@@ -1,2 +1,8 @@
 .env
 .venv/
+client_secrets.json
+token.json
+.DS_Store
+
+__pycache__/
+*.pyc

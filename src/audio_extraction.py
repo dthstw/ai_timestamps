@@ -1,6 +1,28 @@
 from pytube import YouTube
 import os
 import certifi
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.urllib3 import AuthorizedHttp
+
+
+SCOPES = ['https://www.googleapis.com/auth/youtube.readonly']
+
+def get_authenticated_service():
+    creds = None
+    if os.path.exists('token.json'):
+        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(
+                'client_secrets.json', SCOPES)
+            creds = flow.run_local_server(port=8080)
+        with open('token.json', 'w') as token:
+            token.write(creds.to_json())
+    return creds
 
 url_chapters = {}
 
@@ -9,12 +31,19 @@ url_chapters["PvRbGuSeI3o"] = "\n00:00- intro \n00:20- turkey salad with poppyse
 
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
+creds = get_authenticated_service()
+authorized_http = AuthorizedHttp(creds)
+
 #for i, (key, value) in enumerate(url_chapters.items()):
 #    print(f"{key}:{key}")
 keys_list = list(url_chapters.keys())
 #print("http://youtube.com/watch?v="+keys_list[0])
 url_first = "http://youtube.com/watch?v="
-yt = YouTube(url=url_first+keys_list[0])
+yt = YouTube(url=url_first+keys_list[0],
+        proxies=None,
+        use_oauth=True,
+        allow_oauth_cache=True
+    )
 
 print(yt.title)
 
