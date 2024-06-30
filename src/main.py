@@ -11,7 +11,7 @@ video_id = "kCc8FmEb1nY"
 youtube_api_key = os.getenv('YOUTUBE_API_KEY')
 print(f"Your YouTube API key is: {youtube_api_key}")
 
-class YouTube:   
+class YT_search:   
     def __init__(self, api_key):
         self.api_key = api_key
         self.youtube = build('youtube', 'v3', developerKey=api_key)
@@ -28,7 +28,7 @@ class YouTube:
         
         return search_response
     
-inf = YouTube(youtube_api_key)
+inf = YT_search(youtube_api_key)
 
 query = "comedy"
 
