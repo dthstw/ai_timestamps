@@ -5,4 +5,5 @@ token.json
 .DS_Store
 
 __pycache__/
-*.pycscraped_data/
+*.pyc
+scraped_data/
