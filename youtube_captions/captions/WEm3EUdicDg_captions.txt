@@ -1,0 +1,695 @@
+00:00:00 - 00:00:04: hi there and welcome to my python crash
+00:00:01 - 00:00:05: course on the new boston channel
+00:00:04 - 00:00:07: in this tutorial we'll be looking at the
+00:00:05 - 00:00:08: different types of syntax
+00:00:07 - 00:00:11: assigning variables looking at the
+00:00:08 - 00:00:13: different data types using numbers
+00:00:11 - 00:00:15: strings different boolean values
+00:00:13 - 00:00:18: operators different kinds of loops
+00:00:15 - 00:00:19: functions classes and even objects now
+00:00:18 - 00:00:20: for the stuff that i've just said made
+00:00:19 - 00:00:22: no sense to you
+00:00:20 - 00:00:24: then i challenge you to watch till the
+00:00:22 - 00:00:25: end of the tutorial and i assure you
+00:00:24 - 00:00:26: that by the end
+00:00:25 - 00:00:31: you'll have a great understanding of all
+00:00:26 - 00:00:34: of these topics
+00:00:31 - 00:00:34: [Music]
+00:00:35 - 00:00:39: also as you can probably imagine i put a
+00:00:37 - 00:00:40: lot of work and effort into making this
+00:00:39 - 00:00:42: tutorial
+00:00:40 - 00:00:44: it mean the world to me if you go ahead
+00:00:42 - 00:00:45: and subscribe to my channel it should be
+00:00:44 - 00:00:47: the first link in the description
+00:00:45 - 00:00:49: thanks so much for that and let's get
+00:00:47 - 00:00:50: right into it so let's start off with
+00:00:49 - 00:00:52: looking at comments
+00:00:50 - 00:00:54: now comments can be used to explain
+00:00:52 - 00:00:55: python code and they can also be used to
+00:00:54 - 00:00:58: make code more
+00:00:55 - 00:00:59: readable now comment always starts with
+00:00:58 - 00:01:01: a hash
+00:00:59 - 00:01:02: and python will ignore them whenever you
+00:01:01 - 00:01:03: try to run the script
+00:01:02 - 00:01:05: comments can be placed at either the
+00:01:03 - 00:01:06: tsar or the end of the line a comment
+00:01:05 - 00:01:08: does not have to be
+00:01:06 - 00:01:10: text to explain the code it can also be
+00:01:08 - 00:01:11: used to prevent python from just
+00:01:10 - 00:01:13: executing
+00:01:11 - 00:01:14: that bit of code now maybe you don't
+00:01:13 - 00:01:16: just want one line
+00:01:14 - 00:01:18: for a comment and you want multiple so
+00:01:16 - 00:01:19: instead of using this you could use
+00:01:18 - 00:01:21: triple quotes in your code
+00:01:19 - 00:01:23: as long as the string is not assigned to
+00:01:21 - 00:01:25: a variable python will read the code but
+00:01:23 - 00:01:26: then ignore it
+00:01:25 - 00:01:28: let's now have a look at how you can
+00:01:26 - 00:01:29: create a variable
+00:01:28 - 00:01:31: a variable is created the moment that
+00:01:29 - 00:01:34: you first assign a value to it
+00:01:31 - 00:01:35: for example here i'm going to say x
+00:01:34 - 00:01:38: equals to 10.
+00:01:35 - 00:01:39: so x is going to be the variable and 10
+00:01:38 - 00:01:41: is going to be the value
+00:01:39 - 00:01:42: now if you go ahead and print out x it
+00:01:41 - 00:01:45: should respond with
+00:01:42 - 00:01:46: 10. now as i said earlier we can use
+00:01:45 - 00:01:48: variables
+00:01:46 - 00:01:50: to assign any type of data whether that
+00:01:48 - 00:01:51: be a number or even a word
+00:01:50 - 00:01:53: so let's go ahead and make a new
+00:01:51 - 00:01:54: variable and we're going to assign it to
+00:01:53 - 00:01:56: the string
+00:01:54 - 00:01:59: coding now if you go ahead and print out
+00:01:56 - 00:02:00: y this is the result that we get
+00:01:59 - 00:02:02: now that you know how to create a
+00:02:00 - 00:02:03: variable let's have a look at how you
+00:02:02 - 00:02:06: can change the type
+00:02:03 - 00:02:07: even after the type has been set now
+00:02:06 - 00:02:09: changing a type is as simple
+00:02:07 - 00:02:12: as making something from an integer to
+00:02:09 - 00:02:14: string or string to an integer
+00:02:12 - 00:02:15: if you want to specify the data type of
+00:02:14 - 00:02:17: a variable
+00:02:15 - 00:02:19: this can be done with casting so if you
+00:02:17 - 00:02:21: go ahead and say
+00:02:19 - 00:02:23: x equals a string and in brackets 10
+00:02:21 - 00:02:26: then x will be 10 but in quotations
+00:02:23 - 00:02:29: and hence it will print out as a string
+00:02:26 - 00:02:31: now we can also go ahead and say y
+00:02:29 - 00:02:34: equals to the integer 3.
+00:02:31 - 00:02:36: now y will be 3 without any quotation
+00:02:34 - 00:02:38: in addition to that we can also say the
+00:02:36 - 00:02:40: z equals to flow
+00:02:38 - 00:02:42: in practice three all this does is it
+00:02:40 - 00:02:45: adds a decimal place to the end of three
+00:02:42 - 00:02:47: and hence the result three point zero
+00:02:45 - 00:02:48: let's now have a look at single or
+00:02:47 - 00:02:50: double quotes
+00:02:48 - 00:02:52: string variables can be declared either
+00:02:50 - 00:02:53: by using a single quote
+00:02:52 - 00:02:55: or a double let's have a look at what
+00:02:53 - 00:02:55: the difference is so if you go ahead and
+00:02:55 - 00:02:58: say
+00:02:55 - 00:02:59: x equals coding in double quotes and
+00:02:58 - 00:03:02: then we also go ahead
+00:02:59 - 00:03:03: and say y equals the coding in single
+00:03:02 - 00:03:04: quotations
+00:03:03 - 00:03:06: the output that we get here is actually
+00:03:04 - 00:03:08: going to be the exact same
+00:03:06 - 00:03:10: another key thing to take into
+00:03:08 - 00:03:13: consideration is the variable names
+00:03:10 - 00:03:14: are case sensitive for this one we're
+00:03:13 - 00:03:16: going to have a capital a
+00:03:14 - 00:03:18: and we're going to assign this value to
+00:03:16 - 00:03:18: python and now we're going to have a
+00:03:18 - 00:03:20: small a
+00:03:18 - 00:03:22: right below it and we're going to assign
+00:03:20 - 00:03:23: the value to variables
+00:03:22 - 00:03:26: let's now go ahead and print both of
+00:03:23 - 00:03:28: these out to see what we get
+00:03:26 - 00:03:29: as you can see here we get two different
+00:03:28 - 00:03:31: results
+00:03:29 - 00:03:32: this is because the capital a will not
+00:03:31 - 00:03:34: override the other
+00:03:32 - 00:03:36: let's now go ahead and look at data
+00:03:34 - 00:03:38: types now there are a lot of different
+00:03:36 - 00:03:40: types of built-in data types
+00:03:38 - 00:03:42: in programming data type is a very
+00:03:40 - 00:03:43: important concept
+00:03:42 - 00:03:46: variables can sort data of different
+00:03:43 - 00:03:48: types hence data types some of the data
+00:03:46 - 00:03:51: types are built into python
+00:03:48 - 00:03:53: are scr or string for text int or
+00:03:51 - 00:03:56: integer and flow for numeric types
+00:03:53 - 00:03:58: list tuple and range for sequence types
+00:03:56 - 00:04:00: as well as bool for brain types
+00:03:58 - 00:04:02: we'll be having a look at most of these
+00:04:00 - 00:04:04: in a bit more detail in just a second
+00:04:02 - 00:04:06: let's have a look at how you can get the
+00:04:04 - 00:04:08: data type so if you don't remember
+00:04:06 - 00:04:09: getting a data type can be done by using
+00:04:08 - 00:04:11: the type function
+00:04:09 - 00:04:12: here i'm going to go ahead and say x
+00:04:11 - 00:04:16: equals five
+00:04:12 - 00:04:19: i'm gonna go ahead and print out type x
+00:04:16 - 00:04:20: as you can see it tells us that x is an
+00:04:19 - 00:04:22: integer
+00:04:20 - 00:04:23: let's now have a look at numbers so
+00:04:22 - 00:04:25: there are two main numeric types in
+00:04:23 - 00:04:28: python
+00:04:25 - 00:04:29: int or integer and float variables of
+00:04:28 - 00:04:31: numeric types are created when you first
+00:04:29 - 00:04:33: assign a value to
+00:04:31 - 00:04:34: variables of numeric types are created
+00:04:33 - 00:04:37: when you assign a value to them
+00:04:34 - 00:04:38: now let's go ahead and say x equals 1
+00:04:37 - 00:04:41: and y
+00:04:38 - 00:04:42: equals to 2.8 if you go ahead and print
+00:04:41 - 00:04:45: out the type for both
+00:04:42 - 00:04:48: x and y it tells us that x is an integer
+00:04:45 - 00:04:50: and y is a float int or integer is
+00:04:48 - 00:04:51: basically a whole number
+00:04:50 - 00:04:53: it can be positive or negative but it
+00:04:51 - 00:04:55: cannot have any decimals
+00:04:53 - 00:04:56: float on the other hand is a floating
+00:04:55 - 00:04:58: point number
+00:04:56 - 00:05:00: and it can be either positive or
+00:04:58 - 00:05:00: negative but it has to contain either
+00:05:00 - 00:05:03: one
+00:05:00 - 00:05:04: or more decimals let's now have a look
+00:05:03 - 00:05:05: at strings
+00:05:04 - 00:05:07: now strings in python are surrounded by
+00:05:05 - 00:05:09: angle quotations
+00:05:07 - 00:05:11: or double quotation marks hello in
+00:05:09 - 00:05:12: single quotation is the same as hello in
+00:05:11 - 00:05:14: double
+00:05:12 - 00:05:16: and you can display a string literal
+00:05:14 - 00:05:18: with the print function
+00:05:16 - 00:05:20: you can also assign a multi-aligned
+00:05:18 - 00:05:21: string to a variable by using three
+00:05:20 - 00:05:22: quotes
+00:05:21 - 00:05:24: as i showed you earlier we can also use
+00:05:22 - 00:05:25: three codes for making multi-line
+00:05:24 - 00:05:27: comments
+00:05:25 - 00:05:28: however when it's connected to a
+00:05:27 - 00:05:30: variable it's a value
+00:05:28 - 00:05:32: let's go ahead and just say a equals
+00:05:30 - 00:05:34: triple quote and some sample text in
+00:05:32 - 00:05:35: multi-lines
+00:05:34 - 00:05:37: as you can see when we print this out it
+00:05:35 - 00:05:38: prints out more than one line
+00:05:37 - 00:05:40: now again it doesn't matter if you use
+00:05:38 - 00:05:40: three single quotes or three double
+00:05:40 - 00:05:42: quotes
+00:05:40 - 00:05:43: they both still do output the same
+00:05:42 - 00:05:45: result like many other programming
+00:05:43 - 00:05:48: languages strings in python
+00:05:45 - 00:05:49: are arrays of bytes representing unicode
+00:05:48 - 00:05:51: characters
+00:05:49 - 00:05:52: however python doesn't actually have a
+00:05:51 - 00:05:54: character data type
+00:05:52 - 00:05:56: it's simply a string with a length of
+00:05:54 - 00:05:57: one
+00:05:56 - 00:05:59: square brackets can be used to access
+00:05:57 - 00:06:01: the elements of a string
+00:05:59 - 00:06:03: so we're going to go ahead and say a
+00:06:01 - 00:06:04: equals to hello world and we're going to
+00:06:03 - 00:06:06: go ahead and print out a
+00:06:04 - 00:06:08: then after the a we're gonna add in
+00:06:06 - 00:06:09: square brackets and say one in the
+00:06:08 - 00:06:11: middle now before i print this out try
+00:06:09 - 00:06:12: and have a go yourself to see what you
+00:06:11 - 00:06:14: get
+00:06:12 - 00:06:15: as you can see here it prints out the e
+00:06:14 - 00:06:16: that's because the first character
+00:06:15 - 00:06:19: actually has a position
+00:06:16 - 00:06:20: of zero and not one so if we did the
+00:06:19 - 00:06:21: same thing
+00:06:20 - 00:06:23: with zero instead of one then it would
+00:06:21 - 00:06:25: print out h instead
+00:06:23 - 00:06:26: you can also get the length of a string
+00:06:25 - 00:06:28: by using the len
+00:06:26 - 00:06:29: function to try this out we're gonna
+00:06:28 - 00:06:32: carry on with our example with a
+00:06:29 - 00:06:33: being hello world what we're gonna do is
+00:06:32 - 00:06:35: go ahead and say print
+00:06:33 - 00:06:37: then and then a in the middle this
+00:06:35 - 00:06:38: should go ahead and print out the length
+00:06:37 - 00:06:40: of the string
+00:06:38 - 00:06:42: in this case that's going to be 13. in
+00:06:40 - 00:06:43: let's now have a look at booleans in
+00:06:42 - 00:06:46: python
+00:06:43 - 00:06:46: number lines represent one or two values
+00:06:46 - 00:06:48: true
+00:06:46 - 00:06:49: or false in programming you often need
+00:06:48 - 00:06:52: to know if an expression
+00:06:49 - 00:06:53: is true or false now evaluating any
+00:06:52 - 00:06:55: expression in python
+00:06:53 - 00:06:57: will get you one of these two answers
+00:06:55 - 00:07:00: let's go ahead and compare two values
+00:06:57 - 00:07:02: python will return the boolean answer so
+00:07:00 - 00:07:03: let's go ahead and say print 10 is
+00:07:02 - 00:07:06: greater than 9
+00:07:03 - 00:07:08: 10 equals to 9 and 10 is smaller than 9
+00:07:06 - 00:07:10: and the result that we get should be in
+00:07:08 - 00:07:13: this order 2
+00:07:10 - 00:07:13: false and false because 10 is greater
+00:07:13 - 00:07:15: than 9
+00:07:13 - 00:07:17: however the next two after that are
+00:07:15 - 00:07:19: false
+00:07:17 - 00:07:21: when you try and run a condition in an
+00:07:19 - 00:07:22: if statement python will again return
+00:07:21 - 00:07:24: either true or false
+00:07:22 - 00:07:26: we're going to go ahead and say a equals
+00:07:24 - 00:07:28: to 100
+00:07:26 - 00:07:29: and b equals to 50. let's also say that
+00:07:28 - 00:07:32: if
+00:07:29 - 00:07:33: b is greater than a then print b is
+00:07:32 - 00:07:36: greater than a
+00:07:33 - 00:07:37: else print out b is not greater than a
+00:07:36 - 00:07:38: now if you don't really know how if or
+00:07:37 - 00:07:40: else statements work
+00:07:38 - 00:07:42: don't worry because we'll get onto that
+00:07:40 - 00:07:44: in just a second now the ball function
+00:07:42 - 00:07:44: actually allows you to evaluate any
+00:07:44 - 00:07:46: value
+00:07:44 - 00:07:48: it also gives you true or false in
+00:07:46 - 00:07:49: return for example let's go ahead and
+00:07:48 - 00:07:52: say
+00:07:49 - 00:07:53: print bull hello and we'll also say
+00:07:52 - 00:07:56: print bool
+00:07:53 - 00:07:56: 15. as you can see we got two outputs
+00:07:56 - 00:07:58: and they're both
+00:07:56 - 00:08:00: true because they're both valid
+00:07:58 - 00:08:01: statements now almost any value is
+00:08:00 - 00:08:04: evaluated to true
+00:08:01 - 00:08:04: it has some sort of content any string
+00:08:04 - 00:08:06: is true
+00:08:04 - 00:08:08: except for empty strings and any number
+00:08:06 - 00:08:12: is true except for
+00:08:08 - 00:08:13: zero any list tuple or even sets or
+00:08:12 - 00:08:15: all through except for the ones that
+00:08:13 - 00:08:16: have nothing in them
+00:08:15 - 00:08:19: so again we're going to go ahead and say
+00:08:16 - 00:08:22: bool and then we're going to say abc
+00:08:19 - 00:08:24: bool123 and bull a list of apple
+00:08:22 - 00:08:25: cherry and banana now we haven't really
+00:08:24 - 00:08:27: looked the list yet but we'll be looking
+00:08:25 - 00:08:29: at that in a second anyways the output
+00:08:27 - 00:08:31: here should all be true
+00:08:29 - 00:08:33: even though a lot of the values are true
+00:08:31 - 00:08:34: some are still false
+00:08:33 - 00:08:36: in fact there's really not that many
+00:08:34 - 00:08:38: values they value to false
+00:08:36 - 00:08:40: except for empty values the number zero
+00:08:38 - 00:08:41: and even the value of none and of course
+00:08:40 - 00:08:44: the value false
+00:08:41 - 00:08:44: also evaluates to false to have a look
+00:08:44 - 00:08:47: at all of this
+00:08:44 - 00:08:50: let's say ball false ball none
+00:08:47 - 00:08:51: bull zero ball quotations with nothing
+00:08:50 - 00:08:52: inside
+00:08:51 - 00:08:54: will brackets when nothing inside both
+00:08:52 - 00:08:56: square brackets but nothing inside
+00:08:54 - 00:08:58: and bull curly brackets with nothing
+00:08:56 - 00:09:01: died and yes you guessed it
+00:08:58 - 00:09:02: they're all false now functions can also
+00:09:01 - 00:09:03: return a boolean value
+00:09:02 - 00:09:05: but we're not going to dive into it
+00:09:03 - 00:09:06: right now just because we haven't done
+00:09:05 - 00:09:07: functions yet
+00:09:06 - 00:09:10: let's now have a look at python
+00:09:07 - 00:09:12: operators now operators are usable for
+00:09:10 - 00:09:14: operations on variables and values
+00:09:12 - 00:09:16: for example let's use the plus operator
+00:09:14 - 00:09:19: to add together two values
+00:09:16 - 00:09:21: we said print 10 plus 10.
+00:09:19 - 00:09:22: now addition isn't the only operator
+00:09:21 - 00:09:24: that you can use you could also have
+00:09:22 - 00:09:26: subtraction which is just minus
+00:09:24 - 00:09:28: multiplication which is an asterisk
+00:09:26 - 00:09:29: modulus which is going to be a
+00:09:28 - 00:09:31: percentage symbol
+00:09:29 - 00:09:32: python also has a lot of assignment
+00:09:31 - 00:09:35: operators
+00:09:32 - 00:09:36: how these work is x plus equal to 3 is
+00:09:35 - 00:09:39: going to be the same as
+00:09:36 - 00:09:39: x equals to x plus 3. x minus equals to
+00:09:39 - 00:09:42: 3
+00:09:39 - 00:09:43: is the same as x equals x minus 3 and so
+00:09:42 - 00:09:45: on and so forth
+00:09:43 - 00:09:47: there's also comparison operators which
+00:09:45 - 00:09:48: give us boolean values as we said
+00:09:47 - 00:09:49: earlier
+00:09:48 - 00:09:51: these include equal 2 which is gonna be
+00:09:49 - 00:09:53: two equal signs next to each other
+00:09:51 - 00:09:55: greater than or equal to and even less
+00:09:53 - 00:09:56: than or equal to greater than or equal
+00:09:55 - 00:09:58: to which is going to be a greater than
+00:09:56 - 00:10:00: time with an equal to sign right next to
+00:09:58 - 00:10:01: it and less than or equal to which also
+00:10:00 - 00:10:03: follows the same principle
+00:10:01 - 00:10:06: as greater than let's now go ahead and
+00:10:03 - 00:10:07: have a look at python lists
+00:10:06 - 00:10:10: now lists are used to store multiple
+00:10:07 - 00:10:12: items in just a single variable
+00:10:10 - 00:10:13: list of one of the four built-in data
+00:10:12 - 00:10:15: types in python they're used to store
+00:10:13 - 00:10:17: collections of data
+00:10:15 - 00:10:18: the other three are tuples sets and
+00:10:17 - 00:10:19: dictionaries
+00:10:18 - 00:10:21: all of these have different qualities
+00:10:19 - 00:10:23: and usages list equates
+00:10:21 - 00:10:26: using square brackets let's go ahead and
+00:10:23 - 00:10:29: say list equals to square brackets
+00:10:26 - 00:10:32: apple banana oranges in the next line we
+00:10:29 - 00:10:35: can go ahead and print out our list
+00:10:32 - 00:10:36: and it gives us a pre-expected output
+00:10:35 - 00:10:38: now list items
+00:10:36 - 00:10:40: are ordered they can be changed and they
+00:10:38 - 00:10:42: also allow duplicate values
+00:10:40 - 00:10:44: items in list are also indexed the first
+00:10:42 - 00:10:46: item has an index of zero
+00:10:44 - 00:10:48: and the second item has an index of one
+00:10:46 - 00:10:49: when we say that the lists are in order
+00:10:48 - 00:10:52: it means that the items will have to
+00:10:49 - 00:10:54: have a defined order and that order will
+00:10:52 - 00:10:55: not change unless if you do it manually
+00:10:54 - 00:10:57: if you add new items to the list then
+00:10:55 - 00:10:58: your items will be placed at the end of
+00:10:57 - 00:11:00: the list
+00:10:58 - 00:11:02: since the lists are indexed you get
+00:11:00 - 00:11:03: multiple items with the same values
+00:11:02 - 00:11:05: we can go back to our list and we're
+00:11:03 - 00:11:06: going to add in apple and orange again
+00:11:05 - 00:11:08: at the end
+00:11:06 - 00:11:10: and when we print this out we get five
+00:11:08 - 00:11:11: different values to check how many items
+00:11:10 - 00:11:13: a list has
+00:11:11 - 00:11:14: use the lend function this is really
+00:11:13 - 00:11:16: helpful to help you print the number of
+00:11:14 - 00:11:18: the items in the list out
+00:11:16 - 00:11:20: if you go back to our list on the top we
+00:11:18 - 00:11:22: can go ahead and say print
+00:11:20 - 00:11:23: then and then list as you can see here
+00:11:22 - 00:11:25: prints out five
+00:11:23 - 00:11:27: now inside list you can have any data
+00:11:25 - 00:11:30: type whether that be a string
+00:11:27 - 00:11:32: an integer or even a boolean value let's
+00:11:30 - 00:11:34: now have a look at tuples
+00:11:32 - 00:11:36: now tuples are used to store multiple
+00:11:34 - 00:11:37: items in just a single variable
+00:11:36 - 00:11:40: and once again this is one of the four
+00:11:37 - 00:11:41: built-in data types that's used to store
+00:11:40 - 00:11:43: collections of data
+00:11:41 - 00:11:44: a tubal is a collection which is ordered
+00:11:43 - 00:11:47: however it's
+00:11:44 - 00:11:48: unchangeable which is why it differs
+00:11:47 - 00:11:50: from list
+00:11:48 - 00:11:51: and tubals are also written with round
+00:11:50 - 00:11:53: brackets instead of square
+00:11:51 - 00:11:56: let's go ahead and say tuple equals to
+00:11:53 - 00:11:58: again apple banana and orange
+00:11:56 - 00:11:59: when go ahead and print this out we get
+00:11:58 - 00:12:01: the expected output
+00:11:59 - 00:12:02: now as you know tuple items are ordered
+00:12:01 - 00:12:05: unchangeable
+00:12:02 - 00:12:07: but they do still allow duplicate values
+00:12:05 - 00:12:09: and again they are indexed so the first
+00:12:07 - 00:12:11: item has the index of zero
+00:12:09 - 00:12:12: the second is one the third is two and
+00:12:11 - 00:12:13: so on
+00:12:12 - 00:12:15: to work out the tuple length we can
+00:12:13 - 00:12:17: again use the link function
+00:12:15 - 00:12:19: and for this example we'll get three you
+00:12:17 - 00:12:21: can also create a tuple with only one
+00:12:19 - 00:12:22: item to do this you can go ahead and say
+00:12:21 - 00:12:24: this tuple
+00:12:22 - 00:12:26: equals apple but then we need a comma at
+00:12:24 - 00:12:27: the end otherwise python will not
+00:12:26 - 00:12:29: recognize it as
+00:12:27 - 00:12:32: a tuple and again just as list we can
+00:12:29 - 00:12:34: have any data type that we want
+00:12:32 - 00:12:35: let's now have a look at sets this is a
+00:12:34 - 00:12:36: third built in data type that can be
+00:12:35 - 00:12:39: used to store
+00:12:36 - 00:12:41: collections of data the sets are again
+00:12:39 - 00:12:42: used to store multiple items in just a
+00:12:41 - 00:12:44: single variable
+00:12:42 - 00:12:46: however a set is a collection which is
+00:12:44 - 00:12:48: unordered as well as on
+00:12:46 - 00:12:49: indexed and sets are written with curly
+00:12:48 - 00:12:52: brackets
+00:12:49 - 00:12:54: let's go ahead and say set equals to
+00:12:52 - 00:12:56: apple banana and orange
+00:12:54 - 00:12:58: now if you go ahead and print this out
+00:12:56 - 00:12:59: the result will be unordered
+00:12:58 - 00:13:01: this is because that's just don't have a
+00:12:59 - 00:13:02: defined order
+00:13:01 - 00:13:05: in addition to that they also can't have
+00:13:02 - 00:13:07: two items with the same value
+00:13:05 - 00:13:09: duplicate values here will be ignored so
+00:13:07 - 00:13:11: we go ahead and change our set variable
+00:13:09 - 00:13:11: to add an example at the end as you can
+00:13:11 - 00:13:14: see
+00:13:11 - 00:13:15: it simply just ignores it however again
+00:13:14 - 00:13:18: if you want to get the length of the set
+00:13:15 - 00:13:20: you can again use the len command
+00:13:18 - 00:13:22: and just like list and tuples you can
+00:13:20 - 00:13:23: have any data type
+00:13:22 - 00:13:25: now let's have a look at dictionaries
+00:13:23 - 00:13:27: this is the last function for drawing
+00:13:25 - 00:13:28: sets of data
+00:13:27 - 00:13:31: dictionaries are used to store data
+00:13:28 - 00:13:33: values and key to value pairs
+00:13:31 - 00:13:35: a dictionary is a collection which is
+00:13:33 - 00:13:37: ordered from python 3.7
+00:13:35 - 00:13:39: if you're using a version from 3.6
+00:13:37 - 00:13:41: earlier the dictionaries are on order
+00:13:39 - 00:13:43: but they are still changeable and they
+00:13:41 - 00:13:45: still don't allow any duplicates
+00:13:43 - 00:13:47: dryer dictionary you have to use curly
+00:13:45 - 00:13:48: brackets have keys they also lead into
+00:13:47 - 00:13:50: their values
+00:13:48 - 00:13:51: let's go ahead and create our first
+00:13:50 - 00:13:52: dictionary so we're going to say
+00:13:51 - 00:13:54: dictionary
+00:13:52 - 00:13:56: equals to brand it's going to be forward
+00:13:54 - 00:13:58: the model is going to be focused
+00:13:56 - 00:13:59: and the year is going to be 2010. when
+00:13:58 - 00:14:01: you go ahead and print this out
+00:13:59 - 00:14:03: it prints out exactly what we wrote but
+00:14:01 - 00:14:05: in just a single line
+00:14:03 - 00:14:07: now the items in this dictionary are
+00:14:05 - 00:14:09: ordered from python 3.7
+00:14:07 - 00:14:10: changeable and they also do not allow
+00:14:09 - 00:14:12: any duplicates
+00:14:10 - 00:14:13: and as i said earlier dictionary item is
+00:14:12 - 00:14:16: also presented in key
+00:14:13 - 00:14:18: to value pairs and can be referred to by
+00:14:16 - 00:14:19: using the key name
+00:14:18 - 00:14:21: to print the brand value of the
+00:14:19 - 00:14:22: dictionary we go ahead and say print
+00:14:21 - 00:14:24: dictionary
+00:14:22 - 00:14:25: and in square brackets we have to give
+00:14:24 - 00:14:27: the exact name of the key which is going
+00:14:25 - 00:14:29: to be brown as you can see here it
+00:14:27 - 00:14:30: prints out forward we can also do this
+00:14:29 - 00:14:31: for the model as well as the year now
+00:14:30 - 00:14:33: just like says
+00:14:31 - 00:14:34: dictionaries also don't allow any
+00:14:33 - 00:14:35: duplicates so if we go ahead and try and
+00:14:34 - 00:14:38: say yeah
+00:14:35 - 00:14:40: it's 2021 then simply going to ignore
+00:14:38 - 00:14:40: the value have a look at the dictionary
+00:14:40 - 00:14:42: length
+00:14:40 - 00:14:44: again we can use the link function and
+00:14:42 - 00:14:45: for this example here we're going to get
+00:14:44 - 00:14:46: 3.
+00:14:45 - 00:14:48: let's now have a look at some
+00:14:46 - 00:14:49: conditional statements so we're going to
+00:14:48 - 00:14:52: go ahead
+00:14:49 - 00:14:53: and again say a equals to 100 and b
+00:14:52 - 00:14:56: equals to 200.
+00:14:53 - 00:14:58: now if b is greater than a then print
+00:14:56 - 00:15:00: out b is greater than a
+00:14:58 - 00:15:01: else printout a is greater than b now if
+00:15:00 - 00:15:04: you go ahead and run this
+00:15:01 - 00:15:07: it tells us that b is greater than a now
+00:15:04 - 00:15:09: python relies a lot of indentation
+00:15:07 - 00:15:11: now indentation is a white space in the
+00:15:09 - 00:15:12: beginning of the line so for example
+00:15:11 - 00:15:15: we get rid of the indentation in front
+00:15:12 - 00:15:17: of print we get an indentation error
+00:15:15 - 00:15:18: now in addition to this we can also use
+00:15:17 - 00:15:21: the alif keyword
+00:15:18 - 00:15:23: the lf keyword is python's way of saving
+00:15:21 - 00:15:24: if the previous conditions were not true
+00:15:23 - 00:15:26: then try this one so let's go ahead and
+00:15:24 - 00:15:29: change our value of b
+00:15:26 - 00:15:30: to 100 as well and we'll say l if a
+00:15:29 - 00:15:32: equals b
+00:15:30 - 00:15:33: then print a and b are both equal in
+00:15:32 - 00:15:36: this example a
+00:15:33 - 00:15:38: is equal to b so the first condition
+00:15:36 - 00:15:39: isn't true and hence python goes to the
+00:15:38 - 00:15:41: alif statement which is true
+00:15:39 - 00:15:43: and hence we get the result a and b are
+00:15:41 - 00:15:44: equal let's now have a look in while
+00:15:43 - 00:15:46: loops
+00:15:44 - 00:15:48: now python has two primitive loop
+00:15:46 - 00:15:50: commands one loops and four loops
+00:15:48 - 00:15:52: with a while loop we can execute a set
+00:15:50 - 00:15:53: of statements for as long
+00:15:52 - 00:15:55: a condition is true we're going to go
+00:15:53 - 00:15:57: ahead and say i
+00:15:55 - 00:15:58: equals 1 and we're going to say while y
+00:15:57 - 00:16:01: equals
+00:15:58 - 00:16:02: 1 print i as you can see this is going
+00:16:01 - 00:16:04: to go on forever
+00:16:02 - 00:16:06: because i is always going to be 1. let's
+00:16:04 - 00:16:06: now go ahead and change this loop up a
+00:16:06 - 00:16:08: bit
+00:16:06 - 00:16:09: and we're going to say that while i is
+00:16:08 - 00:16:12: less than six
+00:16:09 - 00:16:13: print i and also i plus equals to one if
+00:16:12 - 00:16:16: you don't remember what this does
+00:16:13 - 00:16:16: i equals i plus one when we run this we
+00:16:16 - 00:16:18: get one two
+00:16:16 - 00:16:20: three four and five before the loop
+00:16:18 - 00:16:22: stops we can also add in a break
+00:16:20 - 00:16:25: statement so we can go ahead and say
+00:16:22 - 00:16:27: if i equals to five then break
+00:16:25 - 00:16:29: as you can see here we only just go up
+00:16:27 - 00:16:30: to four because the loop breaks as soon
+00:16:29 - 00:16:32: as i
+00:16:30 - 00:16:33: is equal to five now opposite is a break
+00:16:32 - 00:16:34: statement it's a continue one so we're
+00:16:33 - 00:16:37: going to say if i
+00:16:34 - 00:16:38: equals to five then just continue we
+00:16:37 - 00:16:40: again get up to five
+00:16:38 - 00:16:42: we can also use the else statement with
+00:16:40 - 00:16:42: while so if we go ahead and get rid of
+00:16:42 - 00:16:44: the if
+00:16:42 - 00:16:46: i equals five statement then we can
+00:16:44 - 00:16:48: change that to say
+00:16:46 - 00:16:50: else print i is no longer less than six
+00:16:48 - 00:16:50: so still going to count all the way up
+00:16:50 - 00:16:53: to five
+00:16:50 - 00:16:55: let's have a look at some for loops now
+00:16:53 - 00:16:56: a for loop is used for iterating over a
+00:16:55 - 00:16:58: sequence
+00:16:56 - 00:16:59: this can either be a list a tuple a
+00:16:58 - 00:17:01: dictionary a set
+00:16:59 - 00:17:04: or even a string with the follow we can
+00:17:01 - 00:17:05: execute a set of statements one for each
+00:17:04 - 00:17:07: item in the list
+00:17:05 - 00:17:08: tuple dictionary or even a set so let's
+00:17:07 - 00:17:11: go ahead and make our first
+00:17:08 - 00:17:12: list we're going to say fruits equals
+00:17:11 - 00:17:14: apple
+00:17:12 - 00:17:15: banana and orange then let's say for x
+00:17:14 - 00:17:17: in fruits
+00:17:15 - 00:17:19: we're gonna go ahead and print out all
+00:17:17 - 00:17:21: the different foods in a different line
+00:17:19 - 00:17:23: even strings are iterable objects they
+00:17:21 - 00:17:24: all contain a sequence of characters
+00:17:23 - 00:17:27: to loop the letters through the word
+00:17:24 - 00:17:30: banana we go ahead and say for x
+00:17:27 - 00:17:32: in banana in quotations print x what it
+00:17:30 - 00:17:33: says is just prints
+00:17:32 - 00:17:35: banana but with all of his characters
+00:17:33 - 00:17:37: separated in six different lines
+00:17:35 - 00:17:38: we can also use break statements in for
+00:17:37 - 00:17:39: loops so if we go back to our statement
+00:17:38 - 00:17:42: in the first place
+00:17:39 - 00:17:43: we can say for x in fruits blueprint our
+00:17:42 - 00:17:46: x however if
+00:17:43 - 00:17:47: x equals the banana then break so what
+00:17:46 - 00:17:48: this is going to do is just going to
+00:17:47 - 00:17:50: print out apple
+00:17:48 - 00:17:52: banana and then the code is going to
+00:17:50 - 00:17:53: break if you move the if x equals banana
+00:17:52 - 00:17:55: pop
+00:17:53 - 00:17:57: above print x then it's only going to
+00:17:55 - 00:17:58: print out apple and then break
+00:17:57 - 00:18:00: now again just like the while loops we
+00:17:58 - 00:18:01: can also use the continue statement with
+00:18:00 - 00:18:03: for loops
+00:18:01 - 00:18:05: we can also use else in for loop so
+00:18:03 - 00:18:09: let's go ahead and say for x
+00:18:05 - 00:18:10: in fruits print x l sprint i'm done
+00:18:09 - 00:18:12: and as you can see it's gonna print out
+00:18:10 - 00:18:15: all the fruits in a different line
+00:18:12 - 00:18:16: and then it's going to say i'm done now
+00:18:15 - 00:18:19: follow-ups cannot actually be empty
+00:18:16 - 00:18:20: however if you put in a pass statement
+00:18:19 - 00:18:22: you can avoid getting an error
+00:18:20 - 00:18:24: now this can be used if you don't really
+00:18:22 - 00:18:24: have anything to put into the loop right
+00:18:24 - 00:18:26: now
+00:18:24 - 00:18:28: however you know that you're going to
+00:18:26 - 00:18:30: need it for later let's have a look now
+00:18:28 - 00:18:32: it functions a function is a block of
+00:18:30 - 00:18:32: code which only just runs when it's
+00:18:32 - 00:18:34: called
+00:18:32 - 00:18:35: you can pass data known as parameters
+00:18:34 - 00:18:37: into a function
+00:18:35 - 00:18:40: a function can then return data as a
+00:18:37 - 00:18:42: result now creating a function
+00:18:40 - 00:18:43: is really easy in python it's defined by
+00:18:42 - 00:18:44: using the def
+00:18:43 - 00:18:46: keyword we're going to go ahead and
+00:18:44 - 00:18:47: define function and inside the function
+00:18:46 - 00:18:49: we're going to say print
+00:18:47 - 00:18:51: hello i'm a function let's call the
+00:18:49 - 00:18:51: function we have to use the function
+00:18:51 - 00:18:54: name
+00:18:51 - 00:18:55: followed by parentheses so if we go
+00:18:54 - 00:18:57: ahead and say function
+00:18:55 - 00:18:58: and then the parentheses then it prints
+00:18:57 - 00:19:00: out hello i'm a function
+00:18:58 - 00:19:02: information can be passed into functions
+00:19:00 - 00:19:04: as arguments
+00:19:02 - 00:19:06: arguments are specified after this
+00:19:04 - 00:19:08: function name inside the parentheses
+00:19:06 - 00:19:10: you can add as many arguments as you
+00:19:08 - 00:19:11: want just try and separate them with
+00:19:10 - 00:19:13: a comma let's go ahead and make a new
+00:19:11 - 00:19:14: function we're going to define this
+00:19:13 - 00:19:16: function
+00:19:14 - 00:19:18: and call it name we're going to pass in
+00:19:16 - 00:19:20: the argument of name
+00:19:18 - 00:19:21: and when the function is called we're
+00:19:20 - 00:19:23: going to print out name
+00:19:21 - 00:19:25: now to actually give the function what
+00:19:23 - 00:19:26: it needs to print out we have to call
+00:19:25 - 00:19:28: the function and in the parentheses we
+00:19:26 - 00:19:29: have to put in the argument so here i'm
+00:19:28 - 00:19:31: going to call in the function
+00:19:29 - 00:19:33: and put in my name as you can see for
+00:19:31 - 00:19:34: the output it prints on my name
+00:19:33 - 00:19:36: now when you are calling function you
+00:19:34 - 00:19:37: need to call it with the correct number
+00:19:36 - 00:19:39: of arguments
+00:19:37 - 00:19:40: no more no less or else you will get a
+00:19:39 - 00:19:42: type error
+00:19:40 - 00:19:44: now python is an object oriented
+00:19:42 - 00:19:46: programming language
+00:19:44 - 00:19:48: almost everything in python is an object
+00:19:46 - 00:19:50: with its own properties and methods
+00:19:48 - 00:19:53: a class is like a blueprint for creating
+00:19:50 - 00:19:54: objects to create a class we use the
+00:19:53 - 00:19:56: keyword class
+00:19:54 - 00:19:57: let's go ahead and make our own class so
+00:19:56 - 00:19:59: let's say class
+00:19:57 - 00:20:00: my class and in there we're going to put
+00:19:59 - 00:20:02: in the variable x
+00:20:00 - 00:20:04: and the value of that is going to be 5.
+00:20:02 - 00:20:06: now let's go ahead and create
+00:20:04 - 00:20:08: an object we're going to say new equals
+00:20:06 - 00:20:10: my class and remember the parentheses
+00:20:08 - 00:20:13: let's go ahead and now print out new dot
+00:20:10 - 00:20:13: x and this shouldn't print out the value
+00:20:13 - 00:20:16: of the property
+00:20:13 - 00:20:18: that's named x but it's inside the class
+00:20:16 - 00:20:19: so that's how you can make a really
+00:20:18 - 00:20:21: basic class
+00:20:19 - 00:20:22: in python but now you can go a lot more
+00:20:21 - 00:20:24: advanced in that however for the sake of
+00:20:22 - 00:20:26: this tutorial i won't be doing that as
+00:20:24 - 00:20:28: they can get quite advanced
+00:20:26 - 00:20:29: so that's gonna be it for this video
+00:20:28 - 00:20:31: thank you so much for watching
+00:20:29 - 00:20:33: if you did enjoy don't forget to
+00:20:31 - 00:20:34: subscribe to my channel as well as the
+00:20:33 - 00:20:35: new boston's channel
+00:20:34 - 00:20:37: and also comment down below if you'd
+00:20:35 - 00:20:39: like to see more longer and
+00:20:37 - 00:20:41: comprehensive tutorials on python
+00:20:39 - 00:20:49: again thanks so much for watching i'll
+00:20:41 - 00:20:49: see you in the next one
+00:20:50 - 00:20:52: you

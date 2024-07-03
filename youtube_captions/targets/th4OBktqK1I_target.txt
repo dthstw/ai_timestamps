@@ -1,0 +1,4 @@
+00:00:00 | Learn Python With One Project
+00:00:54 | OctoML
+00:02:10 | Building The Project
+00:53:45 | Outro

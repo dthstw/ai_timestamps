@@ -1,0 +1,19 @@
+00:00:00 Introduction 
+00:00:30 What You Can Do With Python 
+00:01:15 Your First Python Program 
+00:05:30 Variables
+00:09:08 Receiving Input
+00:10:48 Type Conversion
+00:18:49 Strings
+00:23:41 Arithmetic Operators 
+00:25:59 Operator Precedence 
+00:27:11 Comparison Operators 
+00:28:52 Logical Operators
+00:31:06 If Statements
+00:36:16 Exercise
+00:41:42 While Loops
+00:45:11 Lists
+00:48:47 List Methods
+00:52:16 For Loops
+00:54:54 The range() Function 
+00:57:43 Tuples

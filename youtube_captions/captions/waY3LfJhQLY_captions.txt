@@ -1,0 +1,1222 @@
+00:00:03 - 00:00:06: foreign
+00:00:10 - 00:00:17: [Music]
+00:00:14 - 00:00:18: I'll give you an introduction to python
+00:00:17 - 00:00:21: game development by walking you through
+00:00:18 - 00:00:23: creating a simple fun yet extensible
+00:00:21 - 00:00:25: game we'll make this game using the pi
+00:00:23 - 00:00:28: game module which is a simple 2D
+00:00:25 - 00:00:30: Graphics library in Python that allows
+00:00:28 - 00:00:31: you to create a variety of games in case
+00:00:30 - 00:00:34: you're curious I have tons of different
+00:00:31 - 00:00:35: Pi game tutorials on this channel and a
+00:00:34 - 00:00:37: recent one I posted actually shows you
+00:00:35 - 00:00:39: how to build an entire platformer game
+00:00:37 - 00:00:40: here we'll make something much more
+00:00:39 - 00:00:43: simple just to get through the basics
+00:00:40 - 00:00:45: and get you up and started as fast as
+00:00:43 - 00:00:46: possible let me show you a demo of what
+00:00:45 - 00:00:48: we're going to build so on the screen
+00:00:46 - 00:00:49: here you can see our game again this is
+00:00:48 - 00:00:51: fairly straightforward we have a
+00:00:49 - 00:00:53: background we have a rectangle that you
+00:00:51 - 00:00:55: could change to some kind of sprite or
+00:00:53 - 00:00:56: character if you wanted to and then we
+00:00:55 - 00:00:58: have projectiles that are falling on the
+00:00:56 - 00:01:00: screen as we progress further these
+00:00:58 - 00:01:02: projectiles will get faster and more of
+00:01:00 - 00:01:04: them will fall and eventually if we are
+00:01:02 - 00:01:06: to collide with one of these rectangles
+00:01:04 - 00:01:08: and it will tell us that we lost
+00:01:06 - 00:01:09: obviously you could go and add lives you
+00:01:08 - 00:01:12: can make different levels you can make
+00:01:09 - 00:01:13: this game really completely your own but
+00:01:12 - 00:01:15: I wanted to show you the basics covering
+00:01:13 - 00:01:18: things like movement collisions
+00:01:15 - 00:01:19: projectiles backgrounds and all of that
+00:01:18 - 00:01:20: kind of fundamental stuff that once you
+00:01:19 - 00:01:23: know you can make a ton of different
+00:01:20 - 00:01:24: games with so with that said let's get
+00:01:23 - 00:01:26: into the video now the first thing I
+00:01:24 - 00:01:27: want to tell you is that if you are
+00:01:26 - 00:01:29: interested in becoming a software
+00:01:27 - 00:01:31: engineer or learning more about python
+00:01:29 - 00:01:33: go and other programming topics I do
+00:01:31 - 00:01:34: have a course called
+00:01:33 - 00:01:36: programmingexpert.io I'll leave a link
+00:01:34 - 00:01:38: to that in the description I also just
+00:01:36 - 00:01:40: released a blockchain course so anybody
+00:01:38 - 00:01:42: interested in web 3 blockchain
+00:01:40 - 00:01:44: technology creating smart contracts
+00:01:42 - 00:01:46: solidity Etc you can check out my course
+00:01:44 - 00:01:48: blockchain expert again from the link in
+00:01:46 - 00:01:49: the description so the first thing we
+00:01:48 - 00:01:51: need to do when we're going to be
+00:01:49 - 00:01:53: working with this Pi game module is we
+00:01:51 - 00:01:54: need to install Pi game now to do that
+00:01:53 - 00:01:56: you're going to open up a command prompt
+00:01:54 - 00:02:00: or a terminal and type the following
+00:01:56 - 00:02:01: command which is PIP install Pi game now
+00:02:00 - 00:02:03: for some reason this command does not
+00:02:01 - 00:02:05: work for you you can try to run the
+00:02:03 - 00:02:06: command pip 3 install Pi game and if
+00:02:05 - 00:02:08: neither of those work for you I will
+00:02:06 - 00:02:10: leave two videos in the description and
+00:02:08 - 00:02:12: I'll kind of throw the thumbnails up on
+00:02:10 - 00:02:13: the screen that explain to you how to
+00:02:12 - 00:02:15: install Pi game
+00:02:13 - 00:02:16: all right so now that Pi game is
+00:02:15 - 00:02:18: installed we can start using this
+00:02:16 - 00:02:19: library now I've used this a ton of
+00:02:18 - 00:02:21: times but I'm going to walk you through
+00:02:19 - 00:02:23: step by step how we set everything up so
+00:02:21 - 00:02:25: the first thing to do is go into a new
+00:02:23 - 00:02:27: python file you can see I'm in one here
+00:02:25 - 00:02:29: in vs code you can work in any editor
+00:02:27 - 00:02:31: that you like and import the pi game
+00:02:29 - 00:02:32: module now while we're up here we're
+00:02:31 - 00:02:34: going to import a few other modules
+00:02:32 - 00:02:36: we're going to use for this game so
+00:02:34 - 00:02:38: we're going to import time and we are
+00:02:36 - 00:02:42: going to import
+00:02:38 - 00:02:43: random like that perfect all right next
+00:02:42 - 00:02:45: thing we're going to do here is set up
+00:02:43 - 00:02:46: our pygame window now the first thing
+00:02:45 - 00:02:48: you need whenever you're working in pi
+00:02:46 - 00:02:50: game is some kind of window this is
+00:02:48 - 00:02:51: really the place where you can draw
+00:02:50 - 00:02:54: different objects and actually have your
+00:02:51 - 00:02:55: game running now for your window you
+00:02:54 - 00:02:57: need a width and a height so I like to
+00:02:55 - 00:02:59: Define my width and height at the top of
+00:02:57 - 00:03:01: my program in all capitals just that
+00:02:59 - 00:03:02: it's clear that these are constant
+00:03:01 - 00:03:04: values and they're not going to change
+00:03:02 - 00:03:06: so for the width I'm going to make this
+00:03:04 - 00:03:09: 1000 and for the height I'm going to
+00:03:06 - 00:03:10: make this 800 and that is in pixels now
+00:03:09 - 00:03:13: if you are working on a small display
+00:03:10 - 00:03:14: chances are this will be too large for
+00:03:13 - 00:03:16: you so you can make these values smaller
+00:03:14 - 00:03:19: so the window will actually fit on your
+00:03:16 - 00:03:20: screen okay now that we have the width
+00:03:19 - 00:03:23: and the height we're going to say win
+00:03:20 - 00:03:27: standing for our window is equal to
+00:03:23 - 00:03:29: pygame dot display dot set underscore
+00:03:27 - 00:03:31: mode and inside of here we're going to
+00:03:29 - 00:03:33: pass a tuple with the width and the
+00:03:31 - 00:03:35: height make sure you have two sets of
+00:03:33 - 00:03:37: parentheses here and inside of this
+00:03:35 - 00:03:39: intercept you have your width and then
+00:03:37 - 00:03:42: your height and make sure you spell the
+00:03:39 - 00:03:44: width correctly okay the next thing we
+00:03:42 - 00:03:45: can do is set a caption for our window
+00:03:44 - 00:03:47: this is going to be the name at the top
+00:03:45 - 00:03:51: of the window to do that we can say
+00:03:47 - 00:03:53: pygame dot display dot set
+00:03:51 - 00:03:55: underscore caption and then we're going
+00:03:53 - 00:03:57: to pass a string here and I'll just call
+00:03:55 - 00:03:59: this something like space Dodge but you
+00:03:57 - 00:04:00: can call this whatever you want all
+00:03:59 - 00:04:02: right before we go any further let's run
+00:04:00 - 00:04:05: our code here so I'm going to go and
+00:04:02 - 00:04:06: type Python and then main.pi whatever
+00:04:05 - 00:04:08: editor you're working in I assume you
+00:04:06 - 00:04:10: know how to run your python script in vs
+00:04:08 - 00:04:12: code you can also press this button
+00:04:10 - 00:04:13: okay so when I do that you'll notice the
+00:04:12 - 00:04:15: window kind of popped up and then it
+00:04:13 - 00:04:17: disappeared immediately that's because
+00:04:15 - 00:04:19: we don't have any Loop kind of running
+00:04:17 - 00:04:21: that keeps our program alive you can see
+00:04:19 - 00:04:23: again when I run this window pops up and
+00:04:21 - 00:04:25: then it closes in a minute we'll make
+00:04:23 - 00:04:26: sure that Windows stays live and I'll
+00:04:25 - 00:04:29: show you how to do that
+00:04:26 - 00:04:31: perfect so now that we have our window
+00:04:29 - 00:04:32: here our width and our height we need to
+00:04:31 - 00:04:34: set up what's known as the main game
+00:04:32 - 00:04:36: Loop now whenever you're working in pi
+00:04:34 - 00:04:38: game you need a loop typically a while
+00:04:36 - 00:04:40: loop that is going to run while the game
+00:04:38 - 00:04:42: runs right so that actually keeps it
+00:04:40 - 00:04:44: alive the while loop will do things like
+00:04:42 - 00:04:45: check for Collision check for movements
+00:04:44 - 00:04:48: or key presses and then adjust what's
+00:04:45 - 00:04:49: being displayed on the screen so what
+00:04:48 - 00:04:51: we're going to do is create a function
+00:04:49 - 00:04:53: called main this is really where the
+00:04:51 - 00:04:55: main game logic is going to exist for
+00:04:53 - 00:04:56: now we're going to create a variable
+00:04:55 - 00:04:58: called run we're going to say this is
+00:04:56 - 00:05:01: equal to true and we're going to say
+00:04:58 - 00:05:03: while run and then inside of here is
+00:05:01 - 00:05:05: going to be our main game Loop so the
+00:05:03 - 00:05:07: first thing that I always do inside of
+00:05:05 - 00:05:08: my game Loop is I check to see if the
+00:05:07 - 00:05:11: user pressed the x button on the window
+00:05:08 - 00:05:12: if they did that then I want to close
+00:05:11 - 00:05:14: the window it's not automatically
+00:05:12 - 00:05:16: programmed in you need to handle that
+00:05:14 - 00:05:20: key press yourself so to do that I'm
+00:05:16 - 00:05:23: going to say four event in pygame dot
+00:05:20 - 00:05:24: event dot get and this is essentially a
+00:05:23 - 00:05:27: list that contains all of the different
+00:05:24 - 00:05:30: events that have occurred in the last
+00:05:27 - 00:05:32: what do you call it kind of iteration of
+00:05:30 - 00:05:34: this Loop then what we do is check for
+00:05:32 - 00:05:39: the x button event so we're going to say
+00:05:34 - 00:05:42: if event DOT type is equal to pygame Dot
+00:05:39 - 00:05:43: and then in all capitals quit what we
+00:05:42 - 00:05:45: are going to do is say run is equal to
+00:05:43 - 00:05:47: false which will then end this while
+00:05:45 - 00:05:49: loop and we are going to break out of
+00:05:47 - 00:05:51: the for Loop because there's no reason
+00:05:49 - 00:05:53: to continue checking the events if
+00:05:51 - 00:05:55: you've hit the quit button then at the
+00:05:53 - 00:05:56: very end of our function here we're
+00:05:55 - 00:05:59: going to say Pi game
+00:05:56 - 00:06:01: dot quit and pygame.quit will just close
+00:05:59 - 00:06:03: the pi game window for us alright so
+00:06:01 - 00:06:04: very quick recap of what we've done here
+00:06:03 - 00:06:06: we've said run is equal to True while
+00:06:04 - 00:06:07: the variable run is equal to true we're
+00:06:06 - 00:06:09: going to check all of the different
+00:06:07 - 00:06:11: events that are occurring this again
+00:06:09 - 00:06:13: will give us events like key presses
+00:06:11 - 00:06:16: Mouse being moved all that kind of stuff
+00:06:13 - 00:06:18: as well as if we hit the button in the
+00:06:16 - 00:06:20: top right hand corner that x button
+00:06:18 - 00:06:23: which is the event.type equal to pygame
+00:06:20 - 00:06:24: dot quit that's if that's the case sorry
+00:06:23 - 00:06:25: we're going to say run equals to false
+00:06:24 - 00:06:28: we're going to break out of this for
+00:06:25 - 00:06:29: Loop and then that will force us to have
+00:06:28 - 00:06:32: this statement here which will quit the
+00:06:29 - 00:06:33: pi game window now what we need to do is
+00:06:32 - 00:06:35: call this main function so we can test
+00:06:33 - 00:06:37: this out we're going to say if
+00:06:35 - 00:06:40: underscore underscore name is equal to
+00:06:37 - 00:06:43: underscore underscore main like that
+00:06:40 - 00:06:45: then we are going to call the main
+00:06:43 - 00:06:47: function now what this statement is
+00:06:45 - 00:06:49: doing right here is making sure that we
+00:06:47 - 00:06:51: are directly running this python file so
+00:06:49 - 00:06:53: we're running the file itself we're not
+00:06:51 - 00:06:55: importing it because if we were to
+00:06:53 - 00:06:57: import it or if we were to not have this
+00:06:55 - 00:06:59: line for example and we were to import
+00:06:57 - 00:07:01: this file from another python file it
+00:06:59 - 00:07:03: would start running our game when we
+00:07:01 - 00:07:05: only want to do that if we directly run
+00:07:03 - 00:07:07: this python file so hopefully that makes
+00:07:05 - 00:07:09: a bit of sense but this is just checking
+00:07:07 - 00:07:10: if you've run this file directly whereas
+00:07:09 - 00:07:13: if you were to import it this is going
+00:07:10 - 00:07:16: to be false okay so now let's run our
+00:07:13 - 00:07:19: code python main.pi notice the window
+00:07:16 - 00:07:21: appears and it has space Dodge as the
+00:07:19 - 00:07:23: caption then if I press this x button we
+00:07:21 - 00:07:24: can close out of it that only works
+00:07:23 - 00:07:26: because of the code that we've written
+00:07:24 - 00:07:29: here fantastic so the next thing I want
+00:07:26 - 00:07:30: to do is have a background image and
+00:07:29 - 00:07:32: then I want to have a character that can
+00:07:30 - 00:07:34: move around on the screen so let's start
+00:07:32 - 00:07:36: with the background image well for our
+00:07:34 - 00:07:37: background image we need some image that
+00:07:36 - 00:07:40: we're going to display on the screen now
+00:07:37 - 00:07:43: notice here that I actually have one BG
+00:07:40 - 00:07:46: dot jpeg now this is a larger image
+00:07:43 - 00:07:47: which is just a space background all of
+00:07:46 - 00:07:50: this code will be available from my
+00:07:47 - 00:07:51: GitHub including the image so if you
+00:07:50 - 00:07:53: want to download this exact image you
+00:07:51 - 00:07:55: can do that by going to the link in the
+00:07:53 - 00:07:56: description if you don't want this image
+00:07:55 - 00:07:58: and you just want your own background
+00:07:56 - 00:07:59: image then just save an image you can
+00:07:58 - 00:08:01: call it whatever you want but put it in
+00:07:59 - 00:08:03: the same directory as your python script
+00:08:01 - 00:08:05: and then I'll show you how we can use
+00:08:03 - 00:08:07: that image as a background
+00:08:05 - 00:08:09: so at the top of our program here we're
+00:08:07 - 00:08:14: going to say BG sending for background
+00:08:09 - 00:08:16: is equal to pygame dot image dot load
+00:08:14 - 00:08:18: and then we are going to load the name
+00:08:16 - 00:08:21: of our file which in my case is
+00:08:18 - 00:08:22: bg.jpg like that
+00:08:21 - 00:08:25: that's all you need to do to actually
+00:08:22 - 00:08:26: load this image into pie game now if you
+00:08:25 - 00:08:27: named your something else obviously
+00:08:26 - 00:08:29: you're going to change the name to match
+00:08:27 - 00:08:30: that and if you had it for example
+00:08:29 - 00:08:33: inside of a directory then you would do
+00:08:30 - 00:08:35: something like slash Images slash and
+00:08:33 - 00:08:36: then vg.jpg there's a few other ways to
+00:08:35 - 00:08:38: go about doing that but in this case
+00:08:36 - 00:08:41: we're just going to load directly from
+00:08:38 - 00:08:43: the same directory that this python
+00:08:41 - 00:08:45: script is in okay now that we have our
+00:08:43 - 00:08:47: background image we actually need to put
+00:08:45 - 00:08:49: that on the screen now I like to do all
+00:08:47 - 00:08:51: of my drawing in a separate function
+00:08:49 - 00:08:52: just to keep it very clear and kind of
+00:08:51 - 00:08:54: organized so I'm going to create a
+00:08:52 - 00:08:56: function here called Draw
+00:08:54 - 00:08:58: inside of this function for now I'm
+00:08:56 - 00:09:00: going to draw this background image onto
+00:08:58 - 00:09:02: the screen to do that we're going to use
+00:09:00 - 00:09:04: our window which is this Capital wind
+00:09:02 - 00:09:07: variable and we're going to say win dot
+00:09:04 - 00:09:09: blit now blit is a special method that
+00:09:07 - 00:09:10: you use when you want to draw an image
+00:09:09 - 00:09:13: or a surface that's what's referred to
+00:09:10 - 00:09:16: in Python onto the screen so we are
+00:09:13 - 00:09:18: going to BLT the background image and
+00:09:16 - 00:09:21: then we need to pass the coordinates of
+00:09:18 - 00:09:23: the top left hand corner of this image
+00:09:21 - 00:09:26: so in pi game when we're talking about
+00:09:23 - 00:09:28: our coordinate system 0 0 is the top
+00:09:26 - 00:09:31: left hand corner of the screen so if I
+00:09:28 - 00:09:32: run my code here uh this should still be
+00:09:31 - 00:09:34: okay
+00:09:32 - 00:09:36: oops that's not working let's do this
+00:09:34 - 00:09:39: you can see that where my mouse is this
+00:09:36 - 00:09:40: is zero zero if I go all the way over to
+00:09:39 - 00:09:42: the right here now we are at whatever
+00:09:40 - 00:09:44: the width of the screen is which is a
+00:09:42 - 00:09:47: thousand and then the y coordinate of
+00:09:44 - 00:09:48: zero if I were to go down here now we
+00:09:47 - 00:09:51: are at the width of the screen which is
+00:09:48 - 00:09:52: a thousand and then the height of 800 or
+00:09:51 - 00:09:54: the height of whatever our screen is
+00:09:52 - 00:09:56: because that's kind of how the Y is
+00:09:54 - 00:09:58: incremented so rather than y going up
+00:09:56 - 00:10:00: the Y actually goes down zero is the top
+00:09:58 - 00:10:02: and as you go down to the bottom you
+00:10:00 - 00:10:04: increase your y value X is the same as
+00:10:02 - 00:10:06: normal starts at zero and as you go to
+00:10:04 - 00:10:09: the right it increases meaning down here
+00:10:06 - 00:10:10: we have an X of 0 and we have a y of the
+00:10:09 - 00:10:13: height of the screen
+00:10:10 - 00:10:15: okay so that's the coordinate system now
+00:10:13 - 00:10:18: I want my background image to fill the
+00:10:15 - 00:10:20: entire screen so I'm going to put 0 0 as
+00:10:18 - 00:10:22: the coordinate of where the top left
+00:10:20 - 00:10:24: hand corner of this background image
+00:10:22 - 00:10:26: should be placed then the width and the
+00:10:24 - 00:10:29: height will fill the screen
+00:10:26 - 00:10:32: lastly we need to say Pi name dot
+00:10:29 - 00:10:34: display dot update this is going to
+00:10:32 - 00:10:36: refresh the display which means any
+00:10:34 - 00:10:38: draws that we've done this is a drawing
+00:10:36 - 00:10:40: event will actually be applied and put
+00:10:38 - 00:10:42: onto the screen every time you update it
+00:10:40 - 00:10:43: takes all the draws and applies it if
+00:10:42 - 00:10:45: you don't have an update then nothing's
+00:10:43 - 00:10:48: going to happen on the screen fantastic
+00:10:45 - 00:10:50: so now before we exit our while loop
+00:10:48 - 00:10:53: here we're going to call this draw
+00:10:50 - 00:10:54: function so now every single frame we're
+00:10:53 - 00:10:55: going to call the draw function and it's
+00:10:54 - 00:10:59: going to continue to draw this on the
+00:10:55 - 00:11:01: screen let's go ahead and run our code
+00:10:59 - 00:11:03: okay so when we run it you can see that
+00:11:01 - 00:11:05: we get our space image appearing now in
+00:11:03 - 00:11:07: my case my space image is quite large so
+00:11:05 - 00:11:09: it actually fills the entire screen for
+00:11:07 - 00:11:11: some of you your image might be a little
+00:11:09 - 00:11:13: bit smaller and you might want to scale
+00:11:11 - 00:11:15: it up or make it larger so that it fills
+00:11:13 - 00:11:17: the screen now to scale your image you
+00:11:15 - 00:11:19: can do the following you can write High
+00:11:17 - 00:11:22: game
+00:11:19 - 00:11:25: dot transform if we can spell that
+00:11:22 - 00:11:27: correctly dot scale and then you can
+00:11:25 - 00:11:29: pass the image which in this case is the
+00:11:27 - 00:11:31: image that we want to load and then the
+00:11:29 - 00:11:33: size that you want to scale this image
+00:11:31 - 00:11:36: to so in my case I want to scale my
+00:11:33 - 00:11:38: image to be width height so it's going
+00:11:36 - 00:11:40: to be this now when you do this type of
+00:11:38 - 00:11:42: scaling it is not going to preserve the
+00:11:40 - 00:11:44: aspect ratio but there is different
+00:11:42 - 00:11:46: transform functions that'll allow you to
+00:11:44 - 00:11:48: look up from the documentation that let
+00:11:46 - 00:11:52: you actually scale it based on a factor
+00:11:48 - 00:11:54: so you can scale by 2x 3x 4X Etc rather
+00:11:52 - 00:11:55: than scaling using kind of this uh what
+00:11:54 - 00:11:57: do you call it width height system
+00:11:55 - 00:11:59: hopefully that makes a bit of sense but
+00:11:57 - 00:12:01: this will not preserve your aspect ratio
+00:11:59 - 00:12:03: if you use a different scale function it
+00:12:01 - 00:12:05: will there's one that I believe is scale
+00:12:03 - 00:12:08: 2x which just takes the image and scales
+00:12:05 - 00:12:09: it up two times the size okay so now
+00:12:08 - 00:12:11: this should scale our image to be the
+00:12:09 - 00:12:13: width and the height let's quickly test
+00:12:11 - 00:12:14: this out and let me just select this
+00:12:13 - 00:12:17: interpreter so this will keep working
+00:12:14 - 00:12:18: now so now you can see our image looks a
+00:12:17 - 00:12:21: little bit better we've kind of made it
+00:12:18 - 00:12:23: the exact size of our screen rather than
+00:12:21 - 00:12:24: having it be too large and overflow the
+00:12:23 - 00:12:27: screen
+00:12:24 - 00:12:29: okay so now we have our background image
+00:12:27 - 00:12:31: and we have our main event Loop we have
+00:12:29 - 00:12:32: kind of the screen appearing the next
+00:12:31 - 00:12:34: thing we want to do is create a
+00:12:32 - 00:12:37: character that can move around so let's
+00:12:34 - 00:12:39: do that so for our character we're going
+00:12:37 - 00:12:43: to go inside of our main Loop here and
+00:12:39 - 00:12:45: we're going to say player is equal to a
+00:12:43 - 00:12:47: pie game dot rectangle with a capital R
+00:12:45 - 00:12:49: and it's just going to be wrecked and
+00:12:47 - 00:12:52: then we're going to pass the X position
+00:12:49 - 00:12:54: y position width and height of our
+00:12:52 - 00:12:57: player so before I go here I'm going to
+00:12:54 - 00:12:59: create two variables one which is the
+00:12:57 - 00:13:02: player width which will make equal to 40
+00:12:59 - 00:13:04: and another which is the player height
+00:13:02 - 00:13:06: which will be equal to 60. I like to
+00:13:04 - 00:13:08: declare all of my constant variables in
+00:13:06 - 00:13:10: capitals at the top of my program so I
+00:13:08 - 00:13:12: can easily change them and update all of
+00:13:10 - 00:13:15: my code by just changing one variable
+00:13:12 - 00:13:17: here so now I'm going to go to my player
+00:13:15 - 00:13:19: which is pygame.rectangle and we're
+00:13:17 - 00:13:21: going to pick a starting X and a
+00:13:19 - 00:13:23: starting y position for our character
+00:13:21 - 00:13:25: now remember that this is going to be
+00:13:23 - 00:13:27: the top left hand corner of where we are
+00:13:25 - 00:13:29: drawing the player so we can pick any x
+00:13:27 - 00:13:32: coordinate we want I'm going to pick 200
+00:13:29 - 00:13:33: and then for the y coordinate we want
+00:13:32 - 00:13:36: this player to be at the bottom of the
+00:13:33 - 00:13:37: screen so to do this dynamically we're
+00:13:36 - 00:13:39: going to take the height of the screen
+00:13:37 - 00:13:40: and we're going to subtract the height
+00:13:39 - 00:13:42: of the player
+00:13:40 - 00:13:45: so we take height minus player height
+00:13:42 - 00:13:46: that gives us the top left hand corner
+00:13:45 - 00:13:48: where we draw this player so that means
+00:13:46 - 00:13:50: that since our height is 800 and our
+00:13:48 - 00:13:53: player height is 60 we're going to draw
+00:13:50 - 00:13:55: this at 740 meaning the bottom of the
+00:13:53 - 00:13:57: player will be directly at the bottom of
+00:13:55 - 00:13:58: the screen you'll see what I mean when
+00:13:57 - 00:14:00: we draw this but that's why I'm using
+00:13:58 - 00:14:03: this math here next we're going to pass
+00:14:00 - 00:14:04: the player width
+00:14:03 - 00:14:08: and the player height
+00:14:04 - 00:14:10: so it goes X Y with height whenever
+00:14:08 - 00:14:13: you're using a rectangle in pi game
+00:14:10 - 00:14:15: okay so now that we have our player we
+00:14:13 - 00:14:17: want to draw this player onto the screen
+00:14:15 - 00:14:20: so I'm going to pass this player
+00:14:17 - 00:14:21: rectangle to my draw function and then
+00:14:20 - 00:14:24: I'm going to go to draw and I'm going to
+00:14:21 - 00:14:27: accept my player rectangle now I'm going
+00:14:24 - 00:14:31: to draw it to draw my rectangle I'm
+00:14:27 - 00:14:33: going to say Pi game dot draw Dot rect
+00:14:31 - 00:14:35: and then the first thing I'm going to
+00:14:33 - 00:14:37: pass is where I want to draw a rectang
+00:14:35 - 00:14:39: well I want to draw a rectangle on my
+00:14:37 - 00:14:41: window so I pass window the next thing I
+00:14:39 - 00:14:43: pass is the color that I want my
+00:14:41 - 00:14:45: rectangle to be in this case I'm going
+00:14:43 - 00:14:47: to use red now in the newest version of
+00:14:45 - 00:14:49: Pi game which most of you will be using
+00:14:47 - 00:14:52: you can just use string colors so red
+00:14:49 - 00:14:56: white black orange any color you would
+00:14:52 - 00:14:58: know or you can use RGB so if I use RGB
+00:14:56 - 00:15:03: then that would be something like 255 0
+00:14:58 - 00:15:04: 0 where I have 255 red 0 blue and zero
+00:15:03 - 00:15:06: green RGB I think I read it in the in
+00:15:04 - 00:15:09: the wrong order red green blue yeah
+00:15:06 - 00:15:10: sorry so zero green and zero blue but
+00:15:09 - 00:15:12: you get the idea you can use an RGB
+00:15:10 - 00:15:14: color code or
+00:15:12 - 00:15:16: for Simplicity you can just write the
+00:15:14 - 00:15:19: color in which in this case is red
+00:15:16 - 00:15:21: okay next we are going to put the
+00:15:19 - 00:15:24: rectangle that we want to draw and that
+00:15:21 - 00:15:26: rectangle is our player so our player is
+00:15:24 - 00:15:28: a pi game rectangle which is an accepted
+00:15:26 - 00:15:30: argument to this method here so we say
+00:15:28 - 00:15:32: we're drawing it on the window it's a
+00:15:30 - 00:15:33: red rectangle and this is actually the
+00:15:32 - 00:15:36: coordinates of the rectangle right so
+00:15:33 - 00:15:38: it's at 200 it's at this height and it
+00:15:36 - 00:15:39: has this width and this height
+00:15:38 - 00:15:41: perfect
+00:15:39 - 00:15:43: now that we have that we should see a
+00:15:41 - 00:15:46: red rectangle appearing when we run our
+00:15:43 - 00:15:49: code there you go we have our rectangle
+00:15:46 - 00:15:51: showing up on this screen fantastic now
+00:15:49 - 00:15:53: that we have a rectangle we want to move
+00:15:51 - 00:15:56: it around now to move the rectangle is
+00:15:53 - 00:15:58: as easy as adjusting the x coordinate of
+00:15:56 - 00:16:00: this rectangle
+00:15:58 - 00:16:02: so let's have a look at how we do that
+00:16:00 - 00:16:05: the first thing we need to do is listen
+00:16:02 - 00:16:06: for different key presses so if the user
+00:16:05 - 00:16:08: presses the left Arrow key I want to
+00:16:06 - 00:16:10: move to the left which would be reducing
+00:16:08 - 00:16:13: its x value if they press the right
+00:16:10 - 00:16:16: arrow key I want to move to the right so
+00:16:13 - 00:16:20: I'm going to say keys is equal to Pi
+00:16:16 - 00:16:22: game dot key dot get underscore press
+00:16:20 - 00:16:24: now this will give you a list of all of
+00:16:22 - 00:16:26: the keys that the user has pressed and
+00:16:24 - 00:16:28: tell you well if they press them or not
+00:16:26 - 00:16:31: so what I can do here is say the
+00:16:28 - 00:16:33: following I can say if keys and sorry I
+00:16:31 - 00:16:35: said list I mean dictionary and then I
+00:16:33 - 00:16:38: can say Pi game
+00:16:35 - 00:16:40: dot k underscore left which is the code
+00:16:38 - 00:16:45: for the left Arrow key if that's the
+00:16:40 - 00:16:47: case then I can take my player dot X and
+00:16:45 - 00:16:49: I can subtract from that the player
+00:16:47 - 00:16:51: velocity which is a variable that we're
+00:16:49 - 00:16:52: going to Define now at the top of our
+00:16:51 - 00:16:54: program so we're going to say player
+00:16:52 - 00:16:57: what player Val sorry is equal to five
+00:16:54 - 00:16:59: let me just move this down
+00:16:57 - 00:17:01: okay so we're saying if Keys pygame dot
+00:16:59 - 00:17:03: k underscore left you may be wondering
+00:17:01 - 00:17:05: how I found this I just know it because
+00:17:03 - 00:17:07: I've used it many many times before but
+00:17:05 - 00:17:10: this is the uh kind of what do you call
+00:17:07 - 00:17:11: it code for the left Arrow key if you
+00:17:10 - 00:17:14: wanted for example the a key then it
+00:17:11 - 00:17:17: would be K underscore a or k underscore
+00:17:14 - 00:17:19: B or C Etc if you wanted like the shift
+00:17:17 - 00:17:21: key it's K underscore shift there's a
+00:17:19 - 00:17:23: whole um kind of documentation where you
+00:17:21 - 00:17:24: can look up all of the key codes from
+00:17:23 - 00:17:26: the pi game website you can also just
+00:17:24 - 00:17:28: look up Pi game key codes and you'll
+00:17:26 - 00:17:30: probably find a big list that tells you
+00:17:28 - 00:17:31: but the common ones are going to be like
+00:17:30 - 00:17:33: space
+00:17:31 - 00:17:38: shift
+00:17:33 - 00:17:40: c a w Etc or left right so on okay so if
+00:17:38 - 00:17:42: they are pressing the left Arrow key
+00:17:40 - 00:17:44: then we're going to subtract the Y the
+00:17:42 - 00:17:46: reason we subtract sorry not the Y the x
+00:17:44 - 00:17:48: is because we want to move them left so
+00:17:46 - 00:17:50: by subtracting their x coordinate we
+00:17:48 - 00:17:52: move them closer to the zero zero
+00:17:50 - 00:17:55: position so to the left that's why we're
+00:17:52 - 00:17:57: doing this subtraction now we have the
+00:17:55 - 00:17:59: player velocity set at 5 which means
+00:17:57 - 00:18:01: every time that you press this key we're
+00:17:59 - 00:18:02: going to go five pixels backwards you
+00:18:01 - 00:18:05: can adjust that velocity if you want the
+00:18:02 - 00:18:06: character to move faster or slower
+00:18:05 - 00:18:07: now of course we're going to do the same
+00:18:06 - 00:18:11: thing for the other Arrow key so
+00:18:07 - 00:18:13: pygame.k underscore right and then we
+00:18:11 - 00:18:15: say if I can get rid of that crazy
+00:18:13 - 00:18:19: autocomplete player
+00:18:15 - 00:18:22: dot X plus equals the player velocity
+00:18:19 - 00:18:24: one thing to note here when I use dot X
+00:18:22 - 00:18:26: that's simply adjusting the first value
+00:18:24 - 00:18:28: here so we start at 200 then we go back
+00:18:26 - 00:18:29: by the velocity or forward by the
+00:18:28 - 00:18:32: velocity right that's how you access
+00:18:29 - 00:18:34: that you can also access the width
+00:18:32 - 00:18:36: property and the Y property as well as
+00:18:34 - 00:18:39: the height property and that corresponds
+00:18:36 - 00:18:40: with the values up here
+00:18:39 - 00:18:41: okay
+00:18:40 - 00:18:43: fantastic so now we should be able to
+00:18:41 - 00:18:46: move our player because we have this
+00:18:43 - 00:18:48: movement code so let's run and see if we
+00:18:46 - 00:18:49: can do that and using my arrow keys you
+00:18:48 - 00:18:52: can see that I can move my player
+00:18:49 - 00:18:54: however it's moving extremely fast now
+00:18:52 - 00:18:57: the reason for this is that we haven't
+00:18:54 - 00:18:59: set up a clock or kind of a timer that
+00:18:57 - 00:19:00: regulates how fast our PI game Loop is
+00:18:59 - 00:19:02: running
+00:19:00 - 00:19:03: now for some of you if you're on a
+00:19:02 - 00:19:05: slower computer you're going to run that
+00:19:03 - 00:19:07: and be like oh the speed is fine it
+00:19:05 - 00:19:10: works okay the issue is that the speed
+00:19:07 - 00:19:12: that this while loop runs at is what
+00:19:10 - 00:19:14: determines how quickly our character is
+00:19:12 - 00:19:15: moving if I'm holding down the key and
+00:19:14 - 00:19:17: this while loop is running really really
+00:19:15 - 00:19:18: fast I'm going to move fast if it's
+00:19:17 - 00:19:20: running very slow say you're on a slow
+00:19:18 - 00:19:23: computer then this is going to move slow
+00:19:20 - 00:19:25: we don't want that we want this Loop to
+00:19:23 - 00:19:27: always run at the exact same speed so
+00:19:25 - 00:19:28: that no matter what computer you're on
+00:19:27 - 00:19:30: it's going to run at the same pace and
+00:19:28 - 00:19:32: your character is always going to move
+00:19:30 - 00:19:34: at the same speed to do that we need to
+00:19:32 - 00:19:38: set up a clock object so we're going to
+00:19:34 - 00:19:41: say clock is equal to Pi game dot time
+00:19:38 - 00:19:43: dot Capital C clock then we're going to
+00:19:41 - 00:19:45: go here we're going to say clock dot
+00:19:43 - 00:19:47: tick and then we're going to put 60
+00:19:45 - 00:19:49: which is the maximum number of frames
+00:19:47 - 00:19:51: per second or number of times that you
+00:19:49 - 00:19:53: want want this while loop to be running
+00:19:51 - 00:19:54: so you create a clock object here and
+00:19:53 - 00:19:57: then inside of your while loop you have
+00:19:54 - 00:19:59: clock dot tick this is essentially going
+00:19:57 - 00:20:01: to delay the while loop such that it
+00:19:59 - 00:20:03: will only run a maximum of 60 times per
+00:20:01 - 00:20:05: second if you wanted to run faster
+00:20:03 - 00:20:07: obviously you would adjust this value to
+00:20:05 - 00:20:09: be whatever the fixed FPS value is that
+00:20:07 - 00:20:11: you would like okay now that we have
+00:20:09 - 00:20:14: clock.tick you'll notice that when I run
+00:20:11 - 00:20:15: my code my character now moves a lot
+00:20:14 - 00:20:17: slower
+00:20:15 - 00:20:19: so again you could speed this up by
+00:20:17 - 00:20:20: increasing the velocity and then no
+00:20:19 - 00:20:21: matter what computer you're on it's
+00:20:20 - 00:20:23: going to be moving at a similar or the
+00:20:21 - 00:20:25: exact same speed
+00:20:23 - 00:20:27: okay so we're moving but notice here
+00:20:25 - 00:20:30: that I can actually move completely off
+00:20:27 - 00:20:31: the screen we obviously don't want that
+00:20:30 - 00:20:33: for a game otherwise you can just dodge
+00:20:31 - 00:20:35: by going off the screen so we need to
+00:20:33 - 00:20:37: make it so you can't move if you're
+00:20:35 - 00:20:39: hitting the edges of the screen to do
+00:20:37 - 00:20:40: that we just need to come here to our
+00:20:39 - 00:20:41: conditions where we're checking if
+00:20:40 - 00:20:44: you're pressing the left Arrow key and
+00:20:41 - 00:20:46: right arrow key and add a guard Clause
+00:20:44 - 00:20:48: that makes it such that you cannot move
+00:20:46 - 00:20:50: if you're going to be moving off the
+00:20:48 - 00:20:53: screen so the way we do this is we add
+00:20:50 - 00:20:55: another condition here with and we say
+00:20:53 - 00:21:00: if Keys Pi game.k underscore left
+00:20:55 - 00:21:03: and we have the player.y minus the
+00:21:00 - 00:21:06: player underscore velocity is greater
+00:21:03 - 00:21:07: than or equal to zero now the reason
+00:21:06 - 00:21:10: we're putting this here is we're saying
+00:21:07 - 00:21:13: okay we're about to subtract the player
+00:21:10 - 00:21:15: velocity from the x coordinate so if
+00:21:13 - 00:21:19: when we subtract this the player is
+00:21:15 - 00:21:20: still above zero or greater than zero so
+00:21:19 - 00:21:22: their x coordinate is greater than zero
+00:21:20 - 00:21:24: then that's okay we can subtract this
+00:21:22 - 00:21:25: but if it's not so if we're going to be
+00:21:24 - 00:21:29: like negative 1 negative 2 negative 3
+00:21:25 - 00:21:30: Etc don't let them move hopefully that's
+00:21:29 - 00:21:32: clear why we're doing that and that's
+00:21:30 - 00:21:35: why we have this code here now let's
+00:21:32 - 00:21:37: copy this and put the same thing here
+00:21:35 - 00:21:39: except now we need to change this a
+00:21:37 - 00:21:41: little bit because we're adding to the
+00:21:39 - 00:21:42: velocity or we're adding to the x
+00:21:41 - 00:21:47: coordinates sorry so we have player What
+00:21:42 - 00:21:50: DOT X apologies plus player.vel and then
+00:21:47 - 00:21:52: we're going to say plus player dot width
+00:21:50 - 00:21:55: and this is actually going to be less
+00:21:52 - 00:21:57: than or equal to the width of the screen
+00:21:55 - 00:21:59: now this one is a little bit longer
+00:21:57 - 00:22:02: because we have to account for the fact
+00:21:59 - 00:22:04: that player.x is the top left hand
+00:22:02 - 00:22:06: corner of our player so we need to add
+00:22:04 - 00:22:07: the velocity kind of like we did here
+00:22:06 - 00:22:09: but in the opposite direction because
+00:22:07 - 00:22:12: we're increasing it not decreasing it
+00:22:09 - 00:22:14: and we also need to account for the
+00:22:12 - 00:22:16: width again this is the top left hand
+00:22:14 - 00:22:18: corner then we have a width of in this
+00:22:16 - 00:22:21: case 40 pixels so we need to make sure
+00:22:18 - 00:22:23: the x coordinate plus the width plus the
+00:22:21 - 00:22:25: velocity is going to be less than the
+00:22:23 - 00:22:27: width of the screen before we allow the
+00:22:25 - 00:22:29: character to move to the right
+00:22:27 - 00:22:30: okay now let's run this and see if it
+00:22:29 - 00:22:32: works
+00:22:30 - 00:22:34: and notice when I go to the right here I
+00:22:32 - 00:22:35: can't move any further than the very
+00:22:34 - 00:22:38: edge of the screen
+00:22:35 - 00:22:39: and same with the left hand side okay we
+00:22:38 - 00:22:41: now have a character that is moving
+00:22:39 - 00:22:42: around the next thing we need to do is
+00:22:41 - 00:22:44: keep track of the amount of time that
+00:22:42 - 00:22:46: has elapsed we then need to create some
+00:22:44 - 00:22:48: projectiles that are coming down on the
+00:22:46 - 00:22:49: screen and then check for collision with
+00:22:48 - 00:22:51: those projectiles currently we're about
+00:22:49 - 00:22:53: halfway done if you're still following
+00:22:51 - 00:22:55: along at this point congratulations give
+00:22:53 - 00:22:57: yourself a pat on the back believe it or
+00:22:55 - 00:22:59: not most people do not make it this far
+00:22:57 - 00:23:00: alright so there's a few different kind
+00:22:59 - 00:23:02: of directions we can go in here in terms
+00:23:00 - 00:23:03: of what we want to write next but I
+00:23:02 - 00:23:05: think the easiest is going to be to
+00:23:03 - 00:23:07: handle the time so we know how much time
+00:23:05 - 00:23:09: has elapsed to do that
+00:23:07 - 00:23:11: we are going to create a variable here
+00:23:09 - 00:23:13: called start time
+00:23:11 - 00:23:16: start time is going to be equal to time
+00:23:13 - 00:23:17: dot time time dot time is going to give
+00:23:16 - 00:23:19: us the current time so we're going to
+00:23:17 - 00:23:21: grab the current time when the game
+00:23:19 - 00:23:23: started and then we're going to create
+00:23:21 - 00:23:25: another variable here called lapsed
+00:23:23 - 00:23:28: underscore time and make this equal to
+00:23:25 - 00:23:31: zero then beneath our clock.tick we're
+00:23:28 - 00:23:33: going to say elapsed underscore time and
+00:23:31 - 00:23:35: this is going to be equal to time dot
+00:23:33 - 00:23:37: time
+00:23:35 - 00:23:39: minus
+00:23:37 - 00:23:41: the start time
+00:23:39 - 00:23:43: so we're essentially storing what time
+00:23:41 - 00:23:45: we started the wall loop at then every
+00:23:43 - 00:23:47: time we iterate we're getting what the
+00:23:45 - 00:23:48: current time is and subtracting that
+00:23:47 - 00:23:50: from the start time which will give us
+00:23:48 - 00:23:52: the number of seconds that have elapsed
+00:23:50 - 00:23:54: since we started the while Looper since
+00:23:52 - 00:23:56: we started the game now that we have the
+00:23:54 - 00:23:59: elapsed time
+00:23:56 - 00:24:01: we can pass that to our draw function
+00:23:59 - 00:24:02: and we can draw the elapsed time on the
+00:24:01 - 00:24:05: screen so we're going to go to our draw
+00:24:02 - 00:24:07: function we're going to take elapsed
+00:24:05 - 00:24:08: underscore time as another parameter
+00:24:07 - 00:24:10: here
+00:24:08 - 00:24:12: and then we're going to draw this now to
+00:24:10 - 00:24:14: draw this we actually need to use a font
+00:24:12 - 00:24:15: because we're going to have text on the
+00:24:14 - 00:24:17: screen that says time you know two
+00:24:15 - 00:24:19: seconds three seconds Etc so what we
+00:24:17 - 00:24:22: need to do is initialize our font module
+00:24:19 - 00:24:24: create a font object and then use that
+00:24:22 - 00:24:26: font to render some text on the screen
+00:24:24 - 00:24:28: so at the top of our code we're going to
+00:24:26 - 00:24:30: say Pi game
+00:24:28 - 00:24:33: dot font
+00:24:30 - 00:24:35: dot init we just need to initialize the
+00:24:33 - 00:24:37: font module don't ask me why we need to
+00:24:35 - 00:24:38: do this it's a requirement from PI games
+00:24:37 - 00:24:39: we just do that at the top of our
+00:24:38 - 00:24:41: program
+00:24:39 - 00:24:43: then we're going to come down here and
+00:24:41 - 00:24:47: we're going to say font
+00:24:43 - 00:24:50: is equal to Pi game dot font dot sys
+00:24:47 - 00:24:52: font with this capitalization and then
+00:24:50 - 00:24:54: we can pass any of our system fonts in
+00:24:52 - 00:24:56: this case I like to use Comic Sans and
+00:24:54 - 00:24:59: the size of our font which I will choose
+00:24:56 - 00:25:00: as 30. you can change this to be
+00:24:59 - 00:25:01: whatever you want there's different
+00:25:00 - 00:25:04: types of fonts you can put in here no
+00:25:01 - 00:25:06: Times New Roman aerial
+00:25:04 - 00:25:08: Etc and then whatever the size is I'm
+00:25:06 - 00:25:10: just going to make it 30. so again the
+00:25:08 - 00:25:13: procedure is initialize the font module
+00:25:10 - 00:25:14: create a font object here and then use
+00:25:13 - 00:25:17: the font object to create some text
+00:25:14 - 00:25:18: which you can render on the screen so to
+00:25:17 - 00:25:20: do that I'm going to say my time
+00:25:18 - 00:25:24: underscore text inside of my draw
+00:25:20 - 00:25:26: function is equal to font dot render and
+00:25:24 - 00:25:27: then I'm going to pass the text I want
+00:25:26 - 00:25:31: to render now in this case I'm going to
+00:25:27 - 00:25:33: say time colon and then inside of my F
+00:25:31 - 00:25:36: string here I'm going to say round
+00:25:33 - 00:25:38: and then a lapsed underscore time and
+00:25:36 - 00:25:39: then I'm going to put an S here
+00:25:38 - 00:25:42: then I'm going to put a 1 and I'm going
+00:25:39 - 00:25:43: to put the color which is white don't
+00:25:42 - 00:25:45: worry I'll go through this slower I know
+00:25:43 - 00:25:47: that was pretty fast so we have render
+00:25:45 - 00:25:49: the first thing we do is pass the string
+00:25:47 - 00:25:51: or the attacks that we want to render on
+00:25:49 - 00:25:54: the screen now I'm using an F string
+00:25:51 - 00:25:55: available in Python 3.7 and above and
+00:25:54 - 00:25:57: this allows me to embed a variable
+00:25:55 - 00:25:59: directly inside of the string and have
+00:25:57 - 00:26:02: it rendered as a string so I'm saying
+00:25:59 - 00:26:04: time colon and then I'm rounding the
+00:26:02 - 00:26:07: elapsed time to the nearest second
+00:26:04 - 00:26:09: and I put this inside my curly braces so
+00:26:07 - 00:26:11: that I can directly use this variable in
+00:26:09 - 00:26:13: this round function then I put an S so
+00:26:11 - 00:26:16: that I have you know three four five
+00:26:13 - 00:26:18: whatever seconds next I put one one
+00:26:16 - 00:26:19: stands for anti-aliasing don't worry
+00:26:18 - 00:26:21: about this too much but it just looks
+00:26:19 - 00:26:23: makes your text look a little bit better
+00:26:21 - 00:26:25: and then you pass the color that you
+00:26:23 - 00:26:25: want this text to be in this case I want
+00:26:25 - 00:26:28: white
+00:26:25 - 00:26:30: okay now that we have our text we need
+00:26:28 - 00:26:31: to render this on the screen so we're
+00:26:30 - 00:26:34: going to say win
+00:26:31 - 00:26:37: dot bullet and then we're going to Blitz
+00:26:34 - 00:26:39: the time underscore text and the
+00:26:37 - 00:26:41: position we're going to BLT it at is 10
+00:26:39 - 00:26:43: 10. so just we have a little bit of
+00:26:41 - 00:26:46: padding from the top left hand corner of
+00:26:43 - 00:26:47: the screen 10 pixels x 10 pixels y just
+00:26:46 - 00:26:49: moves us a little bit off the edge of
+00:26:47 - 00:26:51: the screen so it looks a little bit
+00:26:49 - 00:26:54: better all right now we should be
+00:26:51 - 00:26:55: rendering the uh time so let's see if
+00:26:54 - 00:26:57: that works by running our code and
+00:26:55 - 00:26:59: notice that we have our time it is
+00:26:57 - 00:27:01: counting up uh and it will keep
+00:26:59 - 00:27:04: displaying whatever the current time is
+00:27:01 - 00:27:06: awesome so now that we have our time the
+00:27:04 - 00:27:08: next thing we need to do is generate
+00:27:06 - 00:27:11: some projectiles now we're going to
+00:27:08 - 00:27:13: generate our projectiles on kind of a
+00:27:11 - 00:27:15: counting increment where the increment
+00:27:13 - 00:27:17: at which we generate them gets shorter
+00:27:15 - 00:27:20: and shorter meaning we kind of generate
+00:27:17 - 00:27:22: more of them uh more quickly as the time
+00:27:20 - 00:27:24: progresses making the game a little bit
+00:27:22 - 00:27:25: more difficult obviously you can mess
+00:27:24 - 00:27:27: with this mechanic however you'd like
+00:27:25 - 00:27:29: but I wanted to show you how we do some
+00:27:27 - 00:27:30: kind of dynamic rendering here so we're
+00:27:29 - 00:27:32: not just putting one on the screen say
+00:27:30 - 00:27:34: every one second it gets a little bit
+00:27:32 - 00:27:36: more complicated than that all right so
+00:27:34 - 00:27:37: to do this we need to have a few
+00:27:36 - 00:27:39: variables we're going to say star I'm
+00:27:37 - 00:27:40: going to call those little projectiles
+00:27:39 - 00:27:42: stars even though I know they don't
+00:27:40 - 00:27:46: really look like them I'm going to say
+00:27:42 - 00:27:48: star add increment is equal to 2 000
+00:27:46 - 00:27:50: milliseconds which means the first star
+00:27:48 - 00:27:53: that we add will be added in 2000
+00:27:50 - 00:27:56: milliseconds then we are going to have
+00:27:53 - 00:27:59: star underscore count
+00:27:56 - 00:28:00: equal to zero and this is actually just
+00:27:59 - 00:28:02: going to be a variable that tells us
+00:28:00 - 00:28:04: when we should add the next star I know
+00:28:02 - 00:28:06: it's a little bit misleading it's not
+00:28:04 - 00:28:08: telling us how many stars we have it's
+00:28:06 - 00:28:10: going to be counting so that we know
+00:28:08 - 00:28:11: when we get to this increment and when
+00:28:10 - 00:28:13: we should add another start of the
+00:28:11 - 00:28:15: screen okay
+00:28:13 - 00:28:18: then we're going to have an array here
+00:28:15 - 00:28:19: called stars or a list sorry and this is
+00:28:18 - 00:28:21: where we're going to store all of our
+00:28:19 - 00:28:23: different stars that are currently on
+00:28:21 - 00:28:25: the screen then we'll draw all of them
+00:28:23 - 00:28:26: that are inside of this list onto the
+00:28:25 - 00:28:28: screen
+00:28:26 - 00:28:30: okay so at the top of our code here
+00:28:28 - 00:28:32: although it doesn't really matter where
+00:28:30 - 00:28:33: you put this we're going to generate
+00:28:32 - 00:28:36: some of our stars so we're going to
+00:28:33 - 00:28:40: actually say that our star underscore
+00:28:36 - 00:28:42: count plus equals clock dot tick now I
+00:28:40 - 00:28:45: know this seems a little bit weird but
+00:28:42 - 00:28:48: what clock dot tick does is return the
+00:28:45 - 00:28:50: number of milliseconds since the last
+00:28:48 - 00:28:52: clock tick so you need to actually do it
+00:28:50 - 00:28:54: in this way to keep track of the time
+00:28:52 - 00:28:57: accurately in my case it's about 16 or
+00:28:54 - 00:28:58: 17 milliseconds between every clock tick
+00:28:57 - 00:29:00: but for you it could be slightly
+00:28:58 - 00:29:03: different so we say star count plus
+00:29:00 - 00:29:04: equals clock.tick and what this is doing
+00:29:03 - 00:29:06: is essentially counting how many
+00:29:04 - 00:29:09: milliseconds have occurred since again
+00:29:06 - 00:29:11: the last clock tick you could use this
+00:29:09 - 00:29:12: elapsed time variable but it gets a
+00:29:11 - 00:29:14: little bit more complicated based on how
+00:29:12 - 00:29:16: we're kind of keeping track of the time
+00:29:14 - 00:29:17: with this variable I know that I'm
+00:29:16 - 00:29:19: probably confusing you a little bit
+00:29:17 - 00:29:22: again this just returning number of
+00:29:19 - 00:29:24: milliseconds since last tick so you do
+00:29:22 - 00:29:26: that um to keep track of kind of the
+00:29:24 - 00:29:29: precise time in this variable all right
+00:29:26 - 00:29:30: now we're going to say if the star
+00:29:29 - 00:29:32: counts
+00:29:30 - 00:29:37: is greater than
+00:29:32 - 00:29:37: the star add increment
+00:29:37 - 00:29:41: then we're going to add stars to the
+00:29:39 - 00:29:43: screen so hopefully you see what I'm
+00:29:41 - 00:29:45: doing here this is 2000 star count is
+00:29:43 - 00:29:47: zero as soon as we have 2 000
+00:29:45 - 00:29:50: milliseconds that have elapsed then we
+00:29:47 - 00:29:51: trigger this and then we add a star now
+00:29:50 - 00:29:53: I'm actually going to add three stars at
+00:29:51 - 00:29:54: a time but you could add a random number
+00:29:53 - 00:29:56: you could add 20 Stars you could add one
+00:29:54 - 00:29:57: start you can add as many as you want to
+00:29:56 - 00:30:00: the screen so I'm going to say four
+00:29:57 - 00:30:03: underscore in range 3 because I want to
+00:30:00 - 00:30:04: add three stars and by the way this say
+00:30:03 - 00:30:06: placeholder variable that you use when
+00:30:04 - 00:30:08: you don't want to have an increment
+00:30:06 - 00:30:10: variable like I I don't actually care
+00:30:08 - 00:30:12: about the iteration count I just want to
+00:30:10 - 00:30:14: do something three times so I say four
+00:30:12 - 00:30:17: underscore in range three okay
+00:30:14 - 00:30:19: now I'm going to generate the X position
+00:30:17 - 00:30:21: of my star because I want to randomly
+00:30:19 - 00:30:23: position them on the screen so I'm going
+00:30:21 - 00:30:25: to pick a valid x coordinate and then
+00:30:23 - 00:30:26: we'll choose a y coordinate and place
+00:30:25 - 00:30:28: the star on the screen
+00:30:26 - 00:30:33: so star X
+00:30:28 - 00:30:37: is equal to random dot Rand int
+00:30:33 - 00:30:39: and then 0 with minus the star
+00:30:37 - 00:30:41: underscore width which is a variable
+00:30:39 - 00:30:43: that I don't believe we've defined yet
+00:30:41 - 00:30:45: so let's add that variable to the top of
+00:30:43 - 00:30:47: our screen here and make that equal to
+00:30:45 - 00:30:48: let's go with 10.
+00:30:47 - 00:30:51: okay
+00:30:48 - 00:30:55: so again star underscore X is equal to
+00:30:51 - 00:30:57: random.randint0 with minus star width
+00:30:55 - 00:30:59: now the reason we're doing this is
+00:30:57 - 00:31:02: because we want to pick a random integer
+00:30:59 - 00:31:04: in the range of 0 and width again minus
+00:31:02 - 00:31:06: star with which is a valid position for
+00:31:04 - 00:31:08: the x coordinate of the star that we are
+00:31:06 - 00:31:10: generating okay we can do this because
+00:31:08 - 00:31:12: we imported the random module at the top
+00:31:10 - 00:31:18: of our program we're then going to say
+00:31:12 - 00:31:20: star is equal to Pi game Dot rect
+00:31:18 - 00:31:23: and we're going to place this at the
+00:31:20 - 00:31:26: star underscore X and at the negative
+00:31:23 - 00:31:28: star underscore height which is another
+00:31:26 - 00:31:30: variable that we need to Define so let's
+00:31:28 - 00:31:33: go here
+00:31:30 - 00:31:36: and make this equal to 20. okay
+00:31:33 - 00:31:38: now the reason I'm doing this is I want
+00:31:36 - 00:31:41: my star to start off of the screen and
+00:31:38 - 00:31:42: then move down so when I do negative
+00:31:41 - 00:31:45: star height that means I'm going to get
+00:31:42 - 00:31:48: a negative y coordinate so my star
+00:31:45 - 00:31:49: starts not at the top of the screen a
+00:31:48 - 00:31:51: little bit above the top of the screen
+00:31:49 - 00:31:53: and then as we move it down it looks
+00:31:51 - 00:31:55: like it enters the screen if instead you
+00:31:53 - 00:31:57: were to put 0 here then you would see
+00:31:55 - 00:31:59: the star kind of appear right at the top
+00:31:57 - 00:32:01: of the screen and then start moving down
+00:31:59 - 00:32:04: instead we want to see it slowly enter
+00:32:01 - 00:32:06: the screen so we do that by giving it a
+00:32:04 - 00:32:10: negative height to start
+00:32:06 - 00:32:13: okay next we pass the star width
+00:32:10 - 00:32:16: and the star underscore height
+00:32:13 - 00:32:20: and now we add this star to our Stars
+00:32:16 - 00:32:21: list so we say Stars dot append star
+00:32:20 - 00:32:23: like that
+00:32:21 - 00:32:26: okay so this now generates three random
+00:32:23 - 00:32:28: stars for us now that we have that we
+00:32:26 - 00:32:31: want to adjust our star add increment
+00:32:28 - 00:32:33: and we want to set our star count back
+00:32:31 - 00:32:35: to zero so we say star count equal to
+00:32:33 - 00:32:37: zero and before that we're going to
+00:32:35 - 00:32:39: adjust this increment so that it's
+00:32:37 - 00:32:42: slightly less than what it currently is
+00:32:39 - 00:32:45: so we generate Stars faster to do that
+00:32:42 - 00:32:49: we say star add
+00:32:45 - 00:32:52: increment is equal to the maximum of 200
+00:32:49 - 00:32:56: and the star add
+00:32:52 - 00:32:58: increment minus 50. okay so let's just
+00:32:56 - 00:32:59: quickly go through what I did here I'm
+00:32:58 - 00:33:01: essentially saying with this maximum
+00:32:59 - 00:33:05: function pick the maximum value out of
+00:33:01 - 00:33:06: this and 200. now this makes it so that
+00:33:05 - 00:33:10: the minimum star add increment I ever
+00:33:06 - 00:33:12: have is 200 right so if star at
+00:33:10 - 00:33:15: increment is equal to 200 rather than
+00:33:12 - 00:33:18: setting it equal to 150 then 50 then 0
+00:33:15 - 00:33:19: the negative 50 we always keep it at 200
+00:33:18 - 00:33:22: okay so this is just the minimum value
+00:33:19 - 00:33:24: that's what I'm setting here then in
+00:33:22 - 00:33:25: most cases what will happen is since
+00:33:24 - 00:33:27: star at increment is going to be much
+00:33:25 - 00:33:30: larger than 200 in the starting case is
+00:33:27 - 00:33:32: equal to 2000 we're going to subtract 50
+00:33:30 - 00:33:34: milliseconds so that every time that
+00:33:32 - 00:33:37: this runs 50 milliseconds kind of faster
+00:33:34 - 00:33:39: we generate another star
+00:33:37 - 00:33:41: hopefully that makes a little bit of
+00:33:39 - 00:33:43: sense but we go from 2000 to 1950 to
+00:33:41 - 00:33:44: 1900
+00:33:43 - 00:33:46: Etc and it gets faster and faster and
+00:33:44 - 00:33:47: faster the time in which we're
+00:33:46 - 00:33:49: incrementing a star and you can
+00:33:47 - 00:33:50: obviously adjust this and change it to
+00:33:49 - 00:33:52: be whatever you want
+00:33:50 - 00:33:55: okay so that will generate Our Stars for
+00:33:52 - 00:33:57: us however if we want to see our stars
+00:33:55 - 00:33:59: then we actually need to draw them on
+00:33:57 - 00:34:01: the screen and we need to move them
+00:33:59 - 00:34:03: downwards so we're going to do both of
+00:34:01 - 00:34:05: those steps before unfortunately we can
+00:34:03 - 00:34:07: see what's going to happen here so now
+00:34:05 - 00:34:08: after we generate Our Stars after we do
+00:34:07 - 00:34:11: our events and after we do our movements
+00:34:08 - 00:34:15: we're going to move our Stars so we're
+00:34:11 - 00:34:17: going to say four star in stars and then
+00:34:15 - 00:34:19: we're actually going to make a copy of
+00:34:17 - 00:34:21: this star's list the reason I'm making a
+00:34:19 - 00:34:23: copy of the Stars list is that I'm going
+00:34:21 - 00:34:25: to be removing stars from this list that
+00:34:23 - 00:34:28: have hit the bottom of the screen or
+00:34:25 - 00:34:30: that have hit our player if that happens
+00:34:28 - 00:34:31: if they hit our player hit the bottom of
+00:34:30 - 00:34:33: the screen we want to get rid of them
+00:34:31 - 00:34:36: because we don't want to be rendering
+00:34:33 - 00:34:37: them and uh moving them when they're not
+00:34:36 - 00:34:39: on the screen that's a waste of
+00:34:37 - 00:34:41: resources so I need to make a copy of
+00:34:39 - 00:34:43: this list because if I'm modifying the
+00:34:41 - 00:34:45: list while I'm working on it I can get
+00:34:43 - 00:34:47: all kinds of weird errors so rather than
+00:34:45 - 00:34:49: doing that I make a copy of it so that
+00:34:47 - 00:34:51: I'm looping through the copy and then I
+00:34:49 - 00:34:54: can adjust or mutate the original list
+00:34:51 - 00:34:57: as I go through this for Loop so I'm
+00:34:54 - 00:35:00: going to say star.y plus equal the star
+00:34:57 - 00:35:04: velocity okay so this moves the star
+00:35:00 - 00:35:05: downwards in the y direction by this
+00:35:04 - 00:35:08: velocity because we're adding to it
+00:35:05 - 00:35:11: meaning it goes down then I'm going to
+00:35:08 - 00:35:14: say if the star dot Y is greater than
+00:35:11 - 00:35:15: the height of the screen then what I
+00:35:14 - 00:35:18: want to do is remove this star so I'm
+00:35:15 - 00:35:20: going to say Stars dot remove
+00:35:18 - 00:35:21: and then I removed the star which will
+00:35:20 - 00:35:23: remove the first instance of this or
+00:35:21 - 00:35:27: really the only instance of it from the
+00:35:23 - 00:35:28: original Stars list nice next we're
+00:35:27 - 00:35:33: going to say l if
+00:35:28 - 00:35:38: star dot Y is greater than or equal to
+00:35:33 - 00:35:40: the player.y and the star dot collide
+00:35:38 - 00:35:41: rect
+00:35:40 - 00:35:43: player
+00:35:41 - 00:35:46: then we are going to remove the star
+00:35:43 - 00:35:49: again so star stock remove
+00:35:46 - 00:35:51: star and we're going to say hit is equal
+00:35:49 - 00:35:54: to true
+00:35:51 - 00:35:57: and we are going to break out of this
+00:35:54 - 00:35:58: Loop okay you'll see why I'm doing this
+00:35:57 - 00:35:59: in a minute
+00:35:58 - 00:36:01: but essentially what we're doing with
+00:35:59 - 00:36:03: the second alif statement here is we're
+00:36:01 - 00:36:04: saying okay if the star.y was not
+00:36:03 - 00:36:06: greater than the height then we're going
+00:36:04 - 00:36:08: to check if the start at Y is greater
+00:36:06 - 00:36:09: than or equal to the player Del y now
+00:36:08 - 00:36:12: the reason we're doing this check here
+00:36:09 - 00:36:14: is because I only want to check to see
+00:36:12 - 00:36:16: if this star is colliding with the
+00:36:14 - 00:36:17: player if the star is at the bottom
+00:36:16 - 00:36:21: portion of the screen so if it's in the
+00:36:17 - 00:36:23: same y kind of plane as our player if
+00:36:21 - 00:36:26: it's not there's no point in me checking
+00:36:23 - 00:36:27: uh if the star has collided with the
+00:36:26 - 00:36:29: player right it just doesn't make any
+00:36:27 - 00:36:30: sense because if it's way above the
+00:36:29 - 00:36:32: player I don't need to check for
+00:36:30 - 00:36:34: Collision because I know it can't be
+00:36:32 - 00:36:37: colliding and in fact I need to add
+00:36:34 - 00:36:38: something here start out y plus star dot
+00:36:37 - 00:36:40: height because again we need to account
+00:36:38 - 00:36:44: for the fact that the star has a height
+00:36:40 - 00:36:45: not just a y coordinate okay so we say
+00:36:44 - 00:36:47: start a y plus start at height if that
+00:36:45 - 00:36:49: is greater than or equal to the player.y
+00:36:47 - 00:36:52: then we're going to check if the star
+00:36:49 - 00:36:54: has collided with the player so since
+00:36:52 - 00:36:57: both of these are Pi game rectangle
+00:36:54 - 00:36:59: objects that allows us to use this fancy
+00:36:57 - 00:37:01: function called collide which just tells
+00:36:59 - 00:37:03: us if two rectangles have collided so if
+00:37:01 - 00:37:05: they've collided then I want to remove
+00:37:03 - 00:37:06: this star because it hit our player I'm
+00:37:05 - 00:37:08: going to set a variable hit equal to
+00:37:06 - 00:37:10: true because we'll then look at that
+00:37:08 - 00:37:14: variable later on to see if our player
+00:37:10 - 00:37:16: has been hit by a star okay now we just
+00:37:14 - 00:37:18: want to go up here and say hit is equal
+00:37:16 - 00:37:19: to false just so that if we do end up
+00:37:18 - 00:37:22: checking this variable later on we don't
+00:37:19 - 00:37:24: get an error where it's undefined
+00:37:22 - 00:37:25: okay so I know I've done a lot there but
+00:37:24 - 00:37:29: we started by generating all of our
+00:37:25 - 00:37:32: stars we then moved all of the stars now
+00:37:29 - 00:37:33: we need to draw all of the stars so I'm
+00:37:32 - 00:37:35: going to pass my stars to this draw
+00:37:33 - 00:37:37: function I'm going to go to my draw
+00:37:35 - 00:37:39: function
+00:37:37 - 00:37:40: and I'm going to start drawing them now
+00:37:39 - 00:37:42: it doesn't really matter where you draw
+00:37:40 - 00:37:44: them but if you draw them after the
+00:37:42 - 00:37:46: player they'll appear on top of them if
+00:37:44 - 00:37:48: you draw them before the player they'll
+00:37:46 - 00:37:50: appear behind the player so pick where
+00:37:48 - 00:37:52: you want to draw them I'm going to do it
+00:37:50 - 00:37:53: after so you can see it on top of the
+00:37:52 - 00:37:57: player okay so fairly straightforward
+00:37:53 - 00:37:59: here we're going to say four star
+00:37:57 - 00:38:00: in Stars
+00:37:59 - 00:38:02: High game
+00:38:00 - 00:38:05: dot draw
+00:38:02 - 00:38:09: dot rectangle on the window with the
+00:38:05 - 00:38:10: color white r star okay straightforward
+00:38:09 - 00:38:12: same as our player we're just doing it
+00:38:10 - 00:38:14: for every single start
+00:38:12 - 00:38:16: all right so that's going to be a
+00:38:14 - 00:38:18: majority of the game done let's run it
+00:38:16 - 00:38:19: make sure it works and then we'll handle
+00:38:18 - 00:38:21: showing something on the screen when the
+00:38:19 - 00:38:24: player gets hit by a star
+00:38:21 - 00:38:26: okay so let's run and you should see
+00:38:24 - 00:38:28: that we get some stuff appearing on the
+00:38:26 - 00:38:29: screen but it looks like we got an error
+00:38:28 - 00:38:32: so what is our error here
+00:38:29 - 00:38:34: it actually didn't show up for me so let
+00:38:32 - 00:38:36: me run this one more time and we'll wait
+00:38:34 - 00:38:39: for the error message and it says star
+00:38:36 - 00:38:41: velocity is not defined okay so that's a
+00:38:39 - 00:38:44: variable that we need to Define so let's
+00:38:41 - 00:38:45: say starvel is equal to three again feel
+00:38:44 - 00:38:46: free to adjust that to be whatever you
+00:38:45 - 00:38:48: want
+00:38:46 - 00:38:50: okay now let's try it and see if our
+00:38:48 - 00:38:52: Stars start moving and there you go
+00:38:50 - 00:38:55: three stars are generated and they start
+00:38:52 - 00:38:56: moving on the screen perfect and notice
+00:38:55 - 00:38:58: that they kind of disappear when they
+00:38:56 - 00:39:01: hit the player or when they hit the
+00:38:58 - 00:39:03: bottom of the screen okay fantastic so
+00:39:01 - 00:39:04: now the last thing we need to do is just
+00:39:03 - 00:39:06: put something on the screen that says
+00:39:04 - 00:39:09: hey you collided with a star you lost
+00:39:06 - 00:39:12: the game and now we'll be finished okay
+00:39:09 - 00:39:13: great so to do that we're going to go
+00:39:12 - 00:39:16: down to the bottom of our while loop
+00:39:13 - 00:39:18: here and before our draw statement we're
+00:39:16 - 00:39:21: going to check if the player was hit by
+00:39:18 - 00:39:23: a star so we're going to say if hit then
+00:39:21 - 00:39:24: we're going to do something now really
+00:39:23 - 00:39:26: all we're going to do is just generate
+00:39:24 - 00:39:27: some text that says you lost put it on
+00:39:26 - 00:39:29: the screen kind of delay for a few
+00:39:27 - 00:39:30: seconds and that'll be it and if you
+00:39:29 - 00:39:32: want to adjust this game and kind of
+00:39:30 - 00:39:34: make it longer add levels you can do
+00:39:32 - 00:39:37: that from here so we're going to say
+00:39:34 - 00:39:39: lost underscore text is equal to our
+00:39:37 - 00:39:41: font dot render you can make a different
+00:39:39 - 00:39:43: font if you want I'm just going to use
+00:39:41 - 00:39:45: the same one I'm going to say you lost
+00:39:43 - 00:39:48: exclamation point and then one and then
+00:39:45 - 00:39:50: the color of white
+00:39:48 - 00:39:53: okay now I'm going to draw this on the
+00:39:50 - 00:39:55: screen so I'm going to say win dot Blitz
+00:39:53 - 00:39:57: the Lost underscore text and I'm going
+00:39:55 - 00:39:59: to draw this in the center of the screen
+00:39:57 - 00:40:02: to draw this in the center of the screen
+00:39:59 - 00:40:06: we do the following we say width divided
+00:40:02 - 00:40:09: by 2 minus the Lost underscore text
+00:40:06 - 00:40:11: dot get underscore width which is a
+00:40:09 - 00:40:13: method you can use to get the width of
+00:40:11 - 00:40:15: your text object divided by two and then
+00:40:13 - 00:40:17: we do the same for the height so say
+00:40:15 - 00:40:20: height divided by 2 minus lost
+00:40:17 - 00:40:21: underscore text Dot get underscore
+00:40:20 - 00:40:24: height
+00:40:21 - 00:40:25: divided by 2. okay so let me just
+00:40:24 - 00:40:26: quickly explain why we're doing this we
+00:40:25 - 00:40:28: want this in the middle of the screen
+00:40:26 - 00:40:31: but we need to pick the top left hand
+00:40:28 - 00:40:32: position of the text that puts it in the
+00:40:31 - 00:40:34: middle of the screen so you might
+00:40:32 - 00:40:35: naively think that you can just do width
+00:40:34 - 00:40:38: over 2 because that's the middle
+00:40:35 - 00:40:39: position of the screen but you can't you
+00:40:38 - 00:40:42: actually have to get the full width of
+00:40:39 - 00:40:45: the text object and then divide that by
+00:40:42 - 00:40:48: two and subtract that from width over
+00:40:45 - 00:40:49: two right so if we have
+00:40:48 - 00:40:51: um can I kind of run this let's run this
+00:40:49 - 00:40:53: and see so let's say 500 is where my
+00:40:51 - 00:40:55: mouse is right if I draw my text it's
+00:40:53 - 00:40:57: going to go this direction from my mouse
+00:40:55 - 00:41:00: so I need to shift it back half the
+00:40:57 - 00:41:01: width of the text and then draw it so
+00:41:00 - 00:41:03: that it fills the screen completely in
+00:41:01 - 00:41:04: the middle and then obviously the same
+00:41:03 - 00:41:05: goes for the height
+00:41:04 - 00:41:07: okay
+00:41:05 - 00:41:09: hopefully that's clear uh that's why
+00:41:07 - 00:41:10: we're doing that all right so now that
+00:41:09 - 00:41:12: we've lit this on the screen we need to
+00:41:10 - 00:41:14: update the screen
+00:41:12 - 00:41:16: so Pi game
+00:41:14 - 00:41:19: dot display
+00:41:16 - 00:41:22: dot update then we are simply going to
+00:41:19 - 00:41:23: pause so we're going to say Pi game
+00:41:22 - 00:41:26: dot time
+00:41:23 - 00:41:29: dot delay I'm going to delay for 4 000
+00:41:26 - 00:41:31: milliseconds which is four seconds and
+00:41:29 - 00:41:33: then I'm going to break
+00:41:31 - 00:41:34: which will break this while loop and
+00:41:33 - 00:41:37: will end the game
+00:41:34 - 00:41:39: okay so let me quickly run through we
+00:41:37 - 00:41:41: generate the text we draw it onto the
+00:41:39 - 00:41:42: screen now since I'm not doing this in
+00:41:41 - 00:41:44: the draw function I need to manually
+00:41:42 - 00:41:46: update the displace we actually see that
+00:41:44 - 00:41:48: appearing then we just freeze the game
+00:41:46 - 00:41:50: so this is just delaying everything for
+00:41:48 - 00:41:52: four seconds just so you can see the
+00:41:50 - 00:41:54: text and then we break and the game ends
+00:41:52 - 00:41:55: if you wanted to you could call the main
+00:41:54 - 00:41:57: function again or you could have the
+00:41:55 - 00:41:58: game Run a second time you can do
+00:41:57 - 00:42:01: whatever you want here you could say how
+00:41:58 - 00:42:02: long you've lasted whatever you can add
+00:42:01 - 00:42:04: a scoreboard but this is where I'm going
+00:42:02 - 00:42:06: to leave it for now so just run make
+00:42:04 - 00:42:07: sure this is working and then that's
+00:42:06 - 00:42:09: pretty much going to wrap up this
+00:42:07 - 00:42:10: tutorial okay so let's just see if we
+00:42:09 - 00:42:13: can Collide here
+00:42:10 - 00:42:16: and we do and notice it says you lost
+00:42:13 - 00:42:18: and then the game is going to end and we
+00:42:16 - 00:42:19: can run it again okay fantastic so let
+00:42:18 - 00:42:21: me zoom out a bit here so you guys can
+00:42:19 - 00:42:23: read some more of the code I'll kind of
+00:42:21 - 00:42:25: scroll through it slowly obviously all
+00:42:23 - 00:42:27: this code will be available from the
+00:42:25 - 00:42:30: link in the description at my GitHub but
+00:42:27 - 00:42:32: that was an introduction to python game
+00:42:30 - 00:42:33: development I hope that this was
+00:42:32 - 00:42:35: complicated enough that it taught you
+00:42:33 - 00:42:37: some stuff and showed you how to create
+00:42:35 - 00:42:38: a game yet simple enough that you could
+00:42:37 - 00:42:40: get through without too many headaches
+00:42:38 - 00:42:42: please let me know your feedback in the
+00:42:40 - 00:42:44: comments down below and I look forward
+00:42:42 - 00:42:45: to seeing you in another YouTube video
+00:42:44 - 00:42:47: don't forget to check out
+00:42:45 - 00:42:49: programmingexpert.io and blockchain
+00:42:47 - 00:42:51: expert which will be in the link in the
+00:42:49 - 00:42:54: description thanks again for watching
+00:42:51 - 00:42:59: and I'll see you in another one
+00:42:54 - 00:43:01: [Music]
+00:42:59 - 00:43:01: foreign

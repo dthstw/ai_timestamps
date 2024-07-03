@@ -1,0 +1,14 @@
+00:00:00 : Introduction
+00:00:17 : Who’s this tutorial for?
+00:00:30 : An outline of this video
+00:01:18 : What is Python and what can you do with it?
+00:02:01 : What is IDE and why I chose Jupyter Notebook
+00:03:09 : How Jupyter Notebook works
+00:04:19 : How to install Python and Jupyter (through Anaconda)
+00:05:58 : Launching Jupyter
+00:07:59 : The print() function
+00:10:24 : Introduction to variables
+00:13:08 : What are variables (in Python)?
+00:16:42 : Assigning a variable to another variable
+00:19:03 : A practice problem - swapping two variables
+00:20:40 : Solutions to the practice problem - swapping two variables

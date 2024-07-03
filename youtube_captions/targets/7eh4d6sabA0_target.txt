@@ -1,0 +1,12 @@
+00:00:00 Introduction
+00:00:59 What is Machine Learning? 
+00:02:58 Machine Learning in Action 
+00:05:45 Libraries and Tools
+00:10:40 Importing a Data Set
+00:17:01 Jupyter Shortcuts
+00:22:53 A Real Machine Learning Problem 
+00:26:09 Preparing the Data
+00:29:15 Learning and Predicting
+00:33:20 Calculating the Accuracy
+00:39:41 Persisting Models
+00:42:55 Visualizing a Decision Tree

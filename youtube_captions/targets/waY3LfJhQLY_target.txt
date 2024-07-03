@@ -1,0 +1,14 @@
+00:00:00 | Project Overview
+00:00:46 | Project Demo
+00:01:52 | Setup/Installation
+00:02:45 | Creating The Window
+00:07:31 | Adding a Background Image
+00:12:35 | Moving a Character
+00:20:38 | Adding Player Boundaries
+00:22:45 | Keeping Track Of Time
+00:24:15 | Rendering Text
+00:27:08 | Adding Projectiles
+00:33:55 | Moving Projectiles & Collision
+00:37:35 | Drawing Projectiles
+00:38:45 | Handling Losing The Game
+00:42:18 | Conclusion
