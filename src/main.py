@@ -11,6 +11,8 @@ import json
 import re
 from youtube_transcript_api import YouTubeTranscriptApi
 import time
+from tqdm import tqdm
+from googleapiclient.errors import HttpError
 
 
 load_dotenv()
@@ -22,22 +24,24 @@ SCOPES = ['https://www.googleapis.com/auth/youtube.readonly']
 retrieved_data = {}
 
 class YT_search:   
-    def __init__(self, token_file,  client_secrets_file, query, output_dir):
+    def __init__(self, token_file,  client_secrets_file, query, output_dir, api_key, start_index=0):
         self.token_file = token_file
         self.client_secrets_file = client_secrets_file
         self.query = query
         self.output_dir = output_dir
         self.target_dir = os.path.join(output_dir, 'targets')
         self.captions_dir = os.path.join(output_dir, 'captions')
+        self.api_key = api_key
         os.makedirs(self.target_dir, exist_ok=True)
         os.makedirs(self.captions_dir, exist_ok=True)
         self.per_query_counter = 0
         self.metadata = self.load_metadata() # Load metadata if it exists
         self.youtube = self.get_authenticated_service()
-        self.search = self.search_videos()
         
+    def get_authenticated_service(self):
+        return build('youtube', 'v3', developerKey=self.api_key)
         
-        
+    '''    
     def get_authenticated_service(self):
         creds = None
         if os.path.exists(self.token_file):
@@ -51,6 +55,7 @@ class YT_search:
             with open(self.token_file, 'w') as token:
                 token.write(creds.to_json())
         return build('youtube', 'v3', credentials=creds)
+    '''
     
     def load_metadata(self):
         try:
@@ -63,7 +68,7 @@ class YT_search:
         with open(os.path.join(self.output_dir, 'metadata.json'), 'w') as file:
             json.dump(self.metadata, file, indent=4)
         
-    def search_videos(self):
+    def search_videos(self, page_token=None):
         search_request = self.youtube.search().list(
             part='id',
             type='video',
@@ -71,12 +76,13 @@ class YT_search:
             maxResults=50,
             relevanceLanguage = 'en',
             videoDuration='long',
+            pageToken=page_token
         )
-        while search_request is not None and self.per_query_counter <= 20:
+        while search_request is not None and self.per_query_counter < 25:
             search_response = search_request.execute()
             
             for item in search_response['items']:
-                if self.per_query_counter >= 20:
+                if self.per_query_counter >= 25:
                     break
                 video_id = item['id']['videoId']
                 if not self.is_video_processed(video_id):
@@ -89,6 +95,7 @@ class YT_search:
                         if captions is None:
                             continue  # Skip this video if captions could not be retrieved
                         metadata_entry = {
+                                'youtube query': self.query,
                                 'video': video_id,
                                 'target': os.path.join(self.target_dir, f"{video_id}_target.txt"),
                                 'transcription': os.path.join(self.captions_dir, f"{video_id}_captions.txt")
@@ -96,11 +103,17 @@ class YT_search:
                         self.metadata.append(metadata_entry)
                         self.save_metadata_entry(video_id, target, captions)
                         self.per_query_counter += 1
-                                 
-            search_request = self.youtube.search().list_next(search_request, search_response)  
-            
+                                                        
+            # Update the page token for the next request
+            if 'nextPageToken' in search_response:
+                page_token = search_response['nextPageToken']
+                search_request = self.youtube.search().list_next(search_request, search_response)
+            else:
+                search_request = None
+
         self.save_metadata()
-        return "The query is fulfilled"       
+        return page_token
+    
                     
     def is_video_processed(self, video_id):
         for entry in self.metadata:
@@ -114,10 +127,11 @@ class YT_search:
             id=video_id
         ).execute()
         if response['items'][0]['status']['privacyStatus'] == 'public':
-            duration_minutes = self.parse_duration(response['items'][0]['contentDetails']['duration'])
-            if duration_minutes <= 90:
-                description = response['items'][0]['snippet']['description']
-                return description
+            if 'duration' in response['items'][0]['contentDetails']:
+                duration_minutes = self.parse_duration(response['items'][0]['contentDetails']['duration'])
+                if duration_minutes <= 90:
+                    description = response['items'][0]['snippet']['description']
+                    return description
         return None
     
     def extract_and_standardize_timestamps(self, description):
@@ -190,10 +204,13 @@ class YT_search:
         # Save the captions
         self.save_captions_to_file(video_id, captions)
         
-        
-        
-        
+with open('/Users/ruslankireev/Documents/vscode/ai_timestamps/api_keys.json', 'r') as file:
+    api_keys = json.load(file)['api_keys']
     
+queries = [
+    "comedy podcast",
+    "gadget review"
+]
 
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
@@ -201,5 +218,26 @@ token_file = '/Users/ruslankireev/Documents/vscode/ai_timestamps/token.json'
 client_secrets_file = '/Users/ruslankireev/Documents/vscode/ai_timestamps/client_secrets.json'
 output_dir = '/Users/ruslankireev/Documents/vscode/ai_timestamps/youtube_captions'
 
-yt_search = YT_search(token_file, client_secrets_file, 'comedy podcast', output_dir)
+for query in tqdm(queries, desc="Scraping YouTube videos"):
+    start_index = 0
+    page_token = None
+    for api_key in api_keys:
+        yt_search = YT_search(token_file, client_secrets_file, query, output_dir, api_key, start_index)
+        try:
+            page_token = yt_search.search_videos(page_token)  # Continue from the last page token
+            if yt_search.per_query_counter >= 25:
+                break  # If 50 videos have been processed, move to the next query
+        except HttpError as e:
+            if e.resp.status == 403 and 'quotaExceeded' in e.content.decode():
+                print(f"Switching to next API key due to quota exceeded.")
+                start_index = yt_search.per_query_counter  # Update start_index to continue from where it left off
+                continue  # Switch to the next API key and retry
+            else:
+                raise e  # Raise the exception if it's not a quota exceeded error
+
+print("Scraping is finished")
+'''
+api_key = api_keys[0]
+yt_search = YT_search(token_file, client_secrets_file, "Travel vlogs", output_dir, api_keys)
 yt_search.search_videos()
+'''

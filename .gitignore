@@ -1,9 +1,16 @@
 .env
 .venv/
+.DS_Store
+
+# Ignore token and secret files
 client_secrets.json
 token.json
-.DS_Store
+api_keys.json
 
 __pycache__/
 *.pyc
+
+# Ignore specific directories
+whisper_outputs/
+youtube_captions/
 scraped_data/
