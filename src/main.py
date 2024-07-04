@@ -19,8 +19,6 @@ load_dotenv()
 
 SCOPES = ['https://www.googleapis.com/auth/youtube.readonly']
 
-retrieved_data = {}
-
 class YT_search:   
     def __init__(self, token_file,  client_secrets_file, query, output_dir, api_key, start_index=0):
         self.token_file = token_file
