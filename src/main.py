@@ -17,8 +17,6 @@ from googleapiclient.errors import HttpError
 
 load_dotenv()
 
-video_id = "kCc8FmEb1nY"
-
 SCOPES = ['https://www.googleapis.com/auth/youtube.readonly']
 
 retrieved_data = {}
@@ -208,8 +206,16 @@ with open('/Users/ruslankireev/Documents/vscode/ai_timestamps/api_keys.json', 'r
     api_keys = json.load(file)['api_keys']
     
 queries = [
-    "comedy podcast",
-    "gadget review"
+    "Programming tutorials",
+    "Science documentaries",
+    "Travel vlogs",
+    "Cooking recipes",
+    "Fitness workout routines",
+    "History documentaries",
+    "Music video reactions",
+    "Stand-up comedy",
+    "Daily vlogs",
+    "Mental health talks"
 ]
 
 os.environ['SSL_CERT_FILE'] = certifi.where()
@@ -236,8 +242,3 @@ for query in tqdm(queries, desc="Scraping YouTube videos"):
                 raise e  # Raise the exception if it's not a quota exceeded error
 
 print("Scraping is finished")
-'''
-api_key = api_keys[0]
-yt_search = YT_search(token_file, client_secrets_file, "Travel vlogs", output_dir, api_keys)
-yt_search.search_videos()
-'''
