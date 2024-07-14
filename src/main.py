@@ -13,6 +13,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 import time
 from tqdm import tqdm
 from googleapiclient.errors import HttpError
+import sys
 
 
 load_dotenv()
@@ -20,10 +21,11 @@ load_dotenv()
 SCOPES = ['https://www.googleapis.com/auth/youtube.readonly']
 
 class YT_search:   
-    def __init__(self, token_file,  client_secrets_file, query, output_dir, api_key, start_index=0):
+    def __init__(self, token_file,  client_secrets_file, query, vids_per_query, output_dir, api_key, start_index=0):
         self.token_file = token_file
         self.client_secrets_file = client_secrets_file
         self.query = query
+        self.vids_per_query = vids_per_query
         self.output_dir = output_dir
         self.target_dir = os.path.join(output_dir, 'targets')
         self.captions_dir = os.path.join(output_dir, 'captions')
@@ -33,6 +35,7 @@ class YT_search:
         self.per_query_counter = 0
         self.metadata = self.load_metadata() # Load metadata if it exists
         self.youtube = self.get_authenticated_service()
+        
         
     def get_authenticated_service(self):
         return build('youtube', 'v3', developerKey=self.api_key)
@@ -74,11 +77,11 @@ class YT_search:
             videoDuration='long',
             pageToken=page_token
         )
-        while search_request is not None and self.per_query_counter < 45:
+        while search_request is not None and self.per_query_counter < self.vids_per_query:
             search_response = search_request.execute()
             
             for item in search_response['items']:
-                if self.per_query_counter >= 45:
+                if self.per_query_counter >= self.vids_per_query:
                     break
                 video_id = item['id']['videoId']
                 if not self.is_video_processed(video_id):
@@ -201,7 +204,7 @@ class YT_search:
         self.save_captions_to_file(video_id, captions)
         
         
-def main():
+def main(vids_per_query=45):
         
     with open('/Users/ruslankireev/Documents/vscode/ai_timestamps/api_keys.json', 'r') as file:
         api_keys = json.load(file)['api_keys']
@@ -226,10 +229,10 @@ def main():
         start_index = 0
         page_token = None
         for api_key in api_keys:
-            yt_search = YT_search(token_file, client_secrets_file, query, output_dir, api_key, start_index)
+            yt_search = YT_search(token_file, client_secrets_file, query, vids_per_query, output_dir, api_key, start_index)
             try:
                 page_token = yt_search.search_videos(page_token)  # Continue from the last page token
-                if yt_search.per_query_counter >= 45:
+                if yt_search.per_query_counter >= 50:
                     break  # If 50 videos have been processed, move to the next query
             except HttpError as e:
                 if e.resp.status == 403 and 'quotaExceeded' in e.content.decode():
@@ -242,4 +245,4 @@ def main():
     print("Scraping is finished")
     
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1])
