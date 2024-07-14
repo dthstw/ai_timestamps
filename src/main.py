@@ -200,39 +200,46 @@ class YT_search:
         # Save the captions
         self.save_captions_to_file(video_id, captions)
         
-with open('/Users/ruslankireev/Documents/vscode/ai_timestamps/api_keys.json', 'r') as file:
-    api_keys = json.load(file)['api_keys']
+        
+def main():
+        
+    with open('/Users/ruslankireev/Documents/vscode/ai_timestamps/api_keys.json', 'r') as file:
+        api_keys = json.load(file)['api_keys']
     
-queries = [
-    "Vlog",
-    "Lecture",
-    "Fitness vlog",
-    "History video",
-    "Podcast",
-    "Talks"
-]
+    
+    queries = [
+        "Vlog",
+        "Lecture",
+        "Fitness vlog",
+        "History video",
+        "Podcast",
+        "Talks"
+    ]
 
-os.environ['SSL_CERT_FILE'] = certifi.where()
+    os.environ['SSL_CERT_FILE'] = certifi.where()
 
-token_file = '/Users/ruslankireev/Documents/vscode/ai_timestamps/token.json'
-client_secrets_file = '/Users/ruslankireev/Documents/vscode/ai_timestamps/client_secrets.json'
-output_dir = '/Users/ruslankireev/Documents/vscode/ai_timestamps/youtube_captions'
+    token_file = '/Users/ruslankireev/Documents/vscode/ai_timestamps/token.json'
+    client_secrets_file = '/Users/ruslankireev/Documents/vscode/ai_timestamps/client_secrets.json'
+    output_dir = '/Users/ruslankireev/Documents/vscode/ai_timestamps/youtube_captions'
 
-for query in tqdm(queries, desc="Scraping YouTube videos"):
-    start_index = 0
-    page_token = None
-    for api_key in api_keys:
-        yt_search = YT_search(token_file, client_secrets_file, query, output_dir, api_key, start_index)
-        try:
-            page_token = yt_search.search_videos(page_token)  # Continue from the last page token
-            if yt_search.per_query_counter >= 45:
-                break  # If 50 videos have been processed, move to the next query
-        except HttpError as e:
-            if e.resp.status == 403 and 'quotaExceeded' in e.content.decode():
-                print(f"Switching to next API key due to quota exceeded.")
-                start_index = yt_search.per_query_counter  # Update start_index to continue from where it left off
-                continue  # Switch to the next API key and retry
-            else:
-                raise e  # Raise the exception if it's not a quota exceeded error
+    for query in tqdm(queries, desc="Scraping YouTube videos"):
+        start_index = 0
+        page_token = None
+        for api_key in api_keys:
+            yt_search = YT_search(token_file, client_secrets_file, query, output_dir, api_key, start_index)
+            try:
+                page_token = yt_search.search_videos(page_token)  # Continue from the last page token
+                if yt_search.per_query_counter >= 45:
+                    break  # If 50 videos have been processed, move to the next query
+            except HttpError as e:
+                if e.resp.status == 403 and 'quotaExceeded' in e.content.decode():
+                    print(f"Switching to next API key due to quota exceeded.")
+                    start_index = yt_search.per_query_counter  # Update start_index to continue from where it left off
+                    continue  # Switch to the next API key and retry
+                else:
+                    raise e  # Raise the exception if it's not a quota exceeded error
 
-print("Scraping is finished")
+    print("Scraping is finished")
+    
+if __name__ == "__main__":
+    main()
