@@ -36,7 +36,7 @@ url_chapters = {
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
 creds = get_authenticated_service()
-
+authorized_http = AuthorizedHttp(creds)
 
 def parse_timestamps(timestamps_str):
     """Parse the timestamps from a string into a list of dictionaries."""

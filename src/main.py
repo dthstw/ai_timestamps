@@ -55,13 +55,13 @@ class YT_search:
     
     def load_metadata(self):
         try:
-            with open(os.path.join(self.output_dir, 'metadata.json'), 'r') as file:
+            with open(os.path.join(self.output_dir, 'metadata_copy_2.json'), 'r') as file:
                 return json.load(file)
         except FileNotFoundError:
             return []
         
     def save_metadata(self):
-        with open(os.path.join(self.output_dir, 'metadata.json'), 'w') as file:
+        with open(os.path.join(self.output_dir, 'metadata_copy_2.json'), 'w') as file:
             json.dump(self.metadata, file, indent=4)
         
     def search_videos(self, page_token=None):
@@ -74,11 +74,11 @@ class YT_search:
             videoDuration='long',
             pageToken=page_token
         )
-        while search_request is not None and self.per_query_counter < 25:
+        while search_request is not None and self.per_query_counter < 45:
             search_response = search_request.execute()
             
             for item in search_response['items']:
-                if self.per_query_counter >= 25:
+                if self.per_query_counter >= 45:
                     break
                 video_id = item['id']['videoId']
                 if not self.is_video_processed(video_id):
@@ -204,16 +204,12 @@ with open('/Users/ruslankireev/Documents/vscode/ai_timestamps/api_keys.json', 'r
     api_keys = json.load(file)['api_keys']
     
 queries = [
-    "Programming tutorials",
-    "Science documentaries",
-    "Travel vlogs",
-    "Cooking recipes",
-    "Fitness workout routines",
-    "History documentaries",
-    "Music video reactions",
-    "Stand-up comedy",
-    "Daily vlogs",
-    "Mental health talks"
+    "Vlog",
+    "Lecture",
+    "Fitness vlog",
+    "History video",
+    "Podcast",
+    "Talks"
 ]
 
 os.environ['SSL_CERT_FILE'] = certifi.where()
@@ -229,7 +225,7 @@ for query in tqdm(queries, desc="Scraping YouTube videos"):
         yt_search = YT_search(token_file, client_secrets_file, query, output_dir, api_key, start_index)
         try:
             page_token = yt_search.search_videos(page_token)  # Continue from the last page token
-            if yt_search.per_query_counter >= 25:
+            if yt_search.per_query_counter >= 45:
                 break  # If 50 videos have been processed, move to the next query
         except HttpError as e:
             if e.resp.status == 403 and 'quotaExceeded' in e.content.decode():
