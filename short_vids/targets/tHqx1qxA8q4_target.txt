@@ -1,0 +1,17 @@
+0:00 - An introduction
+0:43 - Concept & Form of Linear higher order differential equation with constant coefficient
+2:52 - Rules of finding Complementry function with example
+7:09 - Example 1
+7:37 - Example 2
+8:43 - Example 3
+9:40 - Example 4
+11:15 - Rule I of finding Particular Integral
+12:34 - Example 5
+13:40 - Example 6
+15:35 - Rule II of finding Particular Integral
+17:00 - Example 7
+19:18 - Example 8
+22:34 - Rule III of finding Particular Integral
+23:45 - Example 9
+26:58 - Example 10
+32:16 - Conclusion of video

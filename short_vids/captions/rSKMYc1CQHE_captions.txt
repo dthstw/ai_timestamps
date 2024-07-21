@@ -1,0 +1,1261 @@
+00:00:00 - 00:00:03: [Music]
+00:00:01 - 00:00:06: hello everyone and welcome to another
+00:00:03 - 00:00:09: episode of coding Adventures today I'd
+00:00:06 - 00:00:12: like to dive into the world of fluid
+00:00:09 - 00:00:14: simulations so to begin with let's draw
+00:00:12 - 00:00:17: a
+00:00:14 - 00:00:21: [Music]
+00:00:17 - 00:00:23: circle very nice the circle represents a
+00:00:21 - 00:00:25: tiny bit of water or whatever fluid we
+00:00:23 - 00:00:28: want to imagine and it's going to move
+00:00:25 - 00:00:30: around in response to various forces for
+00:00:28 - 00:00:32: instance gravity is probably a good
+00:00:30 - 00:00:35: place to start so back in the code I'll
+00:00:32 - 00:00:37: add in a gravity variable and let's also
+00:00:35 - 00:00:38: keep track of the particle's position
+00:00:37 - 00:00:41: and
+00:00:38 - 00:00:43: velocity each time step we'll then want
+00:00:41 - 00:00:46: it to be accelerated downward by gravity
+00:00:43 - 00:00:49: and to then move according to its new
+00:00:46 - 00:00:50: velocity let's take a
+00:00:49 - 00:00:53: [Music]
+00:00:50 - 00:00:55: look okay not bad but it is falling off
+00:00:53 - 00:00:56: the screen which is a bit annoying so
+00:00:55 - 00:00:58: I've added a tiny function that just
+00:00:56 - 00:01:01: checks if the particle has moved outside
+00:00:58 - 00:01:03: of a box and and if so we shove it back
+00:01:01 - 00:01:05: into the box and send it bouncing off in
+00:01:03 - 00:01:07: the opposite
+00:01:05 - 00:01:09: direction I'd actually also like to
+00:01:07 - 00:01:11: multiply the velocity by some Collision
+00:01:09 - 00:01:13: damping factor between 0er and one here
+00:01:11 - 00:01:16: so that we can control how much energy
+00:01:13 - 00:01:18: it loses with each bounce all right so
+00:01:16 - 00:01:20: we can set up our little bounding box
+00:01:18 - 00:01:22: and turn on the gravity again and off we
+00:01:20 - 00:01:25: go
+00:01:22 - 00:01:27: bouncing by the way I've also made it so
+00:01:25 - 00:01:28: we can control the display size of the
+00:01:27 - 00:01:31: particle
+00:01:28 - 00:01:33: here
+00:01:31 - 00:01:35: okay let's then also try out our
+00:01:33 - 00:01:37: Collision damping setting and we can see
+00:01:35 - 00:01:40: the particle now bounces lower and lower
+00:01:37 - 00:01:42: each time until it comes to a stop
+00:01:40 - 00:01:45: believe it or not though one particle is
+00:01:42 - 00:01:47: not enough particles to simulate a fluid
+00:01:45 - 00:01:49: so I've quickly upgraded our position
+00:01:47 - 00:01:51: and velocity variables to instead store
+00:01:49 - 00:01:53: a whole array of positions and
+00:01:51 - 00:01:56: velocities which we can then Loop over
+00:01:53 - 00:01:57: and just do the same update as before to
+00:01:56 - 00:02:00: each of
+00:01:57 - 00:02:02: them I've also created a simple function
+00:02:00 - 00:02:04: that runs at the beginning to set up the
+00:02:02 - 00:02:05: particles in a little grid Arrangement
+00:02:04 - 00:02:06: just so that they're not all on top of
+00:02:05 - 00:02:09: one
+00:02:06 - 00:02:11: another so let's make a bunch of
+00:02:09 - 00:02:13: particles and I'll quickly tweak the
+00:02:11 - 00:02:14: size and spacing over here to something
+00:02:13 - 00:02:17: more
+00:02:14 - 00:02:20: reasonable and then we can let this
+00:02:17 - 00:02:21: run okay there's a pretty clear problem
+00:02:20 - 00:02:22: though which is that the particles are
+00:02:21 - 00:02:25: all just collapsing on top of one
+00:02:22 - 00:02:27: another so I guess we need some sort of
+00:02:25 - 00:02:29: force to push them apart I'm curious to
+00:02:27 - 00:02:32: learn how this is typically handled in
+00:02:29 - 00:02:34: in the fluid simulation world so I'm
+00:02:32 - 00:02:36: going to do some reading I found a bunch
+00:02:34 - 00:02:38: of intriguing particle-based fluid
+00:02:36 - 00:02:41: papers and I've just spent the last few
+00:02:38 - 00:02:43: hours trying to work my way through
+00:02:41 - 00:02:46: those honestly most of the maths has
+00:02:43 - 00:02:48: gone well over my head as it often does
+00:02:46 - 00:02:50: but the broad ideas at least are
+00:02:48 - 00:02:52: encouragingly simple so I think my goal
+00:02:50 - 00:02:54: for today is not to try and make some
+00:02:52 - 00:02:56: amazingly accurate simulation but just
+00:02:54 - 00:02:58: to build a rough starting point from
+00:02:56 - 00:03:00: which we can delve deeper into the maths
+00:02:58 - 00:03:02: and physics in the future when I'm
+00:03:00 - 00:03:04: hopefully a little bit
+00:03:02 - 00:03:06: smarter anyway the first step to fixing
+00:03:04 - 00:03:08: that overlapping particle problem we
+00:03:06 - 00:03:11: were having is to be able to estimate
+00:03:08 - 00:03:13: the density of our fluid at any point so
+00:03:11 - 00:03:15: I've just scattered our particles around
+00:03:13 - 00:03:17: randomly for this example and of course
+00:03:15 - 00:03:19: since we're imagining that this
+00:03:17 - 00:03:21: represents some kind of fluid in reality
+00:03:19 - 00:03:23: there should be way more particles in
+00:03:21 - 00:03:25: this but we're always going to be
+00:03:23 - 00:03:28: limited by what our computers can handle
+00:03:25 - 00:03:30: so to approximate reality we can just
+00:03:28 - 00:03:32: cheat a little bit by blurring or
+00:03:30 - 00:03:34: smoothing out the few that we have so
+00:03:32 - 00:03:37: that it appears more as a continuous
+00:03:34 - 00:03:40: field than a bunch of individual points
+00:03:37 - 00:03:42: this simple idea is the basis of smooth
+00:03:40 - 00:03:44: particle hydrodynamics a technique
+00:03:42 - 00:03:47: introduced back in the 70s to help solve
+00:03:44 - 00:03:48: astrophysics problems and further our
+00:03:47 - 00:03:50: understanding of the universe which
+00:03:48 - 00:03:52: today we'll be using for the equally
+00:03:50 - 00:03:54: lofty goal of making some little pixels
+00:03:52 - 00:03:56: go Splish Splash for our
+00:03:54 - 00:03:58: Amusement all right so to see how we're
+00:03:56 - 00:04:00: going to calculate this sort of density
+00:03:58 - 00:04:03: field we have here let's zoom in on a
+00:04:00 - 00:04:05: single particle and Define a smoothing
+00:04:03 - 00:04:07: radius which gives us this circle of
+00:04:05 - 00:04:09: influence around the particle where it
+00:04:07 - 00:04:11: will have maximum influence at the
+00:04:09 - 00:04:12: center falling off to no influence at
+00:04:11 - 00:04:15: all at the Outer
+00:04:12 - 00:04:17: Edge Let's draw a little graph of this
+00:04:15 - 00:04:19: Behavior so on the x-axis we'll have the
+00:04:17 - 00:04:21: distance from the center of the particle
+00:04:19 - 00:04:23: and because negative distance doesn't
+00:04:21 - 00:04:24: make a huge amount of sense I'll just
+00:04:23 - 00:04:27: make the left side of the graph be a
+00:04:24 - 00:04:30: mirror of the positive side then the y-
+00:04:27 - 00:04:32: AIS will represent the influ of the
+00:04:30 - 00:04:34: particle at any given distance and let's
+00:04:32 - 00:04:35: say for now that our smoothing radius is
+00:04:34 - 00:04:38: just
+00:04:35 - 00:04:40: one so a super simple function we could
+00:04:38 - 00:04:42: use would be something like this just
+00:04:40 - 00:04:45: subtracting the distance from the radius
+00:04:42 - 00:04:47: and clamping it to never go below zero
+00:04:45 - 00:04:50: and here's what that gives
+00:04:47 - 00:04:52: us this is not very smooth though so we
+00:04:50 - 00:04:54: could take that straight line and Cubit
+00:04:52 - 00:04:56: for example which will ease it out as it
+00:04:54 - 00:04:58: approaches
+00:04:56 - 00:05:00: zero another option if we wanted it to
+00:04:58 - 00:05:02: be smooth at the start start as well
+00:05:00 - 00:05:04: would be to also Square the radius and
+00:05:02 - 00:05:07: distance before subtracting them and
+00:05:04 - 00:05:09: here's how that comes out obviously we
+00:05:07 - 00:05:10: could also try different powers or
+00:05:09 - 00:05:12: different functions alog together I
+00:05:10 - 00:05:14: think it's mostly a case of just playing
+00:05:12 - 00:05:17: around and seeing what works best but
+00:05:14 - 00:05:19: let's go with this one for now so I've
+00:05:17 - 00:05:21: used that to write this little density
+00:05:19 - 00:05:23: function which takes in the point we
+00:05:21 - 00:05:25: want to find the density at and then for
+00:05:23 - 00:05:27: each particle it gets the distance to
+00:05:25 - 00:05:28: that sample point which determines how
+00:05:27 - 00:05:31: much influence the particle has at that
+00:05:28 - 00:05:33: location and then it simply increases
+00:05:31 - 00:05:36: the density by the particle's mass
+00:05:33 - 00:05:38: multiplied by the influence value and
+00:05:36 - 00:05:39: the mass I've just defined to always be
+00:05:38 - 00:05:42: one for
+00:05:39 - 00:05:44: Simplicity so let's test this quickly
+00:05:42 - 00:05:46: with an evenly spaced grid of particles
+00:05:44 - 00:05:49: and I'll just try sampling the density
+00:05:46 - 00:05:52: at the center here with a radius of 0.5
+00:05:49 - 00:05:54: for example now at the moment the
+00:05:52 - 00:05:56: density is coming to about
+00:05:54 - 00:05:58: 0.48 but if we squish the particles
+00:05:56 - 00:06:00: closer together we can see that the
+00:05:58 - 00:06:02: density value goes up which makes sense
+00:06:00 - 00:06:04: and if we move them further apart it
+00:06:02 - 00:06:07: goes down of
+00:06:04 - 00:06:08: course but what about if we increase the
+00:06:07 - 00:06:10: smoothing
+00:06:08 - 00:06:13: radius well our density value has just
+00:06:10 - 00:06:15: shut up through the roof which is very
+00:06:13 - 00:06:17: concerning because making the radius
+00:06:15 - 00:06:19: bigger should only make the result more
+00:06:17 - 00:06:21: blurry which for this uniform grid of
+00:06:19 - 00:06:23: particles should actually have no effect
+00:06:21 - 00:06:26: on the density at all so let's think
+00:06:23 - 00:06:28: about this a bit for each particle we're
+00:06:26 - 00:06:31: calculating an influence value which we
+00:06:28 - 00:06:32: could draw as as a height and here we
+00:06:31 - 00:06:35: can of course see the shape of our
+00:06:32 - 00:06:36: smoothing function emerge now we're
+00:06:35 - 00:06:38: effectively just adding all these
+00:06:36 - 00:06:40: Heights together to create our density
+00:06:38 - 00:06:42: value but it's kind of helpful to note
+00:06:40 - 00:06:44: that if we were to First also multiply
+00:06:42 - 00:06:46: the heights by the width and breadth of
+00:06:44 - 00:06:48: these little boxes I've drawn here what
+00:06:46 - 00:06:51: we'd actually be doing is estimating the
+00:06:48 - 00:06:53: volume of the smoothing
+00:06:51 - 00:06:55: function so with that in mind I think
+00:06:53 - 00:06:57: it's reasonable to say that if we want
+00:06:55 - 00:06:59: the density to stay the same as we
+00:06:57 - 00:07:01: change the smoothing radius then what
+00:06:59 - 00:07:03: we'll need to do is make sure that the
+00:07:01 - 00:07:05: volume of our smoothing function Remains
+00:07:03 - 00:07:07: the Same when we change the smoothing
+00:07:05 - 00:07:09: radius that means we're going to need to
+00:07:07 - 00:07:12: calculate its volume or make wfrm
+00:07:09 - 00:07:15: calculated for us at any rate and that
+00:07:12 - 00:07:19: is come out to Pi * the smoothing radius
+00:07:15 - 00:07:21: to the^ h / 4 we can then just go back
+00:07:19 - 00:07:23: to our smoothing function and calculate
+00:07:21 - 00:07:25: the volume in here and then simply
+00:07:23 - 00:07:27: divide the output by the volume which
+00:07:25 - 00:07:30: means that now the new volume of the
+00:07:27 - 00:07:31: function will always be one
+00:07:30 - 00:07:35: let's quickly make sure this is working
+00:07:31 - 00:07:37: so the density is 187 at the moment and
+00:07:35 - 00:07:40: now if we change the smoothing radius
+00:07:37 - 00:07:42: that should stay the same which it does
+00:07:40 - 00:07:43: of course if we make the radius too
+00:07:42 - 00:07:45: small the results will get a little
+00:07:43 - 00:07:47: dodgy since they just aren't enough
+00:07:45 - 00:07:49: particles but apart from that we now
+00:07:47 - 00:07:51: have a nice way of determining the
+00:07:49 - 00:07:53: density at any point with whatever
+00:07:51 - 00:07:56: smoothing radius we choose to
+00:07:53 - 00:07:58: use okay so let's return to our random
+00:07:56 - 00:08:00: arrangement of particles and we can now
+00:07:58 - 00:08:03: properly visualize the density values
+00:08:00 - 00:08:05: here as we increase the smoothing
+00:08:03 - 00:08:07: radius now we're claiming that this
+00:08:05 - 00:08:09: represents a fluid so one would probably
+00:08:07 - 00:08:11: assume it's a guess at the moment
+00:08:09 - 00:08:13: because we have all these regions with
+00:08:11 - 00:08:16: different densities but I'm more
+00:08:13 - 00:08:18: interested in simulating liquids today
+00:08:16 - 00:08:20: which in Practical terms are
+00:08:18 - 00:08:21: incompressible meaning their molecules
+00:08:20 - 00:08:24: are packed together as tightly as they
+00:08:21 - 00:08:26: can be and so we'd expect the density to
+00:08:24 - 00:08:28: be the same everywhere for our
+00:08:26 - 00:08:29: simulation to behave at least somewhat
+00:08:28 - 00:08:31: like a liquid then we're going to need
+00:08:29 - 00:08:34: to rapidly correct these density
+00:08:31 - 00:08:36: differences by moving particles from
+00:08:34 - 00:08:39: areas of high density towards areas of
+00:08:36 - 00:08:41: low density so we need to figure out how
+00:08:39 - 00:08:43: to calculate that but I started to get a
+00:08:41 - 00:08:45: bit confused at this point while I was
+00:08:43 - 00:08:47: doing my research so I'd like to take a
+00:08:45 - 00:08:50: step back for a moment and just play
+00:08:47 - 00:08:51: around a bit with an abstract example to
+00:08:50 - 00:08:53: try and wrap my head around some stuff
+00:08:51 - 00:08:56: first and then we'll come back and apply
+00:08:53 - 00:08:58: what we've learned to our actual
+00:08:56 - 00:09:00: problem so here's a simple little
+00:08:58 - 00:09:02: function that takes in a point in 2D
+00:09:00 - 00:09:05: space and outputs a single value which
+00:09:02 - 00:09:08: looks like this and what it represents
+00:09:05 - 00:09:09: is nothing at all it's just a madeup
+00:09:08 - 00:09:11: function that we're going to try and
+00:09:09 - 00:09:13: represent with particles to hopefully
+00:09:11 - 00:09:15: gain a better understanding of this
+00:09:13 - 00:09:17: whole smooth particle business we're
+00:09:15 - 00:09:19: working with today so I've now added
+00:09:17 - 00:09:22: some code that spawns in a bunch of
+00:09:19 - 00:09:24: particles at random positions and each
+00:09:22 - 00:09:26: of these just looks up the value of the
+00:09:24 - 00:09:28: example function at its location and
+00:09:26 - 00:09:31: stores that in this vaguely named
+00:09:28 - 00:09:33: particle property is array now we're
+00:09:31 - 00:09:35: going to pretend that we no longer have
+00:09:33 - 00:09:37: access to that example function for
+00:09:35 - 00:09:39: whatever reason so we only know the
+00:09:37 - 00:09:42: values at the particle positions and our
+00:09:39 - 00:09:44: first goal is to Simply approximate the
+00:09:42 - 00:09:46: missing values to do that we'll use the
+00:09:44 - 00:09:48: same smoothing idea from when we
+00:09:46 - 00:09:50: calculated the density earlier so I've
+00:09:48 - 00:09:53: made this little calculate property
+00:09:50 - 00:09:55: function that takes in a point in space
+00:09:53 - 00:09:58: Loops over all the particles and just
+00:09:55 - 00:10:00: adds up the values of their properties
+00:09:58 - 00:10:02: multiplied by the smoothing function
+00:10:00 - 00:10:03: since again that just tells us how much
+00:10:02 - 00:10:06: influence the particle has at the
+00:10:03 - 00:10:07: current point and then also multiplied
+00:10:06 - 00:10:10: by the mass since that effectively
+00:10:07 - 00:10:12: scales how much influence the particles
+00:10:10 - 00:10:14: have let's see how that comes out so
+00:10:12 - 00:10:17: here's the original function again just
+00:10:14 - 00:10:19: for reference and here's our
+00:10:17 - 00:10:21: approximation obviously the shape isn't
+00:10:19 - 00:10:23: perfect but we could simply use more
+00:10:21 - 00:10:25: particles to improve that what's more
+00:10:23 - 00:10:27: concerning though is that the values are
+00:10:25 - 00:10:29: clearly being greatly
+00:10:27 - 00:10:32: exaggerated now we could try to correct
+00:10:29 - 00:10:34: this by reducing the particle Mass but
+00:10:32 - 00:10:35: that just reveals a deeper problem which
+00:10:34 - 00:10:38: is that the values are being
+00:10:35 - 00:10:40: particularly exaggerated in regions of
+00:10:38 - 00:10:42: high particle density since obviously
+00:10:40 - 00:10:45: more values are being added together
+00:10:42 - 00:10:47: there than in regions of low density so
+00:10:45 - 00:10:49: to fix that all we actually need to do
+00:10:47 - 00:10:51: is calculate the density at each
+00:10:49 - 00:10:53: particle using the function we wrote
+00:10:51 - 00:10:55: earlier of course and then divide each
+00:10:53 - 00:10:58: particle's contribution by its
+00:10:55 - 00:11:00: density now our approximated result
+00:10:58 - 00:11:02: looks like this this without needing to
+00:11:00 - 00:11:04: make any adjustments to the mass which
+00:11:02 - 00:11:06: is a whole lot better and it's
+00:11:04 - 00:11:09: reasonably close to the original
+00:11:06 - 00:11:11: function so what we've arrived at here
+00:11:09 - 00:11:13: is actually one of the core equations of
+00:11:11 - 00:11:15: this whole technique which says that to
+00:11:13 - 00:11:18: calculate some property a at any
+00:11:15 - 00:11:21: position X we just need to Loop over all
+00:11:18 - 00:11:22: the particles and add together the value
+00:11:21 - 00:11:25: of that property that's stored in each
+00:11:22 - 00:11:28: particle multiplied by the particle's
+00:11:25 - 00:11:30: mass divided by its density and finally
+00:11:28 - 00:11:32: multiplied by the smoothing function
+00:11:30 - 00:11:34: given the distance between the particle
+00:11:32 - 00:11:37: and the sample
+00:11:34 - 00:11:38: Point what's interesting to note here is
+00:11:37 - 00:11:40: say that the property we want to
+00:11:38 - 00:11:42: calculate with this equation is the
+00:11:40 - 00:11:45: particle
+00:11:42 - 00:11:47: density in that case we replace a with
+00:11:45 - 00:11:49: the density which then cancels out with
+00:11:47 - 00:11:51: the density over here leaving us with
+00:11:49 - 00:11:53: just mass times the smoothing function
+00:11:51 - 00:11:55: which is exactly what we came up with in
+00:11:53 - 00:11:56: the beginning so that bit of math seems
+00:11:55 - 00:11:59: to check out at
+00:11:56 - 00:12:01: least okay that's nice and all but what
+00:11:59 - 00:12:03: we're more interested in right now than
+00:12:01 - 00:12:05: calculating the value of a property at
+00:12:03 - 00:12:08: any point is calculating in which
+00:12:05 - 00:12:10: direction it's most rapidly changing
+00:12:08 - 00:12:12: since that's essential to our problem of
+00:12:10 - 00:12:14: correcting the density in our fluid so
+00:12:12 - 00:12:16: I've started writing this little
+00:12:14 - 00:12:18: calculate gradient function to do that
+00:12:16 - 00:12:21: and all this does is Define a tiny step
+00:12:18 - 00:12:23: size and then figure out how much the
+00:12:21 - 00:12:26: value changes if we take that tiny step
+00:12:23 - 00:12:27: along the X and Y AIS using the
+00:12:26 - 00:12:30: calculate property function we just
+00:12:27 - 00:12:32: wrote then the estimated gradient is
+00:12:30 - 00:12:35: just those two changes each divided by
+00:12:32 - 00:12:37: the size of the step that we took let's
+00:12:35 - 00:12:39: try it out so I've drawn in some little
+00:12:37 - 00:12:41: arrows to visualize the gradients at
+00:12:39 - 00:12:43: different points and just visually it
+00:12:41 - 00:12:44: looks like these are all correctly
+00:12:43 - 00:12:47: pointing along the direction where the
+00:12:44 - 00:12:48: values are most rapidly increasing so
+00:12:47 - 00:12:50: that's
+00:12:48 - 00:12:53: great what's less great is that it's
+00:12:50 - 00:12:55: taking almost 20 seconds to calculate
+00:12:53 - 00:12:57: all of these which is ridiculously slow
+00:12:55 - 00:13:00: fortunately though there is a more
+00:12:57 - 00:13:02: efficient approach imagine we have just
+00:13:00 - 00:13:04: a single particle and I'll draw in the
+00:13:02 - 00:13:06: smoothing radius here as well and we're
+00:13:04 - 00:13:08: trying to calculate the gradient of
+00:13:06 - 00:13:11: whatever property at this point over
+00:13:08 - 00:13:13: here well first of all the direction in
+00:13:11 - 00:13:15: which that property will most rapidly be
+00:13:13 - 00:13:18: increasing is either directly towards
+00:13:15 - 00:13:20: the particle or directly away from it if
+00:13:18 - 00:13:23: the property is negative so that's easy
+00:13:20 - 00:13:25: enough the gradient doesn't only tell us
+00:13:23 - 00:13:27: the direction though but also how fast
+00:13:25 - 00:13:29: the property is changing and that
+00:13:27 - 00:13:32: depends purely on our smoothing
+00:13:29 - 00:13:33: function at the current distance we can
+00:13:32 - 00:13:35: see that the smoothing function isn't
+00:13:33 - 00:13:37: very steep which means that the property
+00:13:35 - 00:13:39: will be changing quite slowly over here
+00:13:37 - 00:13:41: whereas of course if our sample point
+00:13:39 - 00:13:44: was over here for example then it would
+00:13:41 - 00:13:46: be changing a lot more rapidly so after
+00:13:44 - 00:13:49: struggling to remember how basic
+00:13:46 - 00:13:49: calculus works for a few
+00:13:52 - 00:13:56: minutes I finally figured out the
+00:13:54 - 00:13:58: equation for the slope of the smoothing
+00:13:56 - 00:14:00: function which I've just translated into
+00:13:58 - 00:14:03: code over here and that means that we
+00:14:00 - 00:14:04: can now easily look up the slope value
+00:14:03 - 00:14:07: at any
+00:14:04 - 00:14:09: distance so let's return to our fast
+00:14:07 - 00:14:11: attempt at the gradient function and
+00:14:09 - 00:14:13: I'll delete the old code and replace it
+00:14:11 - 00:14:15: with our calculate property code since
+00:14:13 - 00:14:16: that's almost exactly what we need
+00:14:15 - 00:14:19: except since we want to know the
+00:14:16 - 00:14:21: gradient now we'll multiply not by the
+00:14:19 - 00:14:23: smoothing function but by the slope of
+00:14:21 - 00:14:27: the smoothing function and then also by
+00:14:23 - 00:14:27: the direction towards the current
+00:14:27 - 00:14:31: particle
+00:14:29 - 00:14:33: by summing up all these individual
+00:14:31 - 00:14:36: gradients we should logically get the
+00:14:33 - 00:14:38: overall gradient then if we return to
+00:14:36 - 00:14:40: our little visualization and just run it
+00:14:38 - 00:14:42: again it should look exactly the same as
+00:14:40 - 00:14:44: before which it doesn't I guess I got
+00:14:42 - 00:14:46: the direction back to front so I'll just
+00:14:44 - 00:14:48: stick a minor sign in there quickly I
+00:14:46 - 00:14:50: come from the trial and error School of
+00:14:48 - 00:14:53: mathematics but now it does look the
+00:14:50 - 00:14:56: same as before this optimization has
+00:14:53 - 00:14:59: taken us from 20 seconds down to about
+00:14:56 - 00:15:01: five which is still uselessly slow but
+00:14:59 - 00:15:03: head it in the right direction at
+00:15:01 - 00:15:05: least okay I've just been having another
+00:15:03 - 00:15:06: look at our gradient function and we
+00:15:05 - 00:15:08: definitely need to stop calling
+00:15:06 - 00:15:10: calculate density all the time I somehow
+00:15:08 - 00:15:12: forgot already that that's also looping
+00:15:10 - 00:15:13: over all the particles no wonder this is
+00:15:12 - 00:15:16: so
+00:15:13 - 00:15:18: slow so what we can do is just create an
+00:15:16 - 00:15:20: array of density values and then
+00:15:18 - 00:15:22: pre-calculate those for each particle so
+00:15:20 - 00:15:24: that we can just use those cached values
+00:15:22 - 00:15:27: in our gradient
+00:15:24 - 00:15:30: function that brings our computation
+00:15:27 - 00:15:31: time down from 5 Seconds to 18
+00:15:30 - 00:15:34: milliseconds I probably should have
+00:15:31 - 00:15:37: started with that anyway it's still not
+00:15:34 - 00:15:39: fantastic but it's at least usable for
+00:15:37 - 00:15:42: now so let's return at last to our
+00:15:39 - 00:15:43: little density test over here and see if
+00:15:42 - 00:15:46: we can apply this gradient stuff to make
+00:15:43 - 00:15:49: the density be the same everywhere so in
+00:15:46 - 00:15:51: the code I've defined a Target density
+00:15:49 - 00:15:53: that we want to aim for along with a
+00:15:51 - 00:15:54: pressure multiplier which is just how
+00:15:53 - 00:15:57: strongly we're going to push the
+00:15:54 - 00:15:59: particles to try and reach that density
+00:15:57 - 00:16:01: then I've also added this little
+00:15:59 - 00:16:03: function for converting the density to a
+00:16:01 - 00:16:05: kind of pressure value and this just
+00:16:03 - 00:16:07: looks at how far away the density is
+00:16:05 - 00:16:08: from what we want it to be and then
+00:16:07 - 00:16:11: multiplies that by the pressure
+00:16:08 - 00:16:13: multiplier from what I understand this
+00:16:11 - 00:16:15: isn't really a super realistic way to
+00:16:13 - 00:16:18: calculate pressures in a liquid it more
+00:16:15 - 00:16:19: so describes the behavior of gases but
+00:16:18 - 00:16:21: it still seems to be a popular choice
+00:16:19 - 00:16:24: for its simplicity so let's stick with
+00:16:21 - 00:16:26: it for now at least I would like to
+00:16:24 - 00:16:28: quickly visualize these values so I've
+00:16:26 - 00:16:30: set up three different colors over here
+00:16:28 - 00:16:32: one for the regions where it's negative
+00:16:30 - 00:16:34: just meaning that the density is lower
+00:16:32 - 00:16:36: than we want it to be another for where
+00:16:34 - 00:16:38: the value is positive meaning of course
+00:16:36 - 00:16:39: that the density is higher than we want
+00:16:38 - 00:16:41: it to be and finally one for the
+00:16:39 - 00:16:44: boundary between them where the density
+00:16:41 - 00:16:45: is just right I'll also change the
+00:16:44 - 00:16:48: particle color to Black so that it
+00:16:45 - 00:16:50: stands out a bit better here okay so
+00:16:48 - 00:16:52: let's finally get these particles moving
+00:16:50 - 00:16:54: along the pressure gradient and for that
+00:16:52 - 00:16:57: we can just use the gradient function we
+00:16:54 - 00:16:58: wrote which I'll rename to calculate
+00:16:57 - 00:17:00: pressure force and then and then the
+00:16:58 - 00:17:02: property we're interested in here is of
+00:17:00 - 00:17:05: course the pressure so let's substitute
+00:17:02 - 00:17:07: in our little pressure
+00:17:05 - 00:17:09: calculation then our simulation update
+00:17:07 - 00:17:12: Loop now looks like this we still have
+00:17:09 - 00:17:14: the gravity position and collision stuff
+00:17:12 - 00:17:16: from before but I've added in the
+00:17:14 - 00:17:18: density caching we decided to do we
+00:17:16 - 00:17:20: still need to actually apply the
+00:17:18 - 00:17:22: pressure forces here though so I'll make
+00:17:20 - 00:17:24: another loop quickly to calculate those
+00:17:22 - 00:17:26: for each of the particles and then we
+00:17:24 - 00:17:29: know that Force equals mass time
+00:17:26 - 00:17:31: acceleration so acceleration is force
+00:17:29 - 00:17:33: over Mass so my first thought was to
+00:17:31 - 00:17:35: just calculate the acceleration like
+00:17:33 - 00:17:38: this but actually we're thinking about
+00:17:35 - 00:17:41: the movement of tiny volumes of fluid
+00:17:38 - 00:17:43: here and density is the mass per volume
+00:17:41 - 00:17:46: so it's in fact the density that we want
+00:17:43 - 00:17:47: to use instead all right all that's left
+00:17:46 - 00:17:50: then is to just increase the particles
+00:17:47 - 00:17:51: velocity by this acceleration and we can
+00:17:50 - 00:17:54: finally try it
+00:17:51 - 00:17:57: out this has been a long time coming so
+00:17:54 - 00:17:58: let's get a little drum roll
+00:17:57 - 00:18:00: going
+00:17:58 - 00:18:02: [Music]
+00:18:00 - 00:18:05: ah the Cur of the drum roll
+00:18:02 - 00:18:07: continues okay the positions are all not
+00:18:05 - 00:18:10: a number I see so most likely we're
+00:18:07 - 00:18:12: dividing by zero somewhere oh of course
+00:18:10 - 00:18:14: we're being given the position of a
+00:18:12 - 00:18:16: particle here but then we're also
+00:18:14 - 00:18:18: looping over all the particles and
+00:18:16 - 00:18:21: finding the distance between the two and
+00:18:18 - 00:18:22: that's where everything's going wrong I
+00:18:21 - 00:18:24: guess what I'll do is just have this
+00:18:22 - 00:18:26: function Tak in the particle index
+00:18:24 - 00:18:28: instead of the position and that way we
+00:18:26 - 00:18:31: can very easily just skip over the case
+00:18:28 - 00:18:33: where the two particles are the
+00:18:31 - 00:18:36: same okay I just need to fix this up
+00:18:33 - 00:18:38: quickly and I suppose it is technically
+00:18:36 - 00:18:40: possible for two different particles to
+00:18:38 - 00:18:42: be in the same position so if that edge
+00:18:40 - 00:18:45: case occurs let's just pick a random
+00:18:42 - 00:18:47: Direction then all right let's try this
+00:18:45 - 00:18:47: out
+00:18:48 - 00:18:52: again well at least everything hasn't
+00:18:51 - 00:18:54: blinked out of existence but the
+00:18:52 - 00:18:57: particles are getting more dense which
+00:18:54 - 00:18:58: is the opposite of what we want I guess
+00:18:57 - 00:19:00: I need to stick another minus sign in
+00:18:58 - 00:19:03: there somewhere let's see if this works
+00:19:00 - 00:19:03: now the third
+00:19:03 - 00:19:09: time okay that's that was looking
+00:19:07 - 00:19:11: promising for a moment there for a brief
+00:19:09 - 00:19:13: instant I thought it was working but
+00:19:11 - 00:19:15: there's still a lot more red areas than
+00:19:13 - 00:19:17: I'm hoping to see ideally the whole
+00:19:15 - 00:19:20: screen should turn white since that
+00:19:17 - 00:19:22: represents our Target density so to try
+00:19:20 - 00:19:24: figure out what's going on I want to see
+00:19:22 - 00:19:26: what happens if instead of adding the
+00:19:24 - 00:19:29: acceleration to the velocity we just
+00:19:26 - 00:19:30: assign it directly so we're removing any
+00:19:29 - 00:19:32: inertia from the particles they're just
+00:19:30 - 00:19:33: purely moving based on the current
+00:19:32 - 00:19:36: pressure
+00:19:33 - 00:19:38: Force okay if we run this now nothing
+00:19:36 - 00:19:40: happens but that's fine we aren't
+00:19:38 - 00:19:42: accumulating velocity anymore so I guess
+00:19:40 - 00:19:44: we just need to turn the pressure
+00:19:42 - 00:19:47: multiplier up really
+00:19:44 - 00:19:49: high all right that looks interesting I
+00:19:47 - 00:19:51: am a bit surprised by how close together
+00:19:49 - 00:19:53: some of these particles are although
+00:19:51 - 00:19:55: they seem to gradually be pushing each
+00:19:53 - 00:19:57: other apart and I actually remember one
+00:19:55 - 00:19:59: of the papers mentioning this potential
+00:19:57 - 00:20:02: problem with with the smoothing function
+00:19:59 - 00:20:04: we're using since its slope becomes very
+00:20:02 - 00:20:06: shallow as the distance becomes small
+00:20:04 - 00:20:07: meaning that our pressure force will
+00:20:06 - 00:20:11: also be small when the particles are
+00:20:07 - 00:20:13: close together that seems odd so let's
+00:20:11 - 00:20:15: maybe ditch this nice smooth curve for
+00:20:13 - 00:20:17: the spiky version instead since of
+00:20:15 - 00:20:20: course the slope of this one just gets
+00:20:17 - 00:20:22: steeper towards zero so I had to do the
+00:20:20 - 00:20:24: volume and derivative calculations again
+00:20:22 - 00:20:27: but ended up with these two functions
+00:20:24 - 00:20:29: here plugging those in we can see our
+00:20:27 - 00:20:31: little map looks just ever so slightly
+00:20:29 - 00:20:33: different and then I'm going to turn up
+00:20:31 - 00:20:35: the pressure multiplier again now and
+00:20:33 - 00:20:37: see what
+00:20:35 - 00:20:40: happens okay that's looking a lot better
+00:20:37 - 00:20:41: actually the question now though is what
+00:20:40 - 00:20:43: thises will look like if we put the
+00:20:41 - 00:20:46: acceleration back to how it's supposed
+00:20:43 - 00:20:49: to be so I've changed it back and I'm
+00:20:46 - 00:20:49: going to try running this
+00:20:49 - 00:20:53: again let's maybe try increasing the
+00:20:51 - 00:20:56: pressure multiplier a bit so that the
+00:20:53 - 00:20:58: particles can react more
+00:20:56 - 00:21:01: quickly that's looking reasonbly good I
+00:20:58 - 00:21:03: think although maybe I'm imagining this
+00:21:01 - 00:21:06: but it seems to be getting worse over
+00:21:03 - 00:21:06: [Music]
+00:21:07 - 00:21:12: time okay I'm definitely not imagining
+00:21:09 - 00:21:15: it so another thing we need to think
+00:21:12 - 00:21:17: about is Newton's third law of motion
+00:21:15 - 00:21:20: every Force has an equal and opposite
+00:21:17 - 00:21:20: reaction
+00:21:23 - 00:21:27: force so when we were adding on this
+00:21:25 - 00:21:29: pressure force between the current
+00:21:27 - 00:21:31: particle and some other particle we want
+00:21:29 - 00:21:34: to make sure that the other particle
+00:21:31 - 00:21:36: experiences the same Force just in the
+00:21:34 - 00:21:38: other direction I've seen a bunch of
+00:21:36 - 00:21:41: different suggestions on how to actually
+00:21:38 - 00:21:43: do this but an i simple version is to
+00:21:41 - 00:21:45: calculate this shared pressure which is
+00:21:43 - 00:21:48: literally just the average of the
+00:21:45 - 00:21:51: pressure values calculated at both
+00:21:48 - 00:21:53: particles so let's try that out quickly
+00:21:51 - 00:21:55: and I'll just increase the pressure
+00:21:53 - 00:21:55: multiplier
+00:21:57 - 00:22:02: again and this does seem to have made a
+00:21:59 - 00:22:04: pretty big difference I guess maybe that
+00:22:02 - 00:22:06: Newton guy was onto
+00:22:04 - 00:22:08: something now we're only dealing with a
+00:22:06 - 00:22:10: few hundred particles at the moment
+00:22:08 - 00:22:13: which is not very many so let's ramp
+00:22:10 - 00:22:16: this up to a few thousand
+00:22:13 - 00:22:19: instead and this is running at 5 frames
+00:22:16 - 00:22:21: per second so we'd better start
+00:22:19 - 00:22:23: optimizing and by far the most critical
+00:22:21 - 00:22:25: place to do that is when we're
+00:22:23 - 00:22:27: calculating the densities and pressure
+00:22:25 - 00:22:29: forces we should really avoid looping
+00:22:27 - 00:22:31: over all the particles that lie outside
+00:22:29 - 00:22:33: of the smoothing radius since those
+00:22:31 - 00:22:35: don't contribute anything and they're
+00:22:33 - 00:22:38: slowing us down
+00:22:35 - 00:22:40: immensely to do this we're going to need
+00:22:38 - 00:22:42: to chop space up into a grid and we'll
+00:22:40 - 00:22:45: choose the size of the grid cells to be
+00:22:42 - 00:22:47: the same as our smoothing radius since
+00:22:45 - 00:22:49: that means if we imagine there's a bunch
+00:22:47 - 00:22:51: of particles on here that means that to
+00:22:49 - 00:22:53: find the particles inside of the
+00:22:51 - 00:22:55: smoothing radius we only need to
+00:22:53 - 00:22:58: consider the 3X3 grid of cells around
+00:22:55 - 00:22:59: the center of our Circle and in that way
+00:22:58 - 00:23:02: way of course we cut out a huge amount
+00:22:59 - 00:23:02: of unnecessary
+00:23:04 - 00:23:08: work now to actually implement this we
+00:23:06 - 00:23:10: could say that each cell has its own
+00:23:08 - 00:23:12: list that grows or shrinks to hold
+00:23:10 - 00:23:14: however many particles are currently
+00:23:12 - 00:23:16: inside of it but we're probably going to
+00:23:14 - 00:23:18: want to convert the whole simulation to
+00:23:16 - 00:23:21: a comput shador at some point to run on
+00:23:18 - 00:23:23: the GPU and there we need to be able to
+00:23:21 - 00:23:25: specify ahead of time how much memory
+00:23:23 - 00:23:27: we're going to use so I'd like to
+00:23:25 - 00:23:29: experiment with a different GPU friendly
+00:23:27 - 00:23:32: approach which I've been reading about
+00:23:29 - 00:23:33: in this paper here I'm going to modify
+00:23:32 - 00:23:35: it very slightly though so that we don't
+00:23:33 - 00:23:37: need to know the dimensions of the grid
+00:23:35 - 00:23:39: ahead of time meaning that particles can
+00:23:37 - 00:23:41: travel anywhere in the world and it'll
+00:23:39 - 00:23:44: still
+00:23:41 - 00:23:46: work so what we'll do is create a single
+00:23:44 - 00:23:49: array with at least as many entries as
+00:23:46 - 00:23:50: we have particles so here it has 10
+00:23:49 - 00:23:52: entries meaning in this case we could
+00:23:50 - 00:23:54: have at most 10
+00:23:52 - 00:23:56: particles then for each of these
+00:23:54 - 00:23:58: particles we're going to calculate the
+00:23:56 - 00:24:00: coordinate of the cell that it's in so
+00:23:58 - 00:24:02: for example particle Z which happens to
+00:24:00 - 00:24:03: be this one over here is in the cell 2
+00:24:02 - 00:24:06: comma
+00:24:03 - 00:24:08: 0 we need to turn that cordinate into a
+00:24:06 - 00:24:10: single number to make it easy to work
+00:24:08 - 00:24:12: with though so we can just do something
+00:24:10 - 00:24:14: like multiply the X and Y by two
+00:24:12 - 00:24:16: different prime numbers and then add
+00:24:14 - 00:24:19: them together to get some arbitrary hash
+00:24:16 - 00:24:21: value we can then wrap that around the
+00:24:19 - 00:24:23: length of the array so that it becomes a
+00:24:21 - 00:24:25: valid index three in this case and let's
+00:24:23 - 00:24:28: call that our cell key not to be
+00:24:25 - 00:24:30: confused with the seal people
+00:24:28 - 00:24:33: so since this was point0 we'll store the
+00:24:30 - 00:24:36: cell key over here at index0 in the
+00:24:33 - 00:24:39: array then the next point a turns out
+00:24:36 - 00:24:42: has a key of six and so we'll record
+00:24:39 - 00:24:46: that in the next place and so on and so
+00:24:42 - 00:24:46: forth for all of the particles that we
+00:24:47 - 00:24:51: have now we want the points that share a
+00:24:49 - 00:24:53: cell to be next to one another in this
+00:24:51 - 00:24:55: array so that we can efficiently Loop
+00:24:53 - 00:24:57: over them of course if they're in the
+00:24:55 - 00:25:00: same cell they're going to have the same
+00:24:57 - 00:25:02: cell key so we can simply sort the list
+00:25:00 - 00:25:04: based on those keys to do
+00:25:02 - 00:25:08: that and now we can easily see from this
+00:25:04 - 00:25:10: array that particles 2 5 and 7 are all
+00:25:08 - 00:25:13: together in the same cell particle zero
+00:25:10 - 00:25:16: is in a Cell all by itself and so
+00:25:13 - 00:25:18: on anyway let's call this array our
+00:25:16 - 00:25:20: spatial lookup because that sounds nice
+00:25:18 - 00:25:22: and fancy and then the final thing we
+00:25:20 - 00:25:26: need to do is create a second array of
+00:25:22 - 00:25:27: start indices which looks like this to
+00:25:26 - 00:25:30: understand this second array let's just
+00:25:27 - 00:25:32: do a quick example so say we want to
+00:25:30 - 00:25:35: know which points are in this cell over
+00:25:32 - 00:25:38: here we would first calculate the cell's
+00:25:35 - 00:25:40: key like before which is N9 in this case
+00:25:38 - 00:25:42: and then we'd proceed to look up the
+00:25:40 - 00:25:44: ninth element in the array of stat
+00:25:42 - 00:25:47: indices which is this last one over here
+00:25:44 - 00:25:49: the number six that lets us know that we
+00:25:47 - 00:25:51: need to head over to index six in the
+00:25:49 - 00:25:53: spatial lookup in order to find the
+00:25:51 - 00:25:55: first entry with the cell key that we're
+00:25:53 - 00:25:57: interested in we can then simply Loop
+00:25:55 - 00:25:59: over all of those to get the indices of
+00:25:57 - 00:26:02: the particles that are in that
+00:25:59 - 00:26:04: cell unfortunately it is possible for
+00:26:02 - 00:26:06: different cells to end up mapping to the
+00:26:04 - 00:26:09: same key which would mess with these
+00:26:06 - 00:26:11: results but we're anyway going to need
+00:26:09 - 00:26:13: to do distance checks to see which
+00:26:11 - 00:26:16: points are actually inside the smoothing
+00:26:13 - 00:26:18: radius and so that'll get rid of any
+00:26:16 - 00:26:20: mistakes obviously having to check extra
+00:26:18 - 00:26:22: particles from some other random cell
+00:26:20 - 00:26:24: that just happens to have the same key
+00:26:22 - 00:26:27: does waste time but that's what we get
+00:26:24 - 00:26:29: for trying to implement an infinite grid
+00:26:27 - 00:26:32: with a ly non- infinite amount of
+00:26:29 - 00:26:34: memory anyway turning this concept into
+00:26:32 - 00:26:36: code didn't go as smoothly as it
+00:26:34 - 00:26:38: possibly could have but after a bit of
+00:26:36 - 00:26:41: frustration here's what I finally ended
+00:26:38 - 00:26:43: up with we have a function for updating
+00:26:41 - 00:26:45: the lookout whenever the points have
+00:26:43 - 00:26:48: moved and this just calculates the cell
+00:26:45 - 00:26:51: key for every particle and records that
+00:26:48 - 00:26:53: along with the particle index the array
+00:26:51 - 00:26:55: is then sorted based on those keys and
+00:26:53 - 00:26:58: lastly the stat indices are calculated
+00:26:55 - 00:27:00: simply by testing if each key is is the
+00:26:58 - 00:27:02: same as the key that came before it
+00:27:00 - 00:27:04: because if not then it must be the first
+00:27:02 - 00:27:06: occurrence of that key and we can record
+00:27:04 - 00:27:08: its index as the start
+00:27:06 - 00:27:10: index here are the little helper
+00:27:08 - 00:27:13: functions by the way for calculating the
+00:27:10 - 00:27:16: cell coordinate hash and
+00:27:13 - 00:27:17: key then finally there's the function
+00:27:16 - 00:27:20: that allows us to actually find all of
+00:27:17 - 00:27:22: the points within the radius of some
+00:27:20 - 00:27:24: given sample point this works as we've
+00:27:22 - 00:27:27: seen by just looping over the 3X3 block
+00:27:24 - 00:27:29: of cells around that sample point and
+00:27:27 - 00:27:31: calcul deleting each of their keys each
+00:27:29 - 00:27:33: key is then used to look up the start
+00:27:31 - 00:27:36: index for that cell so we can Loop over
+00:27:33 - 00:27:37: all the points in the cell and of course
+00:27:36 - 00:27:39: once we reach a point that has a
+00:27:37 - 00:27:41: different key we just exit out of the
+00:27:39 - 00:27:43: loop all it remains then is to do a
+00:27:41 - 00:27:45: quick distance check to make sure the
+00:27:43 - 00:27:47: point is actually inside the circle and
+00:27:45 - 00:27:50: then we can do whatever we want with
+00:27:47 - 00:27:53: it trying this out now we've gone from
+00:27:50 - 00:27:56: barely five frames per second up to 120
+00:27:53 - 00:27:58: so that was a reasonable success but I'd
+00:27:56 - 00:28:02: be a lot happier about about it if our
+00:27:58 - 00:28:02: simulation wasn't in total chaos over
+00:28:02 - 00:28:07: here one Cluny way I found to improve
+00:28:05 - 00:28:10: this is to Simply start off with a
+00:28:07 - 00:28:12: really low pressure multiplier this way
+00:28:10 - 00:28:14: the particles don't have such a huge
+00:28:12 - 00:28:16: initial burst of acceleration and they
+00:28:14 - 00:28:18: can spread out a little and then we just
+00:28:16 - 00:28:20: gradually increase the multiplier and it
+00:28:18 - 00:28:23: seems to work a bit better at
+00:28:20 - 00:28:24: least that's not really a usable
+00:28:23 - 00:28:27: solution though so I've just been
+00:28:24 - 00:28:28: implementing an idea I read about where
+00:28:27 - 00:28:31: we B basically predict what the next
+00:28:28 - 00:28:33: position of each particle is going to be
+00:28:31 - 00:28:35: simply based on the current velocity and
+00:28:33 - 00:28:38: use those predicted positions when
+00:28:35 - 00:28:40: calculating the densities and pressure
+00:28:38 - 00:28:42: forces I guess this could help the
+00:28:40 - 00:28:45: particles to better react to upcoming
+00:28:42 - 00:28:47: situations and maybe compensate a bit
+00:28:45 - 00:28:49: for the fact that time is obviously not
+00:28:47 - 00:28:52: continuous in a computer simulation but
+00:28:49 - 00:28:54: rather broken up into discrete
+00:28:52 - 00:28:56: steps okay let's try it out I honestly
+00:28:54 - 00:28:59: don't see it making a big difference
+00:28:56 - 00:28:59: though
+00:29:00 - 00:29:05: never mind it's actually making a pretty
+00:29:02 - 00:29:06: massive difference I'd say well that's a
+00:29:05 - 00:29:08: nice
+00:29:06 - 00:29:10: surprise just for fun I've quickly gone
+00:29:08 - 00:29:12: into the particle rendering code I have
+00:29:10 - 00:29:14: here and just set it up so that we can
+00:29:12 - 00:29:16: visualize the speed of the particles
+00:29:14 - 00:29:19: with a color then here's a little
+00:29:16 - 00:29:21: gradient I made for that so the slowest
+00:29:19 - 00:29:23: particles will appear blue fading to Red
+00:29:21 - 00:29:24: for the fastest
+00:29:23 - 00:29:26: [Music]
+00:29:24 - 00:29:28: particles I also added in some simple
+00:29:26 - 00:29:30: controls for things like pausing the
+00:29:28 - 00:29:33: simulation stepping through frame by
+00:29:30 - 00:29:40: frame and resetting
+00:29:33 - 00:29:42: [Music]
+00:29:40 - 00:29:43: it all right I've been playing around
+00:29:42 - 00:29:45: with this some more and one thing I've
+00:29:43 - 00:29:48: noticed is that it behaves very
+00:29:45 - 00:29:50: inconsistently at different simulation
+00:29:48 - 00:29:52: frame rates here's a little grid of
+00:29:50 - 00:29:54: simulations I set up to observe this
+00:29:52 - 00:29:56: problem so we're going from 60
+00:29:54 - 00:29:59: simulation steps per second on the top
+00:29:56 - 00:30:01: left to almost 1 th000 steps per second
+00:29:59 - 00:30:04: on the bottom right and as we can see
+00:30:01 - 00:30:06: here if the number of steps is higher
+00:30:04 - 00:30:09: meaning the time step is smaller and so
+00:30:06 - 00:30:12: we're predicting less F to the Future
+00:30:09 - 00:30:14: the particles take longer to settle down
+00:30:12 - 00:30:16: so even though this feels a bit wrong to
+00:30:14 - 00:30:19: me I'm going to try just removing the
+00:30:16 - 00:30:21: Delta time here and use a constant look
+00:30:19 - 00:30:23: ahead Factor
+00:30:21 - 00:30:25: instead let's then run the same
+00:30:23 - 00:30:27: comparison again and interestingly it is
+00:30:25 - 00:30:30: actually behaving a lot more consistent
+00:30:27 - 00:30:31: ly now well okay I guess we'll go with
+00:30:30 - 00:30:33: that
+00:30:31 - 00:30:35: then now I think it'd be fun if we could
+00:30:33 - 00:30:37: interact with the particles in some way
+00:30:35 - 00:30:38: so I've written this little function
+00:30:37 - 00:30:41: that basically just pulls nearby
+00:30:38 - 00:30:43: particles in towards the mouse or pushes
+00:30:41 - 00:30:45: them away if the input strength is
+00:30:43 - 00:30:46: negative which is controlled by left or
+00:30:45 - 00:30:49: right
+00:30:46 - 00:30:50: clicking so let's give it a shot I'm
+00:30:49 - 00:30:53: going to start by pushing these
+00:30:50 - 00:30:55: particles
+00:30:53 - 00:30:59: outwards and then let's try slicing
+00:30:55 - 00:30:59: through the fluid
+00:31:00 - 00:31:03: all right I feel like this is slowly
+00:31:02 - 00:31:05: starting to get
+00:31:03 - 00:31:07: somewhere clearly we haven't really
+00:31:05 - 00:31:09: succeeded in our goal of making this
+00:31:07 - 00:31:11: fluid incompressible it's certainly
+00:31:09 - 00:31:14: compressing and expanding all over the
+00:31:11 - 00:31:17: place but the density does even out over
+00:31:14 - 00:31:18: time so that's something at least and we
+00:31:17 - 00:31:20: can look into fancier methods to try and
+00:31:18 - 00:31:23: solve this better in the
+00:31:20 - 00:31:25: future anyway now that this seems to be
+00:31:23 - 00:31:27: somewhat working at any rate I think
+00:31:25 - 00:31:28: it's time we brought gravity back into
+00:31:27 - 00:31:31: the
+00:31:28 - 00:31:34: mix so I'll reset this quickly and let's
+00:31:31 - 00:31:36: bring in our settings window I feel like
+00:31:34 - 00:31:38: the density could maybe be set a bit
+00:31:36 - 00:31:41: higher so I'll turn that up and then
+00:31:38 - 00:31:43: let's get the simulation going
+00:31:41 - 00:31:46: again okay I guess that's a little too
+00:31:43 - 00:31:46: high
+00:31:47 - 00:31:52: now so I'll dial that setting back down
+00:31:50 - 00:31:52: a
+00:31:53 - 00:31:58: bit then let's turn on the gravity wait
+00:31:56 - 00:32:01: that's up upside down let me make it go
+00:31:58 - 00:32:03: the other way instead the particles are
+00:32:01 - 00:32:05: quite wild at the moment so I'll also
+00:32:03 - 00:32:06: increase the pressure multiplier to try
+00:32:05 - 00:32:10: and drain them in a
+00:32:06 - 00:32:12: [Music]
+00:32:10 - 00:32:13: little okay let's try picking up a bowl
+00:32:12 - 00:32:17: of
+00:32:13 - 00:32:22: [Music]
+00:32:17 - 00:32:24: water and dropping it back in
+00:32:22 - 00:32:26: Splash this is actually working
+00:32:24 - 00:32:28: surprisingly well I'd say I mean I
+00:32:26 - 00:32:30: realize I've been droning on for over
+00:32:28 - 00:32:32: half an hour already but all that we've
+00:32:30 - 00:32:34: really done is made a bunch of points
+00:32:32 - 00:32:37: that don't like to be too close together
+00:32:34 - 00:32:38: but not too far apart either and while
+00:32:37 - 00:32:41: this is obviously far from being super
+00:32:38 - 00:32:42: realistic or anything I think it's still
+00:32:41 - 00:32:45: quite fascinating that this fluidlike
+00:32:42 - 00:32:47: Behavior has already Arisen from just
+00:32:45 - 00:32:54: the few little things we've
+00:32:47 - 00:32:56: [Music]
+00:32:54 - 00:32:57: implemented anyway let's see if we can
+00:32:56 - 00:33:00: still improve move this at least a
+00:32:57 - 00:33:01: little bit more today and perhaps even
+00:33:00 - 00:33:04: Venture into the third
+00:33:01 - 00:33:06: dimension so a few issues are jumping
+00:33:04 - 00:33:07: out to me at the moment for example
+00:33:06 - 00:33:09: there's the fact that the particles are
+00:33:07 - 00:33:12: really tightly squeezed together along
+00:33:09 - 00:33:14: the edges here and that's causing a gap
+00:33:12 - 00:33:15: between the rest of the particles since
+00:33:14 - 00:33:18: they're trying to get away from that
+00:33:15 - 00:33:20: overly dense region and a similar effect
+00:33:18 - 00:33:23: seems to be happening along the surface
+00:33:20 - 00:33:25: of the fluid as well another thing is
+00:33:23 - 00:33:27: that when we have fast moving particles
+00:33:25 - 00:33:30: such as when starting up the ulation for
+00:33:27 - 00:33:33: instance the fluid seems to be overly
+00:33:30 - 00:33:35: chaotic for example if we zoom in on a
+00:33:33 - 00:33:37: single frame here we can see from these
+00:33:35 - 00:33:40: colors how the velocities are all over
+00:33:37 - 00:33:42: the place even between nearby regions
+00:33:40 - 00:33:44: for this last problem at least I think
+00:33:42 - 00:33:46: it would be a good idea to try add a bit
+00:33:44 - 00:33:50: of friction between the particles in the
+00:33:46 - 00:33:52: fluid more commonly known as viscosity
+00:33:50 - 00:33:54: so let's actually take a moment to look
+00:33:52 - 00:33:56: at the famous Navia Strokes equations
+00:33:54 - 00:33:58: for incompressible fluid flow which
+00:33:56 - 00:34:01: under pin everything that we've been
+00:33:58 - 00:34:03: doing first of all this equation here
+00:34:01 - 00:34:05: just says that the density of the fluid
+00:34:03 - 00:34:08: must remain the same everywhere and I
+00:34:05 - 00:34:10: mean we're trying then the other
+00:34:08 - 00:34:12: equation tells us that each tiny little
+00:34:10 - 00:34:14: volume of fluid is accelerated down the
+00:34:12 - 00:34:17: pressure gradient and that it responds
+00:34:14 - 00:34:20: to external forces such as gravity and
+00:34:17 - 00:34:23: mice in our case so we've done both of
+00:34:20 - 00:34:26: those terms but then this slightly scary
+00:34:23 - 00:34:27: looking term here is the viscosity and
+00:34:26 - 00:34:30: essentially what it does is caused the
+00:34:27 - 00:34:32: velocities of nearby regions of fluid to
+00:34:30 - 00:34:35: become blurred together now we could
+00:34:32 - 00:34:36: implement it this way but for today at
+00:34:35 - 00:34:38: least I actually want to go with a
+00:34:36 - 00:34:40: different approach I've seen that seems
+00:34:38 - 00:34:43: much simpler but still achieves the same
+00:34:40 - 00:34:45: sort of thing so I've added this little
+00:34:43 - 00:34:47: function here which just takes in the
+00:34:45 - 00:34:49: index of a particle and Loops over all
+00:34:47 - 00:34:51: the other particles within the smoothing
+00:34:49 - 00:34:53: radius for each of those it then
+00:34:51 - 00:34:56: calculates the difference between the
+00:34:53 - 00:34:58: velocities of the two particles and adds
+00:34:56 - 00:35:00: that on to the viscosity Force meaning
+00:34:58 - 00:35:03: that over time each particle's velocity
+00:35:00 - 00:35:05: will become more like its neighbors and
+00:35:03 - 00:35:07: nearby neighbors have more influence as
+00:35:05 - 00:35:09: usual which is done using this viscosity
+00:35:07 - 00:35:11: kernel for which I've just repurposed
+00:35:09 - 00:35:13: that function that we were originally
+00:35:11 - 00:35:15: using for the pressure
+00:35:13 - 00:35:18: Force okay let's try it
+00:35:15 - 00:35:20: out oh my settings have been reset so
+00:35:18 - 00:35:22: we're back to no gravity at the moment
+00:35:20 - 00:35:25: but let's see what that looks like
+00:35:22 - 00:35:27: currently our viscosity is at zero so
+00:35:25 - 00:35:30: let's turn it up I'm not sure what a
+00:35:27 - 00:35:33: good value would be let's just try five
+00:35:30 - 00:35:35: maybe no definitely not that looks very
+00:35:33 - 00:35:37: strange my guess is that the viscosity
+00:35:35 - 00:35:39: is just way too high at the moment and
+00:35:37 - 00:35:42: so some of these particles are almost
+00:35:39 - 00:35:43: exactly matching one another in velocity
+00:35:42 - 00:35:46: and that's causing them to Clump
+00:35:43 - 00:35:51: together weirdly so let's reduce it to
+00:35:46 - 00:35:51: maybe 0.5 instead and see how that
+00:35:51 - 00:35:55: goes okay this is looking pretty good
+00:35:53 - 00:35:57: actually we can see how the particle
+00:35:55 - 00:35:59: velocities are more smooth down out and
+00:35:57 - 00:36:01: so we no longer have those few particles
+00:35:59 - 00:36:04: with super high velocities shooting off
+00:36:01 - 00:36:06: on their own I want to see how this
+00:36:04 - 00:36:08: looks with gravity enabled again so I've
+00:36:06 - 00:36:11: set up a quick comparison here with a
+00:36:08 - 00:36:13: range of different viscosity values and
+00:36:11 - 00:36:13: let's see how it
+00:36:14 - 00:36:18: [Music]
+00:36:16 - 00:36:20: goes I think the one on the top right
+00:36:18 - 00:36:22: looked best to me but let's see that
+00:36:20 - 00:36:22: again
+00:36:24 - 00:36:28: quickly and I'll freeze it here actually
+00:36:26 - 00:36:31: because this gives us a nice view of the
+00:36:28 - 00:36:33: increasingly smooth out results we get
+00:36:31 - 00:36:35: with this new artificial viscosity ter
+00:36:33 - 00:36:37: obviously we don't want to smooth out
+00:36:35 - 00:36:40: too much detail though so I'm going to
+00:36:37 - 00:36:42: keep that value pretty low okay now I'm
+00:36:40 - 00:36:44: not quite sure yet how to tackle that
+00:36:42 - 00:36:45: boundary problem I mentioned earlier so
+00:36:44 - 00:36:47: I'm going to just ignore that for now
+00:36:45 - 00:36:50: and instead work on something else
+00:36:47 - 00:36:53: that's bothering me if we lift up a
+00:36:50 - 00:36:55: bunch of water and then let it go we can
+00:36:53 - 00:36:57: see how it quickly splits up into these
+00:36:55 - 00:37:00: little droplets of just a few particles
+00:36:57 - 00:37:02: each which looks a little
+00:37:00 - 00:37:04: strange we could get rid of this
+00:37:02 - 00:37:06: Behavior by simply clamping the pressure
+00:37:04 - 00:37:07: values that they can't go below zero
+00:37:06 - 00:37:09: meaning that the particles won't pull
+00:37:07 - 00:37:13: each other together
+00:37:09 - 00:37:15: anymore so let's try that
+00:37:13 - 00:37:18: out but now the particles are just
+00:37:15 - 00:37:20: raining down individually which doesn't
+00:37:18 - 00:37:22: look right either I guess allowing that
+00:37:20 - 00:37:25: negative pressure was giving us a very
+00:37:22 - 00:37:27: crude kind of surface tension effect and
+00:37:25 - 00:37:29: so I think until we Implement a more
+00:37:27 - 00:37:31: accurate version of that in a future
+00:37:29 - 00:37:34: video perhaps we should probably hang on
+00:37:31 - 00:37:36: to it so I'm going to undo that change
+00:37:34 - 00:37:39: and instead I want to try an interesting
+00:37:36 - 00:37:40: work around one of the papers suggested
+00:37:39 - 00:37:43: which is to Simply have a second
+00:37:40 - 00:37:46: pressure Force purely for pushing apart
+00:37:43 - 00:37:48: particles that get too close together so
+00:37:46 - 00:37:50: this is the shape of the smoothing
+00:37:48 - 00:37:51: function we're using for our density
+00:37:50 - 00:37:54: calculation at the moment and what the
+00:37:51 - 00:37:56: paper recommends is to use another even
+00:37:54 - 00:37:58: spikier version to calculate what the
+00:37:56 - 00:38:00: they call the near
+00:37:58 - 00:38:03: density from this near density we
+00:38:00 - 00:38:05: calculate the near pressure simply by
+00:38:03 - 00:38:07: multiplying it by some constant meaning
+00:38:05 - 00:38:10: that this will be a purely repulsive
+00:38:07 - 00:38:12: Force so let's try it out quickly and
+00:38:10 - 00:38:13: just for fun I'm going to see what
+00:38:12 - 00:38:15: happens if we make the near pressure
+00:38:13 - 00:38:18: multiplier
+00:38:15 - 00:38:20: negative okay they just collapse in on
+00:38:18 - 00:38:22: one another which makes sense so let's
+00:38:20 - 00:38:25: then try a positive
+00:38:22 - 00:38:28: value and now I want to try picking up a
+00:38:25 - 00:38:28: ball of fluid again
+00:38:29 - 00:38:33: and dropping
+00:38:30 - 00:38:36: it and as we can see this time it's able
+00:38:33 - 00:38:37: to hold its shape a lot better since the
+00:38:36 - 00:38:40: particles are no longer getting pulled
+00:38:37 - 00:38:42: into those tiny clusters we saw
+00:38:40 - 00:38:44: before so I think we've succeeded in
+00:38:42 - 00:38:46: improving the fluid a bit with these
+00:38:44 - 00:38:48: last two changes although I'm certainly
+00:38:46 - 00:38:50: not entirely happy with how it's
+00:38:48 - 00:38:52: behaving yet for example something that
+00:38:50 - 00:38:54: bothers me quite a lot is how it often
+00:38:52 - 00:38:57: appears to sort of Bounce more like a
+00:38:54 - 00:38:59: jelly than a liquid this is happening
+00:38:57 - 00:39:01: pretty much all the time but we can see
+00:38:59 - 00:39:04: a dramatic example if I just let the
+00:39:01 - 00:39:06: fluid come to a rest and then change the
+00:39:04 - 00:39:09: target density for
+00:39:06 - 00:39:10: example now we could get less jiggly
+00:39:09 - 00:39:12: results simply by increasing the
+00:39:10 - 00:39:14: pressure multiplier which is why it's
+00:39:12 - 00:39:17: often actually called the stiffness
+00:39:14 - 00:39:19: constant by the way so here I've set up
+00:39:17 - 00:39:22: a little test where it has a value of a
+00:39:19 - 00:39:24: th000 and if I change the density now we
+00:39:22 - 00:39:25: can see that it does settle down a lot
+00:39:24 - 00:39:27: more
+00:39:25 - 00:39:29: quickly but that doesn't come for free
+00:39:27 - 00:39:31: though because the greater the forces in
+00:39:29 - 00:39:34: our fluid are the more simulation steps
+00:39:31 - 00:39:37: we need to run per frame to avoid things
+00:39:34 - 00:39:38: devolving into chaos for example if I
+00:39:37 - 00:39:40: just lower the number of steps here
+00:39:38 - 00:39:42: slightly we can see that already we're
+00:39:40 - 00:39:44: on the brink of
+00:39:42 - 00:39:47: [Music]
+00:39:44 - 00:39:49: pandemonium anyway I'm sure we'll learn
+00:39:47 - 00:39:51: about ways to overcome or at least
+00:39:49 - 00:39:53: improve this problem in the future but
+00:39:51 - 00:39:55: for right now what I'd like to do is
+00:39:53 - 00:39:57: finally convert the whole simulation to
+00:39:55 - 00:40:00: a computor so that we can run it on the
+00:39:57 - 00:40:02: GPU which excels at doing loads of tiny
+00:40:00 - 00:40:05: tasks in parallel which should be a
+00:40:02 - 00:40:07: perfect fit for our particle
+00:40:05 - 00:40:10: calculations I doubt that'll take very
+00:40:07 - 00:40:10: long so I'll see you in a
+00:40:17 - 00:40:24: [Music]
+00:40:25 - 00:40:48: minute
+00:40:26 - 00:40:50: [Music]
+00:40:48 - 00:40:52: okay I kept finding new and creative
+00:40:50 - 00:40:54: ways to mess everything up but this
+00:40:52 - 00:40:55: finally seems to be running properly in
+00:40:54 - 00:40:57: a
+00:40:55 - 00:40:58: computat I'll still need to test the
+00:40:57 - 00:41:00: performance with more particles of
+00:40:58 - 00:41:03: course but just glancing at the FPS
+00:41:00 - 00:41:06: counter looks promising so far hovering
+00:41:03 - 00:41:08: at around 500 frames per second by far
+00:41:06 - 00:41:11: the trickiest part was translating just
+00:41:08 - 00:41:13: one line of code the array. sort from
+00:41:11 - 00:41:15: our neighborhood search I ended up
+00:41:13 - 00:41:17: spending quite a while trying to figure
+00:41:15 - 00:41:20: out how to implement a parallel sorting
+00:41:17 - 00:41:22: algorithm called bonic merge sort to
+00:41:20 - 00:41:24: replace it in particular I was trying to
+00:41:22 - 00:41:27: generate this pattern of lines and
+00:41:24 - 00:41:29: generalize it for any number of inputs
+00:41:27 - 00:41:32: the inputs here are represented by the
+00:41:29 - 00:41:34: horizontal lines and we have 16 of them
+00:41:32 - 00:41:37: in this case meaning that this network
+00:41:34 - 00:41:39: can sort 16 values let's actually assign
+00:41:37 - 00:41:40: a random value to each input so we can
+00:41:39 - 00:41:43: see how this
+00:41:40 - 00:41:45: goes then each of these little vertical
+00:41:43 - 00:41:47: lines represents a pair of inputs that
+00:41:45 - 00:41:50: we're going to compare and potentially
+00:41:47 - 00:41:52: swap around so to start with we're going
+00:41:50 - 00:41:54: to look at each of the eight pairs that
+00:41:52 - 00:41:56: we have over here and let's say we want
+00:41:54 - 00:41:59: to sort from high to low so in this
+00:41:56 - 00:42:01: first pair we have five on top and three
+00:41:59 - 00:42:04: on the bottom which we're happy with so
+00:42:01 - 00:42:06: that can stay unchanged in the next pair
+00:42:04 - 00:42:08: though we can see seven on top and eight
+00:42:06 - 00:42:11: on the bottom so the bottom is a higher
+00:42:08 - 00:42:13: number which is not okay and we'll need
+00:42:11 - 00:42:15: to swap them around so we can look at
+00:42:13 - 00:42:17: all these pairs in parallel figure out
+00:42:15 - 00:42:20: which need to be swapped and then swap
+00:42:17 - 00:42:22: them of course this alone is unlikely to
+00:42:20 - 00:42:25: sort the list so once that's done we'll
+00:42:22 - 00:42:26: need to continue to the next stage here
+00:42:25 - 00:42:29: the pairs are arranged changed a little
+00:42:26 - 00:42:31: differently but the operation is still
+00:42:29 - 00:42:33: exactly the same we can see this first
+00:42:31 - 00:42:35: pair has five on Top seven on the bottom
+00:42:33 - 00:42:38: so it will need to swap as will this
+00:42:35 - 00:42:41: pair with three on top and eight on the
+00:42:38 - 00:42:41: bottom and so
+00:42:42 - 00:42:47: [Music]
+00:42:45 - 00:42:49: on this pattern has been carefully
+00:42:47 - 00:42:51: devised by some clever person such that
+00:42:49 - 00:42:54: following it will do all the comparisons
+00:42:51 - 00:42:56: required to guarantee that the result is
+00:42:54 - 00:42:58: fully sorted by the end
+00:42:56 - 00:43:00: for anyone interested I'll quickly show
+00:42:58 - 00:43:02: the implementation I came up with so
+00:43:00 - 00:43:04: this part runs on the CPU and is
+00:43:02 - 00:43:06: responsible for simply looping through
+00:43:04 - 00:43:09: each of those patterns and telling the
+00:43:06 - 00:43:11: GPU to sort the pairs and then here's
+00:43:09 - 00:43:13: the code that actually does that pair
+00:43:11 - 00:43:14: wise sorting so it starts by just
+00:43:13 - 00:43:16: figuring out which pair of numbers it's
+00:43:14 - 00:43:18: actually looking at and then it Compares
+00:43:16 - 00:43:21: them to see if they need to be swapped
+00:43:18 - 00:43:23: and if they do it of course swaps them
+00:43:21 - 00:43:25: all right I've been doing some testing
+00:43:23 - 00:43:28: with different amounts of particles so
+00:43:25 - 00:43:30: here is 100 particles for example and I
+00:43:28 - 00:43:33: think it's kind of cute watching these
+00:43:30 - 00:43:36: little droplets wobble about then after
+00:43:33 - 00:43:38: that I tried 100,000 particles but my
+00:43:36 - 00:43:40: computer was not happy about that so
+00:43:38 - 00:43:41: there's definitely a lot of room left
+00:43:40 - 00:43:43: for
+00:43:41 - 00:43:45: optimization here's a test with about
+00:43:43 - 00:43:47: 40,000 particles though which seems to
+00:43:45 - 00:43:49: be running okay although I'll have to
+00:43:47 - 00:43:50: fine-tune the settings of course because
+00:43:49 - 00:43:53: at the moment there are some weird
+00:43:50 - 00:43:55: tendrils shooting out of the liquid and
+00:43:53 - 00:43:56: I really don't know why or perhaps we
+00:43:55 - 00:43:59: could call this a a speculative
+00:43:56 - 00:44:01: simulation of how liquids might behave
+00:43:59 - 00:44:03: on an alien planet the settings are
+00:44:01 - 00:44:05: definitely quite finicky at the moment
+00:44:03 - 00:44:06: though so that's something else I want
+00:44:05 - 00:44:09: to
+00:44:06 - 00:44:11: improve here's another little test I've
+00:44:09 - 00:44:13: set up by the way and this one has an
+00:44:11 - 00:44:14: obstacle over here with a gap beneath it
+00:44:13 - 00:44:17: because I just want to see if the
+00:44:14 - 00:44:20: simulation is able to keep the height of
+00:44:17 - 00:44:20: the liquid the same on both
+00:44:21 - 00:44:24: sides so I'm just going to start
+00:44:23 - 00:44:26: bucketing some of this liquid over to
+00:44:24 - 00:44:29: the other end here
+00:44:26 - 00:44:31: and then let's grab another blob and
+00:44:29 - 00:44:33: another and then let's just wait a bit
+00:44:31 - 00:44:35: for this to settle down but already we
+00:44:33 - 00:44:37: can see the height gradually leveling
+00:44:35 - 00:44:40: out so even though our simulation is far
+00:44:37 - 00:44:41: from being super realistic it's nice to
+00:44:40 - 00:44:45: see at least that it's not entirely
+00:44:41 - 00:44:47: unrealistic either okay now as always
+00:44:45 - 00:44:48: there's so much more I still want to do
+00:44:47 - 00:44:51: but to end with for today let's see if
+00:44:48 - 00:44:53: we can get this working in the third
+00:44:51 - 00:44:55: dimension this basically just means
+00:44:53 - 00:44:58: replacing a bunch of float twos with
+00:44:55 - 00:45:00: float threes in the computor as well as
+00:44:58 - 00:45:02: updating the scaling factors of the
+00:45:00 - 00:45:04: various smoothing functions and their
+00:45:02 - 00:45:06: derivatives and making sure our
+00:45:04 - 00:45:08: neighborhood search is aware of this
+00:45:06 - 00:45:10: brand new dimension as well of course
+00:45:08 - 00:45:13: I've also updated the Collision function
+00:45:10 - 00:45:15: to work in 3D and I tweaked it to
+00:45:13 - 00:45:18: account for the bounding box being moved
+00:45:15 - 00:45:20: or rotated as well as scaled simply by
+00:45:18 - 00:45:22: transforming the points and velocities
+00:45:20 - 00:45:24: to its local coordinate system then
+00:45:22 - 00:45:26: resolving those the same as before and
+00:45:24 - 00:45:28: then finally transforming them back into
+00:45:26 - 00:45:28: World
+00:45:29 - 00:45:33: coordinates my first attempt at running
+00:45:31 - 00:45:35: this did not go particularly well but
+00:45:33 - 00:45:37: after some trial and error with the
+00:45:35 - 00:45:39: settings I managed to get this rather
+00:45:37 - 00:45:41: goopy looking result and with a few more
+00:45:39 - 00:45:42: tweaks from there I was finally able to
+00:45:41 - 00:45:43: get something that I was reasonably
+00:45:42 - 00:45:46: happy
+00:45:43 - 00:45:46: [Music]
+00:45:47 - 00:45:51: with so let's just play around with this
+00:45:49 - 00:45:53: a bit I'm going to try squeezing it
+00:45:51 - 00:45:55: together and what's nice about how we
+00:45:53 - 00:45:56: implemented the neighborhood search
+00:45:55 - 00:45:58: stuff is that that we UNC constrained to
+00:45:56 - 00:46:00: any predetermined bonds so we can
+00:45:58 - 00:46:04: stretch this out however much we want as
+00:46:00 - 00:46:04: well and it should still
+00:46:08 - 00:46:12: work those little waves were looking
+00:46:10 - 00:46:14: quite nice I think so let's actually
+00:46:12 - 00:46:16: smoosh this together again and then try
+00:46:14 - 00:46:16: that out once
+00:46:17 - 00:46:27: [Music]
+00:46:24 - 00:46:29: more
+00:46:27 - 00:46:31: now another thing to add to my list of a
+00:46:29 - 00:46:32: million things I want to improve is how
+00:46:31 - 00:46:35: the fluid is actually
+00:46:32 - 00:46:37: rendered these little balls are good for
+00:46:35 - 00:46:38: seeing what's going on of course but it
+00:46:37 - 00:46:41: would be nice to make it actually look
+00:46:38 - 00:46:43: more fluid like and I guess some sort of
+00:46:41 - 00:46:46: Ray marching is probably a good way to
+00:46:43 - 00:46:46: approach that but we'll have to
+00:46:48 - 00:46:53: see so let me actually make a quick note
+00:46:50 - 00:46:56: here of my sort of wish list for this
+00:46:53 - 00:46:57: project I want the simulation to be more
+00:46:56 - 00:47:00: stable and performant so that we can
+00:46:57 - 00:47:02: have many more particles and I'd like
+00:47:00 - 00:47:04: the parameters to be less finicky so
+00:47:02 - 00:47:05: it's easier to get good results and also
+00:47:04 - 00:47:07: for the particles to behave better along
+00:47:05 - 00:47:10: the boundaries because it looks really
+00:47:07 - 00:47:11: odd at the moment another thing that
+00:47:10 - 00:47:13: would be really nice is to be able to do
+00:47:11 - 00:47:15: stuff like put little boats or rubber
+00:47:13 - 00:47:16: ducks in the water and just watch them
+00:47:15 - 00:47:19: Bob
+00:47:16 - 00:47:22: about then finally of course there's the
+00:47:19 - 00:47:24: rendering stuff I just mentioned as
+00:47:22 - 00:47:26: well so plenty of work for the future
+00:47:24 - 00:47:29: but until then I hope you've enjoyed
+00:47:26 - 00:47:31: following along with the process so far
+00:47:29 - 00:47:33: okay that's all for today let me know if
+00:47:31 - 00:47:34: you have any suggestions for this
+00:47:33 - 00:47:38: project or for anything else you'd like
+00:47:34 - 00:47:48: to see all right thanks for watching and
+00:47:38 - 00:47:48: [Music]
+00:47:50 - 00:47:53: goodbye

@@ -1,0 +1,782 @@
+00:00:01 - 00:00:07: all right let's talk about how to shoot
+00:00:04 - 00:00:09: a video podcast from beginning to end I
+00:00:07 - 00:00:11: want to cover everything from what
+00:00:09 - 00:00:14: microphones to buy what lights to buy
+00:00:11 - 00:00:16: audio interfaces switchers how many
+00:00:14 - 00:00:19: cameras you need what camera angles to
+00:00:16 - 00:00:21: use what lenses all the post-production
+00:00:19 - 00:00:23: of editing together podcasts how to
+00:00:21 - 00:00:25: upload it we're gonna cover it all I
+00:00:23 - 00:00:27: recently started somewhat of a podcast
+00:00:25 - 00:00:29: and I've been helping other people start
+00:00:27 - 00:00:31: podcasts and it's honestly a big
+00:00:29 - 00:00:33: learning curve and so I wanted to help
+00:00:31 - 00:00:35: you guys out give you a blueprint and
+00:00:33 - 00:00:37: this video you're watching on YouTube is
+00:00:35 - 00:00:40: a condensed version of a larger mini
+00:00:37 - 00:00:43: course called podcast Pro that you can
+00:00:40 - 00:00:44: check out at fulltime filmmaker.com so
+00:00:43 - 00:00:46: link will be in the description if you
+00:00:44 - 00:00:48: enjoy this video learn some good tips
+00:00:46 - 00:00:50: and want to learn more make sure to
+00:00:48 - 00:00:53: check that out so let's start first by
+00:00:50 - 00:00:55: talking about what microphone to buy now
+00:00:53 - 00:00:57: the microphone is going to be your most
+00:00:55 - 00:01:00: important thing within a podcast because
+00:00:57 - 00:01:01: podcasts can be just Audio Only now the
+00:01:00 - 00:01:04: most popular microphone out there is the
+00:01:01 - 00:01:06: sure sm7b which is what you're listening
+00:01:04 - 00:01:09: to right now the sm7b is going to come
+00:01:06 - 00:01:10: in around 400 microphone only it is
+00:01:09 - 00:01:13: probably the most popular microphone
+00:01:10 - 00:01:15: because it's good looking it's easy to
+00:01:13 - 00:01:17: have here in frame and it has a good
+00:01:15 - 00:01:19: sound but a popular alternative to this
+00:01:17 - 00:01:22: that's a little bit cheaper is the mv7
+00:01:19 - 00:01:24: which ensures USB version of this an
+00:01:22 - 00:01:26: even cheaper alternative to that would
+00:01:24 - 00:01:29: be the rode pod mic which you can get
+00:01:26 - 00:01:31: for just a hundred dollars that too will
+00:01:29 - 00:01:33: have to have an XLR cable going into an
+00:01:31 - 00:01:35: audio interface and then on the cheapest
+00:01:33 - 00:01:37: end is going to be the FTF gear mic that
+00:01:35 - 00:01:39: you can get for just seventy dollars and
+00:01:37 - 00:01:41: that's a USB mic so it doesn't require
+00:01:39 - 00:01:44: any audio interfaces and that's going to
+00:01:41 - 00:01:46: come with a boom arm a desk stand a pop
+00:01:44 - 00:01:48: filter everything you need to get up and
+00:01:46 - 00:01:50: running for just seventy dollars and the
+00:01:48 - 00:01:52: last thing to mention on the sm7b is
+00:01:50 - 00:01:54: it's also a very low sensitivity
+00:01:52 - 00:01:57: microphone so you actually are going to
+00:01:54 - 00:01:59: need what's called a cloud lifter which
+00:01:57 - 00:02:01: is going to raise the gain going into
+00:01:59 - 00:02:03: your audio interface which is going to
+00:02:01 - 00:02:05: cost see another 150 dollars now a few
+00:02:03 - 00:02:07: pros and cons to be aware of each of
+00:02:05 - 00:02:09: these microphones the FTF gear mic does
+00:02:07 - 00:02:12: allow you to control the gain which is
+00:02:09 - 00:02:14: the volume however if you talk too loud
+00:02:12 - 00:02:15: into that one it's still going to
+00:02:14 - 00:02:17: distort even if your gain is turned down
+00:02:15 - 00:02:19: really low but as long as you're talking
+00:02:17 - 00:02:21: in a normal volume like this it is a
+00:02:19 - 00:02:24: great bang for buck microphone the rode
+00:02:21 - 00:02:26: pod mic in my opinion sounds a little
+00:02:24 - 00:02:28: bit thin the low end seems to be missing
+00:02:26 - 00:02:29: just a tad on that guy so you are going
+00:02:28 - 00:02:31: to have to do some EQ with that to get
+00:02:29 - 00:02:33: it to sound in my opinion the way that I
+00:02:31 - 00:02:35: would want it to sound and I feel like
+00:02:33 - 00:02:38: it picks up quite a bit of desk noise
+00:02:35 - 00:02:40: handling noise if you have it on one of
+00:02:38 - 00:02:41: the desk stands so be careful with that
+00:02:40 - 00:02:43: one also if you're not going to be using
+00:02:41 - 00:02:45: the pop filters that come with them
+00:02:43 - 00:02:47: because they do look really cool without
+00:02:45 - 00:02:48: it it does give to plosives quite a bit
+00:02:47 - 00:02:52: more so you're going to hear those
+00:02:48 - 00:02:53: sounds quite a bit more and the sm7b
+00:02:52 - 00:02:55: like I said it's a little bit flat so
+00:02:53 - 00:02:57: you can do some EQ with this guy but
+00:02:55 - 00:02:59: overall all these are great microphones
+00:02:57 - 00:03:01: but the microphone is just the beginning
+00:02:59 - 00:03:03: once you get a microphone you're also
+00:03:01 - 00:03:04: going to need unless it's a USB mic that
+00:03:03 - 00:03:06: goes directly to your computer you're
+00:03:04 - 00:03:08: also going to need an audio interface so
+00:03:06 - 00:03:11: we'll talk about that next so which
+00:03:08 - 00:03:13: audio interface should you buy again if
+00:03:11 - 00:03:14: you've bought a USB microphone you're
+00:03:13 - 00:03:16: not going to need one you can go
+00:03:14 - 00:03:17: straight into your computer so that's
+00:03:16 - 00:03:19: one of the great benefits of those
+00:03:17 - 00:03:21: however your nicer microphones are going
+00:03:19 - 00:03:24: to be going into XLR so you're going to
+00:03:21 - 00:03:25: need to not only pick up an XLR cable to
+00:03:24 - 00:03:27: be able to plug into the microphone but
+00:03:25 - 00:03:30: it's going to have to go into an audio
+00:03:27 - 00:03:32: interface which is then going to allow
+00:03:30 - 00:03:33: you to plug that into your computer on
+00:03:32 - 00:03:36: the low end I have used what's called
+00:03:33 - 00:03:39: The Scarlet solo you can pick up for 130
+00:03:36 - 00:03:41: right now for one input or 190 for two
+00:03:39 - 00:03:44: inputs and I've used these for many
+00:03:41 - 00:03:45: years and they were great I have noticed
+00:03:44 - 00:03:47: a little bit more of a hiss a little bit
+00:03:45 - 00:03:48: of a background hum so that's what
+00:03:47 - 00:03:50: you're going to get with some of the
+00:03:48 - 00:03:52: cheaper audio interfaces a little bit
+00:03:50 - 00:03:54: more background noise now the one I use
+00:03:52 - 00:03:56: for a lot of mine is called an Apollo
+00:03:54 - 00:03:58: twin X which is going to run you about a
+00:03:56 - 00:04:00: thousand dollars it is a bit overkill
+00:03:58 - 00:04:02: for what you're going to need but I love
+00:04:00 - 00:04:04: it it's super high quality but in the
+00:04:02 - 00:04:06: middle of these options is what I would
+00:04:04 - 00:04:08: recommend for a lot of podcasters and
+00:04:06 - 00:04:10: that is called the road Caster Pro 2.
+00:04:08 - 00:04:12: and here's a few reasons why I'd
+00:04:10 - 00:04:14: recommend this specifically for those
+00:04:12 - 00:04:17: doing podcasts number one is that if
+00:04:14 - 00:04:19: you're using an sm7b like I mentioned it
+00:04:17 - 00:04:21: has a higher noise floor you're going to
+00:04:19 - 00:04:23: need to use a cloud lifter but with this
+00:04:21 - 00:04:25: guy with the road Caster Pro 2 you
+00:04:23 - 00:04:26: actually don't need a cloud lifter the
+00:04:25 - 00:04:28: second thing is that it comes with
+00:04:26 - 00:04:31: presets for a lot of the popular
+00:04:28 - 00:04:33: microphones the sm7b being one of them
+00:04:31 - 00:04:37: and they have a few different options of
+00:04:33 - 00:04:38: neutral podcasts or Studio options that
+00:04:37 - 00:04:41: are going to give you flatter or more
+00:04:38 - 00:04:42: punchier sounds to it but for those who
+00:04:41 - 00:04:45: don't want to mess with EQ and learn how
+00:04:42 - 00:04:46: to use all these different tools to mix
+00:04:45 - 00:04:48: your audio and make it sound better
+00:04:46 - 00:04:51: these presets are pretty awesome I still
+00:04:48 - 00:04:52: like to do a few things after even with
+00:04:51 - 00:04:54: the presets but the other main thing
+00:04:52 - 00:04:56: that I like about it and the reason why
+00:04:54 - 00:04:58: I use it for podcasting is that you can
+00:04:56 - 00:05:00: have redundant recording if there's any
+00:04:58 - 00:05:02: goof up on your computer this rarely
+00:05:00 - 00:05:05: happens but every once in a while if I'm
+00:05:02 - 00:05:07: recording into logic X it can happen to
+00:05:05 - 00:05:08: where it stops recording in the computer
+00:05:07 - 00:05:10: and unless I'm looking at it and
+00:05:08 - 00:05:12: monitoring it I'm not going to know it
+00:05:10 - 00:05:15: stopped and then I'm out of luck I don't
+00:05:12 - 00:05:17: have that audio with the road Caster you
+00:05:15 - 00:05:20: can be recording into logic X but you
+00:05:17 - 00:05:23: can also plug in a Micro SD and be
+00:05:20 - 00:05:25: recording to that internally in the road
+00:05:23 - 00:05:28: Caster Pro 2 as well that is on the more
+00:05:25 - 00:05:30: expensive end but eventually that would
+00:05:28 - 00:05:33: be my recommendation for podcasting and
+00:05:30 - 00:05:35: as far as XLR cables I recommend mogami
+00:05:33 - 00:05:37: they are the best highest quality XLR
+00:05:35 - 00:05:39: cables I've used now the last thing to
+00:05:37 - 00:05:41: mention with audio gear is acoustic
+00:05:39 - 00:05:43: treatment now this whole room that I'm
+00:05:41 - 00:05:46: in right now will cut to a shot is
+00:05:43 - 00:05:48: completely acoustically treated and so
+00:05:46 - 00:05:50: that you're not hearing Reverb like the
+00:05:48 - 00:05:52: echo bouncing off of walls and that's a
+00:05:50 - 00:05:53: huge mistake I see in a lot of podcasts
+00:05:52 - 00:05:55: but I'll post a link in the description
+00:05:53 - 00:05:56: where you guys can get these acoustic
+00:05:55 - 00:05:58: blankets they're about a hundred dollars
+00:05:56 - 00:06:00: a piece you get two or three of those
+00:05:58 - 00:06:02: put them up in your recording space all
+00:06:00 - 00:06:05: around you and that's going to make a
+00:06:02 - 00:06:06: world of a difference in the quality of
+00:06:05 - 00:06:08: the audio and make it sound a lot more
+00:06:06 - 00:06:10: professional so that's pretty much it
+00:06:08 - 00:06:12: for audio gear next let's talk about
+00:06:10 - 00:06:14: tips for actual mic placement and use
+00:06:12 - 00:06:16: now main mistakes you're going to see
+00:06:14 - 00:06:19: with audio with podcasters is they're
+00:06:16 - 00:06:21: either going to be too far away this is
+00:06:19 - 00:06:24: like a foot away from the microphone it
+00:06:21 - 00:06:26: can be doable but it's not ideal for
+00:06:24 - 00:06:29: these types of microphones and these
+00:06:26 - 00:06:30: microphones can be used as close but one
+00:06:29 - 00:06:33: of the challenges with it being too
+00:06:30 - 00:06:36: close is you're going to hear plosives a
+00:06:33 - 00:06:39: lot more I like to have it just an inch
+00:06:36 - 00:06:41: or so from my mouth and have it to the
+00:06:39 - 00:06:43: side so that my air is pushing out in
+00:06:41 - 00:06:45: front of the mic instead of directly
+00:06:43 - 00:06:47: into the mic to avoid those plosives
+00:06:45 - 00:06:49: they could also put an extra pop filter
+00:06:47 - 00:06:51: on here or the bigger pop filter it
+00:06:49 - 00:06:52: comes with however it's going to give
+00:06:51 - 00:06:54: you a different sound it's not going to
+00:06:52 - 00:06:57: sound quite as clear and it doesn't look
+00:06:54 - 00:07:00: quite as good now the other thing to pay
+00:06:57 - 00:07:02: attention to is the gain level either on
+00:07:00 - 00:07:05: your microphone if it has one on the
+00:07:02 - 00:07:07: microphone if it's a USB mic or on your
+00:07:05 - 00:07:08: audio interface you want to make sure
+00:07:07 - 00:07:10: that you've set your gain levels and
+00:07:08 - 00:07:13: you've tested the audio to make sure
+00:07:10 - 00:07:15: it's sitting between negative six at the
+00:07:13 - 00:07:17: highest to about negative 18 at the
+00:07:15 - 00:07:20: lowest decibels but once you have your
+00:07:17 - 00:07:22: audio dialed in next for a video podcast
+00:07:20 - 00:07:24: specifically the next most important
+00:07:22 - 00:07:26: thing is going to be your lighting so
+00:07:24 - 00:07:27: we'll talk about that next I get asked
+00:07:26 - 00:07:29: all the time how do you light for two
+00:07:27 - 00:07:31: different people and this is the most
+00:07:29 - 00:07:33: common way that I see is having one
+00:07:31 - 00:07:36: light over the top of each person that's
+00:07:33 - 00:07:37: shining on the opposite person because
+00:07:36 - 00:07:39: if you just have lights pointing this
+00:07:37 - 00:07:40: way it's all going to be frontal lit and
+00:07:39 - 00:07:43: there's not going to be very much
+00:07:40 - 00:07:44: character very much Dimension very much
+00:07:43 - 00:07:46: depth obviously depends on the look
+00:07:44 - 00:07:48: you're going for but specifically for
+00:07:46 - 00:07:52: two person setups we have an aputure
+00:07:48 - 00:07:54: 300X here and an amaron 200x over here
+00:07:52 - 00:07:56: and about the smallest Dome I'd
+00:07:54 - 00:07:58: recommend getting is about a three foot
+00:07:56 - 00:08:00: Dome you can find smaller lights like a
+00:07:58 - 00:08:02: ring light for example is probably the
+00:08:00 - 00:08:03: cheapest light I'd recommend getting but
+00:08:02 - 00:08:05: a ring light's not going to be very soft
+00:08:03 - 00:08:06: and the softer the light the more
+00:08:05 - 00:08:09: forgiving it's going to be on
+00:08:06 - 00:08:10: imperfections on the skin but ideally
+00:08:09 - 00:08:14: you put a sheet between it or something
+00:08:10 - 00:08:16: to diffuse it to make it even softer or
+00:08:14 - 00:08:18: you buy something nicer The Next Step Up
+00:08:16 - 00:08:21: from a ring light would be something
+00:08:18 - 00:08:23: like an amaran 600x and then pick up a
+00:08:21 - 00:08:25: 50 Dome on Amazon and suddenly have a
+00:08:23 - 00:08:26: much softer much higher quality light
+00:08:25 - 00:08:28: that's going to be bright enough for
+00:08:26 - 00:08:32: most scenarios you'll notice I also have
+00:08:28 - 00:08:33: a FTF gear lamp tube light over here and
+00:08:32 - 00:08:36: that's just lighting up this plant over
+00:08:33 - 00:08:37: here this is before and after so you see
+00:08:36 - 00:08:39: it just lights up that tree a little bit
+00:08:37 - 00:08:42: makes it a little bit less dramatic on
+00:08:39 - 00:08:44: the background now we also have a hair
+00:08:42 - 00:08:46: light that is right above me up here
+00:08:44 - 00:08:48: that is an amaran 600x up there and
+00:08:46 - 00:08:50: that's just allowing me to have a little
+00:08:48 - 00:08:52: bit of Separation here from the back
+00:08:50 - 00:08:53: wall and then coming back over to this
+00:08:52 - 00:08:55: spot I've had this turned off till now
+00:08:53 - 00:08:57: but I have an aperture 600x which is
+00:08:55 - 00:08:59: overkill it doesn't need to be that nice
+00:08:57 - 00:09:01: of a light but it's what I have so we
+00:08:59 - 00:09:03: used it and that has a gobo on it which
+00:09:01 - 00:09:05: when turned on looks like window light
+00:09:03 - 00:09:07: coming in from the side there which
+00:09:05 - 00:09:09: lights up that tree next to me this is a
+00:09:07 - 00:09:13: lamp back here floor lamp and inside
+00:09:09 - 00:09:15: that lamp I have two b7cs from aperture
+00:09:13 - 00:09:17: as well so again just making the
+00:09:15 - 00:09:20: background a little bit less dramatic
+00:09:17 - 00:09:22: and then here is my key light on and off
+00:09:20 - 00:09:24: so you can see what that's doing so two
+00:09:22 - 00:09:25: three people set up this is a very
+00:09:24 - 00:09:27: common way to do it but we're now going
+00:09:25 - 00:09:29: to move over to a different lighting
+00:09:27 - 00:09:32: setup to give you some other ideas this
+00:09:29 - 00:09:33: is going to be also a two-person setup
+00:09:32 - 00:09:36: so instead of two key lights each
+00:09:33 - 00:09:38: overhead on each person instead we have
+00:09:36 - 00:09:41: a lantern soft box that you just put
+00:09:38 - 00:09:44: over top of both people it is a little
+00:09:41 - 00:09:47: bit raccoon eye-ish and so what I have
+00:09:44 - 00:09:49: to help out with that is an amaron t4c
+00:09:47 - 00:09:52: tube light that I will turn off and on
+00:09:49 - 00:09:54: here so you can see what that's doing so
+00:09:52 - 00:09:56: that's off and on
+00:09:54 - 00:09:59: now you can make that fill light even
+00:09:56 - 00:10:01: more dramatic if you want to really make
+00:09:59 - 00:10:04: this fill in so you can see that on and
+00:10:01 - 00:10:06: off and in the background that's a gobo
+00:10:04 - 00:10:08: light you see on the back there that is
+00:10:06 - 00:10:11: what is shining on the back wall and I
+00:10:08 - 00:10:13: will turn that off and on now
+00:10:11 - 00:10:15: so you see that just gives a little bit
+00:10:13 - 00:10:17: of Dimension to the back wall so it's
+00:10:15 - 00:10:19: not just blank and I believe that's a
+00:10:17 - 00:10:21: 300X that that light is on and then over
+00:10:19 - 00:10:24: here we have tube lights these are
+00:10:21 - 00:10:25: actually Nan light tube lights so now
+00:10:24 - 00:10:27: you can see what it looks like without
+00:10:25 - 00:10:30: those back there this could totally work
+00:10:27 - 00:10:33: as well and then up here you'll see we
+00:10:30 - 00:10:35: have a hair light this is the f-22c from
+00:10:33 - 00:10:37: amaran let me turn that on and off so
+00:10:35 - 00:10:39: you can see what that's doing you see
+00:10:37 - 00:10:41: how it's just highlighting my hair and
+00:10:39 - 00:10:43: the chairs right here giving them a
+00:10:41 - 00:10:46: little bit more Dimension so you can see
+00:10:43 - 00:10:50: them popping out also on the microphones
+00:10:46 - 00:10:53: so could you get by with just this key
+00:10:50 - 00:10:56: light no fill light or hair light
+00:10:53 - 00:10:59: yeah and then if you throw out the Gobo
+00:10:56 - 00:11:01: this is just the key lights with those
+00:10:59 - 00:11:03: splashes of color on the background
+00:11:01 - 00:11:06: here's how the key light which is an
+00:11:03 - 00:11:08: amaran 100x by the way so we definitely
+00:11:06 - 00:11:10: want that on now let's throw back on our
+00:11:08 - 00:11:11: hair light separating us from the
+00:11:10 - 00:11:13: background a little better now here's
+00:11:11 - 00:11:16: our tube light to give us a little more
+00:11:13 - 00:11:17: fill light and then that Gobo back there
+00:11:16 - 00:11:20: to make things a little more interesting
+00:11:17 - 00:11:22: so let's now go over to our third
+00:11:20 - 00:11:24: scenario and we'll show you how to light
+00:11:22 - 00:11:26: that with just one light all right so
+00:11:24 - 00:11:30: our last setup here is going to be in
+00:11:26 - 00:11:34: our den so we got 700 camera setup kit
+00:11:30 - 00:11:37: lens amaran 600x with a 50 Dome on there
+00:11:34 - 00:11:38: and then a 70 condenser mic then you
+00:11:37 - 00:11:40: just need obviously a computer to plug
+00:11:38 - 00:11:43: that into so here is what the audio
+00:11:40 - 00:11:46: sounds like and what the video looks
+00:11:43 - 00:11:47: like with this setup and as I mentioned
+00:11:46 - 00:11:49: earlier one of the biggest differences
+00:11:47 - 00:11:51: you'll notice in this room is it's not
+00:11:49 - 00:11:53: acoustically treated and this is
+00:11:51 - 00:11:55: honestly what a lot of people's podcasts
+00:11:53 - 00:11:57: are except at least I have a microphone
+00:11:55 - 00:11:59: a lot of people aren't even using a
+00:11:57 - 00:12:01: microphone like this they're just using
+00:11:59 - 00:12:04: a lav mic or a webcam or the computer
+00:12:01 - 00:12:06: microphone so you look over here we've
+00:12:04 - 00:12:08: got a sound blanket on a stand and so
+00:12:06 - 00:12:10: what I would do is just bring this nice
+00:12:08 - 00:12:12: and tight into myself like this and it
+00:12:10 - 00:12:15: doesn't have to be in a nice stand like
+00:12:12 - 00:12:17: this but this is basically a c-stand on
+00:12:15 - 00:12:19: Wheels so this is what it looks and
+00:12:17 - 00:12:21: sounds like in a very normal room that
+00:12:19 - 00:12:23: doesn't have any acoustic treatment
+00:12:21 - 00:12:25: besides this blanket that I've brought
+00:12:23 - 00:12:28: in really cheap camera on a really cheap
+00:12:25 - 00:12:31: tripod that's an FTF gear tripod as well
+00:12:28 - 00:12:33: seventy dollars all in were around a
+00:12:31 - 00:12:35: thousand dollars and you suddenly have
+00:12:33 - 00:12:37: an awesome video podcast ready to go
+00:12:35 - 00:12:39: this is going straight into the computer
+00:12:37 - 00:12:41: recording on a free app in GarageBand
+00:12:39 - 00:12:43: we'll then export that out stick it into
+00:12:41 - 00:12:45: our editing program and we're good to go
+00:12:43 - 00:12:48: so let's talk about what camera to buy
+00:12:45 - 00:12:50: camera and lens set up to get when
+00:12:48 - 00:12:52: filming a podcast notice we're talking
+00:12:50 - 00:12:54: about this after we've talked about
+00:12:52 - 00:12:56: audio gear after we've talked about
+00:12:54 - 00:12:58: lighting gear and that is for a reason
+00:12:56 - 00:13:00: if you have good audio and you have good
+00:12:58 - 00:13:02: lighting then your phone can work and
+00:13:00 - 00:13:03: that's the first thing I'd recommend if
+00:13:02 - 00:13:06: you're on a budget just use your phone
+00:13:03 - 00:13:07: people mostly care about the audio so if
+00:13:06 - 00:13:10: that's taken care of and if they can see
+00:13:07 - 00:13:11: your face and you're well lit then the
+00:13:10 - 00:13:13: phone quality is going to be good enough
+00:13:11 - 00:13:16: now on the cheapest end we showed you in
+00:13:13 - 00:13:18: our den setup there that we had a Canon
+00:13:16 - 00:13:20: R50 with a kit lens that's going to be
+00:13:18 - 00:13:23: your cheapest option as cheap as I would
+00:13:20 - 00:13:25: go just use your phone if you're not
+00:13:23 - 00:13:26: going to invest in a real camera now a
+00:13:25 - 00:13:29: lot of the older cameras are going to
+00:13:26 - 00:13:31: limit you to 30 minutes of recording do
+00:13:29 - 00:13:33: not get 30 minute recording limited
+00:13:31 - 00:13:35: cameras for podcasting because most
+00:13:33 - 00:13:37: podcasts episodes are going to be at
+00:13:35 - 00:13:40: least an hour cameras I can film for an
+00:13:37 - 00:13:42: hour can work like that R50 that I have
+00:13:40 - 00:13:44: kind of pushing it though I'd get one
+00:13:42 - 00:13:46: that can go two hours the next camera
+00:13:44 - 00:13:48: for canons I can go two hours is going
+00:13:46 - 00:13:50: to be the r10 which is going to come in
+00:13:48 - 00:13:52: at a thousand dollars so that's on the
+00:13:50 - 00:13:55: Canon side on the Sony side I'd get the
+00:13:52 - 00:13:57: Sony zv E10 and that's going to allow
+00:13:55 - 00:14:00: you to record for up to 13 hours now
+00:13:57 - 00:14:02: what I'm using here is the Sony a7s III
+00:14:00 - 00:14:04: obviously that's ideal over in this room
+00:14:02 - 00:14:06: we have two c70s obviously that's going
+00:14:04 - 00:14:07: to get very expensive and so more
+00:14:06 - 00:14:10: importantly than the camera bodies is
+00:14:07 - 00:14:12: going to be lenses but you want to focus
+00:14:10 - 00:14:14: on lenses that can stop down to low
+00:14:12 - 00:14:16: apertures and the reason for that is
+00:14:14 - 00:14:19: because low aperture lenses are going to
+00:14:16 - 00:14:21: allow you to have that shallow depth of
+00:14:19 - 00:14:22: field that background blur so I look for
+00:14:21 - 00:14:25: a lens that can go down to a 1.4
+00:14:22 - 00:14:27: aperture if possible again in the den
+00:14:25 - 00:14:30: setup we had a kit lens which is an 18
+00:14:27 - 00:14:32: millimeter on there and that's on a 1.6
+00:14:30 - 00:14:34: crop sensor camera which brings the
+00:14:32 - 00:14:35: focal lengths to about a 29 millimeter
+00:14:34 - 00:14:38: so that's what you saw over there this
+00:14:35 - 00:14:40: is a 35 millimeter that you're seeing
+00:14:38 - 00:14:43: right now on the Sony a7s III and then
+00:14:40 - 00:14:45: over here with the C70 cameras we have
+00:14:43 - 00:14:47: 50 millimeter lenses over there I think
+00:14:45 - 00:14:50: for medium shots which is what this is
+00:14:47 - 00:14:52: 35 to 50 millimeter is the most common I
+00:14:50 - 00:14:54: just keep it medium so that they can
+00:14:52 - 00:14:55: move freely and not move out of frame if
+00:14:54 - 00:14:58: you have a tight shot on them and they
+00:14:55 - 00:15:00: move too far you're going to lose them
+00:14:58 - 00:15:02: from the shot and so just be aware of
+00:15:00 - 00:15:03: that be careful you need a camera you
+00:15:02 - 00:15:05: need a lens you also need a tripod
+00:15:03 - 00:15:07: forgot to mention that again the FTF
+00:15:05 - 00:15:09: gear tripod is the cheapest I'd
+00:15:07 - 00:15:11: recommend that's going to come in at
+00:15:09 - 00:15:12: just 70 dollars most the ones I use are
+00:15:11 - 00:15:15: going to be manfrotto's which are going
+00:15:12 - 00:15:18: to come around 200 but one thing I would
+00:15:15 - 00:15:21: recommend getting for all podcasting is
+00:15:18 - 00:15:23: a dummy battery that can plug into an
+00:15:21 - 00:15:25: outlet into your wall you don't want to
+00:15:23 - 00:15:28: have to be constantly switching out the
+00:15:25 - 00:15:29: batteries and risk the battery going out
+00:15:28 - 00:15:31: in the middle of a podcast so that's
+00:15:29 - 00:15:33: pretty much it for camera gear focus on
+00:15:31 - 00:15:34: the lighting focus on the audio and then
+00:15:33 - 00:15:36: pick up a camera that's going to allow
+00:15:34 - 00:15:38: you to film your face and you'll be good
+00:15:36 - 00:15:41: to go with gear all right let's now talk
+00:15:38 - 00:15:42: about how to actually film a podcast
+00:15:41 - 00:15:45: let's go through the whole process
+00:15:42 - 00:15:48: together alright so first question is
+00:15:45 - 00:15:48: how many cameras need to be filming I
+00:15:48 - 00:15:51: would say if you're going to be
+00:15:48 - 00:15:53: interviewing a second person I would say
+00:15:51 - 00:15:55: having two cameras is ideal now you
+00:15:53 - 00:15:58: could just do one as we'll show over in
+00:15:55 - 00:16:00: the text setup we want these to be at
+00:15:58 - 00:16:02: least 30 degrees apart these two camera
+00:16:00 - 00:16:05: angles and these are actually 90 degrees
+00:16:02 - 00:16:07: apart as you can see here and I actually
+00:16:05 - 00:16:09: have a third camera set up over here in
+00:16:07 - 00:16:11: the R7 and that's going to be showing
+00:16:09 - 00:16:13: both of these guys at the exact same
+00:16:11 - 00:16:15: time so with our audio we have that
+00:16:13 - 00:16:17: going into the road Caster Pro 2 over
+00:16:15 - 00:16:19: here as I mentioned earlier and then the
+00:16:17 - 00:16:21: road Caster is going into our MacBook
+00:16:19 - 00:16:24: and then you see here that we are
+00:16:21 - 00:16:26: recording on Logic Pro X and then right
+00:16:24 - 00:16:29: here we have what's called an ADA mini
+00:16:26 - 00:16:33: pro ISO but the Ada mini pro allows you
+00:16:29 - 00:16:36: to hook hdmis from each of those three
+00:16:33 - 00:16:39: cameras into the Ada mini pro and then
+00:16:36 - 00:16:42: I'm able to switch between each of these
+00:16:39 - 00:16:44: camera angles it will save me a file of
+00:16:42 - 00:16:47: those cuts I've made so that I can have
+00:16:44 - 00:16:49: the podcast video already cut up so if
+00:16:47 - 00:16:50: you have an extra person somebody who's
+00:16:49 - 00:16:52: going to be watching the cameras and
+00:16:50 - 00:16:55: monitoring audio anyway you might as
+00:16:52 - 00:16:57: well get one of these Ada mini pros and
+00:16:55 - 00:16:58: have them be cutting in real time Carter
+00:16:57 - 00:17:01: and I are going to have a little podcast
+00:16:58 - 00:17:03: conversation and show you how this all
+00:17:01 - 00:17:05: works in real time so welcome to the
+00:17:03 - 00:17:07: show today this is the so and so show my
+00:17:05 - 00:17:09: name is Parker walbeck and today we have
+00:17:07 - 00:17:12: with us Carter Hogan good buddy of mine
+00:17:09 - 00:17:13: and the manager at full-time filmmaker
+00:17:12 - 00:17:16: Carter good to have you here good to be
+00:17:13 - 00:17:17: here Carter where are you from tell us
+00:17:16 - 00:17:19: about your family give us a quick
+00:17:17 - 00:17:21: background oh yeah so you know Carter
+00:17:19 - 00:17:23: Hogan originally from Salt Lake City
+00:17:21 - 00:17:26: moved down that's really interesting
+00:17:23 - 00:17:29: tell me about your family so we have a
+00:17:26 - 00:17:31: couple people in it and we that's a lot
+00:17:29 - 00:17:33: of people yeah it's fantastic it's
+00:17:31 - 00:17:35: amazing yeah I love your hat by the way
+00:17:33 - 00:17:37: really good hat I brought it first I
+00:17:35 - 00:17:39: want that on the record I was gonna wear
+00:17:37 - 00:17:40: that hat but he wore that and so I
+00:17:39 - 00:17:43: didn't wear a hat so thanks for making
+00:17:40 - 00:17:45: me change my outfit into the the style
+00:17:43 - 00:17:47: and brand of hats I'll give you it is a
+00:17:45 - 00:17:49: good one okay so that is how you film a
+00:17:47 - 00:17:51: podcast just to give you an idea now I
+00:17:49 - 00:17:53: want to show you in post-production how
+00:17:51 - 00:17:55: I would edit that together first I'm
+00:17:53 - 00:17:57: going to import my footage then I'll
+00:17:55 - 00:17:59: just drag in my video files to start a
+00:17:57 - 00:18:02: new sequence then I'm going to drag them
+00:17:59 - 00:18:05: on top of each other then bring in each
+00:18:02 - 00:18:07: of my separate audio files
+00:18:05 - 00:18:10: and then the easiest way to sync these
+00:18:07 - 00:18:12: up is just highlight all right click
+00:18:10 - 00:18:14: synchronize audio make sure it's on
+00:18:12 - 00:18:17: audio and hit OK so next I'm going to
+00:18:14 - 00:18:19: unlink the camera audio and delete those
+00:18:17 - 00:18:21: we don't need those anymore and now
+00:18:19 - 00:18:22: we're just going to start cutting back
+00:18:21 - 00:18:24: and forth between camera angles
+00:18:22 - 00:18:26: depending on Who's Talking Now the
+00:18:24 - 00:18:29: easiest way to do this is just to find
+00:18:26 - 00:18:30: when we switch off you zoom in here and
+00:18:29 - 00:18:32: you can see this is when I stop talking
+00:18:30 - 00:18:34: when Carter starts talking so you're
+00:18:32 - 00:18:37: just going to come in here and I have
+00:18:34 - 00:18:40: the keyboard shortcut V allowing me to
+00:18:37 - 00:18:43: enable and disable this or right click
+00:18:40 - 00:18:45: enable and then B for my blade tool by
+00:18:43 - 00:18:47: the way you can download all my keyboard
+00:18:45 - 00:18:50: shortcuts to do all these that I'm doing
+00:18:47 - 00:18:52: and then push V and now we start
+00:18:50 - 00:18:54: watching and cutting welcome to the show
+00:18:52 - 00:18:55: today this is the so and so show my name
+00:18:54 - 00:18:58: is Parker walbeck and today we have with
+00:18:55 - 00:18:59: us Carter Hogan so right before Carter
+00:18:58 - 00:19:02: says good to be here we're going to cut
+00:18:59 - 00:19:02: to him
+00:19:02 - 00:19:06: I have you here good to be here and I'm
+00:19:04 - 00:19:07: going to leave a smile on there for just
+00:19:06 - 00:19:09: a minute and then cut back to me
+00:19:07 - 00:19:12: originally from Salt Lake City moved
+00:19:09 - 00:19:15: down and then right here I cut him off
+00:19:12 - 00:19:15: so let's cut to me cutting him off
+00:19:15 - 00:19:19: until I stop cutting them off and again
+00:19:17 - 00:19:21: I'm just looking at the waves here and
+00:19:19 - 00:19:23: just making those cuts next to those and
+00:19:21 - 00:19:25: then I'm just making projected Cuts
+00:19:23 - 00:19:28: something like that
+00:19:25 - 00:19:29: little people in it and we that's a lot
+00:19:28 - 00:19:31: of people yeah so we're gonna cut this
+00:19:29 - 00:19:33: short and just come to the very end here
+00:19:31 - 00:19:34: if you have any further questions please
+00:19:33 - 00:19:36: let me know
+00:19:34 - 00:19:39: and pretend like that was the end so cut
+00:19:36 - 00:19:41: off the rest that could be the end you
+00:19:39 - 00:19:43: could export that out upload it as is I
+00:19:41 - 00:19:46: would however recommend that you put
+00:19:43 - 00:19:47: some intro and outro music now the intro
+00:19:46 - 00:19:50: and outro music that I've been using for
+00:19:47 - 00:19:53: years on my full-time filmmaker YouTube
+00:19:50 - 00:19:55: channel is by by the way may and
+00:19:53 - 00:19:57: everyone knows who hears that song that
+00:19:55 - 00:19:59: that has a full-time filmmaker tutorial
+00:19:57 - 00:20:01: intro song and that song specifically
+00:19:59 - 00:20:04: can be found on musicbed and they have
+00:20:01 - 00:20:06: been my go-to website for licensing
+00:20:04 - 00:20:08: music for several years now and they are
+00:20:06 - 00:20:10: the sponsor of today's video now
+00:20:08 - 00:20:11: personally I believe that musicbed has
+00:20:10 - 00:20:14: the highest quality music out there of
+00:20:11 - 00:20:16: any other licensing platform they have
+00:20:14 - 00:20:18: over a thousand incredibly talented
+00:20:16 - 00:20:20: artists and over 40 000 songs to choose
+00:20:18 - 00:20:23: from some of my favorites to use are
+00:20:20 - 00:20:25: Tony Anderson chapters Ryan tobert by
+00:20:23 - 00:20:27: the way may just to name a few but the
+00:20:25 - 00:20:29: difference that musicbed is the quality
+00:20:27 - 00:20:31: cinematic nature of the music it just
+00:20:29 - 00:20:33: feels like music you'd actually hear in
+00:20:31 - 00:20:35: a film score or in a high-end commercial
+00:20:33 - 00:20:37: rather than these cheap corporate
+00:20:35 - 00:20:39: jingles and finding the right song You
+00:20:37 - 00:20:41: Need Is Easy with their Advanced
+00:20:39 - 00:20:43: parameters like genre mood and even
+00:20:41 - 00:20:45: beats per minute and key and specific to
+00:20:43 - 00:20:47: podcasting they now have a podcast
+00:20:45 - 00:20:48: subscription as well so if you're ready
+00:20:47 - 00:20:50: to take your projects and films to the
+00:20:48 - 00:20:52: next level go hear the difference
+00:20:50 - 00:20:54: yourself and sign up for a free account
+00:20:52 - 00:20:56: at musicbed and use code full-time
+00:20:54 - 00:20:58: filmmaker at checkout to receive one
+00:20:56 - 00:21:01: free month with your purchase of an
+00:20:58 - 00:21:06: annual subscription so let's pull in now
+00:21:01 - 00:21:08: our music bed song from by the way may
+00:21:06 - 00:21:09: and we're not going to talk about this
+00:21:08 - 00:21:11: in this video but we have a separate
+00:21:09 - 00:21:13: video inside the course talking about
+00:21:11 - 00:21:15: how to create logos and Logo animations
+00:21:13 - 00:21:18: but I'm also going to pull in my FTF
+00:21:15 - 00:21:18: intro logo animation
+00:21:19 - 00:21:22: welcome to the show today this is the so
+00:21:20 - 00:21:24: and so show my name is Parker walbeck
+00:21:22 - 00:21:26: and today we have so whatever music you
+00:21:24 - 00:21:29: find Just Adjust that volume so it's not
+00:21:26 - 00:21:33: overpowering the Audio I personally only
+00:21:29 - 00:21:34: have it last about 15 to 30 seconds
+00:21:33 - 00:21:37: depending on what the intro sounds like
+00:21:34 - 00:21:38: so about right there I'm just going to
+00:21:37 - 00:21:41: cut it off
+00:21:38 - 00:21:44: and then add a little applied default
+00:21:41 - 00:21:46: transition and fade it out over time but
+00:21:44 - 00:21:49: now we're going to find the point where
+00:21:46 - 00:21:51: the last beat hits on the outro if you
+00:21:49 - 00:21:53: have any further questions please let me
+00:21:51 - 00:21:53: know
+00:21:54 - 00:21:57: and then we'll just fade that in towards
+00:21:56 - 00:21:59: the end here
+00:21:57 - 00:22:01: now the last thing I would do is add any
+00:21:59 - 00:22:02: audio effects we're not going to cover
+00:22:01 - 00:22:04: this in depth here you can watch full
+00:22:02 - 00:22:06: videos talking about each of these
+00:22:04 - 00:22:09: inside the course but the main audio
+00:22:06 - 00:22:11: effects I use is going to be an EQ a
+00:22:09 - 00:22:14: compressor a limiter some normalization
+00:22:11 - 00:22:16: some mouth d-click sometimes I'll use
+00:22:14 - 00:22:18: denoising and the audio that I've
+00:22:16 - 00:22:20: already dragged into our timeline has
+00:22:18 - 00:22:22: already been processed before I brought
+00:22:20 - 00:22:25: it in and I do all of my processing in
+00:22:22 - 00:22:27: logic pro and the plugins I use are
+00:22:25 - 00:22:30: called Fab filter plugins and then I use
+00:22:27 - 00:22:32: two plugins from isotope RX elements one
+00:22:30 - 00:22:35: being voicity noise and one being mouth
+00:22:32 - 00:22:37: D click and a lot of the paid plugins I
+00:22:35 - 00:22:40: mentioned you can find free versions
+00:22:37 - 00:22:42: within most editing softwares for EQ I
+00:22:40 - 00:22:45: use parametric equalizer then I'll hit
+00:22:42 - 00:22:46: edit and I always add a high pass filter
+00:22:45 - 00:22:50: that's just going to get rid of any low
+00:22:46 - 00:22:52: end rumble or plosives so that is a must
+00:22:50 - 00:22:54: I always do that first and depending on
+00:22:52 - 00:22:56: the microphone and the speaker will
+00:22:54 - 00:22:59: depend on what I'll do here in EQ but
+00:22:56 - 00:23:01: usually will boost the high end a little
+00:22:59 - 00:23:03: bit and I'll usually boost the low end
+00:23:01 - 00:23:05: just a little bit as well you guys put a
+00:23:03 - 00:23:07: pop filter on that get like one of these
+00:23:05 - 00:23:10: big pop filters because you don't care
+00:23:07 - 00:23:11: how it looks okay so just very subtle
+00:23:10 - 00:23:13: just adding a little bit more punch to
+00:23:11 - 00:23:16: the audio with EQ next I put on a
+00:23:13 - 00:23:18: compressor for that I use Dynamics so
+00:23:16 - 00:23:21: drag that on come to edits and I use a
+00:23:18 - 00:23:23: preset called Soft compression and I
+00:23:21 - 00:23:25: usually adjust this ratio to three turn
+00:23:23 - 00:23:27: on the limiter so it doesn't go above
+00:23:25 - 00:23:29: negative one decibels and then depending
+00:23:27 - 00:23:32: on how loud I record will depend on how
+00:23:29 - 00:23:33: much makeup gain I'll add here avoid
+00:23:32 - 00:23:35: those pluses at all cost if you're not
+00:23:33 - 00:23:37: doing video so you see over here we're
+00:23:35 - 00:23:39: in the negative 12 the negative six
+00:23:37 - 00:23:41: range I want to bring that up just a tad
+00:23:39 - 00:23:43: more so I might bring this up to maybe
+00:23:41 - 00:23:45: six or seven put a pop filter on that
+00:23:43 - 00:23:48: get like one of these big pop filters
+00:23:45 - 00:23:49: because you don't care how it looks and
+00:23:48 - 00:23:51: again we're not going to get into this
+00:23:49 - 00:23:53: in depth but I'd also recommend
+00:23:51 - 00:23:55: downloading what's called Julian
+00:23:53 - 00:23:57: loudness meter this is a free plug-in
+00:23:55 - 00:23:59: and while you're listening back to your
+00:23:57 - 00:24:02: audio you want to be looking at the
+00:23:59 - 00:24:03: integrated lufs Spotify and a lot of
+00:24:02 - 00:24:06: these platforms recommend between
+00:24:03 - 00:24:07: negative 14 and negative 18 DBS so one
+00:24:06 - 00:24:08: of the biggest things you're going to
+00:24:07 - 00:24:10: hear in podcasts that might drive you
+00:24:08 - 00:24:12: nuts so I'm about a negative 21 which
+00:24:10 - 00:24:15: means I want to bring this up a tad more
+00:24:12 - 00:24:18: and you can do that by pushing G on your
+00:24:15 - 00:24:21: keyboard hitting normalize Max Peak
+00:24:18 - 00:24:24: audio put it to negative one and then
+00:24:21 - 00:24:26: watch my waveforms down here they all
+00:24:24 - 00:24:28: jumped up and normalized to a higher
+00:24:26 - 00:24:30: volume those plosives those air pockets
+00:24:28 - 00:24:32: are going to be going straight into the
+00:24:30 - 00:24:35: microphone so now we're at about a
+00:24:32 - 00:24:37: negative 17 lufs which is in that zone
+00:24:35 - 00:24:39: and the last effects I mentioned that
+00:24:37 - 00:24:42: are going to be paid is going to be an
+00:24:39 - 00:24:44: rxd noise this is going to get rid of
+00:24:42 - 00:24:47: any of the background fuss so if we come
+00:24:44 - 00:24:49: to just a part with no audio so if you
+00:24:47 - 00:24:52: put this on come to edit you can adjust
+00:24:49 - 00:24:55: how much you want it to be working I'm
+00:24:52 - 00:24:56: usually around a four five six Zone but
+00:24:55 - 00:25:00: if it's really noisy you might want to
+00:24:56 - 00:25:00: boost that up so here's before and after
+00:25:06 - 00:25:09: as you can see it just takes away some
+00:25:08 - 00:25:11: of that background fuzz and I think
+00:25:09 - 00:25:13: that's only a 30 plug-in so it's not too
+00:25:11 - 00:25:15: expensive but the last thing I would do
+00:25:13 - 00:25:17: I think you have to buy their 200
+00:25:15 - 00:25:19: package on this one but this one's
+00:25:17 - 00:25:21: called mouth D click and this is just
+00:25:19 - 00:25:24: going to take away all the
+00:25:21 - 00:25:26: mouth noises when you speak come to
+00:25:24 - 00:25:29: edits I usually have sensitivity at five
+00:25:26 - 00:25:32: click widening at 2.5 let's listen to
+00:25:29 - 00:25:34: this with and without making us
+00:25:32 - 00:25:35: separating us from the background a
+00:25:34 - 00:25:38: little better
+00:25:35 - 00:25:39: now with making us
+00:25:38 - 00:25:40: separating us from the background a
+00:25:39 - 00:25:43: little better
+00:25:40 - 00:25:45: I highly recommend that now that I use
+00:25:43 - 00:25:47: that I recognize so many mouth noises in
+00:25:45 - 00:25:51: people's audio at this point we'll just
+00:25:47 - 00:25:53: come up to file export media name it
+00:25:51 - 00:25:55: whatever you will where you want and for
+00:25:53 - 00:25:58: most podcasts you're probably good just
+00:25:55 - 00:26:01: to export it out at 1080p I just use the
+00:25:58 - 00:26:03: YouTube preset within the h.264 format
+00:26:01 - 00:26:05: and then hit export and you're ready to
+00:26:03 - 00:26:07: now upload your podcast which we'll talk
+00:26:05 - 00:26:10: about next how do you upload a podcast
+00:26:07 - 00:26:11: now it's not exactly straightforward I
+00:26:10 - 00:26:15: want to show you in this video how to do
+00:26:11 - 00:26:17: it with a free option called anchor FM
+00:26:15 - 00:26:21: so type that into Google it's called
+00:26:17 - 00:26:24: Spotify for podcasters anchor dot fm go
+00:26:21 - 00:26:26: to login hit sign up put in your
+00:26:24 - 00:26:29: information hit sign up let's make your
+00:26:26 - 00:26:31: first episode let's do it so I have a
+00:26:29 - 00:26:34: file ready to go I'm going to upload a
+00:26:31 - 00:26:36: video file by hitting browse come to a
+00:26:34 - 00:26:37: file that I want to upload and it's
+00:26:36 - 00:26:39: going to ask if you want an audio
+00:26:37 - 00:26:41: episode or video episode I'm going to
+00:26:39 - 00:26:43: say video and you're going to title it
+00:26:41 - 00:26:45: whatever you want put a description
+00:26:43 - 00:26:47: customize if there's a certain season
+00:26:45 - 00:26:50: number episode number you want this to
+00:26:47 - 00:26:51: be upload some episode art if you have
+00:26:50 - 00:26:53: any all right so once that has finished
+00:26:51 - 00:26:56: uploading now we're going to hit next
+00:26:53 - 00:26:59: and now we get to set up our podcast and
+00:26:56 - 00:27:02: call this true Millennial give it a
+00:26:59 - 00:27:05: description put in a category podcast
+00:27:02 - 00:27:07: language English
+00:27:05 - 00:27:09: hit continue
+00:27:07 - 00:27:13: upload some cover Arts
+00:27:09 - 00:27:14: continue update now this is ready to
+00:27:13 - 00:27:16: publish this will make your podcast
+00:27:14 - 00:27:19: available on Spotify so we'll hit
+00:27:16 - 00:27:21: publish and it will let us know when it
+00:27:19 - 00:27:23: is ready on Spotify now if you want to
+00:27:21 - 00:27:25: put this on other platforms you have
+00:27:23 - 00:27:28: what's called an RSS distribution feed
+00:27:25 - 00:27:31: so you'll use this link right here to
+00:27:28 - 00:27:33: then upload this to other platforms and
+00:27:31 - 00:27:35: then as soon as they notify you when
+00:27:33 - 00:27:37: it's ready on Spotify you'll be able to
+00:27:35 - 00:27:39: hit listen on Spotify and you'll be able
+00:27:37 - 00:27:42: to start listening to and sharing your
+00:27:39 - 00:27:45: podcast so that is how you create a
+00:27:42 - 00:27:46: podcast from A to Z again this was a
+00:27:45 - 00:27:48: compressed version just trying to give
+00:27:46 - 00:27:50: you all the steps so if you want more
+00:27:48 - 00:27:52: in-depth detailed instructions on each
+00:27:50 - 00:27:54: of these steps and additional steps like
+00:27:52 - 00:27:56: using stream yard to do virtual
+00:27:54 - 00:27:58: interviews or how to monetize your
+00:27:56 - 00:28:00: podcast to actually make them
+00:27:58 - 00:28:02: sustainable for tips and tricks on how
+00:28:00 - 00:28:04: to get more views and actually make your
+00:28:02 - 00:28:05: podcast engaging then make sure to check
+00:28:04 - 00:28:08: out links below to join our course
+00:28:05 - 00:28:10: podcast Pro or that many courses also
+00:28:08 - 00:28:12: included inside full-time filmmaker our
+00:28:10 - 00:28:14: main course with over 600 tutorials
+00:28:12 - 00:28:16: linked also in the description below but
+00:28:14 - 00:28:17: that's all I got for you hopefully you
+00:28:16 - 00:28:19: got some good insights on how to get
+00:28:17 - 00:28:21: your podcast off the ground don't forget
+00:28:19 - 00:28:22: to subscribe for more content just like
+00:28:21 - 00:28:25: this and if you have any further
+00:28:22 - 00:28:25: questions please let me know

@@ -1,0 +1,9 @@
+00:00 - Introduction - c++ tutorial for beginners
+01:51 - The first Program - c++ tutorial for beginners
+04:11 - Types and Variables - c++ tutorial for beginners
+05:31 - Arrays - c++ tutorial for beginners
+06:11 - Strings - c++ tutorial for beginners
+07:11 - If-else - c++ tutorial for beginners
+07:51 - for loop - c++ tutorial for beginners
+08:41 - while loop - c++ tutorial for beginners
+09:41 - functions - c++ tutorial for beginners

@@ -1,0 +1,996 @@
+00:00:03 - 00:00:09: the first stop is performance precision
+00:00:05 - 00:00:09: and payloads
+00:00:22 - 00:00:26: hello everybody my name is drew hanover
+00:00:24 - 00:00:28: i'm with the robotics and perception
+00:00:26 - 00:00:30: group at university of zurich today i'm
+00:00:28 - 00:00:32: going to talk uh really quickly about
+00:00:30 - 00:00:35: adaptive nonlinear mpc for quadrotor
+00:00:32 - 00:00:37: control under uncertainty
+00:00:35 - 00:00:39: um so traditionally any sort of model
+00:00:37 - 00:00:40: based controller requires a good model
+00:00:39 - 00:00:42: if you want to have adequate control
+00:00:40 - 00:00:44: performance this often requires a large
+00:00:42 - 00:00:46: amount of domain expertise it can be
+00:00:44 - 00:00:48: expensive to procure
+00:00:46 - 00:00:49: you can learn you know residual dynamics
+00:00:48 - 00:00:52: but it requires a lot of data and
+00:00:49 - 00:00:53: additional computational effort
+00:00:52 - 00:00:55: and so it kind of begs the question how
+00:00:53 - 00:00:57: do you control a system that you know
+00:00:55 - 00:00:59: very little about so for example in the
+00:00:57 - 00:01:01: top right here we have a quad rotor
+00:00:59 - 00:01:04: flying with a unknown payload of 450
+00:01:01 - 00:01:06: grams it's completely unbeknownst to the
+00:01:04 - 00:01:07: non-linear mpc high level controller
+00:01:06 - 00:01:09: model
+00:01:07 - 00:01:12: or on the right for example maybe we
+00:01:09 - 00:01:15: take off with a beer payload
+00:01:12 - 00:01:16: and fly some aggressive trajectories
+00:01:15 - 00:01:18: so it's really difficult to kind of
+00:01:16 - 00:01:20: model higher order aerodynamic effects
+00:01:18 - 00:01:22: prop wash et cetera
+00:01:20 - 00:01:24: and as i mentioned you can learn these
+00:01:22 - 00:01:26: things but it takes quite a bit of time
+00:01:24 - 00:01:28: so our our proposed approach was
+00:01:26 - 00:01:31: actually to use a non-linear mpc high
+00:01:28 - 00:01:33: level and then design an l1 adaptive
+00:01:31 - 00:01:35: controller as the low level to basically
+00:01:33 - 00:01:37: learn the residual dynamics online and
+00:01:35 - 00:01:40: be able to compensate for any sort of
+00:01:37 - 00:01:42: model uncertainty in real time we don't
+00:01:40 - 00:01:44: really want to do any sort of learning
+00:01:42 - 00:01:47: offline we want to be able to just use
+00:01:44 - 00:01:49: sensor information and our known
+00:01:47 - 00:01:50: understanding of a first principles
+00:01:49 - 00:01:52: based model
+00:01:50 - 00:01:54: and so our approach is extremely
+00:01:52 - 00:01:56: computationally efficient it's less than
+00:01:54 - 00:02:00: 10 microseconds additional compute time
+00:01:56 - 00:02:00: to the nonlinear mpc solution
+00:02:01 - 00:02:05: so we demonstrate this on a series of
+00:02:02 - 00:02:07: real world experiments first we have
+00:02:05 - 00:02:09: increasing speed circle trajectories
+00:02:07 - 00:02:11: we've basically
+00:02:09 - 00:02:12: compared these against data-driven mpcs
+00:02:11 - 00:02:14: that are augmented with gaussian
+00:02:12 - 00:02:16: processes that learn those residual
+00:02:14 - 00:02:18: dynamics offline
+00:02:16 - 00:02:20: and we can show basically a 70
+00:02:18 - 00:02:21: performance improvement in tracking
+00:02:20 - 00:02:23: error
+00:02:21 - 00:02:27: with even without an aerodynamic model
+00:02:23 - 00:02:29: embedded within the mpc nominal dynamics
+00:02:27 - 00:02:31: next as we saw earlier
+00:02:29 - 00:02:33: on the top plot we have a 450 gram
+00:02:31 - 00:02:35: unknown payload in red
+00:02:33 - 00:02:37: we have our method which tracks the two
+00:02:35 - 00:02:39: meter per second circle trajectory quite
+00:02:37 - 00:02:42: well it's less than one centimeter rmse
+00:02:39 - 00:02:43: it's completely unknown to the mpc
+00:02:42 - 00:02:46: and then on the bottom we have a static
+00:02:43 - 00:02:47: external aerodynamic disturbance where
+00:02:46 - 00:02:48: you blow a fan basically on the quad
+00:02:47 - 00:02:50: rotor
+00:02:48 - 00:02:51: and to try to introduce disturbance and
+00:02:50 - 00:02:53: again
+00:02:51 - 00:02:55: we can track these disturbances quite
+00:02:53 - 00:02:57: well
+00:02:55 - 00:02:59: next we have basically a slung payload
+00:02:57 - 00:03:02: of 100 grams and we fly a relatively
+00:02:59 - 00:03:04: aggressive racing trajectory
+00:03:02 - 00:03:06: again completely unbeknownst to the mpc
+00:03:04 - 00:03:08: model we have to adapt in real time to
+00:03:06 - 00:03:09: the time-varying disturbance and we can
+00:03:08 - 00:03:10: basically show better tracking
+00:03:09 - 00:03:12: performance
+00:03:10 - 00:03:14: compared to a non-adaptive mpc without
+00:03:12 - 00:03:17: the payload attached
+00:03:14 - 00:03:19: and then finally we have a very
+00:03:17 - 00:03:22: aggressive racing trajectory it's about
+00:03:19 - 00:03:24: 20 meters per second with over four g's
+00:03:22 - 00:03:27: uh linear accelerations
+00:03:24 - 00:03:29: um and here we can you know track these
+00:03:27 - 00:03:31: really quite well
+00:03:29 - 00:03:32: and one important thing about all this
+00:03:31 - 00:03:34: work is that
+00:03:32 - 00:03:35: this controller uh throughout all of
+00:03:34 - 00:03:37: these experiments none of the gains are
+00:03:35 - 00:03:38: updated at all the model is never
+00:03:37 - 00:03:40: updated the gains are never updated so
+00:03:38 - 00:03:42: you have a very flexible controller
+00:03:40 - 00:03:44: that's robust to a bunch of different
+00:03:42 - 00:03:44: kinds of model
+00:03:44 - 00:03:49: uncertainty that's it thanks everybody
+00:03:53 - 00:03:56: thank you
+00:03:54 - 00:03:58: hi i'm brendan engela i'm an associate
+00:03:56 - 00:04:00: professor at stevens institute of
+00:03:58 - 00:04:03: technology not too far from here in new
+00:04:00 - 00:04:06: jersey and this is work i've done with
+00:04:03 - 00:04:08: some of my phd students that was led by
+00:04:06 - 00:04:10: a former phd student of mine john martin
+00:04:08 - 00:04:13: who is now a postdoc at university of
+00:04:10 - 00:04:13: alberta
+00:04:13 - 00:04:19: we have uh extracted from the carla
+00:04:17 - 00:04:21: simulator which has become a very
+00:04:19 - 00:04:23: popular high fidelity simulator for rl
+00:04:21 - 00:04:25: and automated driving
+00:04:23 - 00:04:27: we've extracted a stochastic road
+00:04:25 - 00:04:29: network from it
+00:04:27 - 00:04:32: for the purpose of exploring
+00:04:29 - 00:04:34: route level learning and decision making
+00:04:32 - 00:04:36: one particular interest of ours is
+00:04:34 - 00:04:37: distributional reinforcement learning
+00:04:36 - 00:04:39: and exploring that
+00:04:37 - 00:04:40: in terms of decision making at the route
+00:04:39 - 00:04:42: level
+00:04:40 - 00:04:44: so to really ensure that we can learn
+00:04:42 - 00:04:47: distributions that are meaningful and
+00:04:44 - 00:04:49: accurate we wanted to start simple and
+00:04:47 - 00:04:52: uh look at the distributions that could
+00:04:49 - 00:04:55: be learned with respect to route level
+00:04:52 - 00:04:58: planning actions um on a road network so
+00:04:55 - 00:05:00: all of the carla road maps we have
+00:04:58 - 00:05:04: extracted stochastic road networks from
+00:05:00 - 00:05:06: them that are customizable and relevant
+00:05:04 - 00:05:07: stochastic phenomena that can arise in
+00:05:06 - 00:05:10: driving scenarios can be captured in
+00:05:07 - 00:05:12: them we also have
+00:05:10 - 00:05:13: meaningful simulated perceptual
+00:05:12 - 00:05:15: observations that map to each of the
+00:05:13 - 00:05:17: locations in the road network so right
+00:05:15 - 00:05:19: now our rep even though we're working on
+00:05:17 - 00:05:20: a simplified road network our
+00:05:19 - 00:05:23: representation of representation of the
+00:05:20 - 00:05:25: state comes from a lidar-derived
+00:05:23 - 00:05:29: occupancy map from those respective
+00:05:25 - 00:05:29: locations in the karla environment
+00:05:29 - 00:05:32: here's an example of how we've been able
+00:05:30 - 00:05:34: to use this stochastic road network
+00:05:32 - 00:05:36: environment for distributional
+00:05:34 - 00:05:37: reinforcement learning this is just a
+00:05:36 - 00:05:41: simple situation where we're trying to
+00:05:37 - 00:05:43: get from the green dot to the red dot
+00:05:41 - 00:05:46: currently we're looking at the actions
+00:05:43 - 00:05:48: available to our agent at the blue dot
+00:05:46 - 00:05:50: and we've just dropped one stochastic
+00:05:48 - 00:05:53: event into this environment at the
+00:05:50 - 00:05:55: location of the magenta dot which is a
+00:05:53 - 00:05:58: crosswalk and when the agent gets to
+00:05:55 - 00:06:00: that location it may be delayed for some
+00:05:58 - 00:06:02: you know random amount of time based on
+00:06:00 - 00:06:03: pedestrians that are passing through the
+00:06:02 - 00:06:05: crosswalk and it has to learn that
+00:06:03 - 00:06:07: through experience
+00:06:05 - 00:06:08: uh and
+00:06:07 - 00:06:10: what we've found is you know we've used
+00:06:08 - 00:06:12: this as a mechanism for evaluating
+00:06:10 - 00:06:13: different kind of uh
+00:06:12 - 00:06:16: target deployment policies in
+00:06:13 - 00:06:17: distributional reinforcement learning
+00:06:16 - 00:06:20: in particular we're looking at one in
+00:06:17 - 00:06:22: which we look at second order stochastic
+00:06:20 - 00:06:23: dominance as an action selection
+00:06:22 - 00:06:26: criteria
+00:06:23 - 00:06:27: to support our decision making and when
+00:06:26 - 00:06:29: we're at that location that's shown
+00:06:27 - 00:06:31: there in cyan we have two competing
+00:06:29 - 00:06:33: actions that have very very similar
+00:06:31 - 00:06:35: expected returns but one has a much
+00:06:33 - 00:06:36: higher variance than the other
+00:06:35 - 00:06:38: and we can explore that using an
+00:06:36 - 00:06:40: environment like this ensure that those
+00:06:38 - 00:06:41: distributions that are learned are
+00:06:40 - 00:06:43: accurate and the outcomes can
+00:06:41 - 00:06:45: meaningfully
+00:06:43 - 00:06:47: affect route level decision making and
+00:06:45 - 00:06:48: allow us to make better decisions
+00:06:47 - 00:06:51: so here's an example of a case study
+00:06:48 - 00:06:53: that we did in this environment
+00:06:51 - 00:06:54: letting our agents explore this
+00:06:53 - 00:06:57: environment and exploring different
+00:06:54 - 00:06:59: target deployment policies
+00:06:57 - 00:07:02: we have one in particular where we're
+00:06:59 - 00:07:04: applying a threshold and
+00:07:02 - 00:07:06: if the expected returns fall within that
+00:07:04 - 00:07:08: threshold then we use the variance of
+00:07:06 - 00:07:09: the return distributions to make a
+00:07:08 - 00:07:12: decision
+00:07:09 - 00:07:14: that's the green plot that's shown
+00:07:12 - 00:07:16: right here and that led us to choose a
+00:07:14 - 00:07:18: slightly different path than the path of
+00:07:16 - 00:07:20: maximum expected return
+00:07:18 - 00:07:21: the green path actually skips around the
+00:07:20 - 00:07:23: stochastic crosswalk
+00:07:21 - 00:07:25: takes a little bit of extra time on
+00:07:23 - 00:07:26: average but a much more deterministic
+00:07:25 - 00:07:29: amount of time so
+00:07:26 - 00:07:30: that's just one example of a meaningful
+00:07:29 - 00:07:32: distributional rl scenario you can
+00:07:30 - 00:07:34: explore in this environment
+00:07:32 - 00:07:35: we hope others will find this useful
+00:07:34 - 00:07:37: and
+00:07:35 - 00:07:41: i encourage you to stop by our poster
+00:07:37 - 00:07:41: and check out our code thank you
+00:07:46 - 00:07:51: awesome next up we have a fabio from
+00:07:49 - 00:07:55: doing quantifying and using system
+00:07:51 - 00:07:55: uncertainty and uav navigation
+00:07:58 - 00:08:01: thank you
+00:07:58 - 00:08:03: uh my name is fabio i'm part of a ca
+00:08:01 - 00:08:05: list i'm a phd student
+00:08:03 - 00:08:06: and today well i'll present our work
+00:08:05 - 00:08:08: with fighting and using system
+00:08:06 - 00:08:11: uncertainty in uav navigation
+00:08:08 - 00:08:12: well in our work we address the task of
+00:08:11 - 00:08:14: uv navigation through a set of gates
+00:08:12 - 00:08:16: with a new location well this this
+00:08:14 - 00:08:20: radiates uh
+00:08:16 - 00:08:21: and basically the idea is to to build a
+00:08:20 - 00:08:23: neural network that
+00:08:21 - 00:08:26: allows the uav to pass through this set
+00:08:23 - 00:08:27: of gates uh place it in a
+00:08:26 - 00:08:28: red
+00:08:27 - 00:08:31: in a circle
+00:08:28 - 00:08:32: and basically we want to address the
+00:08:31 - 00:08:35: question how
+00:08:32 - 00:08:37: does uncertainty from perception impacts
+00:08:35 - 00:08:39: the control predictions at the output
+00:08:37 - 00:08:42: and how can we improve the uav
+00:08:39 - 00:08:44: navigation performance by just
+00:08:42 - 00:08:46: by using the overall system uncertainty
+00:08:44 - 00:08:48: so basically here we propose a method to
+00:08:46 - 00:08:51: quantify system uncertainty and to and
+00:08:48 - 00:08:52: use it to improve the navigation
+00:08:51 - 00:08:55: performance in this task
+00:08:52 - 00:08:57: so first our architecture is based on uh
+00:08:55 - 00:08:59: composite of two components the first
+00:08:57 - 00:09:02: one is the perception which is based in
+00:08:59 - 00:09:03: uh christmas operation autoencoder and
+00:09:02 - 00:09:04: at inference time we just use the
+00:09:03 - 00:09:07: quarter part
+00:09:04 - 00:09:10: and for the control we just use a simple
+00:09:07 - 00:09:12: uh ensemble of feed forward networks and
+00:09:10 - 00:09:14: to quantify the uncertainty basically in
+00:09:12 - 00:09:16: the side part of the this slide the
+00:09:14 - 00:09:18: first equation for the first question we
+00:09:16 - 00:09:20: just use multiple dropout
+00:09:18 - 00:09:22: and in the second question is basically
+00:09:20 - 00:09:23: telling us that uh we will use the
+00:09:22 - 00:09:26: samples that we get at the output of
+00:09:23 - 00:09:27: perception like uh let's say in a mini
+00:09:26 - 00:09:29: mini batch of perception prediction
+00:09:27 - 00:09:31: samples we will pass through each and
+00:09:29 - 00:09:33: simple member this small mini match of
+00:09:31 - 00:09:34: monte carlo samples from from the
+00:09:33 - 00:09:38: perception component
+00:09:34 - 00:09:40: so um well the task is to
+00:09:38 - 00:09:41: drive the the uav through this set of
+00:09:40 - 00:09:43: gates in this circle track and the
+00:09:41 - 00:09:45: ladies to pass through
+00:09:43 - 00:09:48: 32 gates in four laps without colliding
+00:09:45 - 00:09:50: or getting off of this track and
+00:09:48 - 00:09:52: the idea is to add random noise to each
+00:09:50 - 00:09:54: gate position and height so that we have
+00:09:52 - 00:09:58: a more complex uh tracks uh
+00:09:54 - 00:09:59: for the uv to driving and adding more uh
+00:09:58 - 00:10:01: adding adding noise to this track
+00:09:59 - 00:10:03: basically very impacts what the uav sees
+00:10:01 - 00:10:04: during during
+00:10:03 - 00:10:06: the deployment in the simulation
+00:10:04 - 00:10:08: environment so that we generate for
+00:10:06 - 00:10:10: example images or these these complex
+00:10:08 - 00:10:12: new scenarios generate images or input
+00:10:10 - 00:10:14: images that have for example two gates
+00:10:12 - 00:10:15: in front of it
+00:10:14 - 00:10:18: and um
+00:10:15 - 00:10:20: yeah but does it work so in the first
+00:10:18 - 00:10:22: stage what we did is to use the
+00:10:20 - 00:10:24: prediction samples and we follow with
+00:10:22 - 00:10:26: the standard approach in the literature
+00:10:24 - 00:10:27: that this basically use the control
+00:10:26 - 00:10:31: prediction mean
+00:10:27 - 00:10:33: but uh well does it work
+00:10:31 - 00:10:35: so well
+00:10:33 - 00:10:37: not really in most of the cases although
+00:10:35 - 00:10:39: we just tested in a few tracks in these
+00:10:37 - 00:10:41: are aerial experiments
+00:10:39 - 00:10:44: we saw that the uav couldn't even pass
+00:10:41 - 00:10:46: all the all the gates it couldn't invest
+00:10:44 - 00:10:48: even the first gate so that made us
+00:10:46 - 00:10:51: wonder what was going on so we just
+00:10:48 - 00:10:51: wanted to place uh
+00:10:51 - 00:10:56: some to observe what was going on in the
+00:10:54 - 00:10:57: outputs of the prediction component so
+00:10:56 - 00:11:00: we intentionally tried to reproduce what
+00:10:57 - 00:11:02: the uv was observing and we saw that in
+00:11:00 - 00:11:02: both at the output of the encoder and
+00:11:02 - 00:11:04: the
+00:11:02 - 00:11:06: control components we had multiple
+00:11:04 - 00:11:08: predictions so basically well in the
+00:11:06 - 00:11:10: right two plots there are the velocity
+00:11:08 - 00:11:12: commands that are predicted and these
+00:11:10 - 00:11:14: are deposit commands that affect the
+00:11:12 - 00:11:15: orientation and the lateral movement of
+00:11:14 - 00:11:16: the uav
+00:11:15 - 00:11:18: so we needed to change a little bit of
+00:11:16 - 00:11:21: strategy or how we use the prediction
+00:11:18 - 00:11:23: component the control predictions so we
+00:11:21 - 00:11:25: proposed to pick the ensemble member
+00:11:23 - 00:11:27: that
+00:11:25 - 00:11:28: depending on its confidence and
+00:11:27 - 00:11:31: basically we choose a simple member that
+00:11:28 - 00:11:33: minimizes the mutual information our
+00:11:31 - 00:11:35: lower bond so basically we're using here
+00:11:33 - 00:11:36: we're choosing the simple member that
+00:11:35 - 00:11:38: has the lowest entropy
+00:11:36 - 00:11:40: and in case we have multimodal
+00:11:38 - 00:11:42: prediction we just choose one mode
+00:11:40 - 00:11:45: instead of the meme
+00:11:42 - 00:11:47: and does it work well
+00:11:45 - 00:11:50: actually it works
+00:11:47 - 00:11:51: better than in the previous cases and
+00:11:50 - 00:11:54: yes this is
+00:11:51 - 00:11:54: very interesting so far
+00:11:54 - 00:11:59: and
+00:11:54 - 00:12:00: um yes so just to conclude um
+00:11:59 - 00:12:03: [Music]
+00:12:00 - 00:12:04: sorry just property uncertainty along
+00:12:03 - 00:12:06: the system can provide valuable uh
+00:12:04 - 00:12:08: predictions and uncertainty estimates
+00:12:06 - 00:12:10: however we need to use properly these
+00:12:08 - 00:12:13: predictions uncertainty estimates of
+00:12:10 - 00:12:16: purple impact to positively impact the
+00:12:13 - 00:12:18: uav performance and main one main job of
+00:12:16 - 00:12:19: our method is that we rely on sampling
+00:12:18 - 00:12:21: which can be
+00:12:19 - 00:12:22: privative in some
+00:12:21 - 00:12:24: systems that have
+00:12:22 - 00:12:26: tight time constraints
+00:12:24 - 00:12:26: thank you
+00:12:33 - 00:12:39: okay next up is a stock called swarm
+00:12:36 - 00:12:41: simulation platform i had a timer over
+00:12:39 - 00:12:41: here
+00:12:42 - 00:12:46: good afternoon everyone my name is tyler
+00:12:44 - 00:12:48: fadrizzi and on behalf of professor
+00:12:46 - 00:12:49: chares sundaram and tang yao of purdue
+00:12:48 - 00:12:51: university i'm going to present to you
+00:12:49 - 00:12:52: on swarm simulation platform
+00:12:51 - 00:12:53: so
+00:12:52 - 00:12:55: everyone here building a robotic
+00:12:53 - 00:12:57: algorithm you have about five general
+00:12:55 - 00:12:59: steps that you'll go through
+00:12:57 - 00:13:00: first you're gonna have an idea
+00:12:59 - 00:13:02: then you're gonna say okay i need to
+00:13:00 - 00:13:03: validate it a little bit
+00:13:02 - 00:13:05: then i'm gonna do i'm gonna prototype it
+00:13:03 - 00:13:07: in simulation prototype it in reality
+00:13:05 - 00:13:08: and then i'm going to hopefully deploy
+00:13:07 - 00:13:11: it that's kind of what the point of this
+00:13:08 - 00:13:14: whole uh talks been about however let's
+00:13:11 - 00:13:16: talk about step three with one robot as
+00:13:14 - 00:13:17: you guys have seen it's hard but it's
+00:13:16 - 00:13:20: definitely doable
+00:13:17 - 00:13:22: but what about excuse me moss
+00:13:20 - 00:13:24: with 30 agents is that possible how hard
+00:13:22 - 00:13:25: is that if anyone here has tried to do
+00:13:24 - 00:13:27: that in ross it can be a quite a
+00:13:25 - 00:13:28: nightmare
+00:13:27 - 00:13:29: now what happens if you want to do all
+00:13:28 - 00:13:31: of that on a laptop because you're a
+00:13:29 - 00:13:32: graduate student who doesn't have access
+00:13:31 - 00:13:34: to a cluster
+00:13:32 - 00:13:36: what if like myself you don't have an
+00:13:34 - 00:13:38: entire development lab to help back you
+00:13:36 - 00:13:40: and you wanted to do photorealistic
+00:13:38 - 00:13:42: visualizations as well on top of
+00:13:40 - 00:13:43: everything that you just heard
+00:13:42 - 00:13:45: so because of this and because of how
+00:13:43 - 00:13:47: difficult that can be we created the
+00:13:45 - 00:13:49: swarm simulation platform
+00:13:47 - 00:13:50: now this is an easy to use web
+00:13:49 - 00:13:52: accessible cloud-based system but when i
+00:13:50 - 00:13:54: say web accessible you only interact
+00:13:52 - 00:13:56: through a website and really when i say
+00:13:54 - 00:13:58: easy to use the only code you write is
+00:13:56 - 00:13:59: the code you actually care about you
+00:13:58 - 00:14:01: don't have to write a communication
+00:13:59 - 00:14:04: system you don't need a perception
+00:14:01 - 00:14:06: system if you don't care about it
+00:14:04 - 00:14:08: now it's multi-agent optimized we really
+00:14:06 - 00:14:10: thought from the start how can we do
+00:14:08 - 00:14:11: swarm robotics so we built an entire
+00:14:10 - 00:14:14: robotic firmware from the ground up that
+00:14:11 - 00:14:16: could actually scale to 30 agents and
+00:14:14 - 00:14:18: beyond
+00:14:16 - 00:14:21: we utilize scenarios and objectives for
+00:14:18 - 00:14:22: benchmarking and community engagement
+00:14:21 - 00:14:24: as well as an open environment and we
+00:14:22 - 00:14:25: have a community space where people can
+00:14:24 - 00:14:27: contribute their algorithms in open
+00:14:25 - 00:14:28: source and we can really have
+00:14:27 - 00:14:30: discussions about what algorithms work
+00:14:28 - 00:14:32: best
+00:14:30 - 00:14:33: we also have a library of available
+00:14:32 - 00:14:36: algorithms that you can just use for
+00:14:33 - 00:14:37: task allocation obstacle avoidance and
+00:14:36 - 00:14:39: object detection
+00:14:37 - 00:14:40: but really the whole point of the system
+00:14:39 - 00:14:42: is to reduce the rework especially on
+00:14:40 - 00:14:43: uav systems
+00:14:42 - 00:14:44: a lot of the times we're just
+00:14:43 - 00:14:46: replicating the work that a lot of other
+00:14:44 - 00:14:48: people have done before we can actually
+00:14:46 - 00:14:49: get to the algorithms that are really
+00:14:48 - 00:14:51: interesting
+00:14:49 - 00:14:53: now for benchmarks this is a critical
+00:14:51 - 00:14:55: design aspect when we started working on
+00:14:53 - 00:14:57: our system we incorporate city our
+00:14:55 - 00:14:59: algorithms as our lines so that you can
+00:14:57 - 00:15:01: compare against
+00:14:59 - 00:15:03: but then we also have leaderboards for
+00:15:01 - 00:15:04: common tasks and those common tasks are
+00:15:03 - 00:15:07: task allocation
+00:15:04 - 00:15:09: formation control and rendezvous some of
+00:15:07 - 00:15:11: the typical uav
+00:15:09 - 00:15:13: focus multi-agent scenarios that you
+00:15:11 - 00:15:14: might have to do
+00:15:13 - 00:15:16: and then our consistent robotic firmware
+00:15:14 - 00:15:18: and computational resources
+00:15:16 - 00:15:20: are really what set us apart because
+00:15:18 - 00:15:22: everyone uses the same communication
+00:15:20 - 00:15:27: system the same cloud-based computers
+00:15:22 - 00:15:28: with nvidia gpus nothing really changes
+00:15:27 - 00:15:30: and we also have cluster services
+00:15:28 - 00:15:33: available so you can scale even beyond
+00:15:30 - 00:15:34: just one computer
+00:15:33 - 00:15:36: now for data collection and analysis for
+00:15:34 - 00:15:38: metrics and reproducibility we have a
+00:15:36 - 00:15:40: community-based way of doing this we
+00:15:38 - 00:15:41: actually we actually elicit from the
+00:15:40 - 00:15:44: community what the metric should be for
+00:15:41 - 00:15:45: a benchmark and that's how we decide how
+00:15:44 - 00:15:47: you're going to be graded whenever you
+00:15:45 - 00:15:49: go and submit your algorithm for to get
+00:15:47 - 00:15:51: on the actual leaderboard
+00:15:49 - 00:15:53: now we also use scenarios in this way
+00:15:51 - 00:15:55: and this is just a defined set of tasks
+00:15:53 - 00:15:57: like take this drone and go search a
+00:15:55 - 00:15:58: hospital
+00:15:57 - 00:16:00: for each of these you also have multiple
+00:15:58 - 00:16:02: options for testing your edge cases such
+00:16:00 - 00:16:04: as communication parameters and because
+00:16:02 - 00:16:05: it's a it's it's not a real world system
+00:16:04 - 00:16:07: we have deterministic inference so we
+00:16:05 - 00:16:09: can tell you if your perception system
+00:16:07 - 00:16:11: is not seeing things correctly
+00:16:09 - 00:16:13: we also have multiple environments such
+00:16:11 - 00:16:15: as the city the hospital mountains and a
+00:16:13 - 00:16:16: lot more and then you can also customize
+00:16:15 - 00:16:18: each of your scenarios that you're using
+00:16:16 - 00:16:20: such as moving randomized humans and
+00:16:18 - 00:16:22: vehicles that you can add into the scene
+00:16:20 - 00:16:24: dynamic objects as well as and what
+00:16:22 - 00:16:26: we're really focused on is adversarial
+00:16:24 - 00:16:28: agents especially especially in the uav
+00:16:26 - 00:16:30: space as we move forward
+00:16:28 - 00:16:31: now future in the future we're working
+00:16:30 - 00:16:33: on automated real world testing
+00:16:31 - 00:16:35: gauntlets right to help with that cinder
+00:16:33 - 00:16:37: real world gap to push your systems as
+00:16:35 - 00:16:39: hard as you can in sims so that you can
+00:16:37 - 00:16:41: actually succeed in the real world we're
+00:16:39 - 00:16:42: doing c plus based operating systems
+00:16:41 - 00:16:44: with some ross integration and we're
+00:16:42 - 00:16:46: really focused on reinforcement and
+00:16:44 - 00:16:47: learning helping along with you know
+00:16:46 - 00:16:49: open ai's gym all of the common tools
+00:16:47 - 00:16:51: everybody uses in rl but again adding
+00:16:49 - 00:16:52: that so that you only write the
+00:16:51 - 00:16:54: algorithm you need and then you just
+00:16:52 - 00:16:56: deploy it
+00:16:54 - 00:16:57: to sign up you can go to swarm semio
+00:16:56 - 00:16:59: you create an account you get 100 free
+00:16:57 - 00:17:00: simulations honestly right now it's all
+00:16:59 - 00:17:02: free because we're still in the testing
+00:17:00 - 00:17:04: phase so use it
+00:17:02 - 00:17:06: please provide feedback i have a poster
+00:17:04 - 00:17:08: out front uh out front please tell me
+00:17:06 - 00:17:09: and give me feedback because i'm hungry
+00:17:08 - 00:17:13: for it i want to know how to make this
+00:17:09 - 00:17:13: platform better thank you
+00:17:19 - 00:17:25: awesome next uh lee elia
+00:17:22 - 00:17:27: aliyah excuse me um we talking about
+00:17:25 - 00:17:30: some symptom reel transfer for high
+00:17:27 - 00:17:30: speed quad order flight
+00:17:33 - 00:17:38: so yeah welcome to my very short talk on
+00:17:36 - 00:17:40: sim trill transfer for high speed
+00:17:38 - 00:17:42: quality flights i'm idiap kaufman the
+00:17:40 - 00:17:43: phd student at the robotics and
+00:17:42 - 00:17:45: perception group with professor
+00:17:43 - 00:17:47: scaramucci
+00:17:45 - 00:17:49: so what i will talk about today is
+00:17:47 - 00:17:50: basically learning based controllers for
+00:17:49 - 00:17:52: high speed flights so learning based
+00:17:50 - 00:17:53: controllers for high speed flight are
+00:17:52 - 00:17:55: great we've
+00:17:53 - 00:17:56: shown them on several um applications
+00:17:55 - 00:17:58: basically and
+00:17:56 - 00:18:00: they're typically trained in simulation
+00:17:58 - 00:18:02: using some form of imitation learning or
+00:18:00 - 00:18:03: reinforcement learning
+00:18:02 - 00:18:06: but then to deploy them on a real-world
+00:18:03 - 00:18:08: platform is actually not that simple
+00:18:06 - 00:18:10: so we show that we can transfer such
+00:18:08 - 00:18:12: highly agile policies for tasks such as
+00:18:10 - 00:18:14: acrobatic flight or high-speed flight in
+00:18:12 - 00:18:16: the wild that we can transfer these
+00:18:14 - 00:18:18: approaches to the real world using
+00:18:16 - 00:18:20: sensory abstractions and the suitable
+00:18:18 - 00:18:24: choice of control modality
+00:18:20 - 00:18:24: so let's dive right into this so
+00:18:25 - 00:18:28: so when i talk about sensory
+00:18:27 - 00:18:30: abstractions i basically mean and we
+00:18:28 - 00:18:34: should not go completely end-to-end we
+00:18:30 - 00:18:35: should not map from rgb images directly
+00:18:34 - 00:18:38: to low-level control commands we
+00:18:35 - 00:18:40: actually show in our work that an
+00:18:38 - 00:18:42: abstract form of these inputs actually
+00:18:40 - 00:18:44: facilitates simulation to reality
+00:18:42 - 00:18:46: transfer so we can train in simulation
+00:18:44 - 00:18:48: on abstract inputs and deploy in the
+00:18:46 - 00:18:49: real world on the on the same abstract
+00:18:48 - 00:18:51: inputs
+00:18:49 - 00:18:53: and we get successful transfer between
+00:18:51 - 00:18:56: domains
+00:18:53 - 00:18:58: not only about and so abstraction is not
+00:18:56 - 00:19:00: only about the policy inputs but it's
+00:18:58 - 00:19:03: actually also about the policy outputs
+00:19:00 - 00:19:05: so i presented a paper here at icra um
+00:19:03 - 00:19:07: about the control modality that is
+00:19:05 - 00:19:09: predicted by these networks
+00:19:07 - 00:19:11: and i show basically that you should not
+00:19:09 - 00:19:14: directly go to motor commands if you
+00:19:11 - 00:19:15: want to fly agile because it works very
+00:19:14 - 00:19:17: well in sim but in the real world this
+00:19:15 - 00:19:19: doesn't
+00:19:17 - 00:19:21: really work and if you do velocity
+00:19:19 - 00:19:24: commands for example and you transfer
+00:19:21 - 00:19:26: very well but your agility is limited to
+00:19:24 - 00:19:28: near hoverstand areas if you really want
+00:19:26 - 00:19:30: to fly agile and still successfully
+00:19:28 - 00:19:32: transfer between domains you should go
+00:19:30 - 00:19:33: to collect the frost and body rates
+00:19:32 - 00:19:37: that's actually the same control
+00:19:33 - 00:19:39: modality that also human pilots use
+00:19:37 - 00:19:42: yeah we basically apply these ideas on
+00:19:39 - 00:19:43: several tasks such as
+00:19:42 - 00:19:45: acrobatics
+00:19:43 - 00:19:46: so
+00:19:45 - 00:19:48: what we see here is basically a
+00:19:46 - 00:19:51: vision-based quadrotor so all
+00:19:48 - 00:19:53: computation and sensing is done on board
+00:19:51 - 00:19:56: that performs
+00:19:53 - 00:19:58: acrobatic trajectories in the real world
+00:19:56 - 00:20:00: what is controlling the drone here is a
+00:19:58 - 00:20:02: neural network policy that is trained
+00:20:00 - 00:20:07: entirely in simulation and deployed on
+00:20:02 - 00:20:07: the real platform without any function
+00:20:08 - 00:20:11: we also
+00:20:08 - 00:20:14: [Music]
+00:20:11 - 00:20:14: deploy these ideas
+00:20:14 - 00:20:18: in
+00:20:16 - 00:20:20: unknown unstructured environments so we
+00:20:18 - 00:20:22: basically show that we can train a
+00:20:20 - 00:20:25: neural network policy that basically
+00:20:22 - 00:20:27: maps depth images to receiving horizon
+00:20:25 - 00:20:30: navigation commands such that you can
+00:20:27 - 00:20:32: fly at very high speeds in previously
+00:20:30 - 00:20:34: unknown environments
+00:20:32 - 00:20:37: so we deployed this in forests snowy
+00:20:34 - 00:20:39: mountain trails or disaster scenarios
+00:20:37 - 00:20:41: and we tested it against the sky deer
+00:20:39 - 00:20:41: drone
+00:20:41 - 00:20:45: yeah and the last task that is upcoming
+00:20:44 - 00:20:49: that's
+00:20:45 - 00:20:49: we are currently working on
+00:20:50 - 00:20:53: it's actually drone racing
+00:20:54 - 00:21:01: [Music]
+00:20:58 - 00:21:01: so
+00:21:05 - 00:21:09: so what we see here is
+00:21:07 - 00:21:11: not viking base but this here is
+00:21:09 - 00:21:13: actually a vision-based drone that races
+00:21:11 - 00:21:15: through the track at the speed that is
+00:21:13 - 00:21:17: very competitive to
+00:21:15 - 00:21:19: professional human pilot performance
+00:21:17 - 00:21:21: yeah if you think this sounds
+00:21:19 - 00:21:21: interesting
+00:21:24 - 00:21:27: reach out to me afterwards at the poster
+00:21:26 - 00:21:31: session write me an email and i'm happy
+00:21:27 - 00:21:31: to discuss thanks a lot
+00:21:38 - 00:21:43: okay soon i think you're up next and
+00:21:41 - 00:21:44: send a real strategy for spatially aware
+00:21:43 - 00:21:46: robots
+00:21:44 - 00:21:49: robot navigation in uneven outdoor
+00:21:46 - 00:21:49: environments
+00:21:58 - 00:22:02: [Music]
+00:22:00 - 00:22:04: uh hi everyone i'm carson from
+00:22:02 - 00:22:06: university of maryland college park so
+00:22:04 - 00:22:09: today i'm going to uh
+00:22:06 - 00:22:11: give a brief talk about our
+00:22:09 - 00:22:15: central strategy for especially wearable
+00:22:11 - 00:22:15: navigation and even our environments
+00:22:16 - 00:22:21: so safe robot navigation in uneven
+00:22:18 - 00:22:24: auditoriums is challenging uh due to the
+00:22:21 - 00:22:26: risk of robotic powers and high
+00:22:24 - 00:22:27: vibrations so it's important to
+00:22:26 - 00:22:29: understand the roughness and the
+00:22:27 - 00:22:32: elevation changes of the terrains
+00:22:29 - 00:22:34: uh to perform intelligent navigation
+00:22:32 - 00:22:36: so in the past three years uh deep
+00:22:34 - 00:22:37: transmission learning
+00:22:36 - 00:22:40: is hugely successful because of the
+00:22:37 - 00:22:42: ability availability of realistic
+00:22:40 - 00:22:43: simulation environments
+00:22:42 - 00:22:45: however
+00:22:43 - 00:22:48: the most of the existing drl methods
+00:22:45 - 00:22:50: suffers from this imperial gap
+00:22:48 - 00:22:53: and we observed that majority of the
+00:22:50 - 00:22:56: existing outdoor navigation techniques
+00:22:53 - 00:22:58: are tested and trained only in synthetic
+00:22:56 - 00:23:01: or controlled environments
+00:22:58 - 00:23:01: so in this our work
+00:23:01 - 00:23:06: our objective is to maximize the
+00:23:03 - 00:23:07: utilization of a fully trained drl
+00:23:06 - 00:23:08: network
+00:23:07 - 00:23:11: to perform
+00:23:08 - 00:23:15: comparably better in both simulated and
+00:23:11 - 00:23:15: reliable environments
+00:23:15 - 00:23:20: so let me summarize our contributions so
+00:23:18 - 00:23:22: in our work we propose a centurial
+00:23:20 - 00:23:25: strategy by extracting an intermediate
+00:23:22 - 00:23:27: output from a fully trained url network
+00:23:25 - 00:23:29: for perception
+00:23:27 - 00:23:31: uh instead of using uh the end-to-end
+00:23:29 - 00:23:33: actions
+00:23:31 - 00:23:37: for navigation we use
+00:23:33 - 00:23:40: an intermediate output for perception
+00:23:37 - 00:23:42: moreover we incorporate imu and turn
+00:23:40 - 00:23:44: elevation based rewards to encode the
+00:23:42 - 00:23:45: terrain features into our perception
+00:23:44 - 00:23:47: module
+00:23:45 - 00:23:49: in in this particular case terrain
+00:23:47 - 00:23:50: features are the
+00:23:49 - 00:23:52: the elevation and roughness of the
+00:23:50 - 00:23:54: terrains
+00:23:52 - 00:23:56: further we imposed a new constraint on
+00:23:54 - 00:23:58: the dynamic window approach to penalize
+00:23:56 - 00:24:02: the velocities that could cause proper
+00:23:58 - 00:24:02: flip powers and high vibrations
+00:24:02 - 00:24:06: so this is the overall system
+00:24:04 - 00:24:10: architecture uh we use 3d point cloud
+00:24:06 - 00:24:13: robots orientation and imu data to train
+00:24:10 - 00:24:15: uh the attention-based drl policy we
+00:24:13 - 00:24:16: train this policy end-to-end in a unity
+00:24:15 - 00:24:19: based simulator
+00:24:16 - 00:24:22: however we do not use the output actions
+00:24:19 - 00:24:24: of this network for navigation
+00:24:22 - 00:24:25: instead we extract an intermediate
+00:24:24 - 00:24:28: result which we call the
+00:24:25 - 00:24:29: attention feature map
+00:24:28 - 00:24:32: and we observe that this feature map
+00:24:29 - 00:24:36: encodes there and features uh based on
+00:24:32 - 00:24:38: the reward we used to train the policy
+00:24:36 - 00:24:40: in particular we used
+00:24:38 - 00:24:41: we used dimensional dementia reduced imu
+00:24:40 - 00:24:44: data
+00:24:41 - 00:24:46: to quantify the vibration experience by
+00:24:44 - 00:24:47: the robot
+00:24:46 - 00:24:51: also the elevation map is used to
+00:24:47 - 00:24:51: identify the terrain elevation changes
+00:24:52 - 00:24:56: and we observe that the cost map we
+00:24:54 - 00:24:59: generate using using the features
+00:24:56 - 00:25:02: extracted from the drl network
+00:24:59 - 00:25:04: highlights critical elevation changes
+00:25:02 - 00:25:06: towards the goal direction
+00:25:04 - 00:25:09: so in other words the navigation pause
+00:25:06 - 00:25:11: map attains more to the
+00:25:09 - 00:25:14: critical regions towards the goal
+00:25:11 - 00:25:14: direction
+00:25:15 - 00:25:19: and we compare our methods performance
+00:25:17 - 00:25:23: with the end-to-end drl policy
+00:25:19 - 00:25:25: uh and other state-of-the-art methods
+00:25:23 - 00:25:28: and we use a clear path husky robot in
+00:25:25 - 00:25:29: simulation environment as well as uh in
+00:25:28 - 00:25:32: the real world
+00:25:29 - 00:25:33: we observe comparable performance from
+00:25:32 - 00:25:34: uh
+00:25:33 - 00:25:36: both end-to-end
+00:25:34 - 00:25:38: and our method in simulation
+00:25:36 - 00:25:40: environments however there's a
+00:25:38 - 00:25:42: significant performance degradation in
+00:25:40 - 00:25:43: the endpoint method when it comes to
+00:25:42 - 00:25:46: real world
+00:25:43 - 00:25:47: however we realized that
+00:25:46 - 00:25:49: our strategy
+00:25:47 - 00:25:52: performs comparably better in both
+00:25:49 - 00:25:54: simulation and real environments
+00:25:52 - 00:25:57: so that is the summary for proposed
+00:25:54 - 00:25:57: method thank you very much
+00:26:00 - 00:26:05: so hi i'm martin from university of
+00:26:02 - 00:26:07: birmingham and today i present our work
+00:26:05 - 00:26:09: toolkit a set of tools which allow us to
+00:26:07 - 00:26:11: perform reproducible robot grasping
+00:26:09 - 00:26:12: experiments in simulation and the real
+00:26:11 - 00:26:15: world
+00:26:12 - 00:26:17: so learning based grasping methods
+00:26:15 - 00:26:19: typically rely on synthetic training
+00:26:17 - 00:26:21: data this includes rendered scene images
+00:26:19 - 00:26:23: and grasp annotations from a physical
+00:26:21 - 00:26:25: simulation engine
+00:26:23 - 00:26:26: during inference we instead observe real
+00:26:25 - 00:26:29: scenes and execute the grasp in the real
+00:26:26 - 00:26:31: world we therefore have two domain gaps
+00:26:29 - 00:26:32: firstly the visual domain gap which is a
+00:26:31 - 00:26:34: difference in the appearance of the
+00:26:32 - 00:26:36: image or the point cloud and secondly
+00:26:34 - 00:26:38: the physical domain gap which is the
+00:26:36 - 00:26:41: difference between grasp executions in
+00:26:38 - 00:26:42: the simulation and in the real world
+00:26:41 - 00:26:44: while the visual domain gap is tackled
+00:26:42 - 00:26:46: by many works we instead want to
+00:26:44 - 00:26:49: investigate the physical domain gap
+00:26:46 - 00:26:52: which is less frequently addressed
+00:26:49 - 00:26:55: another issue that we find is
+00:26:52 - 00:26:57: the reproducibility of experiments and
+00:26:55 - 00:26:59: when benchmarking different models it is
+00:26:57 - 00:27:02: necessary to evaluate them
+00:26:59 - 00:27:03: on exactly the same benchmark scenes for
+00:27:02 - 00:27:05: a fair comparison
+00:27:03 - 00:27:07: we therefore need tools to set up scenes
+00:27:05 - 00:27:08: for simulation based and real world
+00:27:07 - 00:27:10: experiments and share them with the
+00:27:08 - 00:27:12: community
+00:27:10 - 00:27:14: that is where our book toolkit comes
+00:27:12 - 00:27:16: into play we can create scenes with an
+00:27:14 - 00:27:18: intuitive graphical user interface
+00:27:16 - 00:27:21: sample grasps and evaluate them in
+00:27:18 - 00:27:24: simulation we directly export a
+00:27:21 - 00:27:27: pdf with
+00:27:24 - 00:27:30: indications of the object placements
+00:27:27 - 00:27:31: for placement of the real
+00:27:30 - 00:27:33: shapes
+00:27:31 - 00:27:35: and using augmented reality we can
+00:27:33 - 00:27:37: further facilitate this placement so
+00:27:35 - 00:27:39: that we can execute the exact same
+00:27:37 - 00:27:41: grasps in the simulation and in the real
+00:27:39 - 00:27:42: world as well
+00:27:41 - 00:27:45: the scene arrangement in this slide is
+00:27:42 - 00:27:46: fairly simple however we can also set up
+00:27:45 - 00:27:49: more complex scenes
+00:27:46 - 00:27:51: for example with hidden objects such as
+00:27:49 - 00:27:52: the marble under the cup or with stacked
+00:27:51 - 00:27:53: objects
+00:27:52 - 00:27:55: using
+00:27:53 - 00:27:57: both augmented reality and the printouts
+00:27:55 - 00:27:59: we can
+00:27:57 - 00:28:00: arrange these
+00:27:59 - 00:28:02: reliably
+00:28:00 - 00:28:04: we can also use our setup tools to
+00:28:02 - 00:28:06: arrange scenes for deformable objects
+00:28:04 - 00:28:08: although they don't work in our
+00:28:06 - 00:28:08: simulation environment
+00:28:09 - 00:28:12: this slide gives an overview of our
+00:28:11 - 00:28:14: implementation we built up on
+00:28:12 - 00:28:17: well-established open source tools like
+00:28:14 - 00:28:18: blender pi bullet and ross and all files
+00:28:17 - 00:28:20: can be easily shared with the research
+00:28:18 - 00:28:22: community to foster reproducibility of
+00:28:20 - 00:28:25: experiments
+00:28:22 - 00:28:27: all our tools are open source and can be
+00:28:25 - 00:28:30: accessed under this link
+00:28:27 - 00:28:32: finally we did some proof of concept
+00:28:30 - 00:28:33: experiments to investigate the
+00:28:32 - 00:28:36: physical domain gap that i mentioned
+00:28:33 - 00:28:37: earlier the results confirm this gap and
+00:28:36 - 00:28:39: indicate that the simulation is more
+00:28:37 - 00:28:41: accurate for scenes with isolated
+00:28:39 - 00:28:43: objects as here on the left then for
+00:28:41 - 00:28:45: more compact scenes as the one on the
+00:28:43 - 00:28:46: right where objects are almost touching
+00:28:45 - 00:28:48: each other
+00:28:46 - 00:28:49: we will further investigate this gap in
+00:28:48 - 00:28:51: the future and use the gain knowledge to
+00:28:49 - 00:28:53: improve the simulation environment as
+00:28:51 - 00:28:55: well
+00:28:53 - 00:28:56: thank you very much for the attention
+00:28:55 - 00:28:58: and if you're interested feel free to
+00:28:56 - 00:29:01: check out our project page and get in
+00:28:58 - 00:29:01: touch with us
+00:29:04 - 00:29:08: i hope you can see my screen
+00:29:06 - 00:29:10: yeah let me just close
+00:29:08 - 00:29:12: this one window here
+00:29:10 - 00:29:15: good to go
+00:29:12 - 00:29:17: hi um so yeah my name is jay young lim
+00:29:15 - 00:29:19: from the autonomous systems lab at
+00:29:17 - 00:29:21: etheric and today i'll present an
+00:29:19 - 00:29:24: interactive oasis which is a
+00:29:21 - 00:29:25: photorealistic terrain simulation um
+00:29:24 - 00:29:28: this work has done
+00:29:25 - 00:29:30: been done with uh marcus mueller and
+00:29:28 - 00:29:32: other collaborators at eth zurich and
+00:29:30 - 00:29:35: dlr
+00:29:32 - 00:29:37: um first introduction into oasis
+00:29:35 - 00:29:39: is a
+00:29:37 - 00:29:41: photorealistic simulator to simulate
+00:29:39 - 00:29:44: extraterrestrial environments this is
+00:29:41 - 00:29:47: useful since data from extraterrestrial
+00:29:44 - 00:29:48: environments are
+00:29:47 - 00:29:51: sparse and rare
+00:29:48 - 00:29:53: therefore by generating synthetically
+00:29:51 - 00:29:55: generating scenes we can get a rich data
+00:29:53 - 00:29:57: set which we can simulate different
+00:29:55 - 00:29:59: lighting conditions and different
+00:29:57 - 00:29:59: terrains
+00:30:00 - 00:30:06: by using also a synthetic scene generate
+00:30:03 - 00:30:09: as a simulator to generate scenes we get
+00:30:06 - 00:30:11: additional data such as semantic labels
+00:30:09 - 00:30:14: and instance labels which would have
+00:30:11 - 00:30:17: required expensive annotation processes
+00:30:14 - 00:30:20: if we use real world data
+00:30:17 - 00:30:22: while the simulator is created for
+00:30:20 - 00:30:24: extraterrestrial environments it can
+00:30:22 - 00:30:26: also be used to simulate a more
+00:30:24 - 00:30:28: earth-like environment such as forest
+00:30:26 - 00:30:30: and waterfronts
+00:30:28 - 00:30:32: and the simulation is
+00:30:30 - 00:30:34: easily configurable through a
+00:30:32 - 00:30:38: configuration file which the user
+00:30:34 - 00:30:41: can simulate a configured
+00:30:38 - 00:30:42: the blender backend as well as various
+00:30:41 - 00:30:45: scene properties
+00:30:42 - 00:30:48: in the scene
+00:30:45 - 00:30:52: in this work we show a extensions to the
+00:30:48 - 00:30:56: existing oasis simulator which allows an
+00:30:52 - 00:30:58: autonomous agent or an external planner
+00:30:56 - 00:31:01: to request interactively
+00:30:58 - 00:31:03: scenes to the simulator which can be
+00:31:01 - 00:31:06: useful for
+00:31:03 - 00:31:08: active perception tasks and
+00:31:06 - 00:31:09: also active various active
+00:31:08 - 00:31:13: methods
+00:31:09 - 00:31:15: we use grpc a remote process control
+00:31:13 - 00:31:18: framework for the interface which
+00:31:15 - 00:31:20: supports various language bindings and
+00:31:18 - 00:31:22: so that it is general enough to serve
+00:31:20 - 00:31:25: various use cases
+00:31:22 - 00:31:27: but as an example to solve to
+00:31:25 - 00:31:28: demonstrate a robotics task we should
+00:31:27 - 00:31:30: provide
+00:31:28 - 00:31:33: we demonstrate a ros-based
+00:31:30 - 00:31:33: implementation
+00:31:34 - 00:31:38: and using the scene
+00:31:36 - 00:31:40: scene information we can simulate
+00:31:38 - 00:31:43: various sensor modalities and this shows
+00:31:40 - 00:31:45: a rgbt camera sensor
+00:31:43 - 00:31:49: and the corresponding point cloud being
+00:31:45 - 00:31:49: simulated with oasis
+00:31:49 - 00:31:54: to demonstrate um how useful this kind
+00:31:52 - 00:31:57: of operation of the simulator is we
+00:31:54 - 00:31:59: first demonstrate a
+00:31:57 - 00:32:01: path mapping experiments with fixed
+00:31:59 - 00:32:02: viewpoints
+00:32:01 - 00:32:04: and you can see
+00:32:02 - 00:32:07: [Music]
+00:32:04 - 00:32:09: the scene being reconstructed in a tsdf
+00:32:07 - 00:32:14: based mapping framework box blocks from
+00:32:09 - 00:32:16: a lawnmower pattern of viewpoints
+00:32:14 - 00:32:19: and to extend it even further we show a
+00:32:16 - 00:32:20: active exploration and mapping task
+00:32:19 - 00:32:23: which is tasked to
+00:32:20 - 00:32:24: explore and map the environment
+00:32:23 - 00:32:26: in this case
+00:32:24 - 00:32:31: we can see that it can successfully map
+00:32:26 - 00:32:31: a large hill in the middle of the scene
+00:32:32 - 00:32:36: the code is all
+00:32:33 - 00:32:39: open source and please feel free to
+00:32:36 - 00:32:41: approach us if you have any questions or
+00:32:39 - 00:32:43: you're interested in using it we're
+00:32:41 - 00:32:46: happy to discuss and give
+00:32:43 - 00:32:48: any feedback
+00:32:46 - 00:32:48: thank you very much
+00:32:50 - 00:32:53: okay so you should be able to see my
+00:32:52 - 00:32:54: screen now
+00:32:53 - 00:32:56: right
+00:32:54 - 00:32:57: yeah that's good
+00:32:56 - 00:33:00: okay perfect
+00:32:57 - 00:33:01: so good afternoon everyone i'm giuseppe
+00:33:00 - 00:33:03: vecchio from the proceed lab at the
+00:33:01 - 00:33:06: university of catania and today i'm
+00:33:03 - 00:33:07: presenting midgard a simulation platform
+00:33:06 - 00:33:09: for autonomous
+00:33:07 - 00:33:11: navigation in a structured environment
+00:33:09 - 00:33:13: developed in collaboration with the
+00:33:11 - 00:33:15: robotic system group from the university
+00:33:13 - 00:33:17: of catania and the autonomous agent
+00:33:15 - 00:33:18: research group from the university of
+00:33:17 - 00:33:21: edinburgh
+00:33:18 - 00:33:23: the main idea behind this simulation
+00:33:21 - 00:33:24: platform is to tackle the task of
+00:33:23 - 00:33:27: autonomous navigation in outdoor
+00:33:24 - 00:33:29: structured environment which is still a
+00:33:27 - 00:33:31: major challenge in robotics
+00:33:29 - 00:33:34: because you have to deal with the
+00:33:31 - 00:33:37: unstructured nature of environment uh
+00:33:34 - 00:33:39: how cluttered it is with obstacles and
+00:33:37 - 00:33:41: with the dangers uh presented by the
+00:33:39 - 00:33:43: environment itself
+00:33:41 - 00:33:45: and it could be applied to many
+00:33:43 - 00:33:48: real-world applications like planetary
+00:33:45 - 00:33:52: exploration forest inventory search and
+00:33:48 - 00:33:54: rescue and precision agriculture
+00:33:52 - 00:33:56: in this project we are tackling as i
+00:33:54 - 00:33:59: said the task of autonomous navigation
+00:33:56 - 00:34:01: and we are tackling it through as a
+00:33:59 - 00:34:04: waypoint navigation task so we have a
+00:34:01 - 00:34:07: fixed goal and map and from a starting
+00:34:04 - 00:34:10: location we want to reach the goal
+00:34:07 - 00:34:12: avoiding obstacles
+00:34:10 - 00:34:15: our proposed solution is midgard the
+00:34:12 - 00:34:16: simulation platform developed on unreal
+00:34:15 - 00:34:19: engine
+00:34:16 - 00:34:22: which exploits modern technology to
+00:34:19 - 00:34:25: assimilate uh to obtain realistic
+00:34:22 - 00:34:28: imagery and uh simulate the physics
+00:34:25 - 00:34:30: it provides diverse training scenes it
+00:34:28 - 00:34:33: actually come at this stage with four
+00:34:30 - 00:34:35: with four different uh training scenes
+00:34:33 - 00:34:39: and it includes a standard interaction
+00:34:35 - 00:34:41: interface uh based on gym so it can it
+00:34:39 - 00:34:44: is basically plug and play with any
+00:34:41 - 00:34:46: current uh reinforcement
+00:34:44 - 00:34:49: learning code
+00:34:46 - 00:34:52: um as i said um
+00:34:49 - 00:34:55: we um we propose midgard it is a
+00:34:52 - 00:34:57: realistic simulation platform it uh
+00:34:55 - 00:34:59: comes with four different navigation
+00:34:57 - 00:35:02: scenes there are middle c forest scene
+00:34:59 - 00:35:04: volcanic scene and glacier scene it is
+00:35:02 - 00:35:07: highly configurable and it is meant to
+00:35:04 - 00:35:11: improve generalization capabilities in
+00:35:07 - 00:35:11: reinforcement learning methods
+00:35:11 - 00:35:17: it comes with a procedural landscape
+00:35:14 - 00:35:19: generation algorithm which allowed to
+00:35:17 - 00:35:23: easily configure and obtain infinite
+00:35:19 - 00:35:25: variation of a specific scene and it is
+00:35:23 - 00:35:29: controlled by a difficulty level
+00:35:25 - 00:35:31: which allowed to control the clutterness
+00:35:29 - 00:35:34: of the environment so to have
+00:35:31 - 00:35:36: more sparse or more cluttered and dense
+00:35:34 - 00:35:38: obstacles
+00:35:36 - 00:35:41: it use a grid
+00:35:38 - 00:35:42: representation of the map where for each
+00:35:41 - 00:35:44: cell
+00:35:42 - 00:35:47: we spawn an obstacle and the size of the
+00:35:44 - 00:35:50: cell of the you know the cell of the
+00:35:47 - 00:35:52: greek uh are used to control the density
+00:35:50 - 00:35:54: of obstacles
+00:35:52 - 00:35:57: in the simulator we model two different
+00:35:54 - 00:36:01: kind of agents a discrete agent with a
+00:35:57 - 00:36:04: five actions five discrete actions and a
+00:36:01 - 00:36:05: continuous agent and we also model
+00:36:04 - 00:36:08: several different
+00:36:05 - 00:36:10: sensors including rgb camera depth
+00:36:08 - 00:36:12: camera instance and semantic
+00:36:10 - 00:36:14: segmentation and we also have other
+00:36:12 - 00:36:15: low-level sensors
+00:36:14 - 00:36:19: including a
+00:36:15 - 00:36:21: vehicle orientation sensor and a gps
+00:36:19 - 00:36:23: like sensor
+00:36:21 - 00:36:26: and here you can see some navigation
+00:36:23 - 00:36:29: example from some trained reinforcement
+00:36:26 - 00:36:32: learning algorithms where the green box
+00:36:29 - 00:36:34: is the actual target
+00:36:32 - 00:36:36: thank you everyone if you have any
+00:36:34 - 00:36:39: question feel free to contact me and the
+00:36:36 - 00:36:41: simulator and documentation will be made
+00:36:39 - 00:36:45: available at the project website thank
+00:36:41 - 00:36:45: you very much

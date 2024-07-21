@@ -1,0 +1,20 @@
+00:00 - Creating files
+00:45 - Starbucks SVG
+01:00 - Navbar
+01:15 - Running live-server
+01:45 - Setting the font
+02:07 - Importing the font
+04:43 - Location SVG
+06:06 - Sign in button
+09:44 - Box shadow generator
+10:11 - Navbar box shadow
+11:12 - Starbucks Rewards
+14:42 - Spotting the text align issue
+21:53 - the Pineapple Passionfruit
+26:38 - Cold Brew
+29:07 - Back-to-school-smiles.
+30:02 - Anytime protein
+32:44 - Footer notes
+34:11 - Visual adjustments
+38:21 - Results
+38:45 - Comparison

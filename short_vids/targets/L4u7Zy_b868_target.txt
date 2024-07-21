@@ -1,0 +1,19 @@
+0:00 - Introduction and references
+2:10 - About cellular automata
+2:47 - The rules for a sand simulation
+3:36 - Code! Creating a grid
+5:04 - Animating a falling grain of sand
+7:32 - About matrix columns and rows
+8:04 - Let's account for the bottom edge
+9:09 - Adding mouse interaction
+9:42 - More sophisticated sand behavior
+10:43 - Oops! Some errors to fix
+11:30 - Adding randomness
+12:26 - Handling left and right edges
+14:00 - Checking if mouse is within the canvas
+14:40 - Making it more efficient
+14:56 - More space and more sand
+16:55 - Adding some color!
+18:54 - Challenge complete! Let's do some refactoring
+20:58 - How could we add gravity?
+21:57 - Wrapping up

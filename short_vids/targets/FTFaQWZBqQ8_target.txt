@@ -1,0 +1,16 @@
+0:00 - Intro
+0:22 - Advantages of using Figma
+1:22 - How to log in into figma.com
+1:36 - Why you should copy other designs
+2:28 - How to start a project from a TEMPLATE
+5:10 - Interface OVERVIEW
+5:27 - Create a FRAME
+6:38 - SHAPE and COLOR creation
+8:28 - CORNER RADIUS adjustment
+10:12 - Create a CIRCLE
+12:25 - How to use an ICON
+14:28 - How to paste IMAGES
+15:32 - How to use TEXT
+18:39 - BUTTON UI
+21:39 - Conclusion
+22:32 - Next steps

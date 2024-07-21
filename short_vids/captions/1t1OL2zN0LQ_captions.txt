@@ -1,0 +1,838 @@
+00:00:00 - 00:00:07: [Music]
+00:00:05 - 00:00:09: hi everyone my name is Phil today I'll
+00:00:07 - 00:00:12: be teaching you how to solve the 3X3
+00:00:09 - 00:00:14: Rubik's Cube using an easy method this
+00:00:12 - 00:00:16: method is easy because it's broken down
+00:00:14 - 00:00:18: into small steps each with an obvious
+00:00:16 - 00:00:19: and well- defined goal the method is
+00:00:18 - 00:00:22: designed to minimize intense thinking
+00:00:19 - 00:00:24: and memorization in fact the only thing
+00:00:22 - 00:00:25: you really have to memorize is one four
+00:00:24 - 00:00:28: move sequence and several applications
+00:00:25 - 00:00:30: of it after watching this video you will
+00:00:28 - 00:00:33: be able to solve the cube and be able to
+00:00:30 - 00:00:34: teach others as well before we go into
+00:00:33 - 00:00:37: the method of solving the cube let's
+00:00:34 - 00:00:37: explore some Basics and background
+00:00:42 - 00:00:47: info this is a 3X3 Cube for the purposes
+00:00:45 - 00:00:50: of our tutorial there are two ways to
+00:00:47 - 00:00:52: visualize this Puzzle first is side by
+00:00:50 - 00:00:54: side this Cube has six sides each with a
+00:00:52 - 00:00:57: different color the centers of these
+00:00:54 - 00:00:59: sides act as swivels and they stay put
+00:00:57 - 00:01:02: relative to each other for example no
+00:00:59 - 00:01:04: matter how much I mix up the cube the
+00:01:02 - 00:01:07: yellow side will always be opposite of
+00:01:04 - 00:01:09: the white side secondly you can think of
+00:01:07 - 00:01:11: the cube as layers you can think of
+00:01:09 - 00:01:14: layers like stories in a building each
+00:01:11 - 00:01:16: layer sits on top of one another except
+00:01:14 - 00:01:18: for of course the bottom layer here the
+00:01:16 - 00:01:20: terms we will use to describe the layers
+00:01:18 - 00:01:22: goes as follows the first layer is on
+00:01:20 - 00:01:24: the bottom and the last layer is on the
+00:01:22 - 00:01:27: top the middle one is what we call the
+00:01:24 - 00:01:28: second layer the basis for our solving
+00:01:27 - 00:01:31: method is to visualize the cube as a
+00:01:28 - 00:01:32: puzzle with three layers
+00:01:31 - 00:01:34: now let's take the cube apart and check
+00:01:32 - 00:01:36: out the components of the puzzle you'll
+00:01:34 - 00:01:38: notice that there are three different
+00:01:36 - 00:01:40: types of pieces on the cube the first
+00:01:38 - 00:01:43: type of piece is called the centerpiece
+00:01:40 - 00:01:45: each Center piece holds one sticker
+00:01:43 - 00:01:47: there are six centers in total because
+00:01:45 - 00:01:48: the centers don't move relative to each
+00:01:47 - 00:01:51: other the color of the center will
+00:01:48 - 00:01:54: ultimately decide the color of each face
+00:01:51 - 00:01:56: for example if the side has a red Center
+00:01:54 - 00:01:59: the entire side should be red when the
+00:01:56 - 00:02:02: cube is solved the second type of piece
+00:01:59 - 00:02:03: is an edge which holds two stickers an
+00:02:02 - 00:02:07: edge is a type of piece that fits in
+00:02:03 - 00:02:09: between two centers for example this
+00:02:07 - 00:02:12: blue and red Edge fits between the blue
+00:02:09 - 00:02:14: and red centers the third type of piece
+00:02:12 - 00:02:17: is a corner which has three stickers
+00:02:14 - 00:02:20: this corner is red white and blue and
+00:02:17 - 00:02:22: fits between the red white and blue
+00:02:20 - 00:02:26: centerpieces each piece is unique on the
+00:02:22 - 00:02:28: cube there will only be one white center
+00:02:26 - 00:02:31: one green orange Edge and one red right
+00:02:28 - 00:02:33: and blue corner along these lines there
+00:02:31 - 00:02:35: will be certain pieces that do not exist
+00:02:33 - 00:02:37: for example there will never be a green
+00:02:35 - 00:02:41: blue edge as the center pieces are
+00:02:37 - 00:02:43: opposite that's about it for background
+00:02:41 - 00:02:46: information now let's talk about how the
+00:02:43 - 00:02:48: cube moves each side can be rotated
+00:02:46 - 00:02:50: clockwise or
+00:02:48 - 00:02:52: counterclockwise you can make a single
+00:02:50 - 00:02:54: or even a double
+00:02:52 - 00:02:56: turn these moves on a cube can be
+00:02:54 - 00:02:58: denoted with Cube notation which begins
+00:02:56 - 00:03:01: with associating each side of the cube
+00:02:58 - 00:03:06: with a letter the letters we use here
+00:03:01 - 00:03:10: are r l u d f and b r stands for right L
+00:03:06 - 00:03:13: stands for left U for up D for down f
+00:03:10 - 00:03:18: for front and B for back in this
+00:03:13 - 00:03:21: tutorial we'll only be using R L U and F
+00:03:18 - 00:03:23: a plain letter means a clockwise turn of
+00:03:21 - 00:03:25: that face with respect to that face as
+00:03:23 - 00:03:28: if you were looking directly at it for
+00:03:25 - 00:03:31: example a u would instruct us to turn
+00:03:28 - 00:03:33: the upper side clock wise
+00:03:31 - 00:03:36: once a letter followed by a prime symbol
+00:03:33 - 00:03:39: means a counterclockwise turn so a u
+00:03:36 - 00:03:42: Prime would instruct us to turn the
+00:03:39 - 00:03:45: upper side counterclockwise once if you
+00:03:42 - 00:03:47: did a u and then a u Prime the cube
+00:03:45 - 00:03:49: would return to its original state
+00:03:47 - 00:03:52: because the U Prime undoes the
+00:03:49 - 00:03:56: u double turns are notated with a two
+00:03:52 - 00:03:59: following the letter so an R2 denotes a
+00:03:56 - 00:04:01: double turn on the right face and doing
+00:03:59 - 00:04:04: another R2 Returns the cube to its
+00:04:01 - 00:04:06: original state direction does not matter
+00:04:04 - 00:04:08: so much here as turning aside clockwise
+00:04:06 - 00:04:11: twice is the same as turning it
+00:04:08 - 00:04:14: counterclockwise twice let's try a
+00:04:11 - 00:04:19: notation exercise for this exercise try
+00:04:14 - 00:04:21: doing the following moves r u r Prime U
+00:04:19 - 00:04:23: Prime in plain English this string of
+00:04:21 - 00:04:24: moves instructs us to move the right
+00:04:23 - 00:04:28: face once
+00:04:24 - 00:04:31: clockwise then move the upper face once
+00:04:28 - 00:04:34: clockwise after that move the right face
+00:04:31 - 00:04:36: once counterclockwise to finish move the
+00:04:34 - 00:04:38: upper face once
+00:04:36 - 00:04:41: counterclockwise if you did this
+00:04:38 - 00:04:43: correctly on a solved Cube 2/3 of your
+00:04:41 - 00:04:46: top face should still be the same color
+00:04:43 - 00:04:48: repeating the string of moves five more
+00:04:46 - 00:04:51: times six times in total Returns the
+00:04:48 - 00:04:53: cube to its original state there are a
+00:04:51 - 00:04:55: lot more types of turns and notations
+00:04:53 - 00:04:57: but the ones mentioned in this section
+00:04:55 - 00:04:59: of the video are the ones that will be
+00:04:57 - 00:05:01: used to teach the method at this point
+00:04:59 - 00:05:03: point we know how the puzzle Works its
+00:05:01 - 00:05:05: basic rules and how to turn now let's
+00:05:03 - 00:05:08: take a look at the method and then apply
+00:05:05 - 00:05:08: our knowledge to solve the
+00:05:10 - 00:05:15: cube for Simplicity we will break this
+00:05:13 - 00:05:17: step down into two separate substeps the
+00:05:15 - 00:05:20: first one is called Daisy and the second
+00:05:17 - 00:05:21: one finishes up the cross for good we
+00:05:20 - 00:05:24: call the first step Daisy because
+00:05:21 - 00:05:26: daisies have yellow centers and white
+00:05:24 - 00:05:28: petals the goal of this step is to
+00:05:26 - 00:05:31: gather edges with white stickers around
+00:05:28 - 00:05:33: the yellow Center for our purposes the
+00:05:31 - 00:05:36: edges with white stickers will be called
+00:05:33 - 00:05:38: the white edges this should take only
+00:05:36 - 00:05:41: one to three moves for each sticker and
+00:05:38 - 00:05:43: it is completely intuitive we feel the
+00:05:41 - 00:05:44: best way to teach this is by example so
+00:05:43 - 00:05:47: here's an example of how to solve the
+00:05:44 - 00:05:49: daisy so to make things easier and more
+00:05:47 - 00:05:51: visible we recommend starting our solve
+00:05:49 - 00:05:53: by putting the yellow Center on top we
+00:05:51 - 00:05:56: will try to build our white edges around
+00:05:53 - 00:05:57: it one by one here one of the white
+00:05:56 - 00:05:59: edges the one in the back is already
+00:05:57 - 00:06:02: solved that means there're only only
+00:05:59 - 00:06:03: three we have to do ourselves from this
+00:06:02 - 00:06:06: view we are able to see three white
+00:06:03 - 00:06:09: edges here here and
+00:06:06 - 00:06:11: here this one here on the left is only
+00:06:09 - 00:06:14: one move from being solved so solving it
+00:06:11 - 00:06:14: is very
+00:06:14 - 00:06:19: straightforward generally our goal is to
+00:06:16 - 00:06:21: go for the easiest ones first White
+00:06:19 - 00:06:23: edges are usually easy if they're
+00:06:21 - 00:06:26: sitting in this position or this
+00:06:23 - 00:06:27: position they can be solved using only
+00:06:26 - 00:06:31: one
+00:06:27 - 00:06:34: move the second sticker we can do here
+00:06:31 - 00:06:36: is this one this one is not in our
+00:06:34 - 00:06:40: desired spot but if we turn the front
+00:06:36 - 00:06:42: side this way it is one move away from
+00:06:40 - 00:06:42: being
+00:06:43 - 00:06:47: solved this one was solved in only two
+00:06:45 - 00:06:50: moves and you can actually think of it
+00:06:47 - 00:06:53: as an extension of the first case you
+00:06:50 - 00:06:55: had the first move transferred this
+00:06:53 - 00:06:58: white sticker over
+00:06:55 - 00:07:00: here which turns it into the first case
+00:06:58 - 00:07:03: we encountered as at this point you will
+00:07:00 - 00:07:06: know how to solve this
+00:07:03 - 00:07:08: piece now it's time for the third Edge
+00:07:06 - 00:07:10: we have no more white stickers right in
+00:07:08 - 00:07:13: front of us but we can spin the cube in
+00:07:10 - 00:07:15: our hands to try to find one here it is
+00:07:13 - 00:07:17: it's sitting near the bottom of the cube
+00:07:15 - 00:07:19: this one's a little trickier and
+00:07:17 - 00:07:21: requires more moves to solve but we can
+00:07:19 - 00:07:25: definitely do it the first step is to
+00:07:21 - 00:07:28: turn the top so that the empty space
+00:07:25 - 00:07:31: where you want the edge to go is on top
+00:07:28 - 00:07:33: of The Edge you're looking at now the
+00:07:31 - 00:07:36: second thing to do is to move this
+00:07:33 - 00:07:38: sticker or this Edge piece to either
+00:07:36 - 00:07:41: this position or this position we can do
+00:07:38 - 00:07:46: that by rotating the front you can move
+00:07:41 - 00:07:48: it this way or you can move it that way
+00:07:46 - 00:07:51: let's choose to move it this way at this
+00:07:48 - 00:07:52: point this case is really similar to the
+00:07:51 - 00:07:55: first one we solved which was
+00:07:52 - 00:07:57: transferring The Edge piece directly
+00:07:55 - 00:07:59: up however this is made a little more
+00:07:57 - 00:08:01: complicated because this piece is
+00:07:59 - 00:08:05: already white and we do not want to kick
+00:08:01 - 00:08:07: it out of its position so in order to
+00:08:05 - 00:08:09: get past this issue what we'll do is
+00:08:07 - 00:08:11: we'll move this empty spot to where you
+00:08:09 - 00:08:13: want to put the edge and then you can
+00:08:11 - 00:08:16: see this is exactly the same as the
+00:08:13 - 00:08:18: first Edge we solved we just do one move
+00:08:16 - 00:08:20: and we get it in at this point your
+00:08:18 - 00:08:23: Daisy should all be
+00:08:20 - 00:08:26: solved let's do another example of the
+00:08:23 - 00:08:27: daisy here as you can see in this case
+00:08:26 - 00:08:30: we got lucky again which can happen
+00:08:27 - 00:08:32: pretty often in this step this piece is
+00:08:30 - 00:08:35: already adjacent to the yellow center
+00:08:32 - 00:08:38: from this position we can see the three
+00:08:35 - 00:08:41: white edges we want to solve this one
+00:08:38 - 00:08:43: this one and this one now the piece here
+00:08:41 - 00:08:45: can be solved with one move which is
+00:08:43 - 00:08:46: exactly what we've been doing in the
+00:08:45 - 00:08:49: previous
+00:08:46 - 00:08:52: example what we'll focus on next is this
+00:08:49 - 00:08:55: piece over here to solve pieces like
+00:08:52 - 00:08:58: this turn the front face which gives us
+00:08:55 - 00:08:59: a very familiar setup from here all we
+00:08:58 - 00:09:03: need to do is make one one move to
+00:08:59 - 00:09:05: finish it off the last piece is also one
+00:09:03 - 00:09:06: move off so we'll do that to complete
+00:09:05 - 00:09:09: the
+00:09:06 - 00:09:11: daisy here's one situation you may
+00:09:09 - 00:09:13: encounter while solving the daisy this
+00:09:11 - 00:09:14: white red Edge is all the way at the
+00:09:13 - 00:09:17: bottom which is on the opposite side of
+00:09:14 - 00:09:20: the yellow Center to solve this simply
+00:09:17 - 00:09:21: turn this side twice to get the piece
+00:09:20 - 00:09:24: into
+00:09:21 - 00:09:26: place here's one last situation you may
+00:09:24 - 00:09:28: run into while solving the daisy you
+00:09:26 - 00:09:29: have the pieces solved but there is
+00:09:28 - 00:09:32: something remaining like like this white
+00:09:29 - 00:09:34: red Edge over here here you can try to
+00:09:32 - 00:09:36: solve it using that familiar technique
+00:09:34 - 00:09:38: but you may notice that it kicks out
+00:09:36 - 00:09:41: this Edge which is already solved to
+00:09:38 - 00:09:44: remedy this we recommend moving the
+00:09:41 - 00:09:47: empty spot over here which will then
+00:09:44 - 00:09:49: allow you to put the piece that you want
+00:09:47 - 00:09:51: inside to complete the daisy now that
+00:09:49 - 00:09:53: we've covered how to solve the daisy we
+00:09:51 - 00:09:55: will explain how to complete the second
+00:09:53 - 00:09:58: substep which is solving the cross the
+00:09:55 - 00:10:00: idea is to align the other color of each
+00:09:58 - 00:10:02: of the white edges edes with its
+00:10:00 - 00:10:04: corresponding Center by turning the
+00:10:02 - 00:10:06: bottom two layers together and then
+00:10:04 - 00:10:10: turning the front face twice when the
+00:10:06 - 00:10:13: colors match let's go through an example
+00:10:10 - 00:10:15: all we must do here is find a white Edge
+00:10:13 - 00:10:18: and pay attention to the other color on
+00:10:15 - 00:10:21: it in this case it's green so what we'll
+00:10:18 - 00:10:24: do is rotate the bottom two layers
+00:10:21 - 00:10:26: together until the Green's match once we
+00:10:24 - 00:10:29: know that the Green's match we can turn
+00:10:26 - 00:10:31: the front face twice in order to to
+00:10:29 - 00:10:33: solve the cross piece at this point you
+00:10:31 - 00:10:36: can spin the cube in your hand in order
+00:10:33 - 00:10:39: to find a new piece the first thing I
+00:10:36 - 00:10:41: noticed was this orange piece and it's
+00:10:39 - 00:10:44: already near its corresponding orange
+00:10:41 - 00:10:46: Center so there was no need to rotate
+00:10:44 - 00:10:48: the bottom two layers together at this
+00:10:46 - 00:10:50: point once these oranges match we can
+00:10:48 - 00:10:52: turn the front face twice to solve the
+00:10:50 - 00:10:54: orange cross
+00:10:52 - 00:10:57: piece now let's spin the cube one more
+00:10:54 - 00:10:59: time to find this red white piece and
+00:10:57 - 00:11:01: now we want to match the red with the
+00:10:59 - 00:11:05: red Center so we can do that by turning
+00:11:01 - 00:11:09: the bottom two layers together and once
+00:11:05 - 00:11:12: we have that we can turn the front face
+00:11:09 - 00:11:15: twice our last Target is this Edge which
+00:11:12 - 00:11:17: is blue and white so at this point we
+00:11:15 - 00:11:19: want to match the blue with the blue
+00:11:17 - 00:11:21: Center which is on the opposite side of
+00:11:19 - 00:11:24: the cube so we can turn the bottom two
+00:11:21 - 00:11:27: layers together two times in order to
+00:11:24 - 00:11:29: make the blues match and at this point
+00:11:27 - 00:11:31: we can turn the front face twice in
+00:11:29 - 00:11:34: order to complete the
+00:11:31 - 00:11:36: cross that's about it for the cross the
+00:11:34 - 00:11:38: daisy is slightly abstract and requires
+00:11:36 - 00:11:40: some thinking so make sure you practice
+00:11:38 - 00:11:40: that a
+00:11:43 - 00:11:48: bit at this point you should be able to
+00:11:45 - 00:11:50: solve the white cross on your Cube the
+00:11:48 - 00:11:53: next step is to solve all four first
+00:11:50 - 00:11:54: layer Corners which are shown here all
+00:11:53 - 00:11:57: of these corners should have a white
+00:11:54 - 00:11:59: sticker here's an example of a correctly
+00:11:57 - 00:12:01: solved corner you can tell it's solv D
+00:11:59 - 00:12:04: because all three of its colors match
+00:12:01 - 00:12:05: the surrounding centers in this case the
+00:12:04 - 00:12:07: white part of the corner is near the
+00:12:05 - 00:12:09: White Center the red part is near the
+00:12:07 - 00:12:11: red Center and the green is near the
+00:12:09 - 00:12:14: green
+00:12:11 - 00:12:16: center this corner is not correctly
+00:12:14 - 00:12:18: solved even though the whites match
+00:12:16 - 00:12:21: because the other colors do not
+00:12:18 - 00:12:23: correspond correctly now let's introduce
+00:12:21 - 00:12:25: an algorithm which is a series of moves
+00:12:23 - 00:12:30: that accomplishes a particular task on
+00:12:25 - 00:12:32: the cube here it is are you RP Prime U
+00:12:30 - 00:12:35: Prime this is actually the same sequence
+00:12:32 - 00:12:38: of moves we explored in the notation
+00:12:35 - 00:12:40: exercise for review the algorithm says
+00:12:38 - 00:12:43: to turn the right face
+00:12:40 - 00:12:45: clockwise the upper face
+00:12:43 - 00:12:48: clockwise the right face
+00:12:45 - 00:12:51: counterclockwise and then the upper face
+00:12:48 - 00:12:54: counterclockwise in this tutorial we'll
+00:12:51 - 00:12:54: call this algorithm the righty
+00:12:57 - 00:13:01: ALG the righty Al has many uses in this
+00:13:00 - 00:13:04: step we'll be using it to solve the
+00:13:01 - 00:13:06: first layer Corners here's how it works
+00:13:04 - 00:13:09: repetitions of the righty ALG will cause
+00:13:06 - 00:13:12: a corner piece to drop from the top
+00:13:09 - 00:13:15: right into the bottom right slot the
+00:13:12 - 00:13:17: piece goes directly down our goal is to
+00:13:15 - 00:13:19: get the corner piece above where it
+00:13:17 - 00:13:22: should go and then repeat the Ral until
+00:13:19 - 00:13:23: it is solved in this example after
+00:13:22 - 00:13:27: confirming that the red white and blue
+00:13:23 - 00:13:29: corner should belong between the red
+00:13:27 - 00:13:31: white and blue centers
+00:13:29 - 00:13:35: we shall repeat the righty ALG until the
+00:13:31 - 00:13:35: corner is solved let's try
+00:13:44 - 00:13:49: it and here you can see that after three
+00:13:47 - 00:13:52: repetitions the corner is solved now
+00:13:49 - 00:13:53: let's do a full example to begin make
+00:13:52 - 00:13:56: sure that your white cross is facing
+00:13:53 - 00:13:58: downward the white side should be facing
+00:13:56 - 00:14:01: down throughout the entire duration of
+00:13:58 - 00:14:03: this step step here in this example we
+00:14:01 - 00:14:05: already have a corner solved in the back
+00:14:03 - 00:14:07: which is pretty lucky our first step is
+00:14:05 - 00:14:10: to look on the top layer and find a
+00:14:07 - 00:14:12: corner with a white sticker we have one
+00:14:10 - 00:14:15: here and it's white orange and
+00:14:12 - 00:14:17: blue now we check to see if the corner
+00:14:15 - 00:14:20: is on top of where it should go in this
+00:14:17 - 00:14:24: case it is if this corner was solved
+00:14:20 - 00:14:26: over here it would match white blue
+00:14:24 - 00:14:29: orange white blue
+00:14:26 - 00:14:32: orange so once we confirm that this
+00:14:29 - 00:14:33: corner should go directly down we repeat
+00:14:32 - 00:14:36: the righty
+00:14:33 - 00:14:39: ALG until the corner is
+00:14:36 - 00:14:41: solved make sure you check in between
+00:14:39 - 00:14:44: repetitions to see if the corner is
+00:14:41 - 00:14:46: solved if you overdo it you might have
+00:14:44 - 00:14:48: to do more in order to solve the corner
+00:14:46 - 00:14:50: in this case it took three repetitions
+00:14:48 - 00:14:52: to solve the
+00:14:50 - 00:14:55: corner now let's check the top layer to
+00:14:52 - 00:14:57: find another corner with a white sticker
+00:14:55 - 00:15:00: there's one right here and it's white
+00:14:57 - 00:15:02: red and green unfortunately it's not on
+00:15:00 - 00:15:05: top of where it should go so we have to
+00:15:02 - 00:15:06: rotate the bottom two layers together in
+00:15:05 - 00:15:09: order to put it on top of where it
+00:15:06 - 00:15:14: should go this is very similar to when
+00:15:09 - 00:15:17: we were solving the cross so let's do it
+00:15:14 - 00:15:20: no yes so at this point after rotating
+00:15:17 - 00:15:23: the bottom two layers together twice we
+00:15:20 - 00:15:27: have this in position now white red
+00:15:23 - 00:15:30: green goes down into the white red green
+00:15:27 - 00:15:32: spot once we confirm this we can repeat
+00:15:30 - 00:15:32: the righty
+00:15:33 - 00:15:40: ALG
+00:15:35 - 00:15:40: until the corner piece is
+00:15:44 - 00:15:50: solved and here it
+00:15:46 - 00:15:54: is the last corner is white green and
+00:15:50 - 00:15:57: orange and it belongs directly down in
+00:15:54 - 00:15:59: this position so it's already set up for
+00:15:57 - 00:16:01: repetitions of the righty Al
+00:15:59 - 00:16:04: there's no need to position it with
+00:16:01 - 00:16:08: turning the bottom two layers together
+00:16:04 - 00:16:08: so once this is set up we can
+00:16:13 - 00:16:18: repeat until the corner is solved and at
+00:16:16 - 00:16:21: this point you can see that you have a
+00:16:18 - 00:16:24: first layer that's completely solved all
+00:16:21 - 00:16:27: the white stickers match and you should
+00:16:24 - 00:16:29: have a ring of matching stickers around
+00:16:27 - 00:16:31: this is when you know you're finished
+00:16:29 - 00:16:34: with this step sometimes you may have a
+00:16:31 - 00:16:36: corner Twisted in place like this or two
+00:16:34 - 00:16:40: corners trapped in the bottom layer but
+00:16:36 - 00:16:43: swapped so that they are incorrect to
+00:16:40 - 00:16:47: solve the corner trapped in place simply
+00:16:43 - 00:16:49: repeat the righty ALG until it is solved
+00:16:47 - 00:16:52: to Interchange two pieces that are
+00:16:49 - 00:16:55: incorrectly trapped simply insert a
+00:16:52 - 00:16:57: corner piece into one of these positions
+00:16:55 - 00:16:59: using the righty ALG which should kick
+00:16:57 - 00:17:02: the piece out and reinsert it in order
+00:16:59 - 00:17:04: to solve it correctly if you would like
+00:17:02 - 00:17:07: more help on how to fix these please see
+00:17:04 - 00:17:07: our troubleshooting
+00:17:10 - 00:17:14: video Once the first layer Corners are
+00:17:12 - 00:17:17: done it's time to move onto the four
+00:17:14 - 00:17:20: second layer edges the four edges we're
+00:17:17 - 00:17:23: interested in solving include the red
+00:17:20 - 00:17:26: blue the red green green orange and
+00:17:23 - 00:17:28: orange blue none of these edges should
+00:17:26 - 00:17:30: have a yellow sticker in this step will
+00:17:28 - 00:17:32: also make use of the Lefty version of
+00:17:30 - 00:17:37: the righty ALG which is
+00:17:32 - 00:17:39: this L Prime U Prime l u this algorithm
+00:17:37 - 00:17:42: says to turn the left face
+00:17:39 - 00:17:45: counterclockwise the upper face
+00:17:42 - 00:17:47: counterclockwise the left face clockwise
+00:17:45 - 00:17:50: and then the upper face
+00:17:47 - 00:17:52: clockwise remember that an L move
+00:17:50 - 00:17:54: instructs us to turn the left face
+00:17:52 - 00:17:57: clockwise as if we were looking directly
+00:17:54 - 00:17:59: at it here is the L move one more time
+00:17:57 - 00:18:03: for clarity
+00:17:59 - 00:18:03: let's call the AL we just did the Lefty
+00:18:08 - 00:18:13: ALG like the corners in the step before
+00:18:11 - 00:18:15: we'll be moving Edge pieces from the top
+00:18:13 - 00:18:17: layer into their correct spots for
+00:18:15 - 00:18:20: example we would like the green and red
+00:18:17 - 00:18:21: Edge to appear between the green and red
+00:18:20 - 00:18:24: center
+00:18:21 - 00:18:27: pieces this is an example of a correctly
+00:18:24 - 00:18:29: solved Edge the two colors of the edge
+00:18:27 - 00:18:31: match the centers that are adjacent to
+00:18:29 - 00:18:33: it in this step you'll be using
+00:18:31 - 00:18:35: combinations of the righty and Lefty
+00:18:33 - 00:18:37: algs to manipulate the edges and solve
+00:18:35 - 00:18:40: them in between these algs we'll be
+00:18:37 - 00:18:43: spinning the cube in our hands like this
+00:18:40 - 00:18:46: in the form of spin right and spin left
+00:18:43 - 00:18:49: spin right follows the u- turn like this
+00:18:46 - 00:18:51: and can be seen here spin left follows
+00:18:49 - 00:18:54: the Urie turn and goes in the opposite
+00:18:51 - 00:18:56: direction of the spin right this is a
+00:18:54 - 00:18:58: spin
+00:18:56 - 00:19:01: left to set up an edge to be solved
+00:18:58 - 00:19:03: first look at the edge we want to match
+00:19:01 - 00:19:06: the sticker facing you in this case
+00:19:03 - 00:19:07: green with the center of the same color
+00:19:06 - 00:19:09: you can rotate the bottom two layers
+00:19:07 - 00:19:12: together in order to match these
+00:19:09 - 00:19:14: stickers so for here once we notice that
+00:19:12 - 00:19:16: this color is green we'll rotate the
+00:19:14 - 00:19:17: bottom two layers together and match it
+00:19:16 - 00:19:20: with the green
+00:19:17 - 00:19:22: center there are two ways to solve an
+00:19:20 - 00:19:25: edge from the top layer you can either
+00:19:22 - 00:19:27: move the edge to the right to solve it
+00:19:25 - 00:19:29: or to the left to solve it for this
+00:19:27 - 00:19:32: example because we matched the green
+00:19:29 - 00:19:34: ones here we can then determine that
+00:19:32 - 00:19:37: this Edge which is green and red belongs
+00:19:34 - 00:19:39: to the left in between the green and the
+00:19:37 - 00:19:39: red
+00:19:39 - 00:19:44: centers the other case we can have is
+00:19:42 - 00:19:46: this piece right here and we can
+00:19:44 - 00:19:49: illustrate it first by matching the
+00:19:46 - 00:19:51: greens together and then you can see
+00:19:49 - 00:19:54: that because this is green and orange it
+00:19:51 - 00:19:57: goes between the green and orange pieces
+00:19:54 - 00:19:59: over here so this would be a case where
+00:19:57 - 00:20:02: you would want to move the Edge to the
+00:19:59 - 00:20:08: right to move an edge to the right do
+00:20:02 - 00:20:11: this sequence U righty ALG spin right
+00:20:08 - 00:20:14: Lefty ALG there's an easy way to
+00:20:11 - 00:20:17: remember this one first remember which
+00:20:14 - 00:20:20: direction The Edge should go and move
+00:20:17 - 00:20:22: the edge away from where it should go
+00:20:20 - 00:20:25: then do the AL corresponding to the
+00:20:22 - 00:20:29: direction you want the edge to go in so
+00:20:25 - 00:20:32: over here the righty Al
+00:20:29 - 00:20:35: spin the cube in that direction so spin
+00:20:32 - 00:20:38: right and then do the other ALG which is
+00:20:35 - 00:20:38: the Lefty
+00:20:38 - 00:20:43: ALG and here you can see that this piece
+00:20:41 - 00:20:47: is
+00:20:43 - 00:20:52: solved to move an edge to the left do
+00:20:47 - 00:20:55: this sequence U Prime Lefty Al spin left
+00:20:52 - 00:20:58: righty ALG you can remember this using
+00:20:55 - 00:21:00: the same strategy outlined before
+00:20:58 - 00:21:05: here's a
+00:21:00 - 00:21:10: walkthrough U Prime Lefty
+00:21:05 - 00:21:10: ALG spin left righty
+00:21:10 - 00:21:16: ALG let's check out an
+00:21:13 - 00:21:18: example let's start by finding an edge
+00:21:16 - 00:21:20: that we can solve in this example
+00:21:18 - 00:21:22: there's one right here the blue orange
+00:21:20 - 00:21:25: one we begin solving the Edge by first
+00:21:22 - 00:21:27: matching the sticker that's facing us
+00:21:25 - 00:21:29: with the same color Center here in this
+00:21:27 - 00:21:31: example the Blues are already matching
+00:21:29 - 00:21:34: which is already done for us and very
+00:21:31 - 00:21:36: convenient next we determine where the
+00:21:34 - 00:21:38: edge should go should it go to the right
+00:21:36 - 00:21:40: or should it go to the left after
+00:21:38 - 00:21:42: looking at it we can decide that it goes
+00:21:40 - 00:21:44: to the left since these Blues match and
+00:21:42 - 00:21:47: the edge would go here with the orang is
+00:21:44 - 00:21:49: matching as well now that we know this
+00:21:47 - 00:21:52: we can apply the sequence of moves to
+00:21:49 - 00:21:54: solve the edge to the left it begins by
+00:21:52 - 00:21:59: turning the edge away from where it
+00:21:54 - 00:22:02: should go applying the Lefty ALG
+00:21:59 - 00:22:05: spinning left and then applying the
+00:22:02 - 00:22:07: right the next Edge we can see is the
+00:22:05 - 00:22:10: orange green one we want to match the
+00:22:07 - 00:22:13: orange sticker on this edge with the
+00:22:10 - 00:22:16: orange Center we can do this by rotating
+00:22:13 - 00:22:18: the bottom two layers together this Edge
+00:22:16 - 00:22:21: also goes left so we can
+00:22:18 - 00:22:25: apply the same
+00:22:21 - 00:22:27: sequence to solve it now we have the
+00:22:25 - 00:22:30: green red Edge and it's conveniently set
+00:22:27 - 00:22:34: up for us us this one also goes left and
+00:22:30 - 00:22:34: so we'll do the same thing once
+00:22:37 - 00:22:42: again the fourth and last Edge is the
+00:22:39 - 00:22:45: red blue one we'll move the bottom two
+00:22:42 - 00:22:47: layers together to match the blue on the
+00:22:45 - 00:22:50: edge with the blue Center this time the
+00:22:47 - 00:22:52: edge moves to the right to move the edge
+00:22:50 - 00:22:55: to the right Begin by turning the edge
+00:22:52 - 00:22:56: away from where it should go then apply
+00:22:55 - 00:23:01: the righty
+00:22:56 - 00:23:05: ALG spin right and then apply the Lefty
+00:23:01 - 00:23:07: Al at this point all of our second layer
+00:23:05 - 00:23:10: edges are solved after this step is done
+00:23:07 - 00:23:12: correctly it'll look like 2/3 of your
+00:23:10 - 00:23:12: cube is
+00:23:15 - 00:23:20: done it's time to work on the last layer
+00:23:18 - 00:23:23: the first objective here is to form a
+00:23:20 - 00:23:25: top cross like this this step is
+00:23:23 - 00:23:27: different from the cross we solved first
+00:23:25 - 00:23:28: in the beginning actually it's much
+00:23:27 - 00:23:31: easier
+00:23:28 - 00:23:33: here's an example of a top cross
+00:23:31 - 00:23:34: sometimes you can complete the first two
+00:23:33 - 00:23:37: layers and already have a cross on the
+00:23:34 - 00:23:40: top formed if this happens you can skip
+00:23:37 - 00:23:42: the step completely aside from having
+00:23:40 - 00:23:44: the cross solved already there are only
+00:23:42 - 00:23:46: three different cases you can encounter
+00:23:44 - 00:23:49: we distinguish these cases based on the
+00:23:46 - 00:23:52: pattern of yellow edges facing up let's
+00:23:49 - 00:23:54: go over all three the first one is
+00:23:52 - 00:23:56: called the line we call it the line
+00:23:54 - 00:23:59: because the yellow edges form a line
+00:23:56 - 00:24:02: with a yellow Center to solve the line
+00:23:59 - 00:24:05: hold it horizontally here's how to do
+00:24:02 - 00:24:09: it f righty
+00:24:05 - 00:24:11: ALG F Prime essentially we turn the
+00:24:09 - 00:24:14: front face clockwise perform the righty
+00:24:11 - 00:24:17: ALG and then undo the first turn we made
+00:24:14 - 00:24:19: which is to do an fime it's very easy
+00:24:17 - 00:24:20: and as you can see the top cross is
+00:24:19 - 00:24:24: already
+00:24:20 - 00:24:25: solved a second case is called the angle
+00:24:24 - 00:24:27: we call it the angle because the yellow
+00:24:25 - 00:24:31: edges form a right angle together with
+00:24:27 - 00:24:34: yellow Center to set this one up hold it
+00:24:31 - 00:24:35: so that there's an edge on the right and
+00:24:34 - 00:24:38: an edge on the
+00:24:35 - 00:24:41: bottom here we're going to use a special
+00:24:38 - 00:24:42: type of f turn instead of turning the
+00:24:41 - 00:24:45: front face on its own we're going to
+00:24:42 - 00:24:48: turn the front two faces together so
+00:24:45 - 00:24:51: this sequence begins with a small F
+00:24:48 - 00:24:52: which is the front two faces together
+00:24:51 - 00:24:56: the righty
+00:24:52 - 00:24:58: ALG and then small fime which is a
+00:24:56 - 00:25:01: counterclockwise turn of the front two
+00:24:58 - 00:25:03: faces together this is the same as the
+00:25:01 - 00:25:05: previous sequence except we involved the
+00:25:03 - 00:25:07: front two faces together instead of just
+00:25:05 - 00:25:07: one
+00:25:07 - 00:25:13: face the last case is called the dot we
+00:25:11 - 00:25:16: call it the dot because it's a DOT and
+00:25:13 - 00:25:19: there are no other edges that are yellow
+00:25:16 - 00:25:22: that are facing up to solve the dot
+00:25:19 - 00:25:22: perform the sequence for the
+00:25:23 - 00:25:29: line and then you'll notice that we have
+00:25:26 - 00:25:31: an angle so then we can perform the
+00:25:29 - 00:25:35: sequence for the
+00:25:31 - 00:25:37: angle and this case is just an addition
+00:25:35 - 00:25:40: of the two previous
+00:25:37 - 00:25:42: cases this step is generally pretty easy
+00:25:40 - 00:25:45: because all it is is reacting to a small
+00:25:42 - 00:25:45: group of
+00:25:45 - 00:25:50: patterns the next step is to solve the
+00:25:48 - 00:25:52: positions of the last layer Corners
+00:25:50 - 00:25:54: let's first take a look at what this
+00:25:52 - 00:25:57: means here's a cube with the last layer
+00:25:54 - 00:25:59: Corners solved you can see that each
+00:25:57 - 00:26:03: color of the corner pieces matches
+00:25:59 - 00:26:03: exactly with the centers they are
+00:26:04 - 00:26:09: near these Corners are correctly
+00:26:07 - 00:26:11: positioned now let's take a look at this
+00:26:09 - 00:26:14: Cube the corners on this Cube are
+00:26:11 - 00:26:17: obviously not solved but they are still
+00:26:14 - 00:26:19: correctly positioned to illustrate this
+00:26:17 - 00:26:21: red blue yellow corner is still in
+00:26:19 - 00:26:24: between the red blue and yellow group of
+00:26:21 - 00:26:27: centers the corner is in the correct
+00:26:24 - 00:26:29: position it's just Twisted the same is
+00:26:27 - 00:26:32: true of the other Corners they are in
+00:26:29 - 00:26:34: the correct position just
+00:26:32 - 00:26:37: Twisted this step aims to correctly
+00:26:34 - 00:26:38: position all the corners at this point
+00:26:37 - 00:26:41: we don't care whether any particular
+00:26:38 - 00:26:43: corner is twisted or not there are three
+00:26:41 - 00:26:45: cases that can happen and you can adjust
+00:26:43 - 00:26:47: the cube by turning the bottom two
+00:26:45 - 00:26:50: layers together in order to get a better
+00:26:47 - 00:26:53: view to determine which case you
+00:26:50 - 00:26:55: have let's start with the first one
+00:26:53 - 00:26:56: which is the easiest if you take a look
+00:26:55 - 00:26:58: and all the corners are already
+00:26:56 - 00:27:01: correctly positioned like in the cube we
+00:26:58 - 00:27:04: have here do nothing you've essentially
+00:27:01 - 00:27:06: skipped this step the second case is
+00:27:04 - 00:27:08: where you have to swap two corners in an
+00:27:06 - 00:27:11: adjacent fashion Let's do an
+00:27:08 - 00:27:13: example here you'll notice that the red
+00:27:11 - 00:27:16: blue yellow and the blue orange yellow
+00:27:13 - 00:27:19: Corners are correctly positioned you can
+00:27:16 - 00:27:21: turn the bottom two layers together to
+00:27:19 - 00:27:21: get a better
+00:27:21 - 00:27:25: view now let's take a look at the other
+00:27:24 - 00:27:28: two
+00:27:25 - 00:27:30: corners especially this green yellow
+00:27:28 - 00:27:33: orange one you'll notice that the green
+00:27:30 - 00:27:34: yellow orange is not in between the
+00:27:33 - 00:27:38: correct group of
+00:27:34 - 00:27:40: centers instead this corner belongs over
+00:27:38 - 00:27:43: here in the back between the green
+00:27:40 - 00:27:47: orange yellow group of centers and the
+00:27:43 - 00:27:50: corner in this current position belongs
+00:27:47 - 00:27:52: over here between the green red yellow
+00:27:50 - 00:27:55: centers at this point it should be
+00:27:52 - 00:27:58: fairly clear that these two should swap
+00:27:55 - 00:27:59: so to summarize these these two are
+00:27:58 - 00:28:01: correctly positioned and these two
+00:27:59 - 00:28:04: should
+00:28:01 - 00:28:06: swap to swap these Corners hold them so
+00:28:04 - 00:28:09: that they're both on the right the
+00:28:06 - 00:28:12: yellow Center should be facing up once
+00:28:09 - 00:28:15: you have this we can begin doing the
+00:28:12 - 00:28:17: sequence of moves that swaps two corners
+00:28:15 - 00:28:22: the sequence looks like
+00:28:17 - 00:28:22: this perform the righty ALG three
+00:28:26 - 00:28:29: times
+00:28:29 - 00:28:34: then spin right and then perform the
+00:28:32 - 00:28:37: Lefty
+00:28:34 - 00:28:37: Al three
+00:28:41 - 00:28:46: times now let's do a check by rotating
+00:28:45 - 00:28:50: the bottom two layers
+00:28:46 - 00:28:52: together to get a better View at this
+00:28:50 - 00:28:55: point this corner is solved and
+00:28:52 - 00:28:57: correctly positioned this corner is
+00:28:55 - 00:28:59: correctly positioned just Twisted but
+00:28:57 - 00:29:01: that's okay okay this corner is
+00:28:59 - 00:29:04: correctly positioned and this corner is
+00:29:01 - 00:29:07: correctly positioned so at this point
+00:29:04 - 00:29:09: all the corners are correctly positioned
+00:29:07 - 00:29:12: the other case is when you need to swap
+00:29:09 - 00:29:14: two corners diagonally here two of the
+00:29:12 - 00:29:16: corners are correctly positioned and two
+00:29:14 - 00:29:19: of them are not the corners we need to
+00:29:16 - 00:29:21: swap are diagonal from each other to
+00:29:19 - 00:29:23: illustrate we can notice that this
+00:29:21 - 00:29:26: corner is in the correct position and so
+00:29:23 - 00:29:28: is this one however this one's not in
+00:29:26 - 00:29:31: the correct position and this one is not
+00:29:28 - 00:29:33: in the correct position either from here
+00:29:31 - 00:29:36: we can tell that these two corners need
+00:29:33 - 00:29:38: to swap in a diagonal fashion which is
+00:29:36 - 00:29:41: different from an adjacent
+00:29:38 - 00:29:44: swap to do this first perform the
+00:29:41 - 00:29:46: adjacent swap we learned previously you
+00:29:44 - 00:29:49: can do this at any angle just as long as
+00:29:46 - 00:29:51: the yellow Center is facing up let's do
+00:29:49 - 00:29:51: this first
+00:29:56 - 00:29:59: part
+00:30:04 - 00:30:09: after this you'll always encounter an
+00:30:06 - 00:30:11: adjacent swap over here you can tell
+00:30:09 - 00:30:14: that these two corners are correctly
+00:30:11 - 00:30:17: positioned and these two are not so this
+00:30:14 - 00:30:20: is an adjacent Swap and we already know
+00:30:17 - 00:30:20: how to do
+00:30:26 - 00:30:29: this
+00:30:33 - 00:30:38: and then we can adjust the bottom two
+00:30:35 - 00:30:41: layers and confirm that all the corners
+00:30:38 - 00:30:44: are correctly positioned essentially to
+00:30:41 - 00:30:48: do a diagonal swap we do two adjacent
+00:30:44 - 00:30:48: swaps to create a diagonal
+00:30:49 - 00:30:53: swap now that all the last layer Corners
+00:30:52 - 00:30:55: are correctly positioned it's time to
+00:30:53 - 00:30:57: twist them so that all the yellow
+00:30:55 - 00:31:00: stickers are facing in the same
+00:30:57 - 00:31:01: Direction which is up so essentially
+00:31:00 - 00:31:04: you're going from
+00:31:01 - 00:31:06: this to this where all the yellow
+00:31:04 - 00:31:09: Corners are facing
+00:31:06 - 00:31:11: up let's try two examples in this
+00:31:09 - 00:31:13: example we have four corners that need
+00:31:11 - 00:31:15: to be twisted to begin twisting them
+00:31:13 - 00:31:18: we'll first flip the cube upside down so
+00:31:15 - 00:31:20: that the white side is facing up in
+00:31:18 - 00:31:21: effect the corners we need to twist are
+00:31:20 - 00:31:24: now in the bottom
+00:31:21 - 00:31:26: layer to begin first find a corner that
+00:31:24 - 00:31:28: needs to be twisted in the bottom layer
+00:31:26 - 00:31:31: and spin the cube in your hand so that
+00:31:28 - 00:31:33: it's on the bottom right here this is
+00:31:31 - 00:31:34: not an issue because all four corners
+00:31:33 - 00:31:37: need some form of
+00:31:34 - 00:31:39: twisting after that's complete repeat
+00:31:37 - 00:31:41: the righty ALG until the corner is
+00:31:39 - 00:31:42: correctly Twisted you can tell if a
+00:31:41 - 00:31:44: corner is correctly twisted if the
+00:31:42 - 00:31:47: yellow sticker on it is facing down
+00:31:44 - 00:31:47: let's try it on this
+00:31:53 - 00:31:57: corner after two repetitions of the
+00:31:55 - 00:31:59: righty ALG you'll notice that this
+00:31:57 - 00:32:02: corner is facing down and it's correctly
+00:31:59 - 00:32:03: Twisted because it matches the yellow
+00:32:02 - 00:32:06: pieces around
+00:32:03 - 00:32:08: it afterwards turn the bottom layer so
+00:32:06 - 00:32:11: that another Corner that needs to be
+00:32:08 - 00:32:14: twisted is loaded into the bottom right
+00:32:11 - 00:32:17: spot then repeat the righty ALG until
+00:32:14 - 00:32:17: the corner is correctly
+00:32:25 - 00:32:29: Twisted here we can check check this
+00:32:27 - 00:32:33: corner has been correctly
+00:32:29 - 00:32:33: Twisted repeat this
+00:32:33 - 00:32:39: process until all the corners are
+00:32:36 - 00:32:39: twisted
+00:32:47 - 00:32:52: correctly this step ends when all the
+00:32:49 - 00:32:54: corners are twisted and the cube is
+00:32:52 - 00:32:57: turned right side up
+00:32:54 - 00:32:59: again in this example we'll need need to
+00:32:57 - 00:33:02: only twist two corners as two corners
+00:32:59 - 00:33:06: are already Twisted correctly to begin
+00:33:02 - 00:33:07: flip the cube upside down next confirm
+00:33:06 - 00:33:09: that the corner that you need to twist
+00:33:07 - 00:33:12: first is on the bottom
+00:33:09 - 00:33:15: right repeat the righty ALG until the
+00:33:12 - 00:33:15: corner is correctly
+00:33:16 - 00:33:22: Twisted here because these two corners
+00:33:19 - 00:33:24: were already correctly Twisted we can
+00:33:22 - 00:33:27: skip them and load this one into the
+00:33:24 - 00:33:30: correct spot by doing a double
+00:33:27 - 00:33:33: turn on the bottom layer once this is
+00:33:30 - 00:33:35: loaded into the correct spot we can
+00:33:33 - 00:33:35: repeat the righty
+00:33:40 - 00:33:45: ALG until the corner is correctly
+00:33:42 - 00:33:48: Twisted at this point all the corners
+00:33:45 - 00:33:48: should be twisted
+00:33:49 - 00:33:54: correctly as a note sometimes all the
+00:33:52 - 00:33:57: corners will be twisted correctly after
+00:33:54 - 00:34:00: positioning them if this happens you you
+00:33:57 - 00:34:02: can skip this step now let's move on to
+00:34:00 - 00:34:02: the last
+00:34:04 - 00:34:08: step solving the positions of the last
+00:34:06 - 00:34:11: layer edges is the last step of our
+00:34:08 - 00:34:13: method we can begin by adjusting the
+00:34:11 - 00:34:16: corners to their solved state by turning
+00:34:13 - 00:34:16: the bottom two layers
+00:34:16 - 00:34:21: together if you did the previous steps
+00:34:19 - 00:34:25: correctly everything should be solved
+00:34:21 - 00:34:27: except for the edges on the last
+00:34:25 - 00:34:30: layer there are two types of cases that
+00:34:27 - 00:34:34: can happen one type is when there is one
+00:34:30 - 00:34:37: Edge solved correctly and the other type
+00:34:34 - 00:34:40: is where there are no edges solved
+00:34:37 - 00:34:42: correctly the first case we'll deal with
+00:34:40 - 00:34:45: is the one where one Edge is solved and
+00:34:42 - 00:34:47: three edges need to be solved to begin
+00:34:45 - 00:34:49: solving this we must first turn it so
+00:34:47 - 00:34:51: that the solved Edge is in the front
+00:34:49 - 00:34:53: once we have that there is one more
+00:34:51 - 00:34:57: sequence that lets us finish the cube
+00:34:53 - 00:34:59: for good this sequence goes like this
+00:34:57 - 00:35:05: righty
+00:34:59 - 00:35:09: ALG Lefty ALG the righty ALG five times
+00:35:05 - 00:35:14: 1 2 3
+00:35:09 - 00:35:16: 4 5 and then the Lefty ALG five times
+00:35:14 - 00:35:17: 1
+00:35:16 - 00:35:19: 2
+00:35:17 - 00:35:22: 3
+00:35:19 - 00:35:22: 4
+00:35:24 - 00:35:29: 5 sometimes you may need to repeat this
+00:35:27 - 00:35:32: sequence twice in order to be
+00:35:29 - 00:35:39: solved over here is an
+00:35:32 - 00:35:42: illustration righty ALG left the ALG 1 2
+00:35:39 - 00:35:47: 3 4
+00:35:42 - 00:35:49: 5 1 2 3
+00:35:47 - 00:35:51: 4
+00:35:49 - 00:35:54: 5 and if it's not
+00:35:51 - 00:35:58: solved we can repeat the sequence again
+00:35:54 - 00:36:10: and it will be solved writing ALG Lefty
+00:35:58 - 00:36:13: ALG 1 2 3 4 5 1 2 3
+00:36:10 - 00:36:16: 4 5 and the cube is
+00:36:13 - 00:36:17: solved the other type of case you may
+00:36:16 - 00:36:21: encounter is the one where there are no
+00:36:17 - 00:36:23: edges solved to solve the cube from here
+00:36:21 - 00:36:26: simply perform the sequence of moves and
+00:36:23 - 00:36:27: then spin the cube in your hand and do
+00:36:26 - 00:36:31: it again
+00:36:27 - 00:36:33: to illustrate let's try it so I'll do
+00:36:31 - 00:36:43: the
+00:36:33 - 00:36:45: sequence one 2 3 4 5 1 2 3 4
+00:36:43 - 00:36:48: 5 at this point I can spin the cube in
+00:36:45 - 00:36:52: my hand so that the solved Edge is in
+00:36:48 - 00:36:52: the front and do the sequence
+00:36:55 - 00:36:58: again
+00:37:01 - 00:37:05: and the cube should be
+00:37:03 - 00:37:07: solved so that's about it for solving
+00:37:05 - 00:37:09: the Rubik's Cube if you understand these
+00:37:07 - 00:37:12: moves and sequences you should be able
+00:37:09 - 00:37:13: to solve any Cube no matter the scramble
+00:37:12 - 00:37:16: thank you so much for watching and
+00:37:13 - 00:37:18: taking the time to learn with me for
+00:37:16 - 00:37:20: more resources like our troubleshooting
+00:37:18 - 00:37:22: guide and some examples of the method in
+00:37:20 - 00:37:24: action please see links in the
+00:37:22 - 00:37:26: description we'll also throw in some
+00:37:24 - 00:37:28: other cool Cube stuff in case you're
+00:37:26 - 00:37:29: interested in speed cubing if you have
+00:37:28 - 00:37:31: any questions feel free to leave a
+00:37:29 - 00:37:33: comment and someone will get back to you
+00:37:31 - 00:37:35: with an answer thank you again and have
+00:37:33 - 00:37:37: a great day congratulations in solving
+00:37:35 - 00:37:40: the Rubik's
+00:37:37 - 00:37:40: Cube

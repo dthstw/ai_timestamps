@@ -1,0 +1,17 @@
+00:00 - Introduction
+01:01 - Download and install
+03:00 - Welcome screen
+04:20 - Sample data overview
+06:00 - Get data spreadsheet
+07:40 - Transform data from spreadsheet using Power Query Editor
+10:10 - Get data from web
+11:25 - Transform data from web using Power Query Editor
+13:10 - Join tables by merging queries
+14:27 - Overview of Power BI layout, including fields and visualizations
+16:40 - Insert title
+17:20 - Insert variety of visualizations
+22:10 - Insert slicer
+23:30 - Apply theme and change style
+25:00 - Save and Publish report
+26:30 - Share with others
+27:05 - Wrap up

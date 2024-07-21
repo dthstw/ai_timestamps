@@ -1,0 +1,604 @@
+00:00:00 - 00:00:05: welcome to the world of chess my name is levi 
+rosman i'm an international master from new york  
+00:00:05 - 00:00:10: city hence the name gotham and in this video 
+i want to give you all the tools you'll need  
+00:00:10 - 00:00:16: to learn chess and navigate it as a beginner i'm 
+covering five major concepts that i've picked out  
+00:00:16 - 00:00:21: they're right here we'll talk about the board 
+and the setup and obviously all of the pieces  
+00:00:21 - 00:00:25: how they move and how many points they're worth 
+then we'll talk about their interactions that  
+00:00:25 - 00:00:31: means what pieces have what vision attacking 
+capturing creating threats and defending them  
+00:00:31 - 00:00:36: that will flow into number three which is checks 
+and checkmate that's talking specifically about  
+00:00:36 - 00:00:41: the king because checkmate is the goal of the game 
+in the fourth category i will show you some basic  
+00:00:41 - 00:00:47: opening ideas how to start a game with white and 
+with black certain traps to avoid falling into  
+00:00:47 - 00:00:52: the middle game will be tactics and strategy 
+the two major branches and talk a little bit  
+00:00:52 - 00:00:55: about end games as well what are the most 
+important end games for beginners to know  
+00:00:55 - 00:00:59: and last but not least we'll just talk a 
+little bit about a study plan all right  
+00:00:59 - 00:01:07: sounds good let's go first things first a 
+chessboard is an 8x8 square which has files  
+00:01:07 - 00:01:16: which are the a file the b file the c file and so 
+on and ranks the first rank the second rank etc  
+00:01:17 - 00:01:26: boards with coordinates as you see here have a1 
+b1 and so on white starts on one and two and if  
+00:01:26 - 00:01:30: you don't have those coordinates the bottom 
+right hand corner should be a light square  
+00:01:31 - 00:01:37: okay each side has eight pawns they go on 
+the second and seventh rank respectively  
+00:01:38 - 00:01:42: then the back rank of pieces you can put the 
+rooks or the castle-like structures in the corners  
+00:01:43 - 00:01:49: followed by the knights or the horses however you 
+want to call them the bishops go next the ones  
+00:01:49 - 00:01:54: with the pointed hats and in the middle you've got 
+the royalty the king and the queen the easiest way  
+00:01:54 - 00:01:59: to remember how to put the king in the queen is 
+that the white queen likes to uh have a white  
+00:01:59 - 00:02:04: dress with white shoes she likes to stand on the 
+same color square the black queen likes a black  
+00:02:04 - 00:02:07: dress with black shoes so the black queen will 
+stand under the dark square and the light screen  
+00:02:07 - 00:02:12: a light queen white queen will stand on a light 
+square the kings will obviously stand adjacent now  
+00:02:13 - 00:02:18: kings you can also remember are on the e file and 
+the queens are on the d file that's one more way  
+00:02:18 - 00:02:24: to remember it now this is a lot of pieces so 
+what i'm gonna do when i'm teaching you about  
+00:02:24 - 00:02:28: peace movements is i'm gonna cut back a lot 
+now hopefully all of the games that you play  
+00:02:28 - 00:02:33: look like this well you will be playing with the 
+white pieces hopefully in this position you're up  
+00:02:33 - 00:02:41: 35 points of material let's start with the pawns 
+pawns are worth one point they only move forward  
+00:02:41 - 00:02:50: they do not move backwards on their first move 
+pawns can go up two in one go like this however  
+00:02:50 - 00:02:55: after that they can only move forward one 
+square if a pawn makes it all the way to the end  
+00:02:57 - 00:03:04: of the board you can promote it to a queen a 
+rook a bishop or a knight even if you already  
+00:03:04 - 00:03:08: have the two you know the two knights for example 
+that you start with you can have a third one  
+00:03:09 - 00:03:15: one thing about pawns the way they capture is not 
+forward it's diagonally one square so for example  
+00:03:16 - 00:03:21: in this position the white pawn would oh sorry 
+wrong arrow the white pawn would capture the  
+00:03:21 - 00:03:30: black pawn like this that would be the capture of 
+a pawn okay um now there's one other bonus rule  
+00:03:30 - 00:03:34: of pawns that i'll include here just for the sake 
+of including it it will confuse you and you might  
+00:03:34 - 00:03:40: be tempted to leave this video but that rule is 
+called on passant there is this special rule i did  
+00:03:40 - 00:03:44: not invent it so please don't hate me which looks 
+something like a software glitch and it goes like  
+00:03:44 - 00:03:56: this if an enemy pawn moves two squares okay two 
+squares and stands side by side with your pawn  
+00:03:57 - 00:04:05: you can take that pawn via something called on 
+poissant in passing only on this move if you  
+00:04:05 - 00:04:11: wait one turn you can't do it and it looks like 
+this you say levy i'm only like five minutes into  
+00:04:11 - 00:04:17: this video you're already confusing me i don't 
+feel safe i listen it's just my rule it's just  
+00:04:17 - 00:04:23: my job to report the rules okay that's the only 
+special rule about pawns okay all good terrific  
+00:04:23 - 00:04:27: now let's move to knights and bishops together 
+because those are called the minor pieces and  
+00:04:27 - 00:04:33: they're worth three points okay bishops are 
+very simple they can go forward and backward  
+00:04:33 - 00:04:37: diagonally on their own color so a 
+light squared bishop that's how it moves  
+00:04:38 - 00:04:42: a dark square bishop in this case would go all 
+the way down here if it could but it can go to  
+00:04:42 - 00:04:48: any of these squares you can go one square three 
+squares whatever nice knights are the most unique  
+00:04:49 - 00:04:57: they move in little l's so that would mean up two 
+over one okay or up one over two so what does that  
+00:04:57 - 00:05:05: look like well that looks like this one two turn 
+or one two turn or one two turn or one two turn  
+00:05:05 - 00:05:10: knights can also go backwards and the cool thing 
+about knights is they can jump over other pieces  
+00:05:10 - 00:05:17: so this knight doesn't have to ask permission 
+it can just directly move to this square  
+00:05:17 - 00:05:21: with no issues now of course you can't take your 
+own pieces so don't try to do that but it could go  
+00:05:21 - 00:05:27: two and one now obviously knights are a little bit 
+slower right it would take a very different amount  
+00:05:27 - 00:05:32: of time for these two pieces to get to the other 
+side of the board uh they're each worth three  
+00:05:32 - 00:05:39: rooks and queens are actually quite simple no more 
+fancy l's rooks go up down left right and they're  
+00:05:39 - 00:05:47: worth five points in any direction that they want 
+so like this like this like this sorry not in any  
+00:05:47 - 00:05:52: direction that they want i should say however 
+much distance that they want to cover queens  
+00:05:52 - 00:05:59: are like a rook and a bishop combined queens are 
+worth nine points and they can go all the way here  
+00:06:00 - 00:06:07: here here here here all the way this way and this 
+way whatever one of those squares that that queen  
+00:06:07 - 00:06:11: chooses to go to it can go to it is super powered 
+you want to keep the queen it's your most powerful  
+00:06:11 - 00:06:16: attacking piece but it shouldn't do damage early 
+you will be fighting against the fully loaded  
+00:06:16 - 00:06:22: position last but not least we have the kings 
+kings are like queens except they're kind of  
+00:06:22 - 00:06:26: not at all uh they can go in any direction that 
+they want but only one square so queen can go as  
+00:06:26 - 00:06:34: much as it wants a king can only move one one more 
+bonus rule for you which is castling okay i said  
+00:06:34 - 00:06:41: i might confuse you a little bit uh castling 
+is a is a move in chess is when you move two  
+00:06:41 - 00:06:49: pieces at the same time it's your king and your 
+rook okay and what that looks like is let's say  
+00:06:49 - 00:06:55: in this kind of a position so it's white's move 
+the king will go two and the rook will hop right  
+00:06:55 - 00:07:00: over next to the king you can obviously only do 
+that when the king and rook can see each other  
+00:07:01 - 00:07:07: and one more thing about that you can only play 
+the move castles as long as you haven't moved  
+00:07:07 - 00:07:13: the king or the rook that you're trying to use for 
+castling you'll learn later in the opening section  
+00:07:13 - 00:07:17: why castling is important it's an important move 
+because it gets the king out of the middle hiding  
+00:07:17 - 00:07:22: it in a little vacation home on the side for now 
+don't be confused if you're confused it's okay  
+00:07:23 - 00:07:27: all things will be explained later let's 
+talk a little bit about how the pieces  
+00:07:27 - 00:07:35: interact on the chessboard the way i want you 
+to think about this okay is vision of a piece  
+00:07:36 - 00:07:41: what does that mean well let's start with the 
+queen this queen sees all the way down here but  
+00:07:41 - 00:07:49: it's all empty squares the board is split into 
+emptiness empty squares and physical pieces  
+00:07:49 - 00:07:54: a piece that is there that is that we can see it 
+okay so first things first the queen sees the pawn  
+00:07:56 - 00:08:02: who else is the pawn for black not for white but 
+for black you look around the rook sees the pawn  
+00:08:02 - 00:08:08: so taking this pawn would be a terrible move 
+because the rook would respond with a capture  
+00:08:08 - 00:08:12: that's a capture of a pawn that's what that's 
+called taking upon capturing a pawn the rook  
+00:08:12 - 00:08:18: would take back we lose nine points in that trade 
+that's how i want you to think about it we get one  
+00:08:19 - 00:08:27: one for nine is not a good trade what else can 
+we see our bishop can see this night who else  
+00:08:27 - 00:08:32: this bishop sees this knight the bishops don't 
+see each other because the knight is in the way  
+00:08:33 - 00:08:37: so if white in this position play the move 
+bishop takes knight and bishop takes bishop  
+00:08:38 - 00:08:42: that's a fair trade that's three 
+for three that's not a bad deal  
+00:08:42 - 00:08:46: okay that's how i want you to think about it when 
+you're first starting out three for three that's  
+00:08:46 - 00:08:56: fine that's more than okay now what does this 
+bishop see bonus question uh-oh uh oh losing five  
+00:08:57 - 00:09:03: would not be good unless we got more than that in 
+return or close like four four points now our rook  
+00:09:03 - 00:09:08: here defends that that's what that's called 
+that's called defense same way that rook is  
+00:09:08 - 00:09:12: protecting that pawn or defending that pawn 
+we're defending but that's not a fair trade  
+00:09:12 - 00:09:18: so in this position let's move this rook here 
+for example on this square look who we see oh  
+00:09:20 - 00:09:24: and the queen cannot come down and 
+take us that's a very important thing  
+00:09:24 - 00:09:31: because the rook is protecting the rook 
+right now here how about this what if  
+00:09:31 - 00:09:38: let's say black plays a move queen f6 the queen 
+sees the knight is it attacking the knight
+00:09:41 - 00:09:47: no it's not because we're protecting it that would 
+not be a good decision for black to take and one  
+00:09:47 - 00:09:54: more thing let's say in this position black plays 
+this move can we capture that bishop that bishop  
+00:09:54 - 00:10:00: is trying to win our queen and many beginners 
+go oh god oh oh god oh my queen's in danger  
+00:10:00 - 00:10:08: but hold on a second can't we just take is that 
+protected by anything no that's how i want you  
+00:10:08 - 00:10:13: to start thinking about the game as you play it 
+is anything protecting that am i attacking it  
+00:10:14 - 00:10:20: the point value system okay because this queen is 
+not attacking this pawn because it's protected but  
+00:10:20 - 00:10:26: if no one was protecting that pawn then it would 
+be hopefully that kind of begins to cultivate the  
+00:10:26 - 00:10:33: thought process of how pieces interact in a chess 
+game one thing hidden in all this is the fact that  
+00:10:33 - 00:10:41: white can play a move queen c4 and that hits the 
+king that's called a check this next part will  
+00:10:41 - 00:10:49: cover just checks and checkmate so we'll move 
+ahead to this position here it's white to move  
+00:10:49 - 00:10:55: white has a million ways to attack this 
+king a check is an attack on the king  
+00:10:56 - 00:11:02: it threatens to capture the king and chess there 
+is no capturing of the king the king has to escape  
+00:11:02 - 00:11:09: danger so for example let's say the white queen 
+goes here check well the king would slide out of  
+00:11:09 - 00:11:19: danger otherwise we would take the king and so on 
+but what if we put the queen here that's a check  
+00:11:19 - 00:11:26: the king anywhere it moves remains in check which 
+means that we have put the enemy king in a check  
+00:11:26 - 00:11:34: that is unavoidable nothing that black 
+can do that is check mate and we would win  
+00:11:34 - 00:11:39: the game checkmate happens at the beginning 
+of the game sometimes sometimes all the way  
+00:11:39 - 00:11:44: at the end okay sometimes in the middle but 
+checkmate will ultimately decide the game  
+00:11:45 - 00:11:51: one little more i've got to include a little bonus 
+here this position is a little bit different let's  
+00:11:51 - 00:11:55: say it's black's move here black's move not 
+white's move it's white's move we give a check  
+00:11:55 - 00:12:04: but if it's black's move can black move legally no 
+because black cannot put the king in danger that's  
+00:12:04 - 00:12:11: not allowed you can't give up your your king but 
+is black in check is the queen threatening the  
+00:12:11 - 00:12:16: king right now to take it no because the queen 
+doesn't actually see the king it just doesn't  
+00:12:17 - 00:12:26: there the queen does not see the king this is 
+called stalemate stalemate is when one side has  
+00:12:26 - 00:12:35: no legal moves but is not in check the king is not 
+in danger that is a draw not a win for one side  
+00:12:36 - 00:12:42: but a draw a tie you say levy that's stupid what 
+if i'm up 37 000 points of material i accidentally  
+00:12:42 - 00:12:49: stalemate tough luck it's a draw we're working 
+on it it's december 1st 2 2020. if the rules  
+00:12:49 - 00:12:54: change in the future i'll make an update 
+video but as far as it goes this is still it  
+00:12:54 - 00:12:59: i'm very sorry now as i said checkmate 
+can happen at the beginning of the game  
+00:12:59 - 00:13:07: right so the fastest checkmate known to 
+well chess is called the two move checkmate  
+00:13:07 - 00:13:11: and essentially it's it's it's this i mean i'm 
+just going to show it to you so you know it  
+00:13:12 - 00:13:17: but on the second move black can play 
+queen here if white starts out with  
+00:13:17 - 00:13:24: pawn to f3 and pawn to g4 and now you're in 
+check and check is unavoidable you don't always  
+00:13:24 - 00:13:30: have to move your king when you are in check okay 
+you can also block the check if it's possible  
+00:13:31 - 00:13:36: you can also capture whatever is attacking 
+your king but in this particular case you can't  
+00:13:37 - 00:13:44: now i promised you that we would look at openings 
+and we're going to do that now how do you start  
+00:13:44 - 00:13:48: the game of chess here you are you're sitting 
+there you studied this video all right levy  
+00:13:49 - 00:13:55: let's do something let's go in the beginning of 
+the game you want to take control of the center  
+00:13:55 - 00:14:01: of the board this area for advanced 
+beginners maybe a little rectangle  
+00:14:02 - 00:14:08: best way to do that is to put pawns in the 
+center so that might mean something like e4  
+00:14:09 - 00:14:19: or d4 both are okay all right now just for 
+instructive purposes i'm going to do nothing  
+00:14:19 - 00:14:24: with black i'm going to move the knight back and 
+forth to give us the most perfect setup possible  
+00:14:24 - 00:14:30: if you can put a second pawn in the center you 
+should do that without it getting captured if  
+00:14:30 - 00:14:36: you can do it make sure you can do it okay i'm 
+gonna continue to do these things over here  
+00:14:37 - 00:14:42: next come the knights again to the center of the 
+board better because from there they control more  
+00:14:42 - 00:14:48: squares knights on the side they don't really 
+do that okay no i'm still doing my thing over  
+00:14:48 - 00:14:53: here two nights that's usually the best way 
+to go if you can the bishops will go next  
+00:14:53 - 00:15:01: all right and one thing that you have to remember 
+bishop can go to c4 or to d3 or even to e2  
+00:15:01 - 00:15:06: as long as you're getting out the bishop you want 
+to give everybody a turn in the opening before you  
+00:15:06 - 00:15:11: start repeating moves you don't want to move the 
+same piece four or five times that's not how chess  
+00:15:11 - 00:15:15: works you don't need to reinvent the wheel at 
+the beginning of a chess game because we already  
+00:15:15 - 00:15:21: kind of know how to do that i'm these are the 
+secrets so again black is just doing goofy stuff  
+00:15:21 - 00:15:26: and i'll show you obviously a legitimate game 
+after this now i'll put the second bishop just  
+00:15:27 - 00:15:30: don't want the bishop to feel left 
+out remember that castling rule  
+00:15:31 - 00:15:36: get the king out of the center of 
+the board two squares with the king  
+00:15:38 - 00:15:45: and the rook will jump right over and be adjacent 
+okay i want you to remember to do this if you try  
+00:15:45 - 00:15:49: to do it at home on a computer you can just 
+kind of drag this over here and it will happen  
+00:15:49 - 00:15:55: or on a tablet or a mobile phone but uh over 
+the board you have to know how to do this then  
+00:15:55 - 00:16:01: you can bring the queen up and connect the rooks 
+that's kind of called the golden moves of chess  
+00:16:01 - 00:16:09: now here's the problem uh if you have a strong 
+opponent and they just do the same thing which is  
+00:16:09 - 00:16:14: probably what will happen you can't quite just go 
+put two pawns in the center because they will take  
+00:16:16 - 00:16:22: oops and it's not a good idea to bring your queen 
+out very early because the queen can be attacked  
+00:16:22 - 00:16:26: right black just has way too much going on both 
+sides have too many pieces to bring in your most  
+00:16:26 - 00:16:31: powerful piece your most powerful piece will get 
+taken everything in the position is protected very  
+00:16:31 - 00:16:40: well so if they play e5 you can delay this move 
+for now you don't have to always go two squares  
+00:16:40 - 00:16:45: you can still get the night out attacking this 
+pawn let's say they go knight c6 this is very  
+00:16:45 - 00:16:52: classical they defend now bishop to c4 or 
+the second night the second night bishop  
+00:16:52 - 00:17:00: to c4 would be another way castling night out on 
+out and so on the difficult thing about openings  
+00:17:00 - 00:17:04: is that when you're first learning you're very 
+tentative you're thinking about your own moves  
+00:17:04 - 00:17:08: all right i got to get all these pieces to their 
+right squares i better not lose any of the pieces  
+00:17:08 - 00:17:12: and also beginners do all sorts of wild stuff in 
+the opening they don't always follow the rules  
+00:17:12 - 00:17:19: you know uh i will teach you the four move 
+checkmate momentarily but beginners do crazy  
+00:17:19 - 00:17:24: things in the opening so if your opponent is out 
+here doing things like bringing the queen out  
+00:17:24 - 00:17:30: you're like wait can't i just take that yes 
+of course you can a free queen is very good  
+00:17:30 - 00:17:34: even if it's not free queen is good take a 
+queen if you can in the beginning of the game  
+00:17:34 - 00:17:40: be vigilant you're already in battle it's not just 
+about positioning in the beginning of the game  
+00:17:40 - 00:17:45: your pieces are coming out and they're fighting 
+for squares as much as they are also targeting the  
+00:17:45 - 00:17:52: opponent's pieces so as soon as move one already 
+be vigilant what can you capture what's a fair  
+00:17:52 - 00:17:59: trade what's a free piece what's hanging material 
+and so on there's certain openings that you can  
+00:17:59 - 00:18:05: look up the biggest difference between openings 
+in chess are openings that are called theoretical  
+00:18:06 - 00:18:12: and openings that are called setups setup openings 
+for example like the london system with the white  
+00:18:12 - 00:18:19: pieces you play d4 i don't know why this is here 
+you play d4 and then you play the bishop out and  
+00:18:19 - 00:18:28: you kind of play the same way every time d4 and 
+bishop f4 the london system is something that you  
+00:18:28 - 00:18:34: can do the same every game basically every game 
+unless black like does something totally crazy  
+00:18:35 - 00:18:42: uh and loses a bunch of pieces early on with 
+with the king's pawn you can't really because  
+00:18:42 - 00:18:47: when you play the king's pawn here there is 
+a lot of different ways that black can play i  
+00:18:47 - 00:18:50: mean i know it doesn't seem like it if you're just 
+starting out but black can play the french defense  
+00:18:50 - 00:18:55: black can play king spawn black and played 
+the sicilian defense shout out to beth harmon  
+00:18:55 - 00:18:59: kara khan defense so you have to know what to 
+do a little bit about everyone and you add your  
+00:18:59 - 00:19:08: knowledge incrementally but one thing i'll flip 
+this to black is uh this the early queen attacks  
+00:19:09 - 00:19:15: and in particular something called the scholars 
+mate if you're not careful with the black pieces  
+00:19:15 - 00:19:21: you will immediately misunderstand what this 
+move is all about white wants to play bishop c4  
+00:19:22 - 00:19:28: and checkmate you that would look something like 
+this the ship c4 queen h5 why does this work  
+00:19:29 - 00:19:37: this is the only square near the king which is 
+only protected by the king yes only protected  
+00:19:37 - 00:19:46: by the king which means if white is able to land 
+the queen on f7 or f2 if you're playing with black  
+00:19:46 - 00:19:55: and the queen is protected by the bishop it's 
+mate you lose four moves done game is over so  
+00:19:55 - 00:20:00: how do you avoid this happening every beginner has 
+fallen for this at some point something on f7 okay  
+00:20:02 - 00:20:07: how do you avoid this happening well let's say 
+you play you know play e4 e5 and they play queen  
+00:20:07 - 00:20:15: h5 first things first this is not an attack here 
+it is an attack on this pawn though so don't go  
+00:20:15 - 00:20:21: g6 because they will take they will take and that 
+will be a double attack of your king and your rook  
+00:20:22 - 00:20:29: very common trap what i recommend if you play pawn 
+e5 is to always develop your queen's knight next  
+00:20:30 - 00:20:35: whatever white plays unless of course white offers 
+you a pawn capture in the center of the board  
+00:20:35 - 00:20:42: that's why you put the pawn there is to capture so 
+bring out the queen's knight that defends the pawn  
+00:20:42 - 00:20:48: and if they go to mate you make sure they can't 
+take this defend it with the queen for example  
+00:20:48 - 00:20:53: with the queen for example now you can block 
+because your knight protects your central pawn  
+00:20:54 - 00:21:01: okay there's a lot of ways to not fall into 
+this so fast uh at the same time if they you  
+00:21:01 - 00:21:07: know bring out their bishop on the second 
+move uh then you can also play knight f6  
+00:21:07 - 00:21:13: now the queen cannot go here because your 
+knight covers that little tricks to avoid  
+00:21:13 - 00:21:18: losing very quickly otherwise the standard 
+game of chess might look something like this  
+00:21:19 - 00:21:26: this is what a lot of beginner games look like 
+and this will flow into something called the  
+00:21:26 - 00:21:34: middle game which is the ocean in which chess 
+players try to swim but it's not so simple to do  
+00:21:36 - 00:21:40: the middle game is split into 
+two things strategic play  
+00:21:40 - 00:21:48: and tactical play beginners games are decided 
+95 of the time with tactics i will give you a  
+00:21:48 - 00:21:57: very simple example of what a tactic is a 
+tactic is a forcing move or sequence of them  
+00:21:58 - 00:22:05: that guarantees gain of material so look at 
+the position that you have in front of you  
+00:22:06 - 00:22:14: how do we get this knight with the king that 
+would be a three-step process one two three  
+00:22:15 - 00:22:21: that's a bit more strategic in nature in positions 
+with many more pieces on the board strategic plans  
+00:22:21 - 00:22:26: take two or three moves often times it means 
+re-rounding a piece to the other side of  
+00:22:26 - 00:22:33: the board to make it more active gaining very 
+good control of a square tactics are immediate  
+00:22:33 - 00:22:39: they are the most forcing moves in the game they 
+make they make your opponent react so for example  
+00:22:39 - 00:22:46: here there's something called a double attack 
+or a fork the queen can go here attacking the  
+00:22:46 - 00:22:52: king and the knight that will guarantee that 
+you win the night guaranteed because the king  
+00:22:53 - 00:22:57: has to move and then we would take the 
+knight there's one other way to do this  
+00:22:58 - 00:23:04: and that would be here because that's all 
+the same that's how powerful the queen is  
+00:23:04 - 00:23:15: another kind of pin sorry another kind of tactic 
+i should say is a pin and a pin means a diagonal  
+00:23:16 - 00:23:23: or a vertical or horizontal attack on a piece that 
+can't move it just can't move this knight cannot  
+00:23:23 - 00:23:29: move because we would win the king and we cannot 
+capture a king look it literally won't let me move  
+00:23:30 - 00:23:35: this is a pin on the knight to the king this can 
+also happen in reverse there is some debate as  
+00:23:35 - 00:23:41: the skewer x-ray pin but the concept is all the 
+same and by the way if it was black's move in this  
+00:23:41 - 00:23:50: position black can fork or double attack the queen 
+and the king themselves tactics are so important  
+00:23:50 - 00:23:56: you should do as many of them as possible there 
+are workbooks my favorite one is 1001 chess  
+00:23:56 - 00:24:00: exercises for beginners they did not sponsor 
+this video i just recommended that book  
+00:24:00 - 00:24:06: that book goes chapter by chapter every single 
+kind of tactic deflection pin you know discovered  
+00:24:06 - 00:24:10: attack there's a lot of different tactics a 
+lot of different ways to solve these tactics  
+00:24:10 - 00:24:17: um that's what you should do chess is so much 
+about pattern recognition and puzzle solving  
+00:24:17 - 00:24:22: because you don't need to reinvent the wheel when 
+you play the game of chess uh for end games you  
+00:24:22 - 00:24:30: know i i as we move to end games end games are uh 
+a series of positions toward the end obviously of  
+00:24:30 - 00:24:40: chess games which you should know how to win so 
+for example king and one pawn versus king endgames  
+00:24:40 - 00:24:46: that's something that without any knowledge you 
+would not be able to figure out yourself that's  
+00:24:46 - 00:24:50: something that you can pick up and learn there's a 
+book a hundred end games you must know for example  
+00:24:50 - 00:24:58: it's a great book um but more importantly for 
+beginners is how to checkmate for example with  
+00:24:58 - 00:25:04: a queen and a king versus king like that is 
+something you should be able to do like that  
+00:25:04 - 00:25:10: or a ladder checkmate a ladder checkmate is even 
+easier so when you have a queen and another queen  
+00:25:10 - 00:25:17: or a queen and a rook for example or two rooks 
+and that's useful for positions like this like  
+00:25:17 - 00:25:22: let's say you get a position like this in a game 
+with queen and pawn you go wait remember that rule  
+00:25:23 - 00:25:29: i can go make a second queen it's much easier to 
+win with two queens versus a king and a latter  
+00:25:29 - 00:25:37: checkmate uh would uh would look for example like 
+like this let's say uh we promote a second queen  
+00:25:37 - 00:25:45: just you know you do a drill on ladder 
+checkmate it's when you use both of your pieces  
+00:25:46 - 00:25:53: to cut the enemy king laterally and walk it 
+to the other side of the board so for example  
+00:25:53 - 00:25:58: that might look something like this 
+queen b5 cuts the king laterally  
+00:25:59 - 00:26:03: and now your your queens alternate 
+which row they're going to control
+00:26:05 - 00:26:12: or rank right there you go that's something that 
+you just pick up as a beginner you go practice  
+00:26:12 - 00:26:16: some ladder checkmates you go practice 
+how to checkmate with king and queen  
+00:26:17 - 00:26:21: i will give you kind of the the two minute 
+rundown i don't know if it will be useful for you  
+00:26:22 - 00:26:27: on please disappear thank you the easiest 
+way to checkmate with just the queen  
+00:26:29 - 00:26:34: is to put the queen in what's called knight 
+opposition what does that mean that means  
+00:26:34 - 00:26:42: if this piece was a knight it would be attacking 
+the king now you copy everything black does  
+00:26:42 - 00:26:47: if black moves one square to the left you move 
+one square to the left if black moves one square  
+00:26:47 - 00:26:55: diagonally backwards you go the same way and 
+you get this king to one of the final rows  
+00:26:56 - 00:27:00: if the king gets locked on one of those 
+final rows you make sure the king cannot  
+00:27:00 - 00:27:06: escape so like i said one square this 
+way one square this way this way this way  
+00:27:06 - 00:27:13: this way this way oh the king's on the 
+back row now it's time to bring our king  
+00:27:14 - 00:27:23: so for example here here here here here here the 
+king will prevent the enemy king from escaping  
+00:27:23 - 00:27:28: the king cannot put itself in danger obviously 
+with our king there because we would capture it  
+00:27:28 - 00:27:34: so for example now we deliver either this 
+checkmate or the checkmate i like to call  
+00:27:34 - 00:27:40: in your face this is a check and the king is 
+protecting the queen otherwise if our king  
+00:27:40 - 00:27:44: was back here the king can just take the 
+king can capture things for free of course  
+00:27:45 - 00:27:50: but in this case the king would be defending the 
+queen so that's the use of end games as a beginner  
+00:27:50 - 00:27:54: you learn how to checkmate for example with just 
+a queen you learn how to checkmate with just  
+00:27:54 - 00:27:58: the rook there's all sorts of resources on the 
+internet for things like that but the point of  
+00:27:58 - 00:28:04: this video is to point you in the right direction 
+you need to learn basic checkmates and ultimately  
+00:28:04 - 00:28:11: just how to win a position where you have 
+like a huge lead okay hugely in in material  
+00:28:11 - 00:28:16: trade the pieces down get it to an end game get a 
+ladder checkmate checkmate somebody with a queen  
+00:28:17 - 00:28:23: i told you that at the end of all this i would 
+recommend what i think uh is the best and kind of  
+00:28:23 - 00:28:28: most reliable study plan i get asked this question 
+all the time especially now with so many more  
+00:28:28 - 00:28:34: chess fans around the world because of the queen's 
+gambit it was december 1st like i said 2020 so  
+00:28:34 - 00:28:37: whenever you're watching in the future if you've 
+made it this far in the video you want to know  
+00:28:37 - 00:28:43: how do you get better at chess there's a ton of 
+books there's a ton of resources a few days after  
+00:28:43 - 00:28:48: recording this i will have a beginner's course 
+it will be linked in the comments um you want  
+00:28:48 - 00:28:54: to learn a few openings with white and with black 
+you want to be confident in how you start the game  
+00:28:54 - 00:28:59: personally i don't recommend playing computers 
+or bots i recommend going to play people  
+00:28:59 - 00:29:06: online or how you know over the board i recommend 
+longer games 10 minute games 15 minute games  
+00:29:06 - 00:29:11: i recommend playing just a few games a day 
+and then analyzing and when you analyze with a  
+00:29:11 - 00:29:18: computer it won't always be so easy to understand 
+and frankly there's no clear advice i can give on  
+00:29:18 - 00:29:24: how to understand certain engine recommendations 
+the because it doesn't speak to you frankly  
+00:29:25 - 00:29:30: when you look at a game with an engine you 
+need to look for your one move mistakes  
+00:29:30 - 00:29:36: you need to like oh i blundered that piece that's 
+what i did i just literally left the piece hanging  
+00:29:36 - 00:29:43: okay how did my opening go did i fall for a trap 
+try not to fall for the same mistake two times  
+00:29:44 - 00:29:48: have your end games down and start slowly 
+adding a little bit of information to your  
+00:29:48 - 00:29:54: end games learn how to checkmate with a rook 
+okay learn a king and pawn end game for example  
+00:29:55 - 00:30:03: keep adding information there and for the puzzle 
+solving quality over quantity do 10 puzzles in  
+00:30:03 - 00:30:09: one day spend as much time on them as you need 
+get them all correct when you solve puzzles  
+00:30:10 - 00:30:16: you should look to solve them with 
+the process of checks captures attacks  
+00:30:17 - 00:30:22: those are the most forcing moves in 
+chess moves that they have to respond to  
+00:30:22 - 00:30:26: i have videos on puzzle solving so if you ever 
+want to watch videos on puzzle solving and how to  
+00:30:26 - 00:30:33: improve at that that there's content out out there 
+for you as well but that's how you get better so  
+00:30:33 - 00:30:39: you want to do 10 puzzles get 10 correct don't do 
+30 puzzles and only get 10 correct go for 100 that  
+00:30:39 - 00:30:44: way you understand the pattern kind of immerse 
+yourself in it and that's how you would improve  
+00:30:45 - 00:30:51: many people who start the game as adults gain 
+hundreds of rating points on chess.com or wherever  
+00:30:51 - 00:30:57: they play just playing like that i don't really 
+have much else to add i think i've given you just  
+00:30:57 - 00:31:02: about enough we're 30 minutes into this video 
+this is already a lot of information to intake  
+00:31:02 - 00:31:07: if any of you have questions start conversations 
+in the comments i'm sure people would be more than  
+00:31:07 - 00:31:11: happy to jump in and answer about books 
+training regimens and so on and so forth  
+00:31:12 - 00:31:17: that's basically it welcome once again to 
+chess and if there's any other content that  
+00:31:17 - 00:31:20: you'd like to see on my channel besides 
+the playlist that i have on these subjects  
+00:31:20 - 00:31:25: let me know like i said in the comments 
+below enjoy welcome to the 64 squares

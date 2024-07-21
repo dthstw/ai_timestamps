@@ -1,0 +1,11 @@
+0:00 - Introduction
+0:42 - Basic concepts
+2:40 - Notation
+5:09 - Cross
+11:40 - First layer corners
+17:07 - Second layer edges
+23:15 - Top yellow cross
+25:45 - Positioning the last layer corners
+30:47 - Twisting the last layer corners
+34:01 - Positioning the last layer edges
+37:04 - Closing thoughts

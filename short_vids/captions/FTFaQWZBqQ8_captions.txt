@@ -1,0 +1,625 @@
+00:00:00 - 00:00:03: hi in this video i'm going to show you
+00:00:01 - 00:00:07: the best way to start practicing
+00:00:03 - 00:00:07: designing apps and websites in figma
+00:00:10 - 00:00:14: so in this video i'm going to give you
+00:00:11 - 00:00:15: step-by-step instructions you can
+00:00:14 - 00:00:18: literally follow click by click i'll
+00:00:15 - 00:00:20: only tell you the stuff that you need to
+00:00:18 - 00:00:22: get started designing interfaces so
+00:00:20 - 00:00:25: let's get started so we're going to be
+00:00:22 - 00:00:28: looking at a tool called figma and it
+00:00:25 - 00:00:30: has a few advantages one most
+00:00:28 - 00:00:32: importantly for you it's free to get
+00:00:30 - 00:00:35: started if you're working by yourself
+00:00:32 - 00:00:37: we like using it at agn smart because it
+00:00:35 - 00:00:39: also has really good collaboration so we
+00:00:37 - 00:00:42: can have multiple people working on the
+00:00:39 - 00:00:44: same design file at the same time it's
+00:00:42 - 00:00:48: also really fast it works on any
+00:00:44 - 00:00:50: computer whether you have a mac or a pc
+00:00:48 - 00:00:53: or linux whatever you have it works
+00:00:50 - 00:00:55: right in the browser and it also has a
+00:00:53 - 00:00:58: mobile companion app so you can preview
+00:00:55 - 00:01:01: your designs on a mobile screen so there
+00:00:58 - 00:01:02: are really no downsides to starting with
+00:01:01 - 00:01:04: a tool like figma as you're watching the
+00:01:02 - 00:01:07: video if you have any questions about
+00:01:04 - 00:01:08: how to do a particular effect in figma
+00:01:07 - 00:01:10: or any comment or something that you
+00:01:08 - 00:01:11: want to recommend please put it in the
+00:01:10 - 00:01:14: comments below and if you want to find
+00:01:11 - 00:01:16: out more tips about ui and ux make sure
+00:01:14 - 00:01:18: to subscribe to our free newsletter the
+00:01:16 - 00:01:20: link to that is in the description below
+00:01:18 - 00:01:23: and it's a great resource for anyone
+00:01:20 - 00:01:26: starting an ui and ux so this is the
+00:01:23 - 00:01:27: website you just go to figma.com
+00:01:26 - 00:01:30: and i'm already signed in but you can
+00:01:27 - 00:01:32: sign up very quickly even with your
+00:01:30 - 00:01:35: google account and get started but
+00:01:32 - 00:01:37: before we jump right into figma i want
+00:01:35 - 00:01:39: to show you the way i would recommend to
+00:01:37 - 00:01:40: get started so you just want to start
+00:01:39 - 00:01:43: practicing
+00:01:40 - 00:01:45: now for that i'm not going to ask you to
+00:01:43 - 00:01:47: start designing something from scratch
+00:01:45 - 00:01:49: because i believe that would be very
+00:01:47 - 00:01:52: hard with someone especially if you're a
+00:01:49 - 00:01:55: complete beginner in this space
+00:01:52 - 00:01:56: and you have no grounding in design
+00:01:55 - 00:01:58: principles and things like that so the
+00:01:56 - 00:02:01: best way for you to get started is
+00:01:58 - 00:02:03: actually to copy other designs and the
+00:02:01 - 00:02:06: reason this is so good is because
+00:02:03 - 00:02:08: you can see how this design was created
+00:02:06 - 00:02:11: so that when you get stuck on something
+00:02:08 - 00:02:14: you can actually see how this person who
+00:02:11 - 00:02:16: created this file achieved a particular
+00:02:14 - 00:02:18: effect or look inside of figma and this
+00:02:16 - 00:02:19: is totally fine in the beginning because
+00:02:18 - 00:02:21: you're not going to be
+00:02:19 - 00:02:23: selling these you're not going to be
+00:02:21 - 00:02:24: saying that you designed something when
+00:02:23 - 00:02:27: you copied it from someone else this is
+00:02:24 - 00:02:29: just for your own practice and it's a
+00:02:27 - 00:02:31: really good way to get started so as you
+00:02:29 - 00:02:35: can see here this is what figma looks
+00:02:31 - 00:02:37: like after you log in and start a file
+00:02:35 - 00:02:40: and i haven't even shown you how to
+00:02:37 - 00:02:43: start a file because i want you to use
+00:02:40 - 00:02:45: another file as your starting point as
+00:02:43 - 00:02:48: opposed to a blank file and like i said
+00:02:45 - 00:02:50: we're not going to cover everything that
+00:02:48 - 00:02:52: you can see here on the screen in terms
+00:02:50 - 00:02:54: of what all the various buttons do we're
+00:02:52 - 00:02:57: just going to focus about how you can
+00:02:54 - 00:02:58: get started now to do that
+00:02:57 - 00:03:01: i wanted to start off with a template
+00:02:58 - 00:03:04: and what i literally did was i typed
+00:03:01 - 00:03:06: into google sigma resources and i got a
+00:03:04 - 00:03:09: bunch of results i clicked on a few of
+00:03:06 - 00:03:11: them and the third one called literally
+00:03:09 - 00:03:13: figmaresources.com
+00:03:11 - 00:03:15: is a really good one and i have it open
+00:03:13 - 00:03:18: here so when you look at that you'll
+00:03:15 - 00:03:20: find a bunch of free templates and this
+00:03:18 - 00:03:22: is a great thing about figma there are a
+00:03:20 - 00:03:25: lot of free resources on the web that
+00:03:22 - 00:03:27: you can use to start practicing to
+00:03:25 - 00:03:29: incorporate into your designs so you
+00:03:27 - 00:03:33: don't have to start from scratch
+00:03:29 - 00:03:35: and i picked one of these that is a food
+00:03:33 - 00:03:38: delivery app ui
+00:03:35 - 00:03:40: and i have it open here so the way it
+00:03:38 - 00:03:43: works with finger ma is because it's all
+00:03:40 - 00:03:45: web-based you can literally click this
+00:03:43 - 00:03:49: button here that says copy to figma
+00:03:45 - 00:03:50: and it will copy that file over to your
+00:03:49 - 00:03:53: figma account well first it's going to
+00:03:50 - 00:03:55: open it in a new browser tab where you
+00:03:53 - 00:03:57: can see it and there might be even like
+00:03:55 - 00:03:59: other people viewing this file at the
+00:03:57 - 00:04:02: same time but you can see here at the
+00:03:59 - 00:04:05: top that it says view only and we want
+00:04:02 - 00:04:07: to be able to make edits to this so what
+00:04:05 - 00:04:09: we do in this case when we're looking at
+00:04:07 - 00:04:11: someone else's file is we just click on
+00:04:09 - 00:04:14: the name
+00:04:11 - 00:04:16: and then we say duplicate to your drafts
+00:04:14 - 00:04:18: so if you're signed into figma it's just
+00:04:16 - 00:04:20: going to create a copy of this file in
+00:04:18 - 00:04:22: your own figma account and that's
+00:04:20 - 00:04:24: exactly what i did
+00:04:22 - 00:04:26: and i have it open in this tab right
+00:04:24 - 00:04:29: here so you can see it no longer says
+00:04:26 - 00:04:31: view only like it says in that tab and i
+00:04:29 - 00:04:33: can start editing this all right so now
+00:04:31 - 00:04:36: we have a copy of that file that we're
+00:04:33 - 00:04:37: going to use as our starting point so
+00:04:36 - 00:04:39: in figma as you can see i can just
+00:04:37 - 00:04:41: scroll up and down to see the different
+00:04:39 - 00:04:44: screens
+00:04:41 - 00:04:45: in this file and i can very easily
+00:04:44 - 00:04:47: rearrange them you'll notice that in the
+00:04:45 - 00:04:50: original file
+00:04:47 - 00:04:52: they were placed side by side and i have
+00:04:50 - 00:04:54: more of a vertical arrangement and i can
+00:04:52 - 00:04:57: just do that by grabbing the title and
+00:04:54 - 00:04:58: moving it around with my mouse cursor
+00:04:57 - 00:05:01: like that
+00:04:58 - 00:05:04: i can also zoom in and zoom out with a
+00:05:01 - 00:05:07: pinch gesture on my trackpad that way i
+00:05:04 - 00:05:09: can see all of my screens at once or i
+00:05:07 - 00:05:12: can zoom in to see a particular screen
+00:05:09 - 00:05:14: so let's say now i want to start copying
+00:05:12 - 00:05:17: this design what do i do well just to
+00:05:14 - 00:05:19: give you the basics on the left here i
+00:05:17 - 00:05:21: just have
+00:05:19 - 00:05:23: a bunch of layers and then when i select
+00:05:21 - 00:05:25: an element i get the settings for that
+00:05:23 - 00:05:28: element on the right okay
+00:05:25 - 00:05:30: so what i want to do now is create a
+00:05:28 - 00:05:31: rectangle like this
+00:05:30 - 00:05:34: for my own design
+00:05:31 - 00:05:36: now this has a specific shape and this
+00:05:34 - 00:05:39: is called a frame so the first tool you
+00:05:36 - 00:05:41: need to know about is the frames here or
+00:05:39 - 00:05:44: you hit f on your keyboard and anything
+00:05:41 - 00:05:46: i press will show here on
+00:05:44 - 00:05:48: the bottom left corner so you know
+00:05:46 - 00:05:50: exactly what i pressed
+00:05:48 - 00:05:53: to activate a particular tool and then i
+00:05:50 - 00:05:55: can start drawing a size but now i don't
+00:05:53 - 00:05:57: know how to get the exact same size as
+00:05:55 - 00:05:59: this and so what i'm going to do is i'm
+00:05:57 - 00:06:00: going to delete this
+00:05:59 - 00:06:02: and
+00:06:00 - 00:06:05: i'm going to click on this
+00:06:02 - 00:06:07: screen that exists already
+00:06:05 - 00:06:09: and if i look at the frame here and i
+00:06:07 - 00:06:13: click on that it shows me that this is
+00:06:09 - 00:06:15: using an iphone 11 pro max right so this
+00:06:13 - 00:06:16: is a standard size and what i can do in
+00:06:15 - 00:06:20: figma
+00:06:16 - 00:06:22: is i can hit f again to go into
+00:06:20 - 00:06:24: the frame mode and then i can select
+00:06:22 - 00:06:28: here from a bunch of templates and i'll
+00:06:24 - 00:06:30: select iphone 11 pro max and then it
+00:06:28 - 00:06:32: automatically puts in a frame of the
+00:06:30 - 00:06:35: perfect size i'll just place that right
+00:06:32 - 00:06:37: next to the original frame and i can
+00:06:35 - 00:06:41: start copying the design right
+00:06:37 - 00:06:43: so i can see here that they have a fancy
+00:06:41 - 00:06:45: design element here with the purple but
+00:06:43 - 00:06:47: let's keep things simple for now and
+00:06:45 - 00:06:50: let's just assume i just want a purple
+00:06:47 - 00:06:51: background right so the easiest way i
+00:06:50 - 00:06:52: could accomplish this
+00:06:51 - 00:06:54: is
+00:06:52 - 00:06:56: i could either give this whole frame a
+00:06:54 - 00:06:58: background color or i could draw a
+00:06:56 - 00:07:00: rectangle
+00:06:58 - 00:07:02: that's purple right that can be in my
+00:07:00 - 00:07:04: background so if i want to draw a
+00:07:02 - 00:07:06: rectangle i can do that from here you
+00:07:04 - 00:07:08: can see that this is the rectangle tool
+00:07:06 - 00:07:10: and it already says like r next to it so
+00:07:08 - 00:07:14: i'm going to hit r on my keyboard
+00:07:10 - 00:07:16: and draw a rectangle
+00:07:14 - 00:07:17: right so i don't want it to take up i
+00:07:16 - 00:07:19: don't need it to take up the whole
+00:07:17 - 00:07:21: screen this is fine now i can see by
+00:07:19 - 00:07:25: default this is purple
+00:07:21 - 00:07:26: so i'll click on it and see here like i
+00:07:25 - 00:07:28: said whenever i select something the
+00:07:26 - 00:07:30: settings for that element will be on the
+00:07:28 - 00:07:32: right so i'll see here that here is the
+00:07:30 - 00:07:33: gray color and i don't want it to be
+00:07:32 - 00:07:35: gray
+00:07:33 - 00:07:37: i want it to be that purple so i can
+00:07:35 - 00:07:39: either try to change things here or i
+00:07:37 - 00:07:41: can use the eyedropper and this is
+00:07:39 - 00:07:42: something that you might already know
+00:07:41 - 00:07:45: from something like photoshop if you've
+00:07:42 - 00:07:47: ever used a image editing tool or
+00:07:45 - 00:07:49: anything like that so i'll use that and
+00:07:47 - 00:07:52: i'll pick just this color right so this
+00:07:49 - 00:07:56: is good enough for now
+00:07:52 - 00:07:58: next i want to create this card so this
+00:07:56 - 00:07:59: is just another rectangle essentially
+00:07:58 - 00:08:02: right so i'll just draw another
+00:07:59 - 00:08:05: rectangle here and try to have it to be
+00:08:02 - 00:08:07: approximately the same height so i'll
+00:08:05 - 00:08:09: notice here that well the color is
+00:08:07 - 00:08:10: different and i don't have the fancy
+00:08:09 - 00:08:13: rounding so let's start with the color
+00:08:10 - 00:08:15: since we already covered that and this
+00:08:13 - 00:08:16: looks like a very light gray it's not
+00:08:15 - 00:08:18: white because i can see that the circle
+00:08:16 - 00:08:19: is white so what i can do quickly is
+00:08:18 - 00:08:23: again
+00:08:19 - 00:08:24: i'll grab the eyedropper tool select
+00:08:23 - 00:08:26: here
+00:08:24 - 00:08:28: so now i have the same color that's on
+00:08:26 - 00:08:30: the left here right but i can notice
+00:08:28 - 00:08:33: also that the corners here it has these
+00:08:30 - 00:08:36: nice rounded corners that i don't have
+00:08:33 - 00:08:38: and for that right under the
+00:08:36 - 00:08:40: position and the dimensions so if i
+00:08:38 - 00:08:42: change this this is just changing
+00:08:40 - 00:08:45: the x coordinates and i'm just going to
+00:08:42 - 00:08:46: do command z or control z if you're on a
+00:08:45 - 00:08:48: mac to go back
+00:08:46 - 00:08:49: and these are the y coordinates and by
+00:08:48 - 00:08:51: the way
+00:08:49 - 00:08:54: i can change these by clicking and
+00:08:51 - 00:08:55: dragging you you see the cursor turns to
+00:08:54 - 00:08:58: this
+00:08:55 - 00:09:00: sideways arrow and i can click and drag
+00:08:58 - 00:09:02: left and right to change these values or
+00:09:00 - 00:09:05: i can type them in right
+00:09:02 - 00:09:09: i can also change the width
+00:09:05 - 00:09:09: and the height
+00:09:09 - 00:09:13: and here is the angle for rotation but
+00:09:11 - 00:09:16: what i want to focus on right now is the
+00:09:13 - 00:09:18: corner radius right so this is that
+00:09:16 - 00:09:22: rounding effect and so with the corner
+00:09:18 - 00:09:25: radius tool i can adjust how rounded
+00:09:22 - 00:09:28: these corners are now i'm getting closer
+00:09:25 - 00:09:30: to the look of that original file right
+00:09:28 - 00:09:32: but i can see on the bottom that i have
+00:09:30 - 00:09:33: these rounded corners but i don't want
+00:09:32 - 00:09:35: them because the original one doesn't
+00:09:33 - 00:09:38: have it now there is a fix for this in
+00:09:35 - 00:09:40: figma but the easy and cheating solution
+00:09:38 - 00:09:43: would be to just extend this beyond the
+00:09:40 - 00:09:44: frame and then it's hidden outside the
+00:09:43 - 00:09:46: frame
+00:09:44 - 00:09:49: of the phone screen right but if you
+00:09:46 - 00:09:53: want to do it the correct way
+00:09:49 - 00:09:55: you would come to the corner radius
+00:09:53 - 00:09:57: and you would click on independent
+00:09:55 - 00:09:59: corners and what this allows you to do
+00:09:57 - 00:10:02: is set each corner independently and so
+00:09:59 - 00:10:04: if i change this to zero you'll see that
+00:10:02 - 00:10:07: it's no longer rounded and if i want to
+00:10:04 - 00:10:10: keep the top rounded but not the bottom
+00:10:07 - 00:10:12: then i just change the bottom ones right
+00:10:10 - 00:10:14: and now it looks correct
+00:10:12 - 00:10:16: now the next thing would be to create
+00:10:14 - 00:10:19: the circle and the way to create a
+00:10:16 - 00:10:21: circle is from the shapes menu you have
+00:10:19 - 00:10:23: an ellipse which you can also do with
+00:10:21 - 00:10:25: the letter
+00:10:23 - 00:10:27: o on your keyboard now by default you'll
+00:10:25 - 00:10:30: be able to draw
+00:10:27 - 00:10:32: kind of a circle with any
+00:10:30 - 00:10:34: aspect ratio but if you want to be a
+00:10:32 - 00:10:36: perfect circle all you need to do is
+00:10:34 - 00:10:39: hold shift on your keyboard as you're
+00:10:36 - 00:10:40: dragging and it'll just be a perfect
+00:10:39 - 00:10:43: circle
+00:10:40 - 00:10:45: now if i want to find out the exact
+00:10:43 - 00:10:47: dimensions of this i can click once and
+00:10:45 - 00:10:50: i can see on the left that i've selected
+00:10:47 - 00:10:51: the whole group i can double click again
+00:10:50 - 00:10:53: and i can still see that i haven't
+00:10:51 - 00:10:56: selected the circle i keep double
+00:10:53 - 00:10:59: clicking and now i have the circle and
+00:10:56 - 00:11:00: it shows me that it's 104 by 104 so i'll
+00:10:59 - 00:11:04: go here
+00:11:00 - 00:11:08: and change the dimensions
+00:11:04 - 00:11:10: of my circle here and i'll type 104
+00:11:08 - 00:11:12: and now i have something with the exact
+00:11:10 - 00:11:14: dimensions now i want to know where to
+00:11:12 - 00:11:16: place this right how high should it be
+00:11:14 - 00:11:18: like because i don't know a lot about
+00:11:16 - 00:11:20: spacing right now and i just want to
+00:11:18 - 00:11:22: copy what the person did
+00:11:20 - 00:11:24: so again i'll double click here
+00:11:22 - 00:11:27: double click again and now i've selected
+00:11:24 - 00:11:29: this and i want to know how far it is
+00:11:27 - 00:11:34: from that edge and the way i can do that
+00:11:29 - 00:11:36: is i hold option on a mac or alt on a
+00:11:34 - 00:11:38: windows computer and that will show me
+00:11:36 - 00:11:40: the distance from all of the neighboring
+00:11:38 - 00:11:42: elements
+00:11:40 - 00:11:45: if i hover over the uh the text here you
+00:11:42 - 00:11:48: can see it's showing me it's 24 pixels
+00:11:45 - 00:11:50: um if i select the card it's showing me
+00:11:48 - 00:11:52: the distance between
+00:11:50 - 00:11:55: all of the edges here right and so what
+00:11:52 - 00:11:58: i want to know is that it's 64 pixels
+00:11:55 - 00:12:00: away from the top and so i select my
+00:11:58 - 00:12:04: circle and then i can start while
+00:12:00 - 00:12:05: holding option i can hit the down arrow
+00:12:04 - 00:12:08: and
+00:12:05 - 00:12:10: now i have 64 right and i can see that
+00:12:08 - 00:12:12: left and right it's perfectly centered
+00:12:10 - 00:12:14: and figma will help you do this if you
+00:12:12 - 00:12:16: move something it will snap to the
+00:12:14 - 00:12:18: center as you can see here now i have my
+00:12:16 - 00:12:21: circle in the middle right let's quickly
+00:12:18 - 00:12:22: change the color now we're experts at
+00:12:21 - 00:12:23: this
+00:12:22 - 00:12:24: uh this is just white so this is very
+00:12:23 - 00:12:28: easy
+00:12:24 - 00:12:31: uh now there's also here an icon
+00:12:28 - 00:12:33: and icons are things that you'll often
+00:12:31 - 00:12:35: need when designing mobile interfaces
+00:12:33 - 00:12:39: because you're you'll wanna have an icon
+00:12:35 - 00:12:40: for a home screen or something like that
+00:12:39 - 00:12:42: and
+00:12:40 - 00:12:46: you can literally google free figma
+00:12:42 - 00:12:49: icons and again you'll have a result
+00:12:46 - 00:12:52: from google that says here are 460 free
+00:12:49 - 00:12:55: icons and this is also a figma file so i
+00:12:52 - 00:12:57: can literally come here this is a figma
+00:12:55 - 00:12:59: file i just hid the interface here by
+00:12:57 - 00:13:02: right clicking you can hide the
+00:12:59 - 00:13:05: interface and i can come here and select
+00:13:02 - 00:13:07: an icon let's say i want to copy this
+00:13:05 - 00:13:10: one i literally just use the copy
+00:13:07 - 00:13:12: shortcut which is command c or control c
+00:13:10 - 00:13:15: i come back to my file
+00:13:12 - 00:13:17: and i paste that element right so now i
+00:13:15 - 00:13:19: have that icon and figma also helps you
+00:13:17 - 00:13:22: with positioning it automatically
+00:13:19 - 00:13:24: centers things as you're moving them
+00:13:22 - 00:13:27: around so if i resize this
+00:13:24 - 00:13:30: without any modifier keys
+00:13:27 - 00:13:32: it might distort the image so i'll do
+00:13:30 - 00:13:34: command z and what i'll do instead is
+00:13:32 - 00:13:37: hold shift like we did with the circle
+00:13:34 - 00:13:39: that way it'll always resize perfectly
+00:13:37 - 00:13:41: and what i can also do is that if i
+00:13:39 - 00:13:44: already have this centered i can hold
+00:13:41 - 00:13:47: both shift and option
+00:13:44 - 00:13:49: or alt on a pc and start resizing and it
+00:13:47 - 00:13:52: will resize from the center out right so
+00:13:49 - 00:13:54: this will just save you a little bit of
+00:13:52 - 00:13:56: time right
+00:13:54 - 00:13:59: so now i have my icon or i can
+00:13:56 - 00:14:01: alternatively just grab this icon double
+00:13:59 - 00:14:03: click double click
+00:14:01 - 00:14:06: and double click again and that now i've
+00:14:03 - 00:14:08: selected this icon i can delete the one
+00:14:06 - 00:14:10: that i already have
+00:14:08 - 00:14:12: and
+00:14:10 - 00:14:14: paste it here
+00:14:12 - 00:14:16: and now i have that same icon so it's
+00:14:14 - 00:14:19: really important for you to have a place
+00:14:16 - 00:14:21: to go to to find icons and this one that
+00:14:19 - 00:14:23: i found here i literally found it in
+00:14:21 - 00:14:25: three seconds so i'm sure there are
+00:14:23 - 00:14:28: other free icons because this might not
+00:14:25 - 00:14:30: have everything that you need
+00:14:28 - 00:14:31: and another thing that would be very
+00:14:30 - 00:14:33: handy for you is
+00:14:31 - 00:14:36: somewhere to get free images to use in
+00:14:33 - 00:14:38: your designs because as you can see here
+00:14:36 - 00:14:40: uh those will come in very handy in a
+00:14:38 - 00:14:42: lot of applications
+00:14:40 - 00:14:44: and so let's say that i wanted to get an
+00:14:42 - 00:14:47: image here instead of this blank color
+00:14:44 - 00:14:48: since i can't do this fancy effect yet
+00:14:47 - 00:14:51: and we don't want to focus on fancy
+00:14:48 - 00:14:53: effects just yet right so one good
+00:14:51 - 00:14:56: website is called unsplash and i just
+00:14:53 - 00:14:59: typed delivery in search and i found
+00:14:56 - 00:15:01: this image here and with figma it's very
+00:14:59 - 00:15:02: easy to paste in an image
+00:15:01 - 00:15:05: literally all i have to do is come to
+00:15:02 - 00:15:07: unsplash right click on the image
+00:15:05 - 00:15:09: then i can copy the image
+00:15:07 - 00:15:11: go back to my figma file
+00:15:09 - 00:15:14: i select the background so that it
+00:15:11 - 00:15:17: pastes it over this particular area and
+00:15:14 - 00:15:18: i hit command v or control v if you're
+00:15:17 - 00:15:21: on a pc
+00:15:18 - 00:15:23: and then i can just reposition this
+00:15:21 - 00:15:25: i'm not going to worry too much about
+00:15:23 - 00:15:27: you know perfect positioning or fancy
+00:15:25 - 00:15:29: effects but this is how easy it is to
+00:15:27 - 00:15:31: get an image in right
+00:15:29 - 00:15:34: now let's quickly finish
+00:15:31 - 00:15:38: this screen now the next thing that i
+00:15:34 - 00:15:40: need is text here that says non-contact
+00:15:38 - 00:15:43: deliveries and the way i get text is
+00:15:40 - 00:15:44: through the t icon here i can just hit t
+00:15:43 - 00:15:45: on my keyboard
+00:15:44 - 00:15:46: and
+00:15:45 - 00:15:49: text so
+00:15:46 - 00:15:49: non-contact
+00:15:49 - 00:15:54: deliveries
+00:15:52 - 00:15:56: right now obviously this doesn't look
+00:15:54 - 00:15:58: the same as the other image there are a
+00:15:56 - 00:16:00: few things i want to find out first is
+00:15:58 - 00:16:02: the
+00:16:00 - 00:16:04: size of the text so to do that double
+00:16:02 - 00:16:06: click double click
+00:16:04 - 00:16:08: and then i look here at
+00:16:06 - 00:16:10: the settings so one i can see it's using
+00:16:08 - 00:16:13: sf pro display
+00:16:10 - 00:16:14: so you may or may not have the font
+00:16:13 - 00:16:16: locally on your machine that the person
+00:16:14 - 00:16:18: is using
+00:16:16 - 00:16:22: but chances are you will
+00:16:18 - 00:16:24: and i can see that the size is 34. and
+00:16:22 - 00:16:27: it's bold right so i'm gonna apply the
+00:16:24 - 00:16:29: same setting so i'm gonna click here
+00:16:27 - 00:16:30: type 34
+00:16:29 - 00:16:33: and
+00:16:30 - 00:16:34: i'm gonna use sf pro
+00:16:33 - 00:16:35: text
+00:16:34 - 00:16:38: i'm just typing it but you can also
+00:16:35 - 00:16:40: select it here
+00:16:38 - 00:16:42: and i'm gonna change this to
+00:16:40 - 00:16:44: bold right
+00:16:42 - 00:16:47: now this doesn't look exactly the same
+00:16:44 - 00:16:49: because this is over two lines and
+00:16:47 - 00:16:51: by default sigma will just have the text
+00:16:49 - 00:16:54: be as long
+00:16:51 - 00:16:55: or as wide as the text is long and i can
+00:16:54 - 00:16:58: change that by just
+00:16:55 - 00:16:59: dragging this to resize it and this gets
+00:16:58 - 00:17:01: me the effect that i want i just need to
+00:16:59 - 00:17:03: center it now
+00:17:01 - 00:17:05: and i want to know how
+00:17:03 - 00:17:07: far away it is from that
+00:17:05 - 00:17:11: circle right so we saw this already
+00:17:07 - 00:17:14: i'll just double click double click and
+00:17:11 - 00:17:16: hold option and i can see it's 24 pixels
+00:17:14 - 00:17:17: away
+00:17:16 - 00:17:19: and
+00:17:17 - 00:17:22: i'll just nudge this up
+00:17:19 - 00:17:24: a little bit and now it's perfect and i
+00:17:22 - 00:17:25: think the color
+00:17:24 - 00:17:26: is different here
+00:17:25 - 00:17:27: so
+00:17:26 - 00:17:30: again
+00:17:27 - 00:17:33: i'll hit the color hit the eyedropper
+00:17:30 - 00:17:34: and i think this is dark purple
+00:17:33 - 00:17:37: and now
+00:17:34 - 00:17:39: i have that color right
+00:17:37 - 00:17:41: excellent i think this might be doing
+00:17:39 - 00:17:43: some other effects to the text but we're
+00:17:41 - 00:17:45: not going to worry about it right now
+00:17:43 - 00:17:47: we're going to need to create something
+00:17:45 - 00:17:50: that looks like
+00:17:47 - 00:17:52: the paragraph right here and so i'll hit
+00:17:50 - 00:17:54: the t icon again and by default it's
+00:17:52 - 00:17:57: gonna use the same settings as i used
+00:17:54 - 00:17:59: before just for speed i'll copy this
+00:17:57 - 00:18:02: text here so you don't have to wait for
+00:17:59 - 00:18:07: me to type it out and as you can see it
+00:18:02 - 00:18:07: was very wide and i can resize this
+00:18:08 - 00:18:13: and i can also see here how i can find
+00:18:11 - 00:18:16: out how wide this is by double clicking
+00:18:13 - 00:18:20: on it and then seeing okay the width is
+00:18:16 - 00:18:22: three seven four so i go back here type
+00:18:20 - 00:18:24: three seven four
+00:18:22 - 00:18:25: and that's exactly the same width and
+00:18:24 - 00:18:27: i'll just center it
+00:18:25 - 00:18:31: and i'll see how far away this element
+00:18:27 - 00:18:32: was from the top 25
+00:18:31 - 00:18:36: so
+00:18:32 - 00:18:37: if i nudge it up using my arrow keys
+00:18:36 - 00:18:39: now it's right
+00:18:37 - 00:18:42: and as you can see the screen is coming
+00:18:39 - 00:18:43: along and you can do this as someone
+00:18:42 - 00:18:46: who's never
+00:18:43 - 00:18:49: used figma before or any design tool
+00:18:46 - 00:18:52: now i need a button so for that
+00:18:49 - 00:18:55: uh i'm gonna hit the rectangle key again
+00:18:52 - 00:18:58: on my keyboard and just do this
+00:18:55 - 00:19:00: right and then i'm going to cheat and
+00:18:58 - 00:19:03: look at the dimensions of the this
+00:19:00 - 00:19:05: button so 374 again
+00:19:03 - 00:19:07: and 56
+00:19:05 - 00:19:08: so i'm going to do that
+00:19:07 - 00:19:12: 374
+00:19:08 - 00:19:13: and 56
+00:19:12 - 00:19:16: and now
+00:19:13 - 00:19:18: i'm going to center it
+00:19:16 - 00:19:22: and see how far it is
+00:19:18 - 00:19:24: from the element above it so that's 48
+00:19:22 - 00:19:26: but my element is different here so
+00:19:24 - 00:19:28: that's okay you don't need to worry
+00:19:26 - 00:19:31: about that so
+00:19:28 - 00:19:33: what i can do is have the height here
+00:19:31 - 00:19:34: adjust automatically
+00:19:33 - 00:19:36: to the text and i think i have an extra
+00:19:34 - 00:19:40: line that was the reason
+00:19:36 - 00:19:40: so now i can
+00:19:40 - 00:19:44: let me remember what this number was
+00:19:43 - 00:19:47: again
+00:19:44 - 00:19:47: so this is 48
+00:19:48 - 00:19:52: and
+00:19:49 - 00:19:53: 48 here would be like this
+00:19:52 - 00:19:57: all right perfect
+00:19:53 - 00:20:00: so now i'm gonna grab the color
+00:19:57 - 00:20:02: and let me see if i can also steal the
+00:20:00 - 00:20:07: corner radius so this shows eight
+00:20:02 - 00:20:09: perfect i'll just type it here
+00:20:07 - 00:20:11: now i need some text to go on top and
+00:20:09 - 00:20:13: let me see what the settings for that
+00:20:11 - 00:20:13: are
+00:20:13 - 00:20:21: so sf protext semi-bold oh sorry
+00:20:18 - 00:20:22: and
+00:20:21 - 00:20:25: 15.
+00:20:22 - 00:20:25: so i'll do that real quick
+00:20:26 - 00:20:29: oh it actually copied it over because i
+00:20:28 - 00:20:31: started editing that
+00:20:29 - 00:20:34: and so i say
+00:20:31 - 00:20:38: order now
+00:20:34 - 00:20:38: all caps and i'll just center this
+00:20:38 - 00:20:43: and make it white that's very easy i
+00:20:41 - 00:20:44: don't need to grab that color
+00:20:43 - 00:20:47: and
+00:20:44 - 00:20:48: now i'll just copy this and you can copy
+00:20:47 - 00:20:51: an element real quick either by
+00:20:48 - 00:20:54: selecting it doing command c command v
+00:20:51 - 00:20:55: and it'll paste it right over it so if i
+00:20:54 - 00:20:56: move it here you can see it because it's
+00:20:55 - 00:20:58: white on white
+00:20:56 - 00:21:01: or i can
+00:20:58 - 00:21:03: hold option or alt and that'll also
+00:21:01 - 00:21:05: duplicate the element so this is a
+00:21:03 - 00:21:07: little bit faster let me change the
+00:21:05 - 00:21:08: color of that
+00:21:07 - 00:21:10: to be
+00:21:08 - 00:21:14: the color of the dismiss
+00:21:10 - 00:21:17: so i'll just grab that from here
+00:21:14 - 00:21:20: right and move it under the button
+00:21:17 - 00:21:22: change it to dismiss
+00:21:20 - 00:21:26: the last thing i want to see is how far
+00:21:22 - 00:21:27: away it was so that was 32
+00:21:26 - 00:21:31: and
+00:21:27 - 00:21:31: oh sorry no from the button it's 32
+00:21:32 - 00:21:35: and there
+00:21:33 - 00:21:38: now you've created something that's very
+00:21:35 - 00:21:41: very close to the original design as you
+00:21:38 - 00:21:43: can see starting with a template that's
+00:21:41 - 00:21:44: already in figma allows you to cheat in
+00:21:43 - 00:21:47: the beginning
+00:21:44 - 00:21:51: and copy over elements and you should
+00:21:47 - 00:21:54: just look for free resources that have
+00:21:51 - 00:21:58: designs of mobile apps of web apps and
+00:21:54 - 00:22:01: start copying these and see how you can
+00:21:58 - 00:22:04: recreate these elements and over time
+00:22:01 - 00:22:06: you'll start to internalize all of the
+00:22:04 - 00:22:09: principles that are in place like how to
+00:22:06 - 00:22:12: space text elements far apart you'll be
+00:22:09 - 00:22:14: able to do it just by looking at it more
+00:22:12 - 00:22:16: or less of course at some point it's
+00:22:14 - 00:22:18: really good if you start learning about
+00:22:16 - 00:22:20: the actual theory of design but this is
+00:22:18 - 00:22:22: a way to get started without being
+00:22:20 - 00:22:24: bogged down so maybe you can switch
+00:22:22 - 00:22:26: you'll do a little bit of practice a
+00:22:24 - 00:22:28: little bit of theory and start applying
+00:22:26 - 00:22:30: what you learned but this is one way to
+00:22:28 - 00:22:33: get started without knowing any theory
+00:22:30 - 00:22:35: and just by copying existing designs now
+00:22:33 - 00:22:38: the next step from this would be to
+00:22:35 - 00:22:41: start designing things in figma when
+00:22:38 - 00:22:43: you're comfortable with it and you can
+00:22:41 - 00:22:45: pretty much recreate everything that you
+00:22:43 - 00:22:47: see so you might see an app that you
+00:22:45 - 00:22:50: like that's not already created in figma
+00:22:47 - 00:22:51: so maybe you look at instagram or any
+00:22:50 - 00:22:54: other app that you like or tick-tock or
+00:22:51 - 00:22:56: anything and you can start designing
+00:22:54 - 00:22:59: that in figma and when you get stuck you
+00:22:56 - 00:23:02: google it you find out how this fancy
+00:22:59 - 00:23:05: effect was created or you can google can
+00:23:02 - 00:23:07: i do you know x or y in figma can i play
+00:23:05 - 00:23:09: a video in figma for example if i want
+00:23:07 - 00:23:12: to do something like tik tok and you'll
+00:23:09 - 00:23:14: start to familiarize more and more with
+00:23:12 - 00:23:17: the tool and the step after that is to
+00:23:14 - 00:23:20: look at an app that you think could be
+00:23:17 - 00:23:21: improved so maybe your banking app is
+00:23:20 - 00:23:23: really really bad and you've always
+00:23:21 - 00:23:26: wanted to improve it well now you know
+00:23:23 - 00:23:29: how to use figma enough to start putting
+00:23:26 - 00:23:31: together a new design so i hope this
+00:23:29 - 00:23:32: video was helpful for you please let us
+00:23:31 - 00:23:35: know in the comments
+00:23:32 - 00:23:37: if you have any questions about next
+00:23:35 - 00:23:40: steps something you got stuck on and if
+00:23:37 - 00:23:43: you want more tips and tricks about ui
+00:23:40 - 00:23:45: and ux we have a free newsletter that
+00:23:43 - 00:23:47: you can subscribe to the link is in the
+00:23:45 - 00:23:49: description below and it's very helpful
+00:23:47 - 00:23:52: for someone who's just starting out like
+00:23:49 - 00:23:53: you because we go out and we read all of
+00:23:52 - 00:23:55: the news
+00:23:53 - 00:23:57: about ui and ux and we just send you the
+00:23:55 - 00:23:59: best stuff so if you're just starting
+00:23:57 - 00:24:01: out make sure to subscribe to the
+00:23:59 - 00:24:03: newsletter and i'll see you in the next
+00:24:01 - 00:24:22: video
+00:24:03 - 00:24:22: [Music]
+00:24:22 - 00:24:24: you

@@ -1,0 +1,21 @@
+0:00 - Start
+1:07 - Starting up
+1:27 - Recent documents and pinning documents
+1:54 - Templates
+2:34 - Layout - Tabs, ribbons, and groups in Microsoft Excel
+3:48 - Rows, Columns, Cells and Ranges
+5:49 - Worksheets in Microsoft Excel
+6:52 - View and zooming
+7:30 - Inputting Data
+10:56 - Formatting Data
+13:38 - Wrapping Text
+14:22 - Insert Row/ Merge & Center cells
+15:41 - Currency formatting
+16:20 - Print view
+17:02 - Add cell borders and colors
+18:18 - Basic formulas in Microsoft Excel
+21:17 - Copy formula
+23:45 - Freeze Pane
+24:52 - Basic Microsoft Excel functions
+28:59 - “Tell Me” in Microsoft Excel
+29:43 - Inserting charts in Microsoft Excel

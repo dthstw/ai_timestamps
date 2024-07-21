@@ -1,0 +1,731 @@
+00:00:00 - 00:00:03: [MUSIC PLAYING]
+00:00:07 - 00:00:08: I'm sorry.
+00:00:08 - 00:00:10: Am I still recording
+a video here?
+00:00:10 - 00:00:13: [AUDIO LOGO]
+00:00:15 - 00:00:18: A coding challenge idea that has
+been suggested to me many times
+00:00:18 - 00:00:20: is a falling sand simulation.
+00:00:20 - 00:00:22: And today is the day that
+I'm going to tackle it.
+00:00:22 - 00:00:25: Now, I have to confess,
+this is not the first time
+00:00:25 - 00:00:27: that I've tried to make a
+falling sand simulation.
+00:00:27 - 00:00:30: If you're familiar with the
+initiative called Genuary,
+00:00:30 - 00:00:33: which is a month of
+generative art in January,
+00:00:33 - 00:00:35: it's probably happening
+right now because I
+00:00:35 - 00:00:37: think it's January 2024.
+00:00:37 - 00:00:41: In 2022, I made a falling
+sand simulation for Genuary.
+00:00:41 - 00:00:44: I have no recollection
+of how I did it.
+00:00:44 - 00:00:46: But hopefully, there's
+some muscle memory
+00:00:46 - 00:00:48: or deep within the
+recesses of my brain
+00:00:48 - 00:00:49: that will help me through today.
+00:00:49 - 00:00:52: A really excellent, wonderful
+reference if you're like,
+00:00:52 - 00:00:55: what are you even talking
+about, is the game Noita.
+00:00:55 - 00:00:58: It's built on top of the
+Falling Everything Engine, which
+00:00:58 - 00:01:01: is this incredible game engine,
+where every single pixel is
+00:01:01 - 00:01:02: simulated.
+00:01:02 - 00:01:06: I'd also love to highlight
+Max Bittker's Sandspiel.
+00:01:06 - 00:01:08: It might not be how
+it's pronounced.
+00:01:08 - 00:01:12: But I choose to pronounce it
+Sandspiel, where you could just
+00:01:12 - 00:01:15: create this world of
+sand and water and fire
+00:01:15 - 00:01:18: and smoke and fungus
+all out of pixels.
+00:01:18 - 00:01:21: My previous coding challenge,
+if you happened to watch it,
+00:01:21 - 00:01:24: was about cellular automata.
+00:01:24 - 00:01:28: And in fact, this falling
+sand simulation, this idea
+00:01:28 - 00:01:30: of any pixel having
+a state-- is it sand?
+00:01:30 - 00:01:31: Is it water?
+00:01:31 - 00:01:32: Is it fire?
+00:01:32 - 00:01:35: And changing its state based on
+what its neighbors are doing,
+00:01:35 - 00:01:39: I believe this can be
+done with CA-like rules.
+00:01:39 - 00:01:41: Now, maybe you want to
+keep watching this video.
+00:01:41 - 00:01:44: But I do want to just
+mention that there
+00:01:44 - 00:01:47: is this wonderful
+tutorial online by Jason,
+00:01:47 - 00:01:51: at jason.today, about
+making a falling sand
+00:01:51 - 00:01:53: simulator with p5.js.
+00:01:53 - 00:01:53: So we'll see.
+00:01:53 - 00:01:55: We'll compare and contrast.
+00:01:55 - 00:01:56: Maybe at the end, we'll see.
+00:01:56 - 00:01:57: How does my version work?
+00:01:57 - 00:01:58: How does Jason's version work?
+00:01:58 - 00:02:00: But you could also
+go check that out.
+00:02:00 - 00:02:01: Make your own version.
+00:02:01 - 00:02:03: Submit it to the
+Passenger Showcase.
+00:02:03 - 00:02:06: And we'll see what kinds
+of amazing projects
+00:02:06 - 00:02:10: this community can make out
+of falling sand simulated.
+00:02:10 - 00:02:14: Let's first establish the
+world that I intend to create.
+00:02:14 - 00:02:19: So the Wolfram elementary
+CA was a one-dimensional CA
+00:02:19 - 00:02:23: where every cell had
+a state of a 0 or a 1.
+00:02:23 - 00:02:27: Coding Challenge 105, I
+think, was the Game of Life,
+00:02:27 - 00:02:32: which is a two-dimensional
+CA, meaning the grid
+00:02:32 - 00:02:34: lives in two dimensions.
+00:02:34 - 00:02:39: And every cell has
+a state of 0 or 1.
+00:02:39 - 00:02:43: For the falling sand simulation,
+a two-dimensional grid
+00:02:43 - 00:02:44: makes more sense.
+00:02:47 - 00:02:50: Let's say this is
+my p5.js canvas,
+00:02:50 - 00:02:54: and I decide that I'm going
+to place a grain of sand
+00:02:54 - 00:02:54: on the canvas.
+00:02:54 - 00:02:59: That means maybe this
+particular cell's state is 1.
+00:02:59 - 00:03:01: And all the other states are 0.
+00:03:04 - 00:03:07: I want the sand to fall,
+meaning the rule will
+00:03:07 - 00:03:10: be if there is a cell
+with a state of 1
+00:03:10 - 00:03:13: that has a cell with
+a state of 0 below it,
+00:03:13 - 00:03:17: then that piece of sand will
+move from its current location
+00:03:17 - 00:03:19: to the location below.
+00:03:19 - 00:03:23: If it so happens
+that there is already
+00:03:23 - 00:03:29: a cell with a state of 1
+below it, then it can't move.
+00:03:29 - 00:03:30: It stops.
+00:03:30 - 00:03:33: That way, the sand will pile up.
+00:03:33 - 00:03:36: Let's begin by
+implementing only that.
+00:03:36 - 00:03:38: To make my life a
+little easier, I'm
+00:03:38 - 00:03:43: going to grab this make2DArray
+function from the Game of Life
+00:03:43 - 00:03:45: coding challenge.
+00:03:45 - 00:03:50: Then let's call the space that
+I'm going to create a grid.
+00:03:50 - 00:03:53: And let's establish
+the resolution
+00:03:53 - 00:03:54: of every grain of sand.
+00:03:54 - 00:03:57: Now, at some point,
+it might be fun to try
+00:03:57 - 00:03:59: having a grain of sand
+be a single pixel.
+00:03:59 - 00:04:03: But for now, let's have
+a 10 by 10 rectangle.
+00:04:03 - 00:04:06: So I need to establish the
+number of columns and rows.
+00:04:10 - 00:04:12: The number of
+columns is the width
+00:04:12 - 00:04:14: of the canvas divided
+by the width of one
+00:04:14 - 00:04:15: of those little squares--
+00:04:15 - 00:04:17: so in this case,
+40 divided by 10--
+00:04:17 - 00:04:20: 400 divided by 10 would be 40.
+00:04:20 - 00:04:22: So I'm going to have
+a 40 by 40 grid.
+00:04:22 - 00:04:25: So that's what I need to size
+my two-dimensional array as.
+00:04:29 - 00:04:32: So I'm using a
+nested loop to set
+00:04:32 - 00:04:37: every position, every
+column i, every row j, to 0.
+00:04:37 - 00:04:41: I can then use that same nested
+loop to draw every square.
+00:04:41 - 00:04:43: Maybe if it's 0, it's black.
+00:04:43 - 00:04:45: If it's 1, it's white.
+00:04:47 - 00:04:53: And just so we can see it, let
+me give it a stroke of 255.
+00:04:53 - 00:04:56: Oh, and the x position
+would be the column
+00:04:56 - 00:04:59: times the width of that square.
+00:04:59 - 00:05:02: There we go-- a grid
+of black squares.
+00:05:02 - 00:05:04: That's exactly what
+I expected to see.
+00:05:04 - 00:05:09: What happens now if I set one
+particular cell on this grid
+00:05:09 - 00:05:11: to have a state of 1?
+00:05:11 - 00:05:13: Look at that.
+00:05:13 - 00:05:17: Column 20, row 10 is now white.
+00:05:17 - 00:05:20: I am ready to
+implement this logic.
+00:05:20 - 00:05:25: I need to run a loop over
+every single one of these cells
+00:05:25 - 00:05:29: and look for any
+1's, then check what
+00:05:29 - 00:05:31: is the surroundings
+of that particular 1.
+00:05:31 - 00:05:34: Now, while I'm
+doing this analysis,
+00:05:34 - 00:05:37: I cannot change the values
+in the original grid.
+00:05:37 - 00:05:39: So I need another
+two-dimensional grid
+00:05:39 - 00:05:42: that can act as the next
+grid, the next generation,
+00:05:42 - 00:05:45: the next frame of animation of
+this falling sand simulation.
+00:05:49 - 00:05:54: Let's get the state of the
+current cell we're looking at.
+00:05:54 - 00:05:57: If the state is 1,
+I need to look below
+00:05:57 - 00:05:59: and see what is there.
+00:05:59 - 00:06:01: This is not cols, rows.
+00:06:01 - 00:06:06: This is i, j, the state of
+the current cell that I'm on.
+00:06:06 - 00:06:10: And the cell below is j plus 1.
+00:06:10 - 00:06:16: If the state below has a
+value of 0, then the cell i,
+00:06:16 - 00:06:20: j should now have a state
+of 0 in the next generation.
+00:06:20 - 00:06:23: And below should
+have a state of 1.
+00:06:23 - 00:06:27: And now the current
+grid is the next grid.
+00:06:27 - 00:06:29: I've missed some steps here,
+but let's see what we--
+00:06:29 - 00:06:30: how far we get.
+00:06:30 - 00:06:32: OK, so everything went white.
+00:06:32 - 00:06:33: So why?
+00:06:33 - 00:06:36: Well, one issue is when
+I make this new 2D array,
+00:06:36 - 00:06:38: it doesn't have
+any values in it.
+00:06:38 - 00:06:43: And I'm only assigning the value
+0 or 1 if and when I find a 1
+00:06:43 - 00:06:44: in the previous grid.
+00:06:44 - 00:06:47: I need to set all the
+values of the next grid.
+00:06:47 - 00:06:53: However, if I'm checking all
+the cells and I get to here
+00:06:53 - 00:06:56: and I say, like, oh,
+in the next generation,
+00:06:56 - 00:07:00: this one should be a 0 and
+this one should be a 1,
+00:07:00 - 00:07:01: I'm going to keep checking.
+00:07:01 - 00:07:03: And eventually, I'm
+going to get to here
+00:07:03 - 00:07:05: and find that it
+was a 0 and probably
+00:07:05 - 00:07:06: say it should stay a 0.
+00:07:06 - 00:07:08: So what I think would work--
+00:07:08 - 00:07:11: I'm not 100% sure about
+this-- is if I just start in
+00:07:11 - 00:07:15: with the new grid, the next
+generation having all 0's
+00:07:15 - 00:07:17: in it, and I'm just
+setting the values of 1
+00:07:17 - 00:07:21: based on where the 1's are
+in the previous generation.
+00:07:21 - 00:07:26: A way I can address this is by
+having the make2DArray function
+00:07:26 - 00:07:28: just fill everything with 0's.
+00:07:28 - 00:07:30: That way, I'm only
+moving the 1's around.
+00:07:30 - 00:07:32: And the 0's are going
+to be there by default.
+00:07:32 - 00:07:34: I should mention
+that the way that I'm
+00:07:34 - 00:07:39: doing this, where the first
+index grid, i, is the column
+00:07:39 - 00:07:41: and the second
+index, j, is the row
+00:07:41 - 00:07:45: is be a little backwards,
+depending on your point of view
+00:07:45 - 00:07:46: and your experience.
+00:07:46 - 00:07:48: If you're used to
+matrix math, a 2D array,
+00:07:48 - 00:07:51: you'd often be saying row,
+column, instead of column, row.
+00:07:51 - 00:07:53: But this is just the way I
+did it in the Game of Life.
+00:07:53 - 00:07:56: And as long as I'm being
+consistent, it will work.
+00:07:56 - 00:07:56: And it's fine.
+00:07:56 - 00:07:58: It's fine, it's fine.
+00:07:58 - 00:08:04: So now what I'm going to do is
+add another little j in here.
+00:08:04 - 00:08:05: Oh, look at that.
+00:08:05 - 00:08:07: It works now.
+00:08:07 - 00:08:07: Amazing.
+00:08:07 - 00:08:09: It disappeared when
+it hit the bottom.
+00:08:09 - 00:08:12: So I need to account
+for the edge.
+00:08:12 - 00:08:18: If below equals 0 or
+if j plus 1 is greater
+00:08:18 - 00:08:19: than the number of rows.
+00:08:19 - 00:08:24: If j plus 1 is greater than
+the number of rows minus 1.
+00:08:24 - 00:08:25: Oh.
+00:08:25 - 00:08:26: No, less than.
+00:08:26 - 00:08:34: If below is 0 and j
+is not the bottom row.
+00:08:34 - 00:08:35: [BUZZER]
+00:08:35 - 00:08:39: I have an OR there,
+and I said AND.
+00:08:39 - 00:08:42: If below is less--
+00:08:42 - 00:08:45: why am I getting this
+wrong so many times?
+00:08:45 - 00:08:46: Oh!
+00:08:46 - 00:08:48: Otherwise, it
+needs to stay as 1.
+00:08:48 - 00:08:51: I might have had it
+right all those times.
+00:08:51 - 00:08:57: Otherwise, nextGrid
+i, j should stay as 1.
+00:08:57 - 00:09:02: And in fact, if everything is
+going to be set initially to 0,
+00:09:02 - 00:09:04: I don't have to
+explicitly set it to 0.
+00:09:04 - 00:09:08: So I'm basically deciding if I
+should move it down or leave it
+00:09:08 - 00:09:09: where it is.
+00:09:09 - 00:09:12: Let's add some
+mouse interaction.
+00:09:12 - 00:09:16: When I click the mouse,
+I'll add a grain of sand.
+00:09:20 - 00:09:25: So if I take the mouse position
+divided by the size of each
+00:09:25 - 00:09:28: cell, the width of each cell--
+every cell is a square--
+00:09:28 - 00:09:34: that should give me the column
+and row index into my grid.
+00:09:34 - 00:09:35: Look, I'm piling up sand.
+00:09:35 - 00:09:37: Let's change this
+to mouseDragged.
+00:09:41 - 00:09:43: All right, we're cooking.
+00:09:43 - 00:09:47: However, I want to add some
+more sophistication here.
+00:09:47 - 00:09:51: What if I have a grain
+of sand and below it
+00:09:51 - 00:09:54: is a 1 so it can't move down?
+00:09:54 - 00:09:58: However, there is a space
+open to the left or the right.
+00:09:58 - 00:10:00: It could move to one
+of those empty spots.
+00:10:00 - 00:10:03: The sand would be
+falling down to the right
+00:10:03 - 00:10:05: and left building
+up a little hill.
+00:10:05 - 00:10:08: So let's look at below
+right and below left.
+00:10:10 - 00:10:14: Now, I should say,
+do I even need this?
+00:10:14 - 00:10:18: Because wouldn't it be
+undefined otherwise?
+00:10:18 - 00:10:20: Yeah, it works.
+00:10:20 - 00:10:21: I don't even need that.
+00:10:21 - 00:10:22: Some better error checking.
+00:10:22 - 00:10:23: Yes, good.
+00:10:23 - 00:10:25: But why not?
+00:10:25 - 00:10:30: Otherwise, I could check
+if below right is 0.
+00:10:30 - 00:10:35: And then if that's the
+case, nextGrid i plus 1,
+00:10:35 - 00:10:44: j equals 1, else if below
+left equals 0, i minus 1.
+00:10:44 - 00:10:46: Oh, boy.
+00:10:46 - 00:10:47: OK, all right.
+00:10:47 - 00:10:48: I did forget.
+00:10:48 - 00:10:50: It's kind of scooting
+across there.
+00:10:50 - 00:10:53: I do need to ignore
+the bottom row.
+00:10:53 - 00:11:01: So I only want to check
+if j equals rows minus 1,
+00:11:01 - 00:11:03: keep it the same.
+00:11:03 - 00:11:06: This if statement has gotten
+really out of control.
+00:11:06 - 00:11:07: I will refactor this later.
+00:11:07 - 00:11:09: [MUSIC PLAYING] I will refactor.
+00:11:09 - 00:11:13: So if it hits the bottom,
+don't do anything.
+00:11:13 - 00:11:15: Oh, it's going to keep going.
+00:11:15 - 00:11:15: Wait.
+00:11:15 - 00:11:17: Oh, I have to go down one.
+00:11:17 - 00:11:19: Oh, I'm only going to the right.
+00:11:19 - 00:11:20: I also have to go down one.
+00:11:20 - 00:11:21: Well, of course.
+00:11:21 - 00:11:24: So I actually don't
+have this problem.
+00:11:24 - 00:11:26: Welcome to a coding
+challenge where
+00:11:26 - 00:11:27: I didn't plan this in advance.
+00:11:27 - 00:11:29: OK, let's come back to this.
+00:11:29 - 00:11:33: OK, this is better.
+00:11:33 - 00:11:35: OK, there we go.
+00:11:35 - 00:11:38: Look at my falling
+sand simulation.
+00:11:38 - 00:11:39: Now, we do have a
+little bit of a problem.
+00:11:39 - 00:11:44: Notice how it's always going
+to go to the right first.
+00:11:44 - 00:11:47: What would be a nice way
+of having that be random?
+00:11:47 - 00:11:54: I'm going to call it belowA
+and belowB plus dir, minus dir.
+00:11:54 - 00:11:57: dir is either negative
+1 or positive 1.
+00:11:57 - 00:11:59: How do I figure out that?
+00:11:59 - 00:12:01: Well, dir is 1.
+00:12:01 - 00:12:05: If random of 1 is
+less than 0.5, then
+00:12:05 - 00:12:07: multiply dir times negative 1.
+00:12:07 - 00:12:08: Oh, I can't wait to
+hear your better way
+00:12:08 - 00:12:10: of doing that in the comments.
+00:12:10 - 00:12:12: So A is going to
+be plus or minus.
+00:12:12 - 00:12:14: B is going to be the
+opposite of that.
+00:12:14 - 00:12:20: And then if belowA is 0,
+we're saying plus dir.
+00:12:20 - 00:12:23: And if belowB is 0,
+we're saying minus dir.
+00:12:23 - 00:12:25: So now it should randomly
+go left or right.
+00:12:29 - 00:12:31: Oh, oh!
+00:12:31 - 00:12:34: Now I need to handle the
+left and right edges.
+00:12:34 - 00:12:36: How do I do that?
+00:12:36 - 00:12:37: Oh, whoops!
+00:12:37 - 00:12:38: Ah!
+00:12:38 - 00:12:40: I forgot the plus 1 here.
+00:12:40 - 00:12:43: I need the plus 1 here also.
+00:12:43 - 00:12:46: OK, this looks more
+like falling sand now.
+00:12:46 - 00:12:49: It's not jump bouncing
+off like it was before.
+00:12:49 - 00:12:55: But why do I get an error here?
+00:12:55 - 00:12:58: I'm accessing a nested array.
+00:12:58 - 00:13:01: So it's fine if
+this is undefined.
+00:13:01 - 00:13:05: If the first part is undefined,
+I can't get the second part.
+00:13:05 - 00:13:06: That will throw an error.
+00:13:06 - 00:13:10: Well, I think I could just
+check to see if I'm on an edge.
+00:13:10 - 00:13:11: Let's just do that.
+00:13:11 - 00:13:15: All right, I'm going to
+say let belowA and belowB.
+00:13:15 - 00:13:18: Let's let them be undefined.
+00:13:18 - 00:13:20: I just need to check
+the left and the right.
+00:13:20 - 00:13:22: And I only need to check i.
+00:13:22 - 00:13:30: OK, only if i is greater than
+0 and i is less than columns
+00:13:30 - 00:13:35: minus 1, then try to
+actually get a real value.
+00:13:35 - 00:13:37: I still got an error.
+00:13:37 - 00:13:43: As long as i plus dir is
+greater than or equal to 0
+00:13:43 - 00:13:49: and i plus dir is less than or
+equal to the number of columns
+00:13:49 - 00:13:52: minus 1, then I can do belowA.
+00:13:55 - 00:14:01: This is me double-checking
+that that's a valid spot.
+00:14:01 - 00:14:02: Oh!
+00:14:02 - 00:14:05: It's just because my
+mouse went off the screen.
+00:14:05 - 00:14:08: This is correct now, as
+clunky and terrible as it is.
+00:14:08 - 00:14:10: But my mouse is
+going off the screen.
+00:14:15 - 00:14:18: OK, let's take out this
+initial grain of sand.
+00:14:18 - 00:14:20: Let's review.
+00:14:20 - 00:14:23: I want to add grains
+of sand but only
+00:14:23 - 00:14:26: if my mouse is
+within the canvas.
+00:14:26 - 00:14:30: Then I want the grains
+of sand to move down
+00:14:30 - 00:14:34: or to the left or
+right if down is filled
+00:14:34 - 00:14:38: but not if it's on the bottom
+edge or the left or right edge.
+00:14:38 - 00:14:40: It can't leave the canvas.
+00:14:40 - 00:14:42: Let's improve a few
+things about this.
+00:14:42 - 00:14:44: One is we can make it
+more efficient because I
+00:14:44 - 00:14:46: don't need to draw all
+of the black squares.
+00:14:50 - 00:14:52: Now this is much
+faster because I'm only
+00:14:52 - 00:14:53: drawing the white squares.
+00:14:53 - 00:14:55: I'm skipping drawing
+and just filling
+00:14:55 - 00:14:56: the background with black.
+00:14:56 - 00:15:00: Let's give ourselves
+a bit more space.
+00:15:00 - 00:15:03: And instead of dropping
+just a single grain of sand,
+00:15:03 - 00:15:06: what if I drop a small
+collection of sand particles
+00:15:06 - 00:15:08: around the area
+where the mouse is?
+00:15:08 - 00:15:10: So I have the column and row.
+00:15:10 - 00:15:13: And we could make
+a little matrix.
+00:15:13 - 00:15:16: How about 5 by 5?
+00:15:16 - 00:15:18: So I could write
+another little loop
+00:15:18 - 00:15:20: where I want to go
+from negative 2 to 2.
+00:15:20 - 00:15:22: That would be 5 by 5.
+00:15:22 - 00:15:24: So I have to say, the extent--
+00:15:24 - 00:15:25: I don't know if
+that's a good word
+00:15:25 - 00:15:29: to use-- would be
+divide the matrix by 2.
+00:15:29 - 00:15:33: So I'm going to go from
+i is negative extent.
+00:15:33 - 00:15:39: i is less than or equal
+to positive extent, i++.
+00:15:39 - 00:15:43: j, j, j.
+00:15:43 - 00:15:48: And I'm going to call this the
+mouse column and the mouse row
+00:15:48 - 00:15:56: because the actual column now
+is the mouse column plus i.
+00:15:56 - 00:16:00: And the actual row is
+the mouse row plus j.
+00:16:00 - 00:16:05: And then here, I can take
+this and put this in here.
+00:16:05 - 00:16:11: So as long as this 5 by 5
+area, any one of those cells
+00:16:11 - 00:16:14: is within the canvas, I
+should be dropping sand.
+00:16:14 - 00:16:18: And you can see I'm dropping a
+much larger amount of sand now.
+00:16:18 - 00:16:21: Nice little stripes--
+striping effect.
+00:16:21 - 00:16:22: Now, here's the thing.
+00:16:22 - 00:16:24: I don't actually
+want to do 5 by 5.
+00:16:24 - 00:16:26: First of all, that was
+much bigger than I thought.
+00:16:26 - 00:16:30: So let's make this
+3, for example.
+00:16:30 - 00:16:35: But also, maybe they shouldn't
+always all be dropping.
+00:16:35 - 00:16:39: So what if I were to actually
+introduce some randomness here.
+00:16:39 - 00:16:41: Only if random 1--
+00:16:41 - 00:16:44: maybe there's a
+75% chance that I'm
+00:16:44 - 00:16:46: going to drop that little
+grain of sand there.
+00:16:46 - 00:16:49: Let's go back to 5.
+00:16:49 - 00:16:52: So it's a little more amorphous.
+00:16:52 - 00:16:54: OK, now we're
+dropping some sand.
+00:16:54 - 00:16:55: This is just lovely.
+00:16:55 - 00:16:58: How about adding some color?
+00:16:58 - 00:17:02: So one thing that I've done here
+is that everything is based off
+00:17:02 - 00:17:05: of the state being a 0 or a 1.
+00:17:05 - 00:17:09: But what if I think of
+the state as being 0
+00:17:09 - 00:17:11: or anything that's not 0?
+00:17:11 - 00:17:15: As long as it's greater
+than 0, draw the--
+00:17:15 - 00:17:18: what if I used its color?
+00:17:18 - 00:17:19: Oh, I have an idea.
+00:17:19 - 00:17:23: What if I have a hue
+value equal to 0.
+00:17:23 - 00:17:27: And let's say-- this is a little
+bit nuts-- colorMode, because I
+00:17:27 - 00:17:30: have to make everything a
+rainbow, clearly, HSB, 360
+00:17:30 - 00:17:33: is the default, 255, 255.
+00:17:33 - 00:17:35: So this is hue,
+saturation, and brightness.
+00:17:35 - 00:17:37: So what I'm going
+to do is I'm going
+00:17:37 - 00:17:41: to set the grid to a hue value.
+00:17:41 - 00:17:44: Then I'm going to
+fill it with that hue
+00:17:44 - 00:17:47: value and a full
+brightness and saturation.
+00:17:47 - 00:17:51: As long as the state
+is greater than 0,
+00:17:51 - 00:17:52: everything else
+should be the same.
+00:17:52 - 00:17:58: Equals not 1 but
+the current state.
+00:17:58 - 00:18:01: So I'm passing the color around.
+00:18:01 - 00:18:02: Let's see what happens.
+00:18:02 - 00:18:04: [BUZZER]
+00:18:04 - 00:18:05: I don't see anything.
+00:18:05 - 00:18:08: Oh, the hue value is 0.
+00:18:08 - 00:18:10: I forgot I can't use
+a hue value of 0.
+00:18:10 - 00:18:11: Oh, my goodness.
+00:18:11 - 00:18:14: Let's give it a
+hue value of 200.
+00:18:14 - 00:18:15: There, OK, it's blue.
+00:18:15 - 00:18:18: The reason why I was doing
+this is I was thinking,
+00:18:18 - 00:18:20: what if the hue
+changed over time?
+00:18:20 - 00:18:28: So hueValue plus equals 0.1
+as I'm dragging the mouse.
+00:18:28 - 00:18:33: OK, I guess I should have
+it change a little faster.
+00:18:33 - 00:18:36: Ooh, I love this.
+00:18:36 - 00:18:39: OK, well, it's going
+to stop at 360.
+00:18:39 - 00:18:47: So if hueValue is greater than
+360, set it back equal to 1.
+00:18:47 - 00:18:50: [MUSIC PLAYING]
+00:18:54 - 00:18:57: Coding challenge complete.
+00:18:57 - 00:19:01: However, I don't
+know if I can release
+00:19:01 - 00:19:04: this code without fixing
+it up just a little bit.
+00:19:04 - 00:19:09: Let's write a function to help
+with this logic down here,
+00:19:09 - 00:19:15: a function that returns
+true or false if a column is
+00:19:15 - 00:19:18: within the bounds or not.
+00:19:18 - 00:19:19: What should I call this?
+00:19:19 - 00:19:22: withinColumns i.
+00:19:22 - 00:19:27: return i is greater
+than or equal to 0
+00:19:27 - 00:19:30: and i is less than or equal
+to the columns minus 1.
+00:19:30 - 00:19:33: So now I can check here.
+00:19:33 - 00:19:36: withinCols, the column.
+00:19:36 - 00:19:38: And let's do one for rows.
+00:19:43 - 00:19:46: So that cleans up this
+code just a little bit.
+00:19:46 - 00:19:50: I can also now clean this code--
+00:19:53 - 00:19:55: the state of the current cell.
+00:19:55 - 00:19:56: Ah, look at this.
+00:19:56 - 00:19:58: I have that variable, state.
+00:19:58 - 00:20:00: So I can use that here.
+00:20:00 - 00:20:05: This will make things a
+little bit nicer also.
+00:20:05 - 00:20:06: I'm checking a random direction.
+00:20:06 - 00:20:07: That's fine.
+00:20:07 - 00:20:10: I don't love just
+making them undefined.
+00:20:10 - 00:20:12: Let's start with
+them as negative 1.
+00:20:12 - 00:20:17: Then if it's within, then
+I'll give it the actual value.
+00:20:17 - 00:20:20: And then these won't
+trigger unless they're
+00:20:20 - 00:20:23: 0, which is not negative 1.
+00:20:23 - 00:20:24: I don't know if that's better.
+00:20:24 - 00:20:25: A little bit better.
+00:20:25 - 00:20:27: Maybe I'll put some
+comments in the code.
+00:20:27 - 00:20:28: That'll help a little bit.
+00:20:28 - 00:20:30: Just hold that
+thought for a second.
+00:20:30 - 00:20:33: [MUSIC PLAYING]
+00:20:34 - 00:20:36: I don't need this anymore.
+00:20:49 - 00:20:56: Do I dare try this now
+with the sand smaller?
+00:20:56 - 00:20:57: It's divided by half.
+00:21:01 - 00:21:03: So this is lovely.
+00:21:03 - 00:21:05: But it's missing a
+kind of critical thing.
+00:21:05 - 00:21:09: Notice how the sand is
+falling at a constant speed.
+00:21:09 - 00:21:13: It just so happens I've
+written this entire book called
+00:21:13 - 00:21:16: Nature of Code all about
+physics simulation.
+00:21:16 - 00:21:20: And chapter 2 is all about
+velocity and acceleration.
+00:21:20 - 00:21:25: And what is a force but a vector
+that causes an object with mass
+00:21:25 - 00:21:26: to accelerate?
+00:21:26 - 00:21:29: Is there a way
+that I could apply
+00:21:29 - 00:21:33: a gravitational acceleration
+to these little bits of sand
+00:21:33 - 00:21:34: as they fall?
+00:21:34 - 00:21:39: That would be a little
+tricky because the sand
+00:21:39 - 00:21:45: should be falling more than
+just one cell at a time.
+00:21:45 - 00:21:48: This is a challenge I'm
+going to leave to you.
+00:21:48 - 00:21:50: I'll address it maybe
+at a live stream
+00:21:50 - 00:21:54: and showcase any of you who
+submit your falling sand
+00:21:54 - 00:21:56: simulations to the
+Passenger Showcase.
+00:21:56 - 00:22:00: I also want to remind
+you to read jason.today.
+00:22:00 - 00:22:01: Well, that's not
+their last name.
+00:22:01 - 00:22:03: But that's their URL--
+00:22:03 - 00:22:07: jason.today's blog post all
+about making a falling sand
+00:22:07 - 00:22:07: simulator.
+00:22:07 - 00:22:12: And you can see here that
+there is a Grid class, ooh,
+00:22:12 - 00:22:14: with a higher order
+function like fill
+00:22:14 - 00:22:16: and this swapping
+function that allows
+00:22:16 - 00:22:18: you to swap two particles.
+00:22:18 - 00:22:20: Oh, and they're just using
+a one-dimensional array.
+00:22:20 - 00:22:22: You might like this strategy.
+00:22:22 - 00:22:25: Oh, and you can see
+there's different colors.
+00:22:25 - 00:22:27: So there's some other
+things you could
+00:22:27 - 00:22:28: learn by following this post.
+00:22:28 - 00:22:31: But hopefully, you enjoyed
+this coding challenge.
+00:22:31 - 00:22:34: This was technically another
+cellular automata, though,
+00:22:34 - 00:22:37: in truth, it's a stochastic
+one because of the way
+00:22:37 - 00:22:39: that I'm randomly
+moving the sand
+00:22:39 - 00:22:41: left or right as it's falling.
+00:22:41 - 00:22:43: And I can't wait to
+see what you make.
+00:22:43 - 00:22:45: Have a great day.
+00:22:45 - 00:22:46: [TOOTING]
+00:22:46 - 00:22:48: [MUSIC PLAYING]
+00:22:51 - 00:22:54: [BLIPS AND BLEEPS]

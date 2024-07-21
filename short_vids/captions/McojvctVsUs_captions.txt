@@ -1,0 +1,579 @@
+00:00:08 - 00:00:11: hi guys this is harsh padraig from
+00:00:09 - 00:00:14: simply learn and welcome to this
+00:00:11 - 00:00:18: tutorial on c plus plus basics so let's
+00:00:14 - 00:00:20: jump in and see what's in it for us
+00:00:18 - 00:00:22: so we will be covering today the basics
+00:00:20 - 00:00:24: of c plus plus that is we will learn how
+00:00:22 - 00:00:26: to write your first program in c plus
+00:00:24 - 00:00:29: plus then types and variables in c plus
+00:00:26 - 00:00:32: plus after that topics like arrays
+00:00:29 - 00:00:34: strings efl statements for loop while
+00:00:32 - 00:00:36: loop and functions
+00:00:34 - 00:00:37: but before we begin make sure to
+00:00:36 - 00:00:40: subscribe to our channel and hit the
+00:00:37 - 00:00:42: bell icon to never miss an update
+00:00:40 - 00:00:44: so let's start with the introduction to
+00:00:42 - 00:00:46: c plus plus programming
+00:00:44 - 00:00:49: c plus plus is a popular programming
+00:00:46 - 00:00:52: language introduced by john strawstrom
+00:00:49 - 00:00:54: in the year 1979. the aim was to make a
+00:00:52 - 00:00:57: dynamic language that is efficient and
+00:00:54 - 00:00:59: has some additional features to see
+00:00:57 - 00:01:02: initially it was called c with classes
+00:00:59 - 00:01:06: as it was an extension to c language but
+00:01:02 - 00:01:08: later renamed as c plus plus
+00:01:06 - 00:01:10: it is general purpose case sensitive
+00:01:08 - 00:01:13: language and it is called pre-compiled
+00:01:10 - 00:01:14: language because it converts the source
+00:01:13 - 00:01:16: code directly to the machine
+00:01:14 - 00:01:18: understandable code
+00:01:16 - 00:01:21: it is an intermediate level language
+00:01:18 - 00:01:24: because it contains both features of
+00:01:21 - 00:01:24: high level and low level language
+00:01:24 - 00:01:27: c
+00:01:24 - 00:01:29: supports the features of object oriented
+00:01:27 - 00:01:32: language like encapsulation inheritance
+00:01:29 - 00:01:35: polymorphism etc it also supports
+00:01:32 - 00:01:37: procedural programming and functional
+00:01:35 - 00:01:39: programming as well
+00:01:37 - 00:01:41: now as we have understood about c plus
+00:01:39 - 00:01:43: plus programming
+00:01:41 - 00:01:46: let's move on to our first program in c
+00:01:43 - 00:01:46: plus
+00:01:46 - 00:01:50: so the first program for beginners is
+00:01:48 - 00:01:53: hello world program
+00:01:50 - 00:01:56: in this program hello world is printed
+00:01:53 - 00:01:57: it is very basic program and in the
+00:01:56 - 00:02:00: first part of the program we are
+00:01:57 - 00:02:02: including a header file hash include
+00:02:00 - 00:02:04: iostream
+00:02:02 - 00:02:06: header files are generally used to
+00:02:04 - 00:02:08: import features into the program
+00:02:06 - 00:02:10: functions like c in which is used to
+00:02:08 - 00:02:13: take the input from the user and c out
+00:02:10 - 00:02:16: which is used to display the output are
+00:02:13 - 00:02:19: defined in this iopin header file
+00:02:16 - 00:02:22: here using namespace standard means
+00:02:19 - 00:02:24: we are using all the things which are
+00:02:22 - 00:02:26: within the standard library
+00:02:24 - 00:02:27: the second part of the program is main
+00:02:26 - 00:02:29: function
+00:02:27 - 00:02:32: this is a special function from where
+00:02:29 - 00:02:34: the execution of program starts
+00:02:32 - 00:02:36: inside the main function we are printing
+00:02:34 - 00:02:39: hello world using the c out which is
+00:02:36 - 00:02:41: used to print the output
+00:02:39 - 00:02:44: return 0 on the next line will indicate
+00:02:41 - 00:02:47: the program that nothing will return and
+00:02:44 - 00:02:49: program executed successfully
+00:02:47 - 00:02:53: so let's try this hello world program on
+00:02:49 - 00:02:53: our code editor that is vs code
+00:02:55 - 00:02:58: so let's first of all name the file
+00:03:01 - 00:03:04: hello.cpp
+00:03:05 - 00:03:09: so first of all we'll include the header
+00:03:07 - 00:03:12: files
+00:03:09 - 00:03:12: hash include iostream
+00:03:13 - 00:03:19: and then namespace standard we'll write
+00:03:16 - 00:03:22: using namespace
+00:03:19 - 00:03:22: std
+00:03:22 - 00:03:27: now we'll write the main function that
+00:03:24 - 00:03:27: is int main
+00:03:27 - 00:03:32: now inside this function
+00:03:30 - 00:03:35: we'll print using
+00:03:32 - 00:03:35: c out
+00:03:35 - 00:03:37: and
+00:03:35 - 00:03:38: we'll write
+00:03:37 - 00:03:40: hello
+00:03:38 - 00:03:40: world
+00:03:44 - 00:03:53: after that we'll write return 0
+00:03:49 - 00:03:53: all right now let's try to run this
+00:03:57 - 00:04:02: as you can see hello world is getting
+00:04:00 - 00:04:02: printed over here
+00:04:03 - 00:04:09: so this is how it's done
+00:04:05 - 00:04:11: so now let's move to our next topic
+00:04:09 - 00:04:15: that is types and variables
+00:04:11 - 00:04:17: coming to types and variables
+00:04:15 - 00:04:20: in c plus there are different types of
+00:04:17 - 00:04:24: data type that acts as a keyword which
+00:04:20 - 00:04:26: is responsible to define a variable
+00:04:24 - 00:04:28: first is boolean data type
+00:04:26 - 00:04:31: this keyword is used when we have two
+00:04:28 - 00:04:33: values either true or false and these
+00:04:31 - 00:04:35: values are used when there are
+00:04:33 - 00:04:38: conditions for example if the condition
+00:04:35 - 00:04:40: is satisfied then it's true otherwise it
+00:04:38 - 00:04:43: will return false
+00:04:40 - 00:04:45: next is character data type
+00:04:43 - 00:04:48: this character data type is used when we
+00:04:45 - 00:04:50: are dealing with alphabets and symbols
+00:04:48 - 00:04:53: and it is used to hold a single
+00:04:50 - 00:04:55: character within the variable
+00:04:53 - 00:04:57: integer data type
+00:04:55 - 00:04:59: this data type is used for integer
+00:04:57 - 00:05:01: values they can be both positive and
+00:04:59 - 00:05:03: negative
+00:05:01 - 00:05:05: next is flow data type
+00:05:03 - 00:05:09: float is used when we want to store
+00:05:05 - 00:05:11: values that are in decimal form
+00:05:09 - 00:05:14: now variables
+00:05:11 - 00:05:16: variables are used with these data types
+00:05:14 - 00:05:18: it is generally used to store values
+00:05:16 - 00:05:19: and this is the syntax to define a
+00:05:18 - 00:05:22: variable
+00:05:19 - 00:05:24: first we will mention the data type and
+00:05:22 - 00:05:27: then the variable name of our choice
+00:05:24 - 00:05:30: for example int is the data type and
+00:05:27 - 00:05:33: data is the variable name
+00:05:30 - 00:05:35: moving to arrays
+00:05:33 - 00:05:38: errors are one of the most important and
+00:05:35 - 00:05:40: widely used concepts in c plus plus it
+00:05:38 - 00:05:42: can be defined as a collection of
+00:05:40 - 00:05:44: similar kind of elements the elements of
+00:05:42 - 00:05:47: array are stored in contiguous memory
+00:05:44 - 00:05:49: locations that is one after the other
+00:05:47 - 00:05:51: arrays make it possible to store
+00:05:49 - 00:05:53: multiple values of the same data type
+00:05:51 - 00:05:56: into a single variable
+00:05:53 - 00:05:58: the syntax to declare an array is first
+00:05:56 - 00:06:00: we will mention the data type then the
+00:05:58 - 00:06:03: array name and after that number of
+00:06:00 - 00:06:08: elements inside the brackets
+00:06:03 - 00:06:08: our next topic is strings
+00:06:08 - 00:06:12: we can define strings as a collection or
+00:06:11 - 00:06:15: group of characters
+00:06:12 - 00:06:16: it is basically used to represent text
+00:06:15 - 00:06:18: in the program
+00:06:16 - 00:06:21: and we can perform many operations on
+00:06:18 - 00:06:23: strings in order to manipulate it
+00:06:21 - 00:06:25: the syntax of string contains a
+00:06:23 - 00:06:28: collection of characters surrounded by
+00:06:25 - 00:06:30: double quotes for example here string is
+00:06:28 - 00:06:32: the type
+00:06:30 - 00:06:34: str is the name of the string and coffee
+00:06:32 - 00:06:36: is the value that is assigned to the
+00:06:34 - 00:06:38: string
+00:06:36 - 00:06:40: in c plus there are two ways to create a
+00:06:38 - 00:06:42: string
+00:06:40 - 00:06:44: first is c style strings
+00:06:42 - 00:06:46: in c style strings collection of
+00:06:44 - 00:06:47: characters are stored in the form of
+00:06:46 - 00:06:48: arrays
+00:06:47 - 00:06:50: they are basically areas of type
+00:06:48 - 00:06:53: character
+00:06:50 - 00:06:55: the second way is using string objects
+00:06:53 - 00:06:56: we can create string object to hold a
+00:06:55 - 00:06:58: string
+00:06:56 - 00:07:00: they are implemented in the standard
+00:06:58 - 00:07:03: library which we must include in the
+00:07:00 - 00:07:07: program using hash include
+00:07:03 - 00:07:07: next is if false statements
+00:07:08 - 00:07:12: if else are two conditional statements
+00:07:10 - 00:07:15: that are generally used when we want to
+00:07:12 - 00:07:17: run the code based on some conditions
+00:07:15 - 00:07:20: we run a block of code which is inside
+00:07:17 - 00:07:22: if statement only if the condition is
+00:07:20 - 00:07:24: true for example
+00:07:22 - 00:07:25: if the number variable here is equal to
+00:07:24 - 00:07:29: 10
+00:07:25 - 00:07:32: then only the block of code will execute
+00:07:29 - 00:07:34: and will print the message you got it
+00:07:32 - 00:07:36: otherwise it will run the else block and
+00:07:34 - 00:07:40: display the message written inside that
+00:07:36 - 00:07:43: block which is not this one
+00:07:40 - 00:07:45: now coming to loops
+00:07:43 - 00:07:47: first is for loop
+00:07:45 - 00:07:48: for loop is the repetition control
+00:07:47 - 00:07:50: structure
+00:07:48 - 00:07:53: that allows us to repeat a block of code
+00:07:50 - 00:07:55: for a fixed number of times
+00:07:53 - 00:07:56: instead of repeating the same code again
+00:07:55 - 00:07:59: and again
+00:07:56 - 00:08:02: the syntax of for loop has three parts
+00:07:59 - 00:08:04: first is initialization it is used to
+00:08:02 - 00:08:06: initialize the loop
+00:08:04 - 00:08:09: next is condition which is used to
+00:08:06 - 00:08:12: determine when to end the loop and last
+00:08:09 - 00:08:14: is updation which is used to update the
+00:08:12 - 00:08:17: loop variables
+00:08:14 - 00:08:19: for example inside the loop i equal to 0
+00:08:17 - 00:08:22: means we have initialized the loop from
+00:08:19 - 00:08:25: 0 and i less than 10 means the loop will
+00:08:22 - 00:08:26: keep on repeating until i becomes less
+00:08:25 - 00:08:29: than 10
+00:08:26 - 00:08:32: that is it will repeat for 10 times in
+00:08:29 - 00:08:34: total from 0 to 9 and i plus plus
+00:08:32 - 00:08:38: denotes that we are incrementing the
+00:08:34 - 00:08:38: loop after each iteration by 1.
+00:08:39 - 00:08:45: another type of loop is while loop
+00:08:42 - 00:08:47: while loop are used in c plus when we
+00:08:45 - 00:08:49: don't know the exact number of times the
+00:08:47 - 00:08:52: loop should repeat
+00:08:49 - 00:08:55: it repeats the statements till the given
+00:08:52 - 00:08:57: condition is true the syntax for while
+00:08:55 - 00:08:59: loop is while keyword and condition in
+00:08:57 - 00:09:00: the brackets
+00:08:59 - 00:09:02: and the loop will iterate till that
+00:09:00 - 00:09:04: condition is true
+00:09:02 - 00:09:07: and once the condition becomes false
+00:09:04 - 00:09:10: then the control passes outside the loop
+00:09:07 - 00:09:13: for example in this while loop the
+00:09:10 - 00:09:15: condition is number less than 10
+00:09:13 - 00:09:18: that means the loop will keep nitrating
+00:09:15 - 00:09:21: till the number is less than 10
+00:09:18 - 00:09:23: that is till when it becomes equal to 9
+00:09:21 - 00:09:26: and inside the loop after printing the
+00:09:23 - 00:09:28: variable number we are incrementing the
+00:09:26 - 00:09:32: variable because we want to increment
+00:09:28 - 00:09:33: the variable number after each iteration
+00:09:32 - 00:09:36: now
+00:09:33 - 00:09:38: moving on to functions
+00:09:36 - 00:09:40: functions in c plus are group of
+00:09:38 - 00:09:42: statements that are designed to perform
+00:09:40 - 00:09:44: a specific task
+00:09:42 - 00:09:46: it allows us to write a code inside the
+00:09:44 - 00:09:49: function and then we can use that code
+00:09:46 - 00:09:52: every time when we need it
+00:09:49 - 00:09:53: by simply mocking the function
+00:09:52 - 00:09:54: we can also pass arguments to the
+00:09:53 - 00:09:56: function
+00:09:54 - 00:09:57: the syntax of function is
+00:09:56 - 00:09:59: type
+00:09:57 - 00:10:01: function name
+00:09:59 - 00:10:03: and then the parameters
+00:10:01 - 00:10:06: inside the function brackets we can
+00:10:03 - 00:10:08: write the code and we can invoke the
+00:10:06 - 00:10:09: function by calling it from the main
+00:10:08 - 00:10:11: function
+00:10:09 - 00:10:13: so as we have understood these concepts
+00:10:11 - 00:10:16: so let's move on to our code editor that
+00:10:13 - 00:10:18: is vs code to do some examples on these
+00:10:16 - 00:10:20: concepts
+00:10:18 - 00:10:22: so here we will do an example
+00:10:20 - 00:10:25: in which we will find the number of even
+00:10:22 - 00:10:28: elements and odd elements using array
+00:10:25 - 00:10:30: for loop and if file statements
+00:10:28 - 00:10:33: so let's first of all
+00:10:30 - 00:10:33: make a new file
+00:10:34 - 00:10:38: let's name this file as
+00:10:40 - 00:10:44: basic dot cpp
+00:10:47 - 00:10:52: okay so first of all we'll include the
+00:10:49 - 00:10:52: header files
+00:10:56 - 00:11:01: now we'll write using namespace standard
+00:11:03 - 00:11:07: now we will include int main
+00:11:09 - 00:11:11: and
+00:11:12 - 00:11:18: int main
+00:11:14 - 00:11:20: and here we will declare an array
+00:11:18 - 00:11:22: arr
+00:11:20 - 00:11:22: and we'll write
+00:11:25 - 00:11:33: and we'll mention the elements 2
+00:11:30 - 00:11:35: 7 let's say 12 and
+00:11:33 - 00:11:35: 9
+00:11:36 - 00:11:38: okay
+00:11:37 - 00:11:40: now
+00:11:38 - 00:11:44: first of all we'll initialize the
+00:11:40 - 00:11:47: variables let's say int even
+00:11:44 - 00:11:49: 0 and will initialize
+00:11:47 - 00:11:52: odd variable
+00:11:49 - 00:11:52: with 0 as well
+00:11:52 - 00:11:58: now
+00:11:54 - 00:12:01: we'll write int length
+00:11:58 - 00:12:03: because we want to find
+00:12:01 - 00:12:04: size of the array and for that we will
+00:12:03 - 00:12:07: write
+00:12:04 - 00:12:07: sizeof
+00:12:07 - 00:12:11: arrayname
+00:12:09 - 00:12:15: then
+00:12:11 - 00:12:15: divide size of
+00:12:16 - 00:12:21: array of
+00:12:19 - 00:12:24: zero
+00:12:21 - 00:12:27: so now i'll explain this part here we
+00:12:24 - 00:12:30: have an array which has 5 integers and
+00:12:27 - 00:12:33: since size of an integer is 4 bytes
+00:12:30 - 00:12:35: therefore size of array is 5 into 4 that
+00:12:33 - 00:12:37: is 20 bytes
+00:12:35 - 00:12:40: now int length we have written int
+00:12:37 - 00:12:43: length equals size of array divided by a
+00:12:40 - 00:12:45: size of array of 0 that is 20 divided by
+00:12:43 - 00:12:47: 4
+00:12:45 - 00:12:49: that is equal to 5
+00:12:47 - 00:12:53: so 5 is the size
+00:12:49 - 00:12:55: here size of array of 0 is the size of
+00:12:53 - 00:12:58: element at index 0.
+00:12:55 - 00:13:01: we can take any index here like arrow 1
+00:12:58 - 00:13:04: array of 2 array of 3
+00:13:01 - 00:13:09: so now we know the length of the array
+00:13:04 - 00:13:10: so here we will include the for loop
+00:13:09 - 00:13:14: and
+00:13:10 - 00:13:16: we'll start with int i equals zero
+00:13:14 - 00:13:18: we have initialized i with zero
+00:13:16 - 00:13:20: now i less than
+00:13:18 - 00:13:23: length
+00:13:20 - 00:13:25: this one
+00:13:23 - 00:13:28: here i have written i less than length
+00:13:25 - 00:13:29: that is i less than 5
+00:13:28 - 00:13:34: okay
+00:13:29 - 00:13:34: now i plus plus we are incrementing it
+00:13:35 - 00:13:41: now we have to
+00:13:38 - 00:13:44: use if condition because we want to find
+00:13:41 - 00:13:46: the even elements and the odd elements
+00:13:44 - 00:13:49: and for that we have to include if
+00:13:46 - 00:13:51: condition so we'll write if
+00:13:49 - 00:13:54: array
+00:13:51 - 00:13:54: of i
+00:13:55 - 00:13:58: mod 2
+00:13:56 - 00:13:59: that is
+00:13:58 - 00:14:01: if
+00:13:59 - 00:14:05: an element on
+00:14:01 - 00:14:07: dividing by 2 gives 0 as a remainder
+00:14:05 - 00:14:10: gives 0 as a remainder then it will it
+00:14:07 - 00:14:13: is even element
+00:14:10 - 00:14:13: so
+00:14:13 - 00:14:19: we'll increment the even variable this
+00:14:16 - 00:14:21: which we have initialized 0 will
+00:14:19 - 00:14:23: increment over here
+00:14:21 - 00:14:25: okay
+00:14:23 - 00:14:27: so now
+00:14:25 - 00:14:29: in else block
+00:14:27 - 00:14:32: we'll write
+00:14:29 - 00:14:34: odd plus plus
+00:14:32 - 00:14:37: it means that if this condition is not
+00:14:34 - 00:14:39: true then the odd variable will
+00:14:37 - 00:14:41: increment
+00:14:39 - 00:14:44: all right
+00:14:41 - 00:14:44: now
+00:14:44 - 00:14:48: we will
+00:14:46 - 00:14:50: print the variables
+00:14:48 - 00:14:52: so
+00:14:50 - 00:14:55: we'll write
+00:14:52 - 00:14:55: even numbers
+00:14:56 - 00:15:01: and we are printing these outside the
+00:14:58 - 00:15:02: follow so that they
+00:15:01 - 00:15:05: don't repeat
+00:15:02 - 00:15:08: with the for loop so that is why we have
+00:15:05 - 00:15:10: printed these outside the for loop okay
+00:15:08 - 00:15:10: now
+00:15:11 - 00:15:14: we'll write the variable even
+00:15:17 - 00:15:20: and l for the new line
+00:15:24 - 00:15:30: similarly we'll write odd number
+00:15:28 - 00:15:30: or numbers
+00:15:36 - 00:15:41: the variable odd
+00:15:39 - 00:15:44: and after that we'll write
+00:15:41 - 00:15:46: return zero
+00:15:44 - 00:15:50: okay so this is the code
+00:15:46 - 00:15:50: so now let's try to run this one
+00:15:55 - 00:15:59: there is some error
+00:15:57 - 00:16:02: okay
+00:15:59 - 00:16:02: yeah the spelling is wrong
+00:16:08 - 00:16:11: okay let's try again
+00:16:13 - 00:16:18: yeah here it is
+00:16:15 - 00:16:18: as we can see
+00:16:20 - 00:16:25: even numbers 2 or numbers 3
+00:16:23 - 00:16:26: we can
+00:16:25 - 00:16:29: check it
+00:16:26 - 00:16:32: like even numbers 2
+00:16:29 - 00:16:32: 12.
+00:16:33 - 00:16:37: there are two even numbers and 1 7 9
+00:16:35 - 00:16:39: there are three odd numbers
+00:16:37 - 00:16:43: so in this question we have
+00:16:39 - 00:16:48: used array for loop and if else
+00:16:43 - 00:16:51: so now let's try some other example
+00:16:48 - 00:16:51: okay
+00:16:52 - 00:16:55: let's name this as
+00:16:56 - 00:16:59: basic 2
+00:17:00 - 00:17:05: dot cbp
+00:17:04 - 00:17:07: all right first of all we'll include the
+00:17:05 - 00:17:12: header file
+00:17:07 - 00:17:12: hash include i stream
+00:17:15 - 00:17:19: now using namespace standard
+00:17:23 - 00:17:29: okay now we will do an example in which
+00:17:25 - 00:17:31: we will print the elements from 1 to 20
+00:17:29 - 00:17:32: using while loop and with the help of
+00:17:31 - 00:17:34: function
+00:17:32 - 00:17:38: so first of all
+00:17:34 - 00:17:38: we'll start with intermittent
+00:17:38 - 00:17:44: and inside int main will simply
+00:17:42 - 00:17:47: call or invoke the function
+00:17:44 - 00:17:48: by writing the name of the function this
+00:17:47 - 00:17:50: is the name of the function print
+00:17:48 - 00:17:50: function
+00:17:51 - 00:17:56: okay so here we are calling this
+00:17:53 - 00:17:58: function and after that return 0 will
+00:17:56 - 00:18:02: write
+00:17:58 - 00:18:04: ok now we have to make this function
+00:18:02 - 00:18:06: let's create
+00:18:04 - 00:18:06: void
+00:18:08 - 00:18:14: what is the data type print function
+00:18:12 - 00:18:17: is the name
+00:18:14 - 00:18:20: and inside this function
+00:18:17 - 00:18:24: will first of all initialize i
+00:18:20 - 00:18:24: the variable i with one
+00:18:25 - 00:18:30: now will use while loop
+00:18:28 - 00:18:32: and
+00:18:30 - 00:18:35: we'll write the condition
+00:18:32 - 00:18:38: i less than equal to 20
+00:18:35 - 00:18:41: this means that the loop will keep on
+00:18:38 - 00:18:44: repeating until i becomes less than
+00:18:41 - 00:18:44: equal to 20
+00:18:45 - 00:18:51: so basically it will
+00:18:48 - 00:18:54: move from 1 to 20 times
+00:18:51 - 00:18:55: in total the loop will repeat for 20
+00:18:54 - 00:18:57: times
+00:18:55 - 00:18:59: so now
+00:18:57 - 00:19:02: all we have to do is
+00:18:59 - 00:19:05: we'll just print the i variable
+00:19:02 - 00:19:05: and
+00:19:05 - 00:19:09: in order to give some space between each
+00:19:08 - 00:19:11: element
+00:19:09 - 00:19:12: while printing so that is why we have
+00:19:11 - 00:19:15: used double quotes with the space
+00:19:12 - 00:19:17: between them
+00:19:15 - 00:19:18: now we'll
+00:19:17 - 00:19:20: increment
+00:19:18 - 00:19:22: i plus plus
+00:19:20 - 00:19:24: so that i will increment after each
+00:19:22 - 00:19:27: iteration
+00:19:24 - 00:19:29: all right now
+00:19:27 - 00:19:31: here we have called this function and it
+00:19:29 - 00:19:36: is getting printed inside the function
+00:19:31 - 00:19:36: itself so let's try to run this one
+00:19:41 - 00:19:45: here we can see this is the output
+00:19:43 - 00:19:47: one two three four five six seven eight
+00:19:45 - 00:19:49: nine ten
+00:19:47 - 00:19:51: up to twenty
+00:19:49 - 00:19:53: as i have told you
+00:19:51 - 00:19:56: as you have put the condition less than
+00:19:53 - 00:19:57: equal to 20 so that is why 20 is also
+00:19:56 - 00:20:01: getting printed
+00:19:57 - 00:20:02: because we have used equal to over here
+00:20:01 - 00:20:04: so
+00:20:02 - 00:20:07: we have called the function print
+00:20:04 - 00:20:09: function and inside that function we
+00:20:07 - 00:20:10: have initialized the variable i with 1
+00:20:09 - 00:20:12: and we have put the condition i less
+00:20:10 - 00:20:13: than equal to 20
+00:20:12 - 00:20:16: so that is where the loop is getting
+00:20:13 - 00:20:19: repeated for 20 times and i is getting
+00:20:16 - 00:20:21: printed inside the loop and after that
+00:20:19 - 00:20:24: we have used increment operator so that
+00:20:21 - 00:20:27: the value of i gets updated everything
+00:20:24 - 00:20:29: after every single iteration
+00:20:27 - 00:20:32: so this is the output so now let's move
+00:20:29 - 00:20:33: on to the next example
+00:20:32 - 00:20:36: so
+00:20:33 - 00:20:40: let's make a new file
+00:20:36 - 00:20:40: and name it as basic three dot cpv
+00:20:41 - 00:20:47: so here we will do an example of string
+00:20:44 - 00:20:48: and we'll do some push back and pop back
+00:20:47 - 00:20:50: operation on it
+00:20:48 - 00:20:51: so first of all we'll include the header
+00:20:50 - 00:20:54: file
+00:20:51 - 00:20:54: hash include iostream
+00:20:55 - 00:21:00: then using namespace standard
+00:21:04 - 00:21:07: namespace standard okay
+00:21:06 - 00:21:11: now
+00:21:07 - 00:21:11: we'll start with int main
+00:21:13 - 00:21:18: all right first of all we'll write
+00:21:16 - 00:21:19: string
+00:21:18 - 00:21:21: data type
+00:21:19 - 00:21:22: then the name of the string
+00:21:21 - 00:21:24: s
+00:21:22 - 00:21:25: here s is the name of the string
+00:21:24 - 00:21:28: all right now
+00:21:25 - 00:21:31: first of all we'll display a message
+00:21:28 - 00:21:33: to enter a string
+00:21:31 - 00:21:33: so
+00:21:38 - 00:21:42: okay enter a string
+00:21:47 - 00:21:49: now
+00:21:49 - 00:21:52: get line
+00:21:53 - 00:21:58: this is the syntax when you want to take
+00:21:55 - 00:21:59: the input
+00:21:58 - 00:22:00: of a string
+00:21:59 - 00:22:03: so
+00:22:00 - 00:22:06: get line c in is used to take the input
+00:22:03 - 00:22:09: and s is the name of the string
+00:22:06 - 00:22:10: so this is how we take the input
+00:22:09 - 00:22:12: and
+00:22:10 - 00:22:14: now we will print another message saying
+00:22:12 - 00:22:17: that
+00:22:14 - 00:22:17: you have entered
+00:22:30 - 00:22:35: now here we will print the string so
+00:22:40 - 00:22:43: next line and then
+00:22:42 - 00:22:45: okay
+00:22:43 - 00:22:47: now
+00:22:45 - 00:22:50: we'll do some operations like s dot
+00:22:47 - 00:22:50: pushback
+00:22:50 - 00:22:55: this will add an element at the end of
+00:22:53 - 00:22:57: the string
+00:22:55 - 00:22:59: so
+00:22:57 - 00:23:01: let's say we want to add
+00:22:59 - 00:23:01: y
+00:23:02 - 00:23:06: so we'll write y inside the bracket
+00:23:04 - 00:23:09: s dot push back and inside the bracket
+00:23:06 - 00:23:11: with single quotes will write
+00:23:09 - 00:23:11: y
+00:23:13 - 00:23:18: now
+00:23:15 - 00:23:21: we'll display a message saying
+00:23:18 - 00:23:21: after
+00:23:25 - 00:23:31: after using
+00:23:28 - 00:23:31: pushback function
+00:23:35 - 00:23:39: we'll print the string
+00:23:37 - 00:23:43: that is after using the function push
+00:23:39 - 00:23:45: back the string would look like this
+00:23:43 - 00:23:45: and
+00:23:45 - 00:23:49: now
+00:23:47 - 00:23:51: we'll use another function s dot pop
+00:23:49 - 00:23:51: back
+00:23:53 - 00:23:56: it will delete the element from the end
+00:23:57 - 00:24:01: so
+00:23:58 - 00:24:05: we'll write c out
+00:24:01 - 00:24:10: and we'll display the message
+00:24:05 - 00:24:10: after using pop back function
+00:24:21 - 00:24:27: let's write pop back only
+00:24:23 - 00:24:30: and we'll print the
+00:24:27 - 00:24:30: string
+00:24:32 - 00:24:37: okay
+00:24:33 - 00:24:37: now after that we'll write return zero
+00:24:38 - 00:24:43: and i think it's done only the spelling
+00:24:41 - 00:24:44: is wrong over here
+00:24:43 - 00:24:48: okay
+00:24:44 - 00:24:48: yeah now let's try to run this
+00:24:53 - 00:24:56: as you can see the message enter a
+00:24:55 - 00:25:00: string
+00:24:56 - 00:25:00: so let's say i have entered
+00:25:00 - 00:25:03: barcelona
+00:25:04 - 00:25:09: so you have entered barcelona after
+00:25:06 - 00:25:11: using pushback barcelona y
+00:25:09 - 00:25:14: because we have used y
+00:25:11 - 00:25:16: over here we want to add y at the end of
+00:25:14 - 00:25:18: the string so after using pushback
+00:25:16 - 00:25:19: barcelona y
+00:25:18 - 00:25:20: and
+00:25:19 - 00:25:22: pop back function after that we have
+00:25:20 - 00:25:25: used and we know that it will delete the
+00:25:22 - 00:25:28: element from the end so
+00:25:25 - 00:25:30: here we can see there is no y pop by
+00:25:28 - 00:25:32: function have deleted the element
+00:25:30 - 00:25:34: so this is our output
+00:25:32 - 00:25:37: and
+00:25:34 - 00:25:40: these were some basic examples of c plus
+00:25:37 - 00:25:43: basics it includes the
+00:25:40 - 00:25:46: examples of array for loop if else
+00:25:43 - 00:25:49: and functions strings we have covered
+00:25:46 - 00:25:51: and there are some more examples on each
+00:25:49 - 00:25:53: of these topics so i suggest you to
+00:25:51 - 00:25:56: please practice them all
+00:25:53 - 00:25:59: and that is how you will get a good
+00:25:56 - 00:26:00: understanding on all of these topics
+00:25:59 - 00:26:03: so
+00:26:00 - 00:26:05: you can try some more examples on it
+00:26:03 - 00:26:07: and alright guys with that we have come
+00:26:05 - 00:26:09: to the end of this video if you like
+00:26:07 - 00:26:11: this video please give it a thumbs up i
+00:26:09 - 00:26:13: hope it really helped you all
+00:26:11 - 00:26:15: thanks for watching stay safe and keep
+00:26:13 - 00:26:15: learning
+00:26:18 - 00:26:21: hi there if you like this video
+00:26:20 - 00:26:24: subscribe to the simply learn youtube
+00:26:21 - 00:26:26: channel and click here to watch similar
+00:26:24 - 00:26:29: videos turn it up and get certified
+00:26:26 - 00:26:29: click here

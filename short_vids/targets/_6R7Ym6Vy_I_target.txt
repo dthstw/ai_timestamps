@@ -1,0 +1,11 @@
+00:00 - Intro
+2:38 - Generative AI isn’t new – so what’s changed?
+8:43 - How did we get to ChatGPT?
+12:38 - How are Large Language Models created?
+22:48 - How good can a LLM become?
+26:57 - Unexpected effects of scaling up LLMs
+28:05 - How can ChatGPT meet the needs of humans?
+32:30 - Chat GPT demo
+38:07 - Are Language Models always right or fair?
+40:21 - The impact of LLMs on society
+42:54 - Is AI going to kill us all?
