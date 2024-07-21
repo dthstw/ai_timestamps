@@ -1,7 +1,0 @@
-0:00 - Tabnine
-4:31 - ChatGPT
-5:37 - GitHub Copilot
-9:43 - Bard
-10:49 - AWS Code Whisperer
-13:51 - Sourcegraph Cody
-20:40 - CodiumAI

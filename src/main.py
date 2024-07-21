@@ -209,8 +209,7 @@ class YT_search:
 
                 timestamps = self.extract_timestamps_from_description(video_description)
                 min_required = self.calculate_minimum_timestamps(duration_minutes)
-                #Stayed here, i think problem might be because currently we are looping through video_details in extracted videos, and we 
-                #increase per_query_counter inside this loop 
+                
                 if self.validate_timestamps(timestamps, min_required):
                     try:
                         captions = self.get_captions(video_id)
