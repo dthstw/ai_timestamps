@@ -136,19 +136,53 @@ class YT_search:
     def save_captions_to_file(self, video_id, captions):
         if captions:
             output_file = os.path.join(self.captions_dir, f"{video_id}_captions.txt")
+            #with open(output_file, "w") as file:
+            #    for entry in captions:
+            #        start_time = self.format_timestamps(entry['start'])
+            #        end_time = self.format_timestamps(entry['start'] + entry['duration'])
+            #        text = entry['text']
+            #        file.write(f"{start_time} - {end_time}: {text}\n")
             with open(output_file, "w") as file:
-                for entry in captions:
-                    start_time = self.format_timestamps(entry['start'])
-                    end_time = self.format_timestamps(entry['start'] + entry['duration'])
-                    text = entry['text']
-                    file.write(f"{start_time} - {end_time}: {text}\n")
+                window_duration = 120  # 2 minutes window
+                current_start_time = captions[0]['start']
+                current_text = captions[0]['text']
+
+                for entry in captions[1:]:
+                    if entry['start'] - current_start_time < window_duration:
+                        current_text += " " + entry['text']
+                    else:
+                        end_time = self.format_timestamps(current_start_time + window_duration)
+                        start_time = self.format_timestamps(current_start_time)
+                        file.write(f"{start_time} - {end_time}: {current_text}\n")
+
+                        current_start_time = entry['start']
+                        current_text = entry['text']
+
+                # Write the last window
+                end_time = self.format_timestamps(current_start_time + window_duration)
+                start_time = self.format_timestamps(current_start_time)
+                file.write(f"{start_time} - {end_time}: {current_text}\n")
                     
     def save_metadata_entry(self, video_id, timestamps, captions):
         # Save the standardized timestamps
         target_file = os.path.join(self.target_dir, f"{video_id}_target.txt")
         with open(target_file, "w") as file:
-            for time, text in timestamps:
-                file.write(f"{time} - {text}\n")
+            for time_str, text in timestamps:
+                parts = time_str.split(':')
+                if len(parts) == 2:  # Format is MM:SS
+                    minutes = int(parts[0])
+                    seconds = int(parts[1])
+                    total_seconds = minutes * 60 + seconds
+                elif len(parts) == 3:  # Format is HH:MM:SS
+                    hours = int(parts[0])
+                    minutes = int(parts[1])
+                    seconds = int(parts[2])
+                    total_seconds = hours * 3600 + minutes * 60 + seconds
+                else:
+                    raise ValueError(f"Unexpected timestamp format: {time}")
+        
+                formatted_timestamp = self.format_timestamps(total_seconds)
+                file.write(f"{formatted_timestamp} - {text}\n")
         
         # Save the captions
         self.save_captions_to_file(video_id, captions)
@@ -194,6 +228,8 @@ class YT_search:
                 part='snippet,contentDetails',
                 id=','.join(video_ids)
             ).execute()
+            
+            valid_video_found = False
 
             for video_details in video_details_response.get('items', []):
                 video_id = video_details['id']
@@ -219,9 +255,10 @@ class YT_search:
                         metadata_entry = {
                             'youtube query': self.query,
                             'video_id': video_id,
-                            'captions': os.path.join(self.captions_dir, f"{video_id}_transcript.txt"),
-                            'timestamps': os.path.join(self.target_dir, f"{video_id}_timestamps.txt")
+                            'captions': os.path.join(self.captions_dir, f"{video_id}_captions.txt"),
+                            'timestamps': os.path.join(self.target_dir, f"{video_id}_target.txt")
                         }
+                        valid_video_found = True
                         self.metadata.append(metadata_entry)
                         self.save_metadata_entry(video_id, timestamps, captions)
                         self.per_query_counter += 1
@@ -235,8 +272,11 @@ class YT_search:
                         print(f"An error occurred for video {video_id}: {e}")
                 else:
                     continue
-
                 
+            if valid_video_found:
+                current_page_attempt = 0  # Reset the page attempt counter if a valid video is found
+            else:
+                current_page_attempt += 1
 
             if 'nextPageToken' in response:
                 page_token = response['nextPageToken']
@@ -269,7 +309,6 @@ def process_queries(queries, vids_per_query, output_dir, api_keys):
             yt_search = yt_search = YT_search(token_file, client_secrets_file, query, vids_per_query, output_dir, api_key, start_index, metadata)
             try:
                 page_token = yt_search.search_videos(page_token)  # Continue from the last page token
-                start_index = yt_search.per_query_counter 
                 if yt_search.per_query_counter >= vids_per_query:
                     break  # If required number of videos have been processed, move to the next query
             except HttpError as e:
@@ -283,14 +322,9 @@ def process_queries(queries, vids_per_query, output_dir, api_keys):
 def main(): 
 
     queries = [
-        "Fitness",
-        "History video",
-        "Talks",
-        "Bouldering",
-        "Lecture",
-        "Comedy show"
+        "gadget review"
     ]
-    vids_per_query = 40
+    vids_per_query = 1
     output_dir = '/Users/ruslankireev/Documents/vscode/ai_timestamps/short_vids'
     with open('/Users/ruslankireev/Documents/vscode/ai_timestamps/api_keys.json', 'r') as file:
         api_keys = json.load(file)['api_keys']
